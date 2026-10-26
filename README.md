@@ -9,6 +9,8 @@ Scripts for downloading, filtering, sampling, and converting WildChat and SWE-Ch
 
 Each stage's README documents its inputs and commands. Dataset files, samples, Parquet outputs, JSON reports, caches, and dataset-provided documentation are excluded from Git by the root `.gitignore` allowlist.
 
+The main implementation problems, evidence, and resolutions are recorded in [PROJECT_HISTORY.md](PROJECT_HISTORY.md).
+
 ## Git workflow
 
 The remote `main` branch is the shared version. Before changing scripts, run `git pull --rebase origin main`. After checking `git status` and the staged file list, commit the code and run `git push origin main`. Generated data stays local and is never staged.

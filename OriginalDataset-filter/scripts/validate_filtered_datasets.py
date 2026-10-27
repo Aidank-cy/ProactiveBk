@@ -6,6 +6,10 @@ from pathlib import Path
 import pyarrow.parquet as pq
 
 from filter_wildchat import has_interaction_content
+from filter_empty_swe_sessions import has_interaction_content as swe_has_interaction_content, unmatched_tool_result_ids
+from swe_chat_adapter import convert as swe_convert
+from swe_format import signature
+from swe_record_policy import EXCLUDED_FORMATS
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -103,6 +107,23 @@ def main():
     removed_ids = {row["session_id"] for row in swe.get("removed_session_details", [])}
     if removed_ids & set(ids):
         raise ValueError("a removed SWE Session remains in sessions.parquet")
+    agent_named_rows = [row for row in pq.read_table(
+        ORIGINAL / "SWE-chat" / "session_logs.parquet", columns=["session_id", "transcript_path"]
+    ).to_pylist() if row["session_id"].startswith("agent-") or (
+        row["transcript_path"] and Path(row["transcript_path"]).stem.startswith("agent-")
+    )]
+    eligible_agent_named = set()
+    for row in agent_named_rows:
+        path = row["transcript_path"]
+        transcript = ORIGINAL / "SWE-chat" / path if path else None
+        if transcript is None or not transcript.is_file() or signature(transcript) in EXCLUDED_FORMATS | {"unclassified"}:
+            continue
+        events, _, _ = swe_convert(transcript, row["session_id"])
+        if swe_has_interaction_content(events) and not unmatched_tool_result_ids(events):
+            eligible_agent_named.add(row["session_id"])
+    actual_agent_named = {row["session_id"] for row in agent_named_rows} & set(ids)
+    if actual_agent_named != eligible_agent_named:
+        raise ValueError("SWE agent-* Session retention differs from main-agent content eligibility")
     if any(
         not row["transcript_path"] or not (swe_dir / row["transcript_path"]).is_file()
         for row in logs
@@ -127,6 +148,7 @@ def main():
     result["SWE-Chat-filter"] = {
         "session_count": swe["session_count"],
         "removed_sessions": swe["removed_sessions"],
+        "eligible_agent_named_sessions": len(eligible_agent_named),
         "copy_verification": swe["copy_verification"],
     }
     (FILTERED / "filter_validation.json").write_text(

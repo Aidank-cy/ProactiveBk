@@ -74,9 +74,6 @@ def check_swe(source: Path) -> tuple[pa.Table, pa.Table, list[str], dict]:
         session = session_rows[session_by_id[session_id][0]]
         log = log_rows[log_by_id[session_id][0]]
         path = log["transcript_path"]
-        if session_id.startswith("agent-") or (path and Path(path).stem.startswith("agent-")):
-            errors.append((session_id, "subagent_session_in_filtered_source"))
-            continue
         if not path:
             errors.append((session_id, "missing_transcript_path"))
             continue
@@ -128,8 +125,6 @@ def validate_swe_stage(stage: Path, source: Path, selected: list[dict], copied_p
     manifest = json.loads((stage / "sample_manifest.json").read_text(encoding="utf-8"))
     session_ids = [item["session_id"] for item in selected]
     main_paths = [item["transcript_path"] for item in selected]
-    if any(item["session_id"].startswith("agent-") or Path(item["transcript_path"]).stem.startswith("agent-") for item in selected):
-        raise RuntimeError("SWE-chat 主 Session 样本包含 agent-* 子代理日志")
     if manifest["sampling_unit"] != "session_id" or manifest["selected"] != selected or len(selected) != SAMPLE_SIZE:
         raise RuntimeError("SWE-chat 暂存 manifest 与选中 Session 不一致")
     if manifest.get("filtered_source_manifest_sha256") != sha256_file(source / "filter_manifest.json"):

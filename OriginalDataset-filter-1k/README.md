@@ -9,10 +9,10 @@ with its copied main transcript and available supplementary files.
 
 Before sampling SWE, run `../OriginalDataset-filter/scripts/profile_swe_sampling.py`
 to build a read-only structural profile of the full main transcript files. The
-SWE sampler reads that profile and balances the 14 eligible CLI format families,
+SWE sampler reads that profile and balances the eligible CLI format families,
 then covers different observed content structures and file sizes within each
-family. The filtered source already excludes `agent-*` subagent Sessions; the
-sample script checks that none remain. The sample script only selects,
+family. An `agent-*` name is not used to reject a Session; eligibility is
+decided by the filtered source's main-agent content rules. The sample script only selects,
 copies, and validates source files; all event extraction is implemented under
 `../ProcessedDataset/UnifiedTrace/scripts/`.
 

@@ -92,7 +92,7 @@ def main():
     failures = []
     for index, path in enumerate(files, 1):
         family = signature(path)
-        if path.stem.startswith("agent-") or family in EXCLUDED:
+        if family in EXCLUDED:
             continue
         try:
             profile = inspect(path)
@@ -118,7 +118,7 @@ def main():
               "files_scanned": len(files),
               "main_files_profiled": len(rows), "format_counts": dict(sorted(families.items())),
               "feature_file_counts": {name: sum(row[name] for row in rows) for name in FEATURES},
-              "excluded_agent_named_files": sum(p.stem.startswith("agent-") for p in files),
+              "agent_named_main_files_profiled": sum(Path(row["transcript_path"]).stem.startswith("agent-") for row in rows),
               "failed_files": 0}
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
     print(json.dumps(report, ensure_ascii=False), flush=True)

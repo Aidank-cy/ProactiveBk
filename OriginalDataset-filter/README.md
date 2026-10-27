@@ -13,9 +13,9 @@ its own format-specific CLI parser classes under `scripts/` to remove Sessions w
 extractable nonblank **main-agent** human, assistant, thinking, or tool content.
 Claude `isSidechain` records do not qualify as main-agent content; Sessions
 containing only sidechain records are classified as having no main-agent
-interaction and removed by the same rule. `agent-*` Session IDs or main
-transcript stems identify supplementary subagent Sessions and are removed
-before main transcript inspection. Sessions
+interaction and removed by the same rule. An `agent-*` Session ID or main
+transcript stem alone does not establish subagent status: some Cursor Sessions
+with these names contain main-agent interaction and remain eligible. Sessions
 lacking a main transcript and uninterpretable source formats are also excluded.
 The filter also removes an entire Session when a tool result has an ID but no
 tool call with that ID exists in its parsed main-agent transcript. Matching is
@@ -44,4 +44,6 @@ format profile used by the separate 1k sampler. The SWE copy builder invokes
 `scripts/filter_empty_swe_sessions.py` before publication; that script can
 also update an existing filtered SWE copy with a rollback backup. Run
 `scripts/validate_filtered_datasets.py` after building all three.
+The validator rechecks `agent-*` Sessions against their original main logs so
+an eligible Session cannot be lost solely because of its name.
 The original datasets are never modified.

@@ -62,7 +62,7 @@ def unmatched_tool_result_ids(events):
     return sorted(results - calls)
 
 
-def inspect_sessions(dataset, subagents_only=False):
+def inspect_sessions(dataset):
     sessions = pq.read_table(
         dataset / "sessions.parquet", columns=["session_id", "transcript_path"]
     )
@@ -88,11 +88,6 @@ def inspect_sessions(dataset, subagents_only=False):
         path = row["transcript_path"]
         if session_by_id[sid]["transcript_path"] != path:
             raise ValueError(f"Session/log transcript path mismatch: {sid}")
-        if str(sid).startswith("agent-") or (path and Path(path).stem.startswith("agent-")):
-            removed[sid] = {"reason": "supplementary_subagent_session", "transcript_path": path}
-            continue
-        if subagents_only:
-            continue
         if not path:
             removed[sid] = {"reason": "missing_main_transcript_path", "transcript_path": path}
             continue
@@ -227,9 +222,9 @@ def remove_orphaned_transcripts(stage, removed, logs, tasks):
     return removed_files
 
 
-def apply_filter(dataset, keep_backup=True, subagents_only=False):
+def apply_filter(dataset, keep_backup=True):
     dataset = dataset.resolve()
-    removed, formats, log_rows = inspect_sessions(dataset, subagents_only=subagents_only)
+    removed, formats, log_rows = inspect_sessions(dataset)
     old_manifest = json.loads((dataset / "filter_manifest.json").read_text())
     tasks = pq.read_table(
         dataset / "subagent_tasks.parquet", columns=["session_id", "transcript_path"]
@@ -260,7 +255,7 @@ def apply_filter(dataset, keep_backup=True, subagents_only=False):
         old_table_removals.update(table_removals)
         manifest = {
             **old_manifest,
-            "retention_policy": "unique main-agent Session ID and nonblank extractable main-agent interaction content in its main transcript; remove agent-* subagent Sessions, Sessions with no main transcript, no main-agent interaction, uninterpretable main format, or a tool result ID without a matching tool call ID in the same main transcript",
+            "retention_policy": "unique Session ID and nonblank extractable main-agent interaction content in its main transcript; remove Sessions with no main transcript, no main-agent interaction, uninterpretable main format, or a tool result ID without a matching tool call ID in the same main transcript; agent- names alone are not exclusion evidence",
             "empty_content_policy": "same CLI-specific source parser as UnifiedTrace; lifecycle, metadata, and sidechain-only records do not qualify as main-agent interaction content",
             "session_count": pq.ParquetFile(stage / "sessions.parquet").metadata.num_rows,
             "main_transcript_count": sum(
@@ -277,7 +272,7 @@ def apply_filter(dataset, keep_backup=True, subagents_only=False):
             ],
             "removed_session_keyed_rows_by_table": dict(old_table_removals),
             "removed_transcript_files": old_manifest.get("removed_transcript_files", []) + removed_files,
-            "inspected_format_counts": old_manifest.get("inspected_format_counts", {}) if subagents_only else formats,
+            "inspected_format_counts": formats,
             "copy_verification": old_manifest.get("copy_verification", "")
             + "; filtered stage validated against retained Session IDs",
         }
@@ -324,10 +319,5 @@ if __name__ == "__main__":
         action="store_true",
         help="Only for a disposable build staging directory",
     )
-    parser.add_argument(
-        "--subagents-only",
-        action="store_true",
-        help="Apply the newly defined agent-* Session exclusion to an already inspected filtered copy",
-    )
     args = parser.parse_args()
-    apply_filter(args.dataset, keep_backup=not args.discard_backup, subagents_only=args.subagents_only)
+    apply_filter(args.dataset, keep_backup=not args.discard_backup)

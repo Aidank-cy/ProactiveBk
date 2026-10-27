@@ -51,8 +51,6 @@ def main():
     swe_selected=swe_manifest["selected"]
     swe_ids=[item["session_id"] for item in swe_selected]
     swe_paths=[item["transcript_path"] for item in swe_selected]
-    if any(session_id.startswith("agent-") for session_id in swe_ids) or any(Path(path).stem.startswith("agent-") for path in swe_paths):
-        errors.append("SWE main-agent sample contains an agent-* subagent transcript")
     if swe_manifest.get("sampling_unit")!="session_id":errors.append("SWE sampling unit is not session_id")
     if len(swe_ids)!=1000 or len(set(swe_ids))!=1000:errors.append("SWE manifest does not contain 1000 distinct Session IDs")
     if len(set(swe_paths))!=len(swe_paths):errors.append("SWE manifest contains shared main transcript paths")

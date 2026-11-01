@@ -3,6 +3,7 @@
 !/.gitignore
 !/README.md
 !/PROJECT_HISTORY.md
+!/BenchmarkAudits/
 
 !/OriginalDataset/
 /OriginalDataset/*

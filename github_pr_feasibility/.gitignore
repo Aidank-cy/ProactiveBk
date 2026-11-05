@@ -1,0 +1,7 @@
+.cache/
+data/raw/
+data/processed/*
+!data/processed/pr_sampling_frames.json
+results/errors.jsonl
+__pycache__/
+.pytest_cache/

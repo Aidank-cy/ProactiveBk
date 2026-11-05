@@ -1,0 +1,155 @@
+{
+  "2U1/Qwen-VL-Series-Finetune": {
+    "shards": [
+      {
+        "query": "repo:2U1/Qwen-VL-Series-Finetune is:pr is:merged merged:2024-01-01..2026-11-05",
+        "count": 16,
+        "complete": true
+      }
+    ],
+    "frame_count": 16,
+    "complete": true
+  },
+  "nhaouari/obsidian-textgenerator-plugin": {
+    "shards": [
+      {
+        "query": "repo:nhaouari/obsidian-textgenerator-plugin is:pr is:merged merged:2024-01-01..2026-11-05",
+        "count": 19,
+        "complete": true
+      }
+    ],
+    "frame_count": 19,
+    "complete": true
+  },
+  "Relm4/Relm4": {
+    "shards": [
+      {
+        "query": "repo:Relm4/Relm4 is:pr is:merged merged:2024-01-01..2026-11-05",
+        "count": 214,
+        "complete": true
+      }
+    ],
+    "frame_count": 214,
+    "complete": true
+  },
+  "superdb/zui": {
+    "shards": [
+      {
+        "query": "repo:superdb/zui is:pr is:merged merged:2024-01-01..2026-11-05",
+        "count": 171,
+        "complete": true
+      }
+    ],
+    "frame_count": 171,
+    "complete": true
+  },
+  "droidrun/mobilerun": {
+    "shards": [
+      {
+        "query": "repo:droidrun/mobilerun is:pr is:merged merged:2024-01-01..2026-11-05",
+        "count": 245,
+        "complete": true
+      }
+    ],
+    "frame_count": 245,
+    "complete": true
+  },
+  "firezone/firezone": {
+    "shards": [
+      {
+        "query": "repo:firezone/firezone is:pr is:merged merged:2024-01-01..2024-03-05",
+        "count": 588,
+        "complete": true
+      },
+      {
+        "query": "repo:firezone/firezone is:pr is:merged merged:2024-03-06..2024-05-09",
+        "count": 585,
+        "complete": true
+      },
+      {
+        "query": "repo:firezone/firezone is:pr is:merged merged:2024-05-10..2024-07-13",
+        "count": 573,
+        "complete": true
+      },
+      {
+        "query": "repo:firezone/firezone is:pr is:merged merged:2024-07-14..2024-09-16",
+        "count": 534,
+        "complete": true
+      },
+      {
+        "query": "repo:firezone/firezone is:pr is:merged merged:2024-09-17..2025-01-24",
+        "count": 805,
+        "complete": true
+      },
+      {
+        "query": "repo:firezone/firezone is:pr is:merged merged:2025-01-25..2025-03-30",
+        "count": 483,
+        "complete": true
+      },
+      {
+        "query": "repo:firezone/firezone is:pr is:merged merged:2025-03-31..2025-06-03",
+        "count": 600,
+        "complete": true
+      },
+      {
+        "query": "repo:firezone/firezone is:pr is:merged merged:2025-06-04..2025-10-11",
+        "count": 770,
+        "complete": true
+      },
+      {
+        "query": "repo:firezone/firezone is:pr is:merged merged:2025-10-12..2025-12-15",
+        "count": 432,
+        "complete": true
+      },
+      {
+        "query": "repo:firezone/firezone is:pr is:merged merged:2025-12-16..2026-02-18",
+        "count": 794,
+        "complete": true
+      },
+      {
+        "query": "repo:firezone/firezone is:pr is:merged merged:2026-02-19..2026-04-24",
+        "count": 509,
+        "complete": true
+      },
+      {
+        "query": "repo:firezone/firezone is:pr is:merged merged:2026-04-25..2026-06-28",
+        "count": 610,
+        "complete": true
+      },
+      {
+        "query": "repo:firezone/firezone is:pr is:merged merged:2026-06-29..2026-09-01",
+        "count": 901,
+        "complete": true
+      },
+      {
+        "query": "repo:firezone/firezone is:pr is:merged merged:2026-09-02..2026-11-05",
+        "count": 981,
+        "complete": true
+      }
+    ],
+    "frame_count": 9165,
+    "complete": true
+  },
+  "openinterpreter/openinterpreter": {
+    "shards": [
+      {
+        "query": "repo:openinterpreter/openinterpreter is:pr is:merged merged:2024-01-01..2026-11-05",
+        "count": 324,
+        "complete": true
+      }
+    ],
+    "frame_count": 324,
+    "complete": true
+  },
+  "chartjs/Chart.js": {
+    "shards": [
+      {
+        "query": "repo:chartjs/Chart.js is:pr is:merged merged:2024-01-01..2026-11-05",
+        "count": 112,
+        "complete": true
+      }
+    ],
+    "frame_count": 112,
+    "complete": true
+  }
+}

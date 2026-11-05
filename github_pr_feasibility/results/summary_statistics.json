@@ -1,0 +1,881 @@
+{
+  "sample_size": 120,
+  "repository_statistics": [
+    {
+      "repository": "Relm4/Relm4",
+      "stars": 1991,
+      "forks": 106,
+      "recent_merged_prs": 18,
+      "sampled_prs": 20,
+      "avg_human_review_comments": 2.6,
+      "avg_review_rounds": 1.15,
+      "avg_commits": 3.2,
+      "substantive_later_feedback": {
+        "numerator": 8,
+        "denominator": 20,
+        "proportion": 0.4,
+        "wilson_95_interval": [
+          0.21880396741419272,
+          0.613422057684794
+        ]
+      },
+      "feedback_followed_by_revision": {
+        "numerator": 0,
+        "denominator": 20,
+        "proportion": 0.0,
+        "wilson_95_interval": [
+          0,
+          0.16113012549493322
+        ]
+      },
+      "possible_feedback_followed_by_revision": {
+        "numerator": 2,
+        "denominator": 20,
+        "proportion": 0.1,
+        "wilson_95_interval": [
+          0.027865893984153206,
+          0.30103820641179335
+        ]
+      },
+      "candidate_cutoffs_per_pr": 0.7,
+      "labels": {
+        "A": {
+          "numerator": 0,
+          "denominator": 20,
+          "proportion": 0.0,
+          "wilson_95_interval": [
+            0,
+            0.16113012549493322
+          ]
+        },
+        "B": {
+          "numerator": 8,
+          "denominator": 20,
+          "proportion": 0.4,
+          "wilson_95_interval": [
+            0.21880396741419272,
+            0.613422057684794
+          ]
+        },
+        "C": {
+          "numerator": 12,
+          "denominator": 20,
+          "proportion": 0.6,
+          "wilson_95_interval": [
+            0.3865779423152061,
+            0.7811960325858074
+          ]
+        }
+      },
+      "reconstructable_cutoff": {
+        "numerator": 8,
+        "denominator": 20,
+        "proportion": 0.4,
+        "wilson_95_interval": [
+          0.21880396741419272,
+          0.613422057684794
+        ]
+      }
+    },
+    {
+      "repository": "superdb/zui",
+      "stars": 1982,
+      "forks": 135,
+      "recent_merged_prs": 0,
+      "sampled_prs": 20,
+      "avg_human_review_comments": 2.8,
+      "avg_review_rounds": 1.2,
+      "avg_commits": 8.7,
+      "substantive_later_feedback": {
+        "numerator": 6,
+        "denominator": 20,
+        "proportion": 0.3,
+        "wilson_95_interval": [
+          0.14547527396899385,
+          0.5189767762289793
+        ]
+      },
+      "feedback_followed_by_revision": {
+        "numerator": 0,
+        "denominator": 20,
+        "proportion": 0.0,
+        "wilson_95_interval": [
+          0,
+          0.16113012549493322
+        ]
+      },
+      "possible_feedback_followed_by_revision": {
+        "numerator": 2,
+        "denominator": 20,
+        "proportion": 0.1,
+        "wilson_95_interval": [
+          0.027865893984153206,
+          0.30103820641179335
+        ]
+      },
+      "candidate_cutoffs_per_pr": 0.55,
+      "labels": {
+        "A": {
+          "numerator": 0,
+          "denominator": 20,
+          "proportion": 0.0,
+          "wilson_95_interval": [
+            0,
+            0.16113012549493322
+          ]
+        },
+        "B": {
+          "numerator": 6,
+          "denominator": 20,
+          "proportion": 0.3,
+          "wilson_95_interval": [
+            0.14547527396899385,
+            0.5189767762289793
+          ]
+        },
+        "C": {
+          "numerator": 14,
+          "denominator": 20,
+          "proportion": 0.7,
+          "wilson_95_interval": [
+            0.4810232237710206,
+            0.854524726031006
+          ]
+        }
+      },
+      "reconstructable_cutoff": {
+        "numerator": 6,
+        "denominator": 20,
+        "proportion": 0.3,
+        "wilson_95_interval": [
+          0.14547527396899385,
+          0.5189767762289793
+        ]
+      }
+    },
+    {
+      "repository": "droidrun/mobilerun",
+      "stars": 9959,
+      "forks": 1077,
+      "recent_merged_prs": 79,
+      "sampled_prs": 20,
+      "avg_human_review_comments": 1.3,
+      "avg_review_rounds": 0.3,
+      "avg_commits": 8.2,
+      "substantive_later_feedback": {
+        "numerator": 1,
+        "denominator": 20,
+        "proportion": 0.05,
+        "wilson_95_interval": [
+          0.008881219432873136,
+          0.23613589351256675
+        ]
+      },
+      "feedback_followed_by_revision": {
+        "numerator": 0,
+        "denominator": 20,
+        "proportion": 0.0,
+        "wilson_95_interval": [
+          0,
+          0.16113012549493322
+        ]
+      },
+      "possible_feedback_followed_by_revision": {
+        "numerator": 1,
+        "denominator": 20,
+        "proportion": 0.05,
+        "wilson_95_interval": [
+          0.008881219432873136,
+          0.23613589351256675
+        ]
+      },
+      "candidate_cutoffs_per_pr": 0.05,
+      "labels": {
+        "A": {
+          "numerator": 0,
+          "denominator": 20,
+          "proportion": 0.0,
+          "wilson_95_interval": [
+            0,
+            0.16113012549493322
+          ]
+        },
+        "B": {
+          "numerator": 1,
+          "denominator": 20,
+          "proportion": 0.05,
+          "wilson_95_interval": [
+            0.008881219432873136,
+            0.23613589351256675
+          ]
+        },
+        "C": {
+          "numerator": 19,
+          "denominator": 20,
+          "proportion": 0.95,
+          "wilson_95_interval": [
+            0.7638641064874331,
+            0.9911187805671268
+          ]
+        }
+      },
+      "reconstructable_cutoff": {
+        "numerator": 1,
+        "denominator": 20,
+        "proportion": 0.05,
+        "wilson_95_interval": [
+          0.008881219432873136,
+          0.23613589351256675
+        ]
+      }
+    },
+    {
+      "repository": "firezone/firezone",
+      "stars": 9168,
+      "forks": 466,
+      "recent_merged_prs": 1341,
+      "sampled_prs": 20,
+      "avg_human_review_comments": 19.25,
+      "avg_review_rounds": 2.65,
+      "avg_commits": 25.3,
+      "substantive_later_feedback": {
+        "numerator": 12,
+        "denominator": 20,
+        "proportion": 0.6,
+        "wilson_95_interval": [
+          0.3865779423152061,
+          0.7811960325858074
+        ]
+      },
+      "feedback_followed_by_revision": {
+        "numerator": 0,
+        "denominator": 20,
+        "proportion": 0.0,
+        "wilson_95_interval": [
+          0,
+          0.16113012549493322
+        ]
+      },
+      "possible_feedback_followed_by_revision": {
+        "numerator": 6,
+        "denominator": 20,
+        "proportion": 0.3,
+        "wilson_95_interval": [
+          0.14547527396899385,
+          0.5189767762289793
+        ]
+      },
+      "candidate_cutoffs_per_pr": 1.65,
+      "labels": {
+        "A": {
+          "numerator": 0,
+          "denominator": 20,
+          "proportion": 0.0,
+          "wilson_95_interval": [
+            0,
+            0.16113012549493322
+          ]
+        },
+        "B": {
+          "numerator": 12,
+          "denominator": 20,
+          "proportion": 0.6,
+          "wilson_95_interval": [
+            0.3865779423152061,
+            0.7811960325858074
+          ]
+        },
+        "C": {
+          "numerator": 8,
+          "denominator": 20,
+          "proportion": 0.4,
+          "wilson_95_interval": [
+            0.21880396741419272,
+            0.613422057684794
+          ]
+        }
+      },
+      "reconstructable_cutoff": {
+        "numerator": 12,
+        "denominator": 20,
+        "proportion": 0.6,
+        "wilson_95_interval": [
+          0.3865779423152061,
+          0.7811960325858074
+        ]
+      }
+    },
+    {
+      "repository": "openinterpreter/openinterpreter",
+      "stars": 68792,
+      "forks": 5934,
+      "recent_merged_prs": 44,
+      "sampled_prs": 20,
+      "avg_human_review_comments": 1.05,
+      "avg_review_rounds": 0.5,
+      "avg_commits": 3.55,
+      "substantive_later_feedback": {
+        "numerator": 3,
+        "denominator": 20,
+        "proportion": 0.15,
+        "wilson_95_interval": [
+          0.05236779195949584,
+          0.36042329588695743
+        ]
+      },
+      "feedback_followed_by_revision": {
+        "numerator": 0,
+        "denominator": 20,
+        "proportion": 0.0,
+        "wilson_95_interval": [
+          0,
+          0.16113012549493322
+        ]
+      },
+      "possible_feedback_followed_by_revision": {
+        "numerator": 0,
+        "denominator": 20,
+        "proportion": 0.0,
+        "wilson_95_interval": [
+          0,
+          0.16113012549493322
+        ]
+      },
+      "candidate_cutoffs_per_pr": 0.3,
+      "labels": {
+        "A": {
+          "numerator": 0,
+          "denominator": 20,
+          "proportion": 0.0,
+          "wilson_95_interval": [
+            0,
+            0.16113012549493322
+          ]
+        },
+        "B": {
+          "numerator": 3,
+          "denominator": 20,
+          "proportion": 0.15,
+          "wilson_95_interval": [
+            0.05236779195949584,
+            0.36042329588695743
+          ]
+        },
+        "C": {
+          "numerator": 17,
+          "denominator": 20,
+          "proportion": 0.85,
+          "wilson_95_interval": [
+            0.6395767041130426,
+            0.9476322080405041
+          ]
+        }
+      },
+      "reconstructable_cutoff": {
+        "numerator": 3,
+        "denominator": 20,
+        "proportion": 0.15,
+        "wilson_95_interval": [
+          0.05236779195949584,
+          0.36042329588695743
+        ]
+      }
+    },
+    {
+      "repository": "chartjs/Chart.js",
+      "stars": 67779,
+      "forks": 11957,
+      "recent_merged_prs": 15,
+      "sampled_prs": 20,
+      "avg_human_review_comments": 3.5,
+      "avg_review_rounds": 1.75,
+      "avg_commits": 3.15,
+      "substantive_later_feedback": {
+        "numerator": 7,
+        "denominator": 20,
+        "proportion": 0.35,
+        "wilson_95_interval": [
+          0.18118954786794464,
+          0.5671494897805354
+        ]
+      },
+      "feedback_followed_by_revision": {
+        "numerator": 0,
+        "denominator": 20,
+        "proportion": 0.0,
+        "wilson_95_interval": [
+          0,
+          0.16113012549493322
+        ]
+      },
+      "possible_feedback_followed_by_revision": {
+        "numerator": 2,
+        "denominator": 20,
+        "proportion": 0.1,
+        "wilson_95_interval": [
+          0.027865893984153206,
+          0.30103820641179335
+        ]
+      },
+      "candidate_cutoffs_per_pr": 0.75,
+      "labels": {
+        "A": {
+          "numerator": 0,
+          "denominator": 20,
+          "proportion": 0.0,
+          "wilson_95_interval": [
+            0,
+            0.16113012549493322
+          ]
+        },
+        "B": {
+          "numerator": 7,
+          "denominator": 20,
+          "proportion": 0.35,
+          "wilson_95_interval": [
+            0.18118954786794464,
+            0.5671494897805354
+          ]
+        },
+        "C": {
+          "numerator": 13,
+          "denominator": 20,
+          "proportion": 0.65,
+          "wilson_95_interval": [
+            0.43285051021946463,
+            0.8188104521320554
+          ]
+        }
+      },
+      "reconstructable_cutoff": {
+        "numerator": 7,
+        "denominator": 20,
+        "proportion": 0.35,
+        "wilson_95_interval": [
+          0.18118954786794464,
+          0.5671494897805354
+        ]
+      }
+    }
+  ],
+  "group_statistics": {
+    "random": {
+      "n": 60,
+      "A": {
+        "numerator": 0,
+        "denominator": 60,
+        "proportion": 0.0,
+        "wilson_95_interval": [
+          0,
+          0.06017393047793289
+        ]
+      },
+      "A_or_B": {
+        "numerator": 7,
+        "denominator": 60,
+        "proportion": 0.11666666666666667,
+        "wilson_95_interval": [
+          0.05767647403450049,
+          0.2217902059985814
+        ]
+      },
+      "substantive_feedback": {
+        "numerator": 7,
+        "denominator": 60,
+        "proportion": 0.11666666666666667,
+        "wilson_95_interval": [
+          0.05767647403450049,
+          0.2217902059985814
+        ]
+      },
+      "revision_after_feedback": {
+        "numerator": 0,
+        "denominator": 60,
+        "proportion": 0.0,
+        "wilson_95_interval": [
+          0,
+          0.06017393047793289
+        ]
+      },
+      "possible_revision_after_feedback": {
+        "numerator": 1,
+        "denominator": 60,
+        "proportion": 0.016666666666666666,
+        "wilson_95_interval": [
+          0.002948083860873682,
+          0.08855338226779477
+        ]
+      }
+    },
+    "interaction_enriched": {
+      "n": 60,
+      "A": {
+        "numerator": 0,
+        "denominator": 60,
+        "proportion": 0.0,
+        "wilson_95_interval": [
+          0,
+          0.06017393047793289
+        ]
+      },
+      "A_or_B": {
+        "numerator": 30,
+        "denominator": 60,
+        "proportion": 0.5,
+        "wilson_95_interval": [
+          0.37734812427246284,
+          0.6226518757275372
+        ]
+      },
+      "substantive_feedback": {
+        "numerator": 30,
+        "denominator": 60,
+        "proportion": 0.5,
+        "wilson_95_interval": [
+          0.37734812427246284,
+          0.6226518757275372
+        ]
+      },
+      "revision_after_feedback": {
+        "numerator": 0,
+        "denominator": 60,
+        "proportion": 0.0,
+        "wilson_95_interval": [
+          0,
+          0.06017393047793289
+        ]
+      },
+      "possible_revision_after_feedback": {
+        "numerator": 12,
+        "denominator": 60,
+        "proportion": 0.2,
+        "wilson_95_interval": [
+          0.11828389736858964,
+          0.3178204609181701
+        ]
+      }
+    }
+  },
+  "distributions": {
+    "human_reviewer_comments": {
+      "n": 120,
+      "min": 0.0,
+      "median": 1.0,
+      "mean": 5.083333333333333,
+      "max": 66.0
+    },
+    "commits": {
+      "n": 120,
+      "min": 1.0,
+      "median": 3.0,
+      "mean": 8.683333333333334,
+      "max": 140.0
+    },
+    "review_rounds": {
+      "n": 120,
+      "min": 0.0,
+      "median": 1.0,
+      "mean": 1.2583333333333333,
+      "max": 8.0
+    },
+    "feedback_to_revision_sequences": {
+      "n": 120,
+      "min": 0.0,
+      "median": 0.0,
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "possible_feedback_to_revision_sequences": {
+      "n": 120,
+      "min": 0.0,
+      "median": 0.0,
+      "mean": 0.38333333333333336,
+      "max": 12.0
+    },
+    "development_duration_days": {
+      "n": 120,
+      "min": 6.944444444444444e-05,
+      "median": 1.97609375,
+      "mean": 17.05225848765432,
+      "max": 651.7020833333333
+    },
+    "candidate_future_intents": {
+      "n": 120,
+      "min": 0.0,
+      "median": 0.0,
+      "mean": 0.6666666666666666,
+      "max": 3.0
+    },
+    "valid_cutoff_candidates": {
+      "n": 120,
+      "min": 0.0,
+      "median": 0.0,
+      "mean": 0.6666666666666666,
+      "max": 3.0
+    }
+  },
+  "selection_funnel": [
+    {
+      "stage": "sampled_prs",
+      "count": 120,
+      "initial_denominator": 120
+    },
+    {
+      "stage": "meaningful_historical_context",
+      "count": 105,
+      "initial_denominator": 120
+    },
+    {
+      "stage": "substantive_later_human_feedback",
+      "count": 35,
+      "initial_denominator": 120
+    },
+    {
+      "stage": "subsequent_code_revision",
+      "count": 0,
+      "initial_denominator": 120
+    },
+    {
+      "stage": "identifiable_cutoff",
+      "count": 0,
+      "initial_denominator": 120
+    },
+    {
+      "stage": "recoverable_historical_state",
+      "count": 0,
+      "initial_denominator": 120
+    },
+    {
+      "stage": "plausible_implicit_intent",
+      "count": 0,
+      "initial_denominator": 120
+    }
+  ],
+  "possible_revision_funnel_count": 12,
+  "random_baseline": {
+    "rich_context": {
+      "numerator": 48,
+      "denominator": 60,
+      "proportion": 0.8,
+      "wilson_95_interval": [
+        0.6821795390818299,
+        0.8817161026314104
+      ]
+    },
+    "substantive_feedback": {
+      "numerator": 7,
+      "denominator": 60,
+      "proportion": 0.11666666666666667,
+      "wilson_95_interval": [
+        0.05767647403450049,
+        0.2217902059985814
+      ]
+    },
+    "requirement_implementation_revision": {
+      "numerator": 0,
+      "denominator": 60,
+      "proportion": 0.0,
+      "wilson_95_interval": [
+        0,
+        0.06017393047793289
+      ]
+    },
+    "possible_feedback_revision": {
+      "numerator": 1,
+      "denominator": 60,
+      "proportion": 0.016666666666666666,
+      "wilson_95_interval": [
+        0.002948083860873682,
+        0.08855338226779477
+      ]
+    },
+    "candidate_cutoff": {
+      "numerator": 7,
+      "denominator": 60,
+      "proportion": 0.11666666666666667,
+      "wilson_95_interval": [
+        0.05767647403450049,
+        0.2217902059985814
+      ]
+    },
+    "A": {
+      "numerator": 0,
+      "denominator": 60,
+      "proportion": 0.0,
+      "wilson_95_interval": [
+        0,
+        0.06017393047793289
+      ]
+    }
+  },
+  "pr_sampling_frames": {
+    "2U1/Qwen-VL-Series-Finetune": {
+      "shards": [
+        {
+          "query": "repo:2U1/Qwen-VL-Series-Finetune is:pr is:merged merged:2024-01-01..2026-11-05",
+          "count": 16,
+          "complete": true
+        }
+      ],
+      "frame_count": 16,
+      "complete": true
+    },
+    "nhaouari/obsidian-textgenerator-plugin": {
+      "shards": [
+        {
+          "query": "repo:nhaouari/obsidian-textgenerator-plugin is:pr is:merged merged:2024-01-01..2026-11-05",
+          "count": 19,
+          "complete": true
+        }
+      ],
+      "frame_count": 19,
+      "complete": true
+    },
+    "Relm4/Relm4": {
+      "shards": [
+        {
+          "query": "repo:Relm4/Relm4 is:pr is:merged merged:2024-01-01..2026-11-05",
+          "count": 214,
+          "complete": true
+        }
+      ],
+      "frame_count": 214,
+      "complete": true
+    },
+    "superdb/zui": {
+      "shards": [
+        {
+          "query": "repo:superdb/zui is:pr is:merged merged:2024-01-01..2026-11-05",
+          "count": 171,
+          "complete": true
+        }
+      ],
+      "frame_count": 171,
+      "complete": true
+    },
+    "droidrun/mobilerun": {
+      "shards": [
+        {
+          "query": "repo:droidrun/mobilerun is:pr is:merged merged:2024-01-01..2026-11-05",
+          "count": 245,
+          "complete": true
+        }
+      ],
+      "frame_count": 245,
+      "complete": true
+    },
+    "firezone/firezone": {
+      "shards": [
+        {
+          "query": "repo:firezone/firezone is:pr is:merged merged:2024-01-01..2024-03-05",
+          "count": 588,
+          "complete": true
+        },
+        {
+          "query": "repo:firezone/firezone is:pr is:merged merged:2024-03-06..2024-05-09",
+          "count": 585,
+          "complete": true
+        },
+        {
+          "query": "repo:firezone/firezone is:pr is:merged merged:2024-05-10..2024-07-13",
+          "count": 573,
+          "complete": true
+        },
+        {
+          "query": "repo:firezone/firezone is:pr is:merged merged:2024-07-14..2024-09-16",
+          "count": 534,
+          "complete": true
+        },
+        {
+          "query": "repo:firezone/firezone is:pr is:merged merged:2024-09-17..2025-01-24",
+          "count": 805,
+          "complete": true
+        },
+        {
+          "query": "repo:firezone/firezone is:pr is:merged merged:2025-01-25..2025-03-30",
+          "count": 483,
+          "complete": true
+        },
+        {
+          "query": "repo:firezone/firezone is:pr is:merged merged:2025-03-31..2025-06-03",
+          "count": 600,
+          "complete": true
+        },
+        {
+          "query": "repo:firezone/firezone is:pr is:merged merged:2025-06-04..2025-10-11",
+          "count": 770,
+          "complete": true
+        },
+        {
+          "query": "repo:firezone/firezone is:pr is:merged merged:2025-10-12..2025-12-15",
+          "count": 432,
+          "complete": true
+        },
+        {
+          "query": "repo:firezone/firezone is:pr is:merged merged:2025-12-16..2026-02-18",
+          "count": 794,
+          "complete": true
+        },
+        {
+          "query": "repo:firezone/firezone is:pr is:merged merged:2026-02-19..2026-04-24",
+          "count": 509,
+          "complete": true
+        },
+        {
+          "query": "repo:firezone/firezone is:pr is:merged merged:2026-04-25..2026-06-28",
+          "count": 610,
+          "complete": true
+        },
+        {
+          "query": "repo:firezone/firezone is:pr is:merged merged:2026-06-29..2026-09-01",
+          "count": 901,
+          "complete": true
+        },
+        {
+          "query": "repo:firezone/firezone is:pr is:merged merged:2026-09-02..2026-11-05",
+          "count": 981,
+          "complete": true
+        }
+      ],
+      "frame_count": 9165,
+      "complete": true
+    },
+    "openinterpreter/openinterpreter": {
+      "shards": [
+        {
+          "query": "repo:openinterpreter/openinterpreter is:pr is:merged merged:2024-01-01..2026-11-05",
+          "count": 324,
+          "complete": true
+        }
+      ],
+      "frame_count": 324,
+      "complete": true
+    },
+    "chartjs/Chart.js": {
+      "shards": [
+        {
+          "query": "repo:chartjs/Chart.js is:pr is:merged merged:2024-01-01..2026-11-05",
+          "count": 112,
+          "complete": true
+        }
+      ],
+      "frame_count": 112,
+      "complete": true
+    }
+  },
+  "repository_metric_associations": {
+    "stars": {
+      "repositories": 6,
+      "spearman_rho_descriptive": -0.37142857142857144
+    },
+    "forks": {
+      "repositories": 6,
+      "spearman_rho_descriptive": -0.37142857142857144
+    },
+    "recent_merged_prs": {
+      "repositories": 6,
+      "spearman_rho_descriptive": 0.08571428571428572
+    }
+  },
+  "interpretation": "All labels and feedback categories are provisional heuristics. Random rates apply only to sampled repositories and the stated API search frame. Enriched PRs are excluded from natural prevalence estimates."
+}

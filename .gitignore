@@ -1,4 +1,4 @@
-# Track source code and project documentation only. Everything else is data or generated output.
+# Track source code, project documentation, and the curated PR feasibility snapshot.
 /*
 !/.gitignore
 !/README.md
@@ -29,3 +29,5 @@
 !/ProcessedDataset/UnifiedTrace/scripts/
 /ProcessedDataset/UnifiedTrace/scripts/*
 !/ProcessedDataset/UnifiedTrace/scripts/*.py
+
+!/github_pr_feasibility/

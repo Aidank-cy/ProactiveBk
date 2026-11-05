@@ -1,0 +1,20 @@
+seed: 20261105
+observation_start: '2024-01-01'
+observation_end: null  # UTC execution date
+stars_min: 500
+forks_min: 50
+pushed_within_days: 180
+repository_search_pages_per_stratum: 5
+repository_search_page_size: 100
+repositories_per_stratum: 2
+random_prs_per_repository: 10
+enriched_prs_per_repository: 10
+enrichment_pool_multiplier: 4
+recent_activity_days: 90
+max_linked_issues_per_pr: 5
+max_cutoffs_per_pr: 3
+request_timeout_seconds: 30
+request_retries: 5
+rate_limit_floor: 10
+allow_gh_auth: true
+llm_provider: none  # reserved for a separately configured semantic classifier

@@ -1,6 +1,6 @@
 # GitHub repository discovery report
 
-Generated: 2026-11-06T02:06:51.687738+00:00
+Generated: 2026-11-06T02:25:34.596873+00:00
 
 ## Scope and definition
 
@@ -11,6 +11,8 @@ Public repositories created 2024-11-01 through 2026-11-01 inclusive (UTC), with 
 Search coverage complete: **True**. Entire study complete and verified: **False**. Limited mode: **False**.
 
 Search candidates observed so far: **7461**. Verified qualifying: **318**. Pending: **44**. Excluded: **7099**. A partial count is a verified lower bound, never a global total.
+
+There are **362** numeric-threshold candidates for future research processing: **318** with OSI-approved license detection and **44** with unverified license status. The latter group is held locally and must not be included in a public benchmark release without a verified license or written authorization. This is a publication gate, not a conclusion that internal code copying or modification is legally permitted.
 
 ## Stage funnel
 
@@ -414,7 +416,7 @@ Full table: [qualified_repositories.csv](../results/qualified_repositories.csv).
 - Candidate repositories with unknown PR count: 0.
 - Candidate repositories with unknown issue count: 0.
 - Repositories passing numeric thresholds with unknown license status: 44.
-- Pending repositories: 44; see [pending_repositories.csv](../results/pending_repositories.csv).
+- Pending repositories: 44. Repository-level pending records are held locally and omitted from this public report.
 
 A missing GitHub-detected license or an unrecognized SPDX identifier remains pending because detection alone cannot rule out a valid license. The SPDX license list blob SHA is saved in the summary. GitHub Search is a live index, not an atomic snapshot; search movement and delayed indexing can affect full enumeration. The REST and GraphQL HTTP cache and SQLite checkpoint support resumption.
 

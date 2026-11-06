@@ -52,6 +52,23 @@ def test_pr_and_issues_exactly_500_excluded(tmp_path):
     assert summary["excluded_count"] == 1
 
 
+def test_unverified_license_stays_in_processing_but_out_of_public_list(tmp_path):
+    store = Store(tmp_path / "db.sqlite")
+    store.add_repos([repo(1), repo(2)])
+    store.update(1, pr_count=501, issue_count=501, license_status="verified", license_spdx="MIT")
+    store.update(2, pr_count=501, issue_count=501, license_status="unrecognized", license_spdx="NOASSERTION")
+    summary, qualified, pending = export(store, CFG, tmp_path, limited=True)
+    import pandas as pd
+    processing = pd.read_csv(tmp_path / "results/processing_candidates.csv")
+    restricted = pd.read_csv(tmp_path / "results/restricted/repositories.csv")
+    assert qualified["repository_id"].tolist() == [1]
+    assert restricted["repository_id"].tolist() == [2]
+    assert len(processing) == 2
+    assert processing.loc[processing.repository_id.eq(2), "publication_gate"].item() == "written_permission_or_license_verification_required"
+    assert summary["license_unverified_restricted_count"] == 1
+    assert len(pending) == 1
+
+
 def test_graphql_issues_separate_from_prs(tmp_path):
     store = Store(tmp_path / "db.sqlite")
     store.add_repos([repo()])

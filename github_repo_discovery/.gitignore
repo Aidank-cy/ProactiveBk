@@ -3,3 +3,11 @@ discovery.log
 __pycache__/
 .pytest_cache/
 *.egg-info/
+results/all_candidates.csv
+results/excluded_repositories.csv
+results/pending_repositories.csv
+results/processing_candidates.csv
+results/restricted/
+data/restricted/
+reports/restricted/
+restricted_outputs/

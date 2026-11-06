@@ -60,8 +60,16 @@ def export(store, cfg, root, limited=False):
     qualified = frame[pr_ok & issues_ok & fork_ok & license_ok].copy()
     excluded = frame[(frame["total_pull_requests"].notna() & ~pr_ok) | (frame["total_issues"].notna() & ~issues_ok) | ~fork_ok | (pr_ok & issues_ok & fork_ok & frame["license_status"].eq("non_osi"))].copy()
     pending = frame.drop(qualified.index.union(excluded.index)).copy()
+    restricted = frame[pr_ok & issues_ok & fork_ok & frame["license_status"].isin(["missing", "unrecognized"])].copy()
+    processing = pd.concat([qualified.assign(processing_track="license_verified", authorization_status="osi_license_detected", publication_gate="check_license_terms"), restricted.assign(processing_track="license_unverified", authorization_status="not_verified", publication_gate="written_permission_or_license_verification_required")]).sort_values(["created_at", "repository_id"])
+    processing["authorization_evidence_url"] = ""
+    processing["research_processing_plan"] = "same_repository_research_pipeline"
     for name, data in (("all_candidates", frame), ("qualified_repositories", qualified), ("excluded_repositories", excluded), ("pending_repositories", pending)):
         data.to_csv(results / f"{name}.csv", index=False)
+    restricted_dir = results / "restricted"
+    restricted_dir.mkdir(exist_ok=True)
+    restricted.to_csv(restricted_dir / "repositories.csv", index=False)
+    processing.to_csv(results / "processing_candidates.csv", index=False)
     years = range(int(cfg["created_start"][:4]), int(cfg["created_end"][:4]) + 1)
     year_counts = qualified.groupby(qualified["created_at"].str[:4]).size().to_dict()
     month_counts = qualified.groupby(qualified["created_at"].str[:7]).size().to_dict()
@@ -70,6 +78,11 @@ def export(store, cfg, root, limited=False):
     yearly.to_csv(results / "yearly_counts.csv", index=False)
     monthly.to_csv(results / "monthly_counts.csv", index=False)
     assert frame["repository_id"].is_unique and qualified["repository_id"].is_unique
+    assert qualified["repository_id"].is_unique and restricted["repository_id"].is_unique
+    assert set(qualified["repository_id"]).isdisjoint(set(restricted["repository_id"]))
+    assert len(processing) == len(qualified) + len(restricted)
+    assert processing.loc[processing["processing_track"].eq("license_unverified"), "publication_gate"].eq("written_permission_or_license_verification_required").all()
+    assert processing.loc[processing["processing_track"].eq("license_unverified"), "authorization_status"].eq("not_verified").all()
     assert qualified["stars"].ge(cfg["stars_min"]).all()
     assert qualified["total_pull_requests"].gt(cfg["pull_requests_min_exclusive"]).all()
     assert qualified["total_issues"].gt(cfg["issues_min_exclusive"]).all()
@@ -96,6 +109,9 @@ def export(store, cfg, root, limited=False):
         "discovery_coverage_complete": not missing, "incomplete_partitions": missing,
         "discovered_candidates": len(frame), "stages": stages, "verified_qualifying_count": len(qualified),
         "pending_count": len(pending), "excluded_count": len(excluded), "windows": windows, "cohorts": cohorts,
+        "research_processing_candidates": len(processing), "license_verified_count": len(qualified),
+        "license_unverified_restricted_count": len(restricted),
+        "restricted_license_status_counts": {str(k): int(v) for k, v in restricted["license_status"].value_counts().items()},
         "unknown_pr_count": int(frame["total_pull_requests"].isna().sum()),
         "unknown_issue_count": int(frame["total_issues"].isna().sum()),
         "unknown_license": int((pr_ok & issues_ok & fork_ok & ~frame["license_status"].isin(["verified", "non_osi"])).sum()),

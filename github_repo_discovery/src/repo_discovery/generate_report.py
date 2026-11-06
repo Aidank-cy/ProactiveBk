@@ -13,6 +13,7 @@ def generate_report(summary, qualified, pending, root):
         "## Completeness", "",
         f"Search coverage complete: **{summary['discovery_coverage_complete']}**. Entire study complete and verified: **{summary['complete_and_verified']}**. Limited mode: **{summary['limited_mode']}**.", "",
         f"Search candidates observed so far: **{summary['discovered_candidates']}**. Verified qualifying: **{summary['verified_qualifying_count']}**. Pending: **{summary['pending_count']}**. Excluded: **{summary['excluded_count']}**. A partial count is a verified lower bound, never a global total.", "",
+        f"There are **{summary['research_processing_candidates']}** numeric-threshold candidates for future research processing: **{summary['license_verified_count']}** with OSI-approved license detection and **{summary['license_unverified_restricted_count']}** with unverified license status. The latter group is held locally and must not be included in a public benchmark release without a verified license or written authorization. This is a publication gate, not a conclusion that internal code copying or modification is legally permitted.", "",
         "## Stage funnel", "", "| Stage | Verified passing | Pending checks |", "|---|---:|---:|",
     ]
     for stage in summary["stages"]:
@@ -41,7 +42,7 @@ def generate_report(summary, qualified, pending, root):
               f"- Candidate repositories with unknown PR count: {summary['unknown_pr_count']}.",
               f"- Candidate repositories with unknown issue count: {summary['unknown_issue_count']}.",
               f"- Repositories passing numeric thresholds with unknown license status: {summary['unknown_license']}.",
-              f"- Pending repositories: {len(pending)}; see [pending_repositories.csv](../results/pending_repositories.csv).", "",
+              f"- Pending repositories: {len(pending)}. Repository-level pending records are held locally and omitted from this public report.", "",
               "A missing GitHub-detected license or an unrecognized SPDX identifier remains pending because detection alone cannot rule out a valid license. The SPDX license list blob SHA is saved in the summary. GitHub Search is a live index, not an atomic snapshot; search movement and delayed indexing can affect full enumeration. The REST and GraphQL HTTP cache and SQLite checkpoint support resumption.", "",
               "## Stage timing", "", "Wall-clock timings for this invocation: " + ", ".join(f"{k}: {v:.1f}s" for k, v in summary.get("stage_seconds", {}).items()) + ".", ""]
     output = root / "reports/repository_discovery_report.md"

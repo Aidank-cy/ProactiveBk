@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T02:06:51.687738+00:00",
+  "generated_at": "2026-11-06T02:25:34.596873+00:00",
   "created_start": "2024-11-01",
   "created_end": "2026-11-01",
   "thresholds": {
@@ -52,6 +52,13 @@
   "cohorts": {
     "0-1 years": 173,
     "1-2 years": 145
+  },
+  "research_processing_candidates": 362,
+  "license_verified_count": 318,
+  "license_unverified_restricted_count": 44,
+  "restricted_license_status_counts": {
+    "unrecognized": 41,
+    "missing": 3
   },
   "unknown_pr_count": 0,
   "unknown_issue_count": 0,

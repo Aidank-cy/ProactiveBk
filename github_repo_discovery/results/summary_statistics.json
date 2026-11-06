@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-06T02:25:34.596873+00:00",
+  "generated_at": "2026-11-06T02:40:38.725457+00:00",
   "created_start": "2024-11-01",
   "created_end": "2026-11-01",
   "thresholds": {
     "stars_min_inclusive": 1000,
-    "pull_requests_min_exclusive": 500,
-    "issues_min_exclusive": 500,
-    "forks_min_exclusive": 500,
+    "pull_requests_min_inclusive": 500,
+    "issues_min_inclusive": 500,
+    "forks_min_inclusive": 500,
     "license": "SPDX isOsiApproved=true"
   },
   "limited_mode": false,
@@ -21,17 +21,17 @@
       "pending_count": 0
     },
     {
-      "stage": "pull_requests_over_500",
-      "verified_count": 1163,
+      "stage": "pull_requests_at_least_500",
+      "verified_count": 1166,
       "pending_count": 0
     },
     {
-      "stage": "also_issues_over_500",
+      "stage": "also_issues_at_least_500",
       "verified_count": 529,
       "pending_count": 0
     },
     {
-      "stage": "also_forks_over_500",
+      "stage": "also_forks_at_least_500",
       "verified_count": 362,
       "pending_count": 0
     },

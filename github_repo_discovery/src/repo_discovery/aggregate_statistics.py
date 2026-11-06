@@ -53,9 +53,9 @@ def export(store, cfg, root, limited=False):
         })
     columns = ["repository_id", "full_name", "html_url", "created_at", "stars", "forks", "repository_size_kb", "total_pull_requests", "total_issues", "license_spdx", "license_status", "license_name", "license_source_url", "language", "archived", "fork", "default_branch", "collection_timestamp", "error", "within_1_year", "within_2_years", "creation_cohort"]
     frame = pd.DataFrame(records, columns=columns).sort_values(["created_at", "repository_id"])
-    pr_ok = frame["total_pull_requests"].gt(cfg["pull_requests_min_exclusive"])
-    issues_ok = frame["total_issues"].gt(cfg["issues_min_exclusive"])
-    fork_ok = frame["forks"].gt(cfg["forks_min_exclusive"])
+    pr_ok = frame["total_pull_requests"].ge(cfg["pull_requests_min_inclusive"])
+    issues_ok = frame["total_issues"].ge(cfg["issues_min_inclusive"])
+    fork_ok = frame["forks"].ge(cfg["forks_min_inclusive"])
     license_ok = frame["license_status"].eq("verified")
     qualified = frame[pr_ok & issues_ok & fork_ok & license_ok].copy()
     excluded = frame[(frame["total_pull_requests"].notna() & ~pr_ok) | (frame["total_issues"].notna() & ~issues_ok) | ~fork_ok | (pr_ok & issues_ok & fork_ok & frame["license_status"].eq("non_osi"))].copy()
@@ -84,9 +84,9 @@ def export(store, cfg, root, limited=False):
     assert processing.loc[processing["processing_track"].eq("license_unverified"), "publication_gate"].eq("written_permission_or_license_verification_required").all()
     assert processing.loc[processing["processing_track"].eq("license_unverified"), "authorization_status"].eq("not_verified").all()
     assert qualified["stars"].ge(cfg["stars_min"]).all()
-    assert qualified["total_pull_requests"].gt(cfg["pull_requests_min_exclusive"]).all()
-    assert qualified["total_issues"].gt(cfg["issues_min_exclusive"]).all()
-    assert qualified["forks"].gt(cfg["forks_min_exclusive"]).all()
+    assert qualified["total_pull_requests"].ge(cfg["pull_requests_min_inclusive"]).all()
+    assert qualified["total_issues"].ge(cfg["issues_min_inclusive"]).all()
+    assert qualified["forks"].ge(cfg["forks_min_inclusive"]).all()
     assert qualified["license_status"].eq("verified").all()
     assert qualified[["created_at", "repository_id"]].apply(tuple, axis=1).tolist() == sorted(qualified[["created_at", "repository_id"]].apply(tuple, axis=1).tolist())
     assert int(yearly["count"].sum()) == int(monthly["count"].sum()) == len(qualified)
@@ -96,15 +96,15 @@ def export(store, cfg, root, limited=False):
     assert sum(cohorts.values()) == windows["last_2_years"] == len(qualified)
     stages = [
         {"stage": "created_in_window_and_stars_at_least_1000", "verified_count": len(frame), "pending_count": len(missing)},
-        {"stage": "pull_requests_over_500", "verified_count": int(pr_ok.sum()), "pending_count": int(frame["total_pull_requests"].isna().sum())},
-        {"stage": "also_issues_over_500", "verified_count": int((pr_ok & issues_ok).sum()), "pending_count": int((pr_ok & frame["total_issues"].isna()).sum())},
-        {"stage": "also_forks_over_500", "verified_count": int((pr_ok & issues_ok & fork_ok).sum()), "pending_count": int((fork_ok & (frame["total_pull_requests"].isna() | frame["total_issues"].isna())).sum())},
+        {"stage": "pull_requests_at_least_500", "verified_count": int(pr_ok.sum()), "pending_count": int(frame["total_pull_requests"].isna().sum())},
+        {"stage": "also_issues_at_least_500", "verified_count": int((pr_ok & issues_ok).sum()), "pending_count": int((pr_ok & frame["total_issues"].isna()).sum())},
+        {"stage": "also_forks_at_least_500", "verified_count": int((pr_ok & issues_ok & fork_ok).sum()), "pending_count": int((fork_ok & (frame["total_pull_requests"].isna() | frame["total_issues"].isna())).sum())},
         {"stage": "also_osi_approved_license", "verified_count": len(qualified), "pending_count": len(pending)},
     ]
     pd.DataFrame(stages).to_csv(results / "stage_counts.csv", index=False)
     summary = {
         "generated_at": now, "created_start": cfg["created_start"], "created_end": cfg["created_end"],
-        "thresholds": {"stars_min_inclusive": cfg["stars_min"], "pull_requests_min_exclusive": cfg["pull_requests_min_exclusive"], "issues_min_exclusive": cfg["issues_min_exclusive"], "forks_min_exclusive": cfg["forks_min_exclusive"], "license": "SPDX isOsiApproved=true"},
+        "thresholds": {"stars_min_inclusive": cfg["stars_min"], "pull_requests_min_inclusive": cfg["pull_requests_min_inclusive"], "issues_min_inclusive": cfg["issues_min_inclusive"], "forks_min_inclusive": cfg["forks_min_inclusive"], "license": "SPDX isOsiApproved=true"},
         "limited_mode": limited, "complete_and_verified": not limited and not missing and pending.empty,
         "discovery_coverage_complete": not missing, "incomplete_partitions": missing,
         "discovered_candidates": len(frame), "stages": stages, "verified_qualifying_count": len(qualified),

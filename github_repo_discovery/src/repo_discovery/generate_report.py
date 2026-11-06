@@ -9,7 +9,7 @@ def generate_report(summary, qualified, pending, root):
         "# GitHub repository discovery report", "",
         f"Generated: {summary['generated_at']}", "",
         "## Scope and definition", "",
-        f"Public repositories created {summary['created_start']} through {summary['created_end']} inclusive (UTC), with stars ≥1,000, all-state pull requests >500, issues >500 (issues exclude PRs), forks >500, and a GitHub-detected SPDX license whose SPDX list record has `isOsiApproved=true`. Language, topic, domain, archive status and fork status are descriptive only. Stars, issue/PR counts, forks and license are observed when collected, not as of 2026-11-01.", "",
+        f"Public repositories created {summary['created_start']} through {summary['created_end']} inclusive (UTC), with stars ≥1,000, all-state pull requests ≥500, issues ≥500 (issues exclude PRs), forks ≥500, and a GitHub-detected SPDX license whose SPDX list record has `isOsiApproved=true`. Language, topic, domain, archive status and fork status are descriptive only. Stars, issue/PR counts, forks and license are observed when collected, not as of 2026-11-01.", "",
         "## Completeness", "",
         f"Search coverage complete: **{summary['discovery_coverage_complete']}**. Entire study complete and verified: **{summary['complete_and_verified']}**. Limited mode: **{summary['limited_mode']}**.", "",
         f"Search candidates observed so far: **{summary['discovered_candidates']}**. Verified qualifying: **{summary['verified_qualifying_count']}**. Pending: **{summary['pending_count']}**. Excluded: **{summary['excluded_count']}**. A partial count is a verified lower bound, never a global total.", "",

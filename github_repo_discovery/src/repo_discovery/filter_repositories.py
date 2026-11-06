@@ -73,7 +73,7 @@ def verify_licenses(client, store, cfg, root, limit=None):
         if row["pr_count"] is None or row["issue_count"] is None:
             continue
         repo = json.loads(row["data"])
-        if row["pr_count"] > cfg["pull_requests_min_exclusive"] and row["issue_count"] > cfg["issues_min_exclusive"] and repo["forks_count"] > cfg["forks_min_exclusive"]:
+        if row["pr_count"] >= cfg["pull_requests_min_inclusive"] and row["issue_count"] >= cfg["issues_min_inclusive"] and repo["forks_count"] >= cfg["forks_min_inclusive"]:
             rows.append(row)
     if limit is not None:
         rows = rows[:limit]

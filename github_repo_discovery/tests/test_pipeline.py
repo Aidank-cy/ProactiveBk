@@ -7,7 +7,7 @@ from repo_discovery.filter_repositories import count_issues_and_prs, load_osi_li
 from repo_discovery.store import Store
 
 
-CFG = {"created_start": "2024-11-01", "created_end": "2026-11-01", "stars_min": 1000, "pull_requests_min_exclusive": 500, "issues_min_exclusive": 500, "forks_min_exclusive": 500, "graphql_batch_size": 50}
+CFG = {"created_start": "2024-11-01", "created_end": "2026-11-01", "stars_min": 1000, "pull_requests_min_inclusive": 500, "issues_min_inclusive": 500, "forks_min_inclusive": 500, "graphql_batch_size": 50}
 
 
 def repo(repo_id=1, forks=501):
@@ -33,23 +33,24 @@ def test_coverage_detects_missing_child(tmp_path):
 
 def test_thresholds_and_order(tmp_path):
     store = Store(tmp_path / "db.sqlite")
-    store.add_repos([repo(1), repo(2, forks=500)])
+    store.add_repos([repo(1), repo(2, forks=500), repo(3, forks=499)])
     store.update(1, pr_count=501, issue_count=501, license_status="verified", license_spdx="MIT")
     store.update(2, pr_count=501, issue_count=501, license_status="verified", license_spdx="MIT")
+    store.update(3, pr_count=501, issue_count=501, license_status="verified", license_spdx="MIT")
     summary, qualified, pending = export(store, CFG, tmp_path, limited=True)
-    assert qualified["repository_id"].tolist() == [1]
+    assert qualified["repository_id"].tolist() == [1, 2]
     assert len(pending) == 0
-    assert summary["stages"][3]["verified_count"] == 1
-    assert summary["windows"] == {"last_1_year": 1, "last_2_years": 1, "last_5_years": None}
+    assert summary["stages"][3]["verified_count"] == 2
+    assert summary["windows"] == {"last_1_year": 2, "last_2_years": 2, "last_5_years": None}
 
 
-def test_pr_and_issues_exactly_500_excluded(tmp_path):
+def test_pr_issues_and_forks_exactly_500_included(tmp_path):
     store = Store(tmp_path / "db.sqlite")
-    store.add_repos([repo()])
-    store.update(1, pr_count=500, issue_count=500)
+    store.add_repos([repo(forks=500)])
+    store.update(1, pr_count=500, issue_count=500, license_status="verified", license_spdx="MIT")
     summary, qualified, pending = export(store, CFG, tmp_path, limited=True)
-    assert len(qualified) == len(pending) == 0
-    assert summary["excluded_count"] == 1
+    assert len(qualified) == 1 and len(pending) == 0
+    assert summary["excluded_count"] == 0
 
 
 def test_unverified_license_stays_in_processing_but_out_of_public_list(tmp_path):

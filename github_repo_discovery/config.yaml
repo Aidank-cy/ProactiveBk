@@ -1,9 +1,9 @@
 created_start: '2024-11-01'
 created_end: '2026-11-01'
 stars_min: 1000
-pull_requests_min_exclusive: 500
-issues_min_exclusive: 500
-forks_min_exclusive: 500
+pull_requests_min_inclusive: 500
+issues_min_inclusive: 500
+forks_min_inclusive: 500
 spdx_license_list_blob_sha: 0bade76951d254478b70e3d0416c884a16491f5b
 search_page_size: 100
 search_page_workers: 2

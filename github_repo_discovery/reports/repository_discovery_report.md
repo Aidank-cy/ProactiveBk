@@ -1,10 +1,10 @@
 # GitHub repository discovery report
 
-Generated: 2026-11-06T02:25:34.596873+00:00
+Generated: 2026-11-06T02:40:38.725457+00:00
 
 ## Scope and definition
 
-Public repositories created 2024-11-01 through 2026-11-01 inclusive (UTC), with stars ≥1,000, all-state pull requests >500, issues >500 (issues exclude PRs), forks >500, and a GitHub-detected SPDX license whose SPDX list record has `isOsiApproved=true`. Language, topic, domain, archive status and fork status are descriptive only. Stars, issue/PR counts, forks and license are observed when collected, not as of 2026-11-01.
+Public repositories created 2024-11-01 through 2026-11-01 inclusive (UTC), with stars ≥1,000, all-state pull requests ≥500, issues ≥500 (issues exclude PRs), forks ≥500, and a GitHub-detected SPDX license whose SPDX list record has `isOsiApproved=true`. Language, topic, domain, archive status and fork status are descriptive only. Stars, issue/PR counts, forks and license are observed when collected, not as of 2026-11-01.
 
 ## Completeness
 
@@ -19,9 +19,9 @@ There are **362** numeric-threshold candidates for future research processing: *
 | Stage | Verified passing | Pending checks |
 |---|---:|---:|
 | created_in_window_and_stars_at_least_1000 | 7461 | 0 |
-| pull_requests_over_500 | 1163 | 0 |
-| also_issues_over_500 | 529 | 0 |
-| also_forks_over_500 | 362 | 0 |
+| pull_requests_at_least_500 | 1166 | 0 |
+| also_issues_at_least_500 | 529 | 0 |
+| also_forks_at_least_500 | 362 | 0 |
 | also_osi_approved_license | 318 | 44 |
 
 Machine-readable funnel: [stage_counts.csv](../results/stage_counts.csv).

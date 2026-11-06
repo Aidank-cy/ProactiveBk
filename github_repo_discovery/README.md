@@ -3,8 +3,8 @@
 This independent project discovers public GitHub repositories created **2024-11-01 through 2026-11-01 inclusive (UTC)** and applies the current staged criteria:
 
 1. At least 1,000 stars.
-2. More than 500 pull requests of all states and more than 500 issues. GraphQL `issues.totalCount` excludes pull requests.
-3. More than 500 forks.
+2. At least 500 pull requests of all states and at least 500 issues. GraphQL `issues.totalCount` excludes pull requests.
+3. At least 500 forks.
 4. A GitHub-detected SPDX license marked `isOsiApproved=true` by the pinned SPDX license list.
 
 Language, topic, domain, fork status, archive status and activity are not mandatory filters. Contributor count and source LOC are outside this current screening round. All mutable metadata is observed when collected, not as of the creation-date cutoff.

@@ -1,0 +1,19 @@
+seed: 20261106
+candidate_inventory: ../github_repo_discovery/results/processing_candidates.csv
+discovery_checkpoint: ../github_repo_discovery/.cache/discovery.sqlite
+repository_count: 8
+random_prs_per_repository: 40
+enriched_prs_per_repository: 40
+pr_frame_cap: 500
+pr_observation_start: '2024-11-01'
+pr_observation_end: null
+expansion_depth: 1
+max_expanded_issue_pr_nodes_per_repository: 250
+max_neighbors_per_seed: 50
+max_pages_per_endpoint: 10
+max_files_per_pr: 300
+graph_default_max_nodes: 180
+request_timeout_seconds: 45
+max_retries: 5
+public_release_tracks:
+  - license_verified

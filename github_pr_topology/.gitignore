@@ -1,0 +1,17 @@
+.env
+.cache/
+data/raw/
+data/processed/
+data/restricted/
+results/*
+!results/public_aggregate_statistics.json
+reports/
+restricted_outputs/
+*.sqlite
+*.log
+__pycache__/
+.pytest_cache/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+screenshots/

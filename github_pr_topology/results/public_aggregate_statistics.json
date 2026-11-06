@@ -1,0 +1,83 @@
+{
+  "collection_completeness": {
+    "boundary_nodes_recorded": 378,
+    "case_count": 15,
+    "collected_seed_prs": 640,
+    "complete_seed_collection": true,
+    "endpoint_errors": 0,
+    "expanded_neighbor_attempts": 1350,
+    "expanded_neighbor_endpoint_errors": 45,
+    "graph_edges": 26148,
+    "graph_nodes": 14243,
+    "sampled_seed_prs": 640,
+    "seed_bundles_missing": 0,
+    "selected_repositories": 8,
+    "truncated_endpoints": 4,
+    "truncated_repository_count": 5,
+    "unresolved_expanded_neighbor_nodes": 42
+  },
+  "graph_counts": {
+    "expanded_issue_pr_nodes": 1566,
+    "explicit_pr_pr_pairs": 594,
+    "isolated_seed_prs": 229,
+    "issue_nodes": 667,
+    "issues_linked_to_multiple_prs": 256,
+    "issues_linked_to_one_pr": 194,
+    "possible_pr_dependencies": 5,
+    "pr_nodes": 1539,
+    "prs_linked_to_multiple_issues": 174,
+    "prs_with_multiple_human_review_rounds": 28,
+    "prs_with_observable_feedback_followed_by_commit_event": 0,
+    "prs_with_reviews_on_multiple_commit_versions": 20
+  },
+  "graph_scopes": {
+    "candidate": {
+      "average_degree": 6.308,
+      "connected_components": 123,
+      "max_degree": 78
+    },
+    "derived": {
+      "average_degree": 2.956,
+      "connected_components": 772,
+      "max_degree": 32
+    },
+    "verified_explicit": {
+      "average_degree": 1.664,
+      "connected_components": 790,
+      "max_degree": 25
+    }
+  },
+  "limitations": [
+    "Random PR prevalence applies only to the newest 500 PRs per repository in the observation window.",
+    "Interaction-enriched PRs and expanded neighbors are not an unbiased prevalence sample.",
+    "Some neighbor expansion endpoints failed or were truncated.",
+    "Current editable text and commit author times do not establish historical visibility.",
+    "Aggregate topology patterns may overlap and are not causal claims."
+  ],
+  "pattern_counts": {
+    "A_one_issue_one_pr": 194,
+    "B_one_issue_multiple_prs": 256,
+    "C_multiple_issues_one_pr": 174,
+    "D_explicit_pr_pr_reference": 436,
+    "E_pr_reference_chain": 8,
+    "F_many_to_many_component": 61,
+    "G_no_identifiable_issue_link": 339,
+    "H_shared_files_candidate": 3288
+  },
+  "repository_count": 8,
+  "scope": "Aggregate facts from the bounded topology pilot; no node, edge, PR text, or third-party prose",
+  "seed_sampling": {
+    "enriched_seed_prs": 320,
+    "enriched_seed_prs_with_explicit_issue_link": 160,
+    "random_seed_prs": 320,
+    "random_seed_prs_with_explicit_issue_link": 141,
+    "seed_prs": 640,
+    "seed_prs_with_explicit_issue_link": 301,
+    "seed_prs_without_explicit_issue_link": 339
+  },
+  "temporal_uncertainty": {
+    "macro_edge_count": 8789,
+    "macro_edge_temporal_uncertainty_rate": 0.7275,
+    "macro_edges_with_temporal_uncertainty": 6394
+  }
+}

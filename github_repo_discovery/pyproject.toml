@@ -1,0 +1,11 @@
+[project]
+name = "github-repo-discovery"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["requests>=2.31", "PyYAML>=6", "pandas>=2"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

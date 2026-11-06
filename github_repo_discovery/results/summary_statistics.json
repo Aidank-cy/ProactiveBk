@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-11-06T02:06:51.687738+00:00",
+  "created_start": "2024-11-01",
+  "created_end": "2026-11-01",
+  "thresholds": {
+    "stars_min_inclusive": 1000,
+    "pull_requests_min_exclusive": 500,
+    "issues_min_exclusive": 500,
+    "forks_min_exclusive": 500,
+    "license": "SPDX isOsiApproved=true"
+  },
+  "limited_mode": false,
+  "complete_and_verified": false,
+  "discovery_coverage_complete": true,
+  "incomplete_partitions": [],
+  "discovered_candidates": 7461,
+  "stages": [
+    {
+      "stage": "created_in_window_and_stars_at_least_1000",
+      "verified_count": 7461,
+      "pending_count": 0
+    },
+    {
+      "stage": "pull_requests_over_500",
+      "verified_count": 1163,
+      "pending_count": 0
+    },
+    {
+      "stage": "also_issues_over_500",
+      "verified_count": 529,
+      "pending_count": 0
+    },
+    {
+      "stage": "also_forks_over_500",
+      "verified_count": 362,
+      "pending_count": 0
+    },
+    {
+      "stage": "also_osi_approved_license",
+      "verified_count": 318,
+      "pending_count": 44
+    }
+  ],
+  "verified_qualifying_count": 318,
+  "pending_count": 44,
+  "excluded_count": 7099,
+  "windows": {
+    "last_1_year": 173,
+    "last_2_years": 318,
+    "last_5_years": null
+  },
+  "cohorts": {
+    "0-1 years": 173,
+    "1-2 years": 145
+  },
+  "unknown_pr_count": 0,
+  "unknown_issue_count": 0,
+  "unknown_license": 44,
+  "search_partitions": 19,
+  "stage_seconds": {
+    "repository_search": 190.97,
+    "issue_and_pull_request_counts": 588.3,
+    "license_checks": 234.53
+  },
+  "spdx_license_list_blob_sha": "0bade76951d254478b70e3d0416c884a16491f5b"
+}

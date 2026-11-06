@@ -1,0 +1,6 @@
+stage,verified_count,pending_count
+created_in_window_and_stars_at_least_1000,7461,0
+pull_requests_over_500,1163,0
+also_issues_over_500,529,0
+also_forks_over_500,362,0
+also_osi_approved_license,318,44

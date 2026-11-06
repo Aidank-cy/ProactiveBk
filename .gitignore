@@ -31,3 +31,4 @@
 !/ProcessedDataset/UnifiedTrace/scripts/*.py
 
 !/github_pr_feasibility/
+!/github_repo_discovery/

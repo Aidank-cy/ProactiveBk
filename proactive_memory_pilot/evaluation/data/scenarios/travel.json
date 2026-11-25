@@ -191,7 +191,7 @@
         "t_flight_hold",
         "t_auth"
       ],
-      "matching_guidelines": "须是两人国际往返的合规可撤销预留；单程、美国转机、实际出票或未经确认付款不等价。"
+      "matching_guidelines": "识别两人符合限制的非美国转机往返航班可预留即可；不要求列出全部航段或报价。单程、美国转机或未经授权付款不匹配。"
     },
     {
       "task_id": "travel_t2",
@@ -219,7 +219,7 @@
         "t_hotel_cancel",
         "t_auth"
       ],
-      "matching_guidelines": "须识别Jardin Tranquilo可取消房；不可退的Malecon Central或远郊Cerro Verde不等价。"
+      "matching_guidelines": "须识别Jardin Tranquilo可取消住宿的预留机会；不要求重述房价或取消条款。仅推荐不符合约束的其他酒店不匹配。"
     },
     {
       "task_id": "travel_t3",
@@ -245,7 +245,7 @@
         "t_deadline",
         "t_auth"
       ],
-      "matching_guidelines": "确定班次与衔接即可；不表示付款预订，须覆盖两人并考虑登记截止。"
+      "matching_guidelines": "识别两人Baltra至Puerto Ayora接送方案现可确定即可；不要求在预测中给出完整班次。未经授权付款不匹配。"
     },
     {
       "task_id": "travel_t4",
@@ -265,9 +265,9 @@
         "t_land_time",
         "t_land_weather",
         "t_land_option",
-        "t_goal"
+        "t_land_comfort"
       ],
-      "matching_guidelines": "须为许闻安排岸上、避开长快艇的具体活动；远海或潜水不等价。"
+      "matching_guidelines": "识别许闻现可安排适合晕船限制的Santa Cruz岸上活动即可；可选择任一合理陆地方案，不要求给出完整行程。长快艇活动不匹配。"
     },
     {
       "task_id": "travel_t5",
@@ -288,7 +288,7 @@
         "t_claim_receipts",
         "t_claim_return"
       ],
-      "matching_guidelines": "须为林乔最终报销，按本人和许闻拆分实际结算与冻结；仅整理预估预算不等价。"
+      "matching_guidelines": "识别林乔会议费用的最终报销材料现可整理即可；不要求在预测中逐项计算费用。仅做预估预算或混入许闻私人费用不匹配。"
     }
   ],
   "evaluations": [
@@ -1734,7 +1734,7 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "建议8月16日晚前到岛；完整入住及退房日期尚未确定",
           "evidence_record_ids": [
             "e004"
           ]
@@ -1890,7 +1890,7 @@
         "travel_t2": {
           "goal": "Satisfied",
           "open": "Satisfied",
-          "dates": "Satisfied",
+          "dates": "Unknown",
           "inventory": "Unknown",
           "location": "Unknown",
           "budget": "Unknown",
@@ -2067,7 +2067,7 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "建议8月16日晚前到岛；完整入住及退房日期尚未确定",
           "evidence_record_ids": [
             "e004"
           ]
@@ -2223,7 +2223,7 @@
         "travel_t2": {
           "goal": "Satisfied",
           "open": "Satisfied",
-          "dates": "Satisfied",
+          "dates": "Unknown",
           "inventory": "Unknown",
           "location": "Unknown",
           "budget": "Unknown",
@@ -2342,7 +2342,7 @@
           "task_ids": [
             "travel_t1"
           ],
-          "ground_truth_answer": "每段至少3座",
+          "ground_truth_answer": "相关航段有余票；部分航段剩3座，尚不能确认每段都至少有两席",
           "evidence_record_ids": [
             "e006"
           ]
@@ -2406,7 +2406,7 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "建议8月16日晚前到岛；完整入住及退房日期尚未确定",
           "evidence_record_ids": [
             "e004"
           ]
@@ -2551,7 +2551,7 @@
         "travel_t1": {
           "goal": "Satisfied",
           "open": "Satisfied",
-          "inventory": "Satisfied",
+          "inventory": "Unknown",
           "transit": "Satisfied",
           "ticket": "Unknown",
           "timing": "Satisfied",
@@ -2562,7 +2562,7 @@
         "travel_t2": {
           "goal": "Satisfied",
           "open": "Satisfied",
-          "dates": "Satisfied",
+          "dates": "Unknown",
           "inventory": "Unknown",
           "location": "Unknown",
           "budget": "Unknown",
@@ -2749,7 +2749,7 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "建议8月16日晚前到岛；完整入住及退房日期尚未确定",
           "evidence_record_ids": [
             "e004"
           ]
@@ -2905,7 +2905,7 @@
         "travel_t2": {
           "goal": "Satisfied",
           "open": "Satisfied",
-          "dates": "Satisfied",
+          "dates": "Unknown",
           "inventory": "Unknown",
           "location": "Unknown",
           "budget": "Unknown",
@@ -3092,9 +3092,9 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         {
@@ -3449,9 +3449,9 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         {
@@ -3803,9 +3803,9 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         {
@@ -4154,9 +4154,9 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         {
@@ -4505,9 +4505,9 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         {
@@ -4856,9 +4856,9 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         {
@@ -5210,9 +5210,9 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         {
@@ -5320,6 +5320,17 @@
           "ground_truth_answer": "2026-08-06明确提出",
           "evidence_record_ids": [
             "e014"
+          ]
+        },
+        {
+          "question_id": "t_land_comfort",
+          "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
           ]
         },
         {
@@ -5618,9 +5629,9 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         {
@@ -5728,6 +5739,17 @@
           "ground_truth_answer": "2026-08-06明确提出",
           "evidence_record_ids": [
             "e014"
+          ]
+        },
+        {
+          "question_id": "t_land_comfort",
+          "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
           ]
         },
         {
@@ -6032,9 +6054,9 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         {
@@ -6146,6 +6168,17 @@
           "ground_truth_answer": "2026-08-06明确提出",
           "evidence_record_ids": [
             "e014"
+          ]
+        },
+        {
+          "question_id": "t_land_comfort",
+          "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
           ]
         },
         {
@@ -6429,7 +6462,7 @@
           "task_ids": [
             "travel_t1"
           ],
-          "ground_truth_answer": "已创建72小时临时留座，需用户确认付款后出票",
+          "ground_truth_answer": "航司暂留两席，留座到期时刻未说明；银行要求72小时内完成支付二次确认；尚未付款或出票",
           "evidence_record_ids": [
             "e017"
           ]
@@ -6451,9 +6484,9 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         {
@@ -6565,6 +6598,17 @@
           "ground_truth_answer": "2026-08-06明确提出",
           "evidence_record_ids": [
             "e014"
+          ]
+        },
+        {
+          "question_id": "t_land_comfort",
+          "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
           ]
         },
         {
@@ -6870,9 +6914,9 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         {
@@ -6984,6 +7028,17 @@
           "ground_truth_answer": "2026-08-06明确提出",
           "evidence_record_ids": [
             "e014"
+          ]
+        },
+        {
+          "question_id": "t_land_comfort",
+          "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
           ]
         },
         {
@@ -7289,9 +7344,9 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         {
@@ -7403,6 +7458,17 @@
           "ground_truth_answer": "2026-08-06明确提出",
           "evidence_record_ids": [
             "e014"
+          ]
+        },
+        {
+          "question_id": "t_land_comfort",
+          "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
           ]
         },
         {
@@ -7709,9 +7775,9 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         {
@@ -7826,6 +7892,17 @@
           ]
         },
         {
+          "question_id": "t_land_comfort",
+          "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
+          ]
+        },
+        {
           "question_id": "t_land_time",
           "question": "许闻可参加岸上活动的时间窗口是什么？",
           "task_ids": [
@@ -7886,7 +7963,7 @@
           "task_ids": [
             "travel_t5"
           ],
-          "ground_truth_answer": "机票1480美元已结算；接送两人70美元已支付；酒店180美元冻结；TCT 24美元拒付",
+          "ground_truth_answer": "机票1480美元已结算；接送服务已使用但70美元支付状态未确认；酒店180美元冻结；TCT 24美元拒付",
           "evidence_record_ids": [
             "e020"
           ]
@@ -8127,9 +8204,9 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         {
@@ -8244,6 +8321,17 @@
           ]
         },
         {
+          "question_id": "t_land_comfort",
+          "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
+          ]
+        },
+        {
           "question_id": "t_land_time",
           "question": "许闻可参加岸上活动的时间窗口是什么？",
           "task_ids": [
@@ -8304,7 +8392,7 @@
           "task_ids": [
             "travel_t5"
           ],
-          "ground_truth_answer": "机票1480美元已结算；接送两人70美元已支付；酒店180美元冻结；TCT 24美元拒付",
+          "ground_truth_answer": "机票1480美元已结算；接送服务已使用但70美元支付状态未确认；酒店180美元冻结；TCT 24美元拒付",
           "evidence_record_ids": [
             "e020"
           ]
@@ -8545,9 +8633,9 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         {
@@ -8659,6 +8747,17 @@
           "ground_truth_answer": "2026-08-06明确提出",
           "evidence_record_ids": [
             "e014"
+          ]
+        },
+        {
+          "question_id": "t_land_comfort",
+          "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
           ]
         },
         {
@@ -8963,9 +9062,9 @@
           "task_ids": [
             "travel_t2"
           ],
-          "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+          "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         {
@@ -9077,6 +9176,17 @@
           "ground_truth_answer": "2026-08-06明确提出",
           "evidence_record_ids": [
             "e014"
+          ]
+        },
+        {
+          "question_id": "t_land_comfort",
+          "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
           ]
         },
         {

@@ -5,7 +5,7 @@ All counts are derived from the fixed JSON. Initial and final-context tokens are
 | Scenario | Events | Tasks | Unique memory Q | Memory calls | Reactive calls | Proactive calls | Total calls | Ready task-stage pairs | Newly ready | Empty stages | Invalidations | Initial tokens est. | Final tokens est. |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | rental | 18 | 4 | 31 | 553 | 70 | 19 | 642 | 17 | 3 | 6 | 2 | 373 | 1385 |
-| travel | 23 | 5 | 31 | 674 | 106 | 24 | 804 | 12 | 5 | 16 | 4 | 177 | 2193 |
+| travel | 23 | 5 | 32 | 684 | 106 | 24 | 814 | 12 | 5 | 16 | 4 | 177 | 2193 |
 | shopping | 19 | 5 | 32 | 518 | 78 | 20 | 616 | 24 | 5 | 7 | 4 | 169 | 1489 |
 | team_building | 20 | 5 | 35 | 735 | 105 | 21 | 861 | 19 | 5 | 10 | 4 | 167 | 1712 |
 

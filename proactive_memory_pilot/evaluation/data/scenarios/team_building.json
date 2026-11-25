@@ -170,7 +170,7 @@
         "b_lunch_quote",
         "b_auth"
       ],
-      "matching_guidelines": "仅匹配无需押金、7月19日12时前可无损释放的44人临时hold；正式锁定、个人账户付款、签保密承诺或发送证件不等价。"
+      "matching_guidelines": "识别嘉兴智造44人免押金、可无损释放的临时名额预留机会即可；不要求复述精确截止时刻。正式押金锁定或个人账户付款不匹配。"
     },
     {
       "task_id": "team_t2",
@@ -201,7 +201,7 @@
         "b_lunch_quote",
         "b_auth"
       ],
-      "matching_guidelines": "确定具备有效司机资质的沪嘉包车候选；不代表付款或对外确认。"
+      "matching_guidelines": "识别两车沪嘉往返包车候选方案现可确定即可；不要求在预测中列出司机证件。付款或对外确认不匹配。"
     },
     {
       "task_id": "team_t3",
@@ -231,7 +231,7 @@
         "b_factory_quote",
         "b_bus_quote"
       ],
-      "matching_guidelines": "须明确禾城协作44人、特殊饮食、公司发票和活动日时间；普通无过敏安排的餐厅不等价。"
+      "matching_guidelines": "识别禾城协作44人午餐候选方案现可确定即可；不要求在预测中完整列举菜单和发票。仅推荐无法处理团队饮食限制的餐厅不匹配。"
     },
     {
       "task_id": "team_t4",
@@ -259,7 +259,7 @@
         "b_lunch_time",
         "b_auth"
       ],
-      "matching_guidelines": "须是未发送草稿，包含集合、路线、PPE、禁拍、特殊需求及退出机制；群发通知不等价。"
+      "matching_guidelines": "识别嘉兴智造参访通知草稿现可准备即可；不要求在预测中写出通知全文。未经授权群发不匹配。"
     },
     {
       "task_id": "team_t5",
@@ -285,7 +285,7 @@
         "b_bus_invoice",
         "b_lunch_invoice"
       ],
-      "matching_guidelines": "须列三类已结算款与发票，并把工厂服务费、PPE和押金未见交易或发票列为待核，不能称全部费用已付或押金已退。"
+      "matching_guidelines": "识别截至7月24日的费用、已到发票及待确认项现可整理即可；不要求在预测中逐笔列账。声称全部费用已付或押金已退不匹配。"
     }
   ],
   "evaluations": [
@@ -546,7 +546,7 @@
           "task_ids": [
             "team_t4"
           ],
-          "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+          "ground_truth_answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -979,7 +979,7 @@
           "task_ids": [
             "team_t4"
           ],
-          "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+          "ground_truth_answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -1414,7 +1414,7 @@
           "task_ids": [
             "team_t4"
           ],
-          "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+          "ground_truth_answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -1853,7 +1853,7 @@
           "task_ids": [
             "team_t4"
           ],
-          "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+          "ground_truth_answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -2298,7 +2298,7 @@
           "task_ids": [
             "team_t4"
           ],
-          "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+          "ground_truth_answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -2743,7 +2743,7 @@
           "task_ids": [
             "team_t4"
           ],
-          "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+          "ground_truth_answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -3150,7 +3150,7 @@
             "team_t2",
             "team_t3"
           ],
-          "ground_truth_answer": "44人套餐11880元；实到结算但至少合同九成",
+          "ground_truth_answer": "午餐报价和容量尚未提供；实到人数结算，至少按合同人数九成计费；减少须当日10:00前告知",
           "evidence_record_ids": [
             "e006"
           ]
@@ -3192,7 +3192,7 @@
           "task_ids": [
             "team_t4"
           ],
-          "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+          "ground_truth_answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -3601,7 +3601,7 @@
             "team_t2",
             "team_t3"
           ],
-          "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -3647,7 +3647,7 @@
           "task_ids": [
             "team_t4"
           ],
-          "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+          "ground_truth_answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -4058,7 +4058,7 @@
             "team_t2",
             "team_t3"
           ],
-          "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -4104,7 +4104,7 @@
           "task_ids": [
             "team_t4"
           ],
-          "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+          "ground_truth_answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -4519,7 +4519,7 @@
             "team_t2",
             "team_t3"
           ],
-          "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -4565,7 +4565,7 @@
           "task_ids": [
             "team_t4"
           ],
-          "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+          "ground_truth_answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -4978,7 +4978,7 @@
             "team_t2",
             "team_t3"
           ],
-          "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -5024,7 +5024,7 @@
           "task_ids": [
             "team_t4"
           ],
-          "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+          "ground_truth_answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -5445,7 +5445,7 @@
             "team_t2",
             "team_t3"
           ],
-          "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -5491,7 +5491,7 @@
           "task_ids": [
             "team_t4"
           ],
-          "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+          "ground_truth_answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -5921,7 +5921,7 @@
             "team_t2",
             "team_t3"
           ],
-          "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -5967,7 +5967,7 @@
           "task_ids": [
             "team_t4"
           ],
-          "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+          "ground_truth_answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -6395,7 +6395,7 @@
             "team_t2",
             "team_t3"
           ],
-          "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -6441,7 +6441,7 @@
           "task_ids": [
             "team_t4"
           ],
-          "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+          "ground_truth_answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -6869,7 +6869,7 @@
             "team_t2",
             "team_t3"
           ],
-          "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -6915,7 +6915,7 @@
           "task_ids": [
             "team_t4"
           ],
-          "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+          "ground_truth_answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -7345,7 +7345,7 @@
             "team_t2",
             "team_t3"
           ],
-          "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -7821,7 +7821,7 @@
             "team_t2",
             "team_t3"
           ],
-          "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -8304,7 +8304,7 @@
             "team_t2",
             "team_t3"
           ],
-          "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -8784,7 +8784,7 @@
             "team_t2",
             "team_t3"
           ],
-          "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]

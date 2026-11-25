@@ -42,7 +42,7 @@ CONDITION_QUESTIONS = {
                   "deadline": ["t_deadline"], "authorized": ["t_auth"]},
     "travel_t4": {"goal": ["t_land_goal"], "open": ["t_land_open"],
                   "time": ["t_land_time"], "conditions": ["t_land_weather"],
-                  "option": ["t_land_option"], "comfort": ["t_goal", "t_land_weather"]},
+                  "option": ["t_land_option"], "comfort": ["t_land_comfort", "t_land_weather"]},
     "travel_t5": {"goal": ["t_goal"], "open": ["t_claim_return"],
                   "policy": ["t_claim_policy"], "settlement": ["t_claim_payment"],
                   "receipts": ["t_claim_receipts"], "trip_finished": ["t_claim_return"]},

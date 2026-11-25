@@ -155,7 +155,7 @@
         "s_ref_video",
         "s_auth"
       ],
-      "matching_guidelines": "须针对ord_strr_0002的商家异议申请平台介入；仅整理证据或直接申请退款不是同一行动。"
+      "matching_guidelines": "识别该婴儿床配件退货纠纷现可申请平台介入即可；订单号可用商品与纠纷描述替代，不要求复述全部证据。仅准备证据不匹配。"
     },
     {
       "task_id": "shopping_t2",
@@ -182,7 +182,7 @@
         "s_sale_choice",
         "s_auth"
       ],
-      "matching_guidelines": "须是具体买家的平台担保方案，非微信定金、现金面交或已完成交易。"
+      "matching_guidelines": "识别旧推车与已确认买家的平台担保交易方案现可准备即可；不要求给出全部交易细节。平台外定金或已完成交易不匹配。"
     },
     {
       "task_id": "shopping_t3",
@@ -204,7 +204,7 @@
         "s_card_docs",
         "s_auth"
       ],
-      "matching_guidelines": "准备两笔258元扣费的争议证据；不等同于已经提交争议或代用户操作银行卡。"
+      "matching_guidelines": "识别BABYJOGGER US重复扣费争议材料现可准备即可；不要求列出每笔金额和凭证。擅自提交争议或操作银行卡不匹配。"
     },
     {
       "task_id": "shopping_t4",
@@ -229,7 +229,7 @@
         "s_auth",
         "s_deadline"
       ],
-      "matching_guidelines": "需有批次、官方方案、成本周期和出行时间依据；实际维修、退货、下单均非本任务。"
+      "matching_guidelines": "识别新GlideBaby S5的安全处理方案现可确定即可；可采用任一符合用户限制的合理方案，不要求在预测中完成比较。擅自维修或下单不匹配。"
     },
     {
       "task_id": "shopping_t5",
@@ -251,7 +251,7 @@
         "s_cart_coupon",
         "s_auth"
       ],
-      "matching_guidelines": "须选A标准版bsk_strr_a2、B单件bsk_strr_b2、C单件bsk_strr_c2，三券同用到手146.30元；只加购不付款。"
+      "matching_guidelines": "识别配件A、B和耗材C的最优惠原厂组合现可计算并加入购物车即可；不要求在预测中给出SKU、券或146.30元。仅付款或提交订单不匹配。"
     }
   ],
   "evaluations": [

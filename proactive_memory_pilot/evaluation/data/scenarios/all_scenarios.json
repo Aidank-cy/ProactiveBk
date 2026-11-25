@@ -174,7 +174,7 @@
             "r_c_reg",
             "r_c_slot"
           ],
-          "matching_guidelines": "须明确云栖苑与内部计划；联系中介、对外预约、锁房和签约均不等价。"
+          "matching_guidelines": "识别云栖苑已可加入内部看房计划即可；不要求列出完整路线或看房安排。仅提出联系中介、锁房或签约不匹配。"
         },
         {
           "task_id": "rental_t2",
@@ -205,7 +205,7 @@
             "r_a_reg",
             "r_a_slot"
           ],
-          "matching_guidelines": "须明确北岸花园与内部计划；不能用云栖苑的价格、通勤或授权替代。"
+          "matching_guidelines": "识别北岸花园已可加入内部看房计划即可；可用不同措辞，不要求复述全部房源条件。仅指其他房源不匹配。"
         },
         {
           "task_id": "rental_t3",
@@ -238,7 +238,7 @@
             "r_b_slot",
             "r_b_risk"
           ],
-          "matching_guidelines": "须明确河滨小筑且交易与身份风险已排除；个人码转账或发送证件不是匹配。"
+          "matching_guidelines": "须识别河滨小筑的已核验内部看房机会；不要求列出完整风险排查过程。要求个人码转账或发送证件不匹配。"
         },
         {
           "task_id": "rental_t4",
@@ -264,7 +264,7 @@
             "r_contract_fee",
             "r_auth"
           ],
-          "matching_guidelines": "整理出租主体、登记附件、押金、维修、服务费的内部审核材料；不签约也不作法律定论。"
+          "matching_guidelines": "识别云栖苑完整签约前材料包已可汇总即可；不要求在预测中逐项列出附件。签约或代用户作法律定论不匹配。"
         }
       ],
       "evaluations": [
@@ -7774,7 +7774,7 @@
             "t_flight_hold",
             "t_auth"
           ],
-          "matching_guidelines": "须是两人国际往返的合规可撤销预留；单程、美国转机、实际出票或未经确认付款不等价。"
+          "matching_guidelines": "识别两人符合限制的非美国转机往返航班可预留即可；不要求列出全部航段或报价。单程、美国转机或未经授权付款不匹配。"
         },
         {
           "task_id": "travel_t2",
@@ -7802,7 +7802,7 @@
             "t_hotel_cancel",
             "t_auth"
           ],
-          "matching_guidelines": "须识别Jardin Tranquilo可取消房；不可退的Malecon Central或远郊Cerro Verde不等价。"
+          "matching_guidelines": "须识别Jardin Tranquilo可取消住宿的预留机会；不要求重述房价或取消条款。仅推荐不符合约束的其他酒店不匹配。"
         },
         {
           "task_id": "travel_t3",
@@ -7828,7 +7828,7 @@
             "t_deadline",
             "t_auth"
           ],
-          "matching_guidelines": "确定班次与衔接即可；不表示付款预订，须覆盖两人并考虑登记截止。"
+          "matching_guidelines": "识别两人Baltra至Puerto Ayora接送方案现可确定即可；不要求在预测中给出完整班次。未经授权付款不匹配。"
         },
         {
           "task_id": "travel_t4",
@@ -7848,9 +7848,9 @@
             "t_land_time",
             "t_land_weather",
             "t_land_option",
-            "t_goal"
+            "t_land_comfort"
           ],
-          "matching_guidelines": "须为许闻安排岸上、避开长快艇的具体活动；远海或潜水不等价。"
+          "matching_guidelines": "识别许闻现可安排适合晕船限制的Santa Cruz岸上活动即可；可选择任一合理陆地方案，不要求给出完整行程。长快艇活动不匹配。"
         },
         {
           "task_id": "travel_t5",
@@ -7871,7 +7871,7 @@
             "t_claim_receipts",
             "t_claim_return"
           ],
-          "matching_guidelines": "须为林乔最终报销，按本人和许闻拆分实际结算与冻结；仅整理预估预算不等价。"
+          "matching_guidelines": "识别林乔会议费用的最终报销材料现可整理即可；不要求在预测中逐项计算费用。仅做预估预算或混入许闻私人费用不匹配。"
         }
       ],
       "evaluations": [
@@ -9317,7 +9317,7 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "建议8月16日晚前到岛；完整入住及退房日期尚未确定",
               "evidence_record_ids": [
                 "e004"
               ]
@@ -9473,7 +9473,7 @@
             "travel_t2": {
               "goal": "Satisfied",
               "open": "Satisfied",
-              "dates": "Satisfied",
+              "dates": "Unknown",
               "inventory": "Unknown",
               "location": "Unknown",
               "budget": "Unknown",
@@ -9650,7 +9650,7 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "建议8月16日晚前到岛；完整入住及退房日期尚未确定",
               "evidence_record_ids": [
                 "e004"
               ]
@@ -9806,7 +9806,7 @@
             "travel_t2": {
               "goal": "Satisfied",
               "open": "Satisfied",
-              "dates": "Satisfied",
+              "dates": "Unknown",
               "inventory": "Unknown",
               "location": "Unknown",
               "budget": "Unknown",
@@ -9925,7 +9925,7 @@
               "task_ids": [
                 "travel_t1"
               ],
-              "ground_truth_answer": "每段至少3座",
+              "ground_truth_answer": "相关航段有余票；部分航段剩3座，尚不能确认每段都至少有两席",
               "evidence_record_ids": [
                 "e006"
               ]
@@ -9989,7 +9989,7 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "建议8月16日晚前到岛；完整入住及退房日期尚未确定",
               "evidence_record_ids": [
                 "e004"
               ]
@@ -10134,7 +10134,7 @@
             "travel_t1": {
               "goal": "Satisfied",
               "open": "Satisfied",
-              "inventory": "Satisfied",
+              "inventory": "Unknown",
               "transit": "Satisfied",
               "ticket": "Unknown",
               "timing": "Satisfied",
@@ -10145,7 +10145,7 @@
             "travel_t2": {
               "goal": "Satisfied",
               "open": "Satisfied",
-              "dates": "Satisfied",
+              "dates": "Unknown",
               "inventory": "Unknown",
               "location": "Unknown",
               "budget": "Unknown",
@@ -10332,7 +10332,7 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "建议8月16日晚前到岛；完整入住及退房日期尚未确定",
               "evidence_record_ids": [
                 "e004"
               ]
@@ -10488,7 +10488,7 @@
             "travel_t2": {
               "goal": "Satisfied",
               "open": "Satisfied",
-              "dates": "Satisfied",
+              "dates": "Unknown",
               "inventory": "Unknown",
               "location": "Unknown",
               "budget": "Unknown",
@@ -10675,9 +10675,9 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ]
             },
             {
@@ -11032,9 +11032,9 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ]
             },
             {
@@ -11386,9 +11386,9 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ]
             },
             {
@@ -11737,9 +11737,9 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ]
             },
             {
@@ -12088,9 +12088,9 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ]
             },
             {
@@ -12439,9 +12439,9 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ]
             },
             {
@@ -12793,9 +12793,9 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ]
             },
             {
@@ -12903,6 +12903,17 @@
               "ground_truth_answer": "2026-08-06明确提出",
               "evidence_record_ids": [
                 "e014"
+              ]
+            },
+            {
+              "question_id": "t_land_comfort",
+              "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+              "task_ids": [
+                "travel_t4"
+              ],
+              "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+              "evidence_record_ids": [
+                "h002"
               ]
             },
             {
@@ -13201,9 +13212,9 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ]
             },
             {
@@ -13311,6 +13322,17 @@
               "ground_truth_answer": "2026-08-06明确提出",
               "evidence_record_ids": [
                 "e014"
+              ]
+            },
+            {
+              "question_id": "t_land_comfort",
+              "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+              "task_ids": [
+                "travel_t4"
+              ],
+              "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+              "evidence_record_ids": [
+                "h002"
               ]
             },
             {
@@ -13615,9 +13637,9 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ]
             },
             {
@@ -13729,6 +13751,17 @@
               "ground_truth_answer": "2026-08-06明确提出",
               "evidence_record_ids": [
                 "e014"
+              ]
+            },
+            {
+              "question_id": "t_land_comfort",
+              "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+              "task_ids": [
+                "travel_t4"
+              ],
+              "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+              "evidence_record_ids": [
+                "h002"
               ]
             },
             {
@@ -14012,7 +14045,7 @@
               "task_ids": [
                 "travel_t1"
               ],
-              "ground_truth_answer": "已创建72小时临时留座，需用户确认付款后出票",
+              "ground_truth_answer": "航司暂留两席，留座到期时刻未说明；银行要求72小时内完成支付二次确认；尚未付款或出票",
               "evidence_record_ids": [
                 "e017"
               ]
@@ -14034,9 +14067,9 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ]
             },
             {
@@ -14148,6 +14181,17 @@
               "ground_truth_answer": "2026-08-06明确提出",
               "evidence_record_ids": [
                 "e014"
+              ]
+            },
+            {
+              "question_id": "t_land_comfort",
+              "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+              "task_ids": [
+                "travel_t4"
+              ],
+              "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+              "evidence_record_ids": [
+                "h002"
               ]
             },
             {
@@ -14453,9 +14497,9 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ]
             },
             {
@@ -14567,6 +14611,17 @@
               "ground_truth_answer": "2026-08-06明确提出",
               "evidence_record_ids": [
                 "e014"
+              ]
+            },
+            {
+              "question_id": "t_land_comfort",
+              "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+              "task_ids": [
+                "travel_t4"
+              ],
+              "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+              "evidence_record_ids": [
+                "h002"
               ]
             },
             {
@@ -14872,9 +14927,9 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ]
             },
             {
@@ -14986,6 +15041,17 @@
               "ground_truth_answer": "2026-08-06明确提出",
               "evidence_record_ids": [
                 "e014"
+              ]
+            },
+            {
+              "question_id": "t_land_comfort",
+              "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+              "task_ids": [
+                "travel_t4"
+              ],
+              "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+              "evidence_record_ids": [
+                "h002"
               ]
             },
             {
@@ -15292,9 +15358,9 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ]
             },
             {
@@ -15409,6 +15475,17 @@
               ]
             },
             {
+              "question_id": "t_land_comfort",
+              "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+              "task_ids": [
+                "travel_t4"
+              ],
+              "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+              "evidence_record_ids": [
+                "h002"
+              ]
+            },
+            {
               "question_id": "t_land_time",
               "question": "许闻可参加岸上活动的时间窗口是什么？",
               "task_ids": [
@@ -15469,7 +15546,7 @@
               "task_ids": [
                 "travel_t5"
               ],
-              "ground_truth_answer": "机票1480美元已结算；接送两人70美元已支付；酒店180美元冻结；TCT 24美元拒付",
+              "ground_truth_answer": "机票1480美元已结算；接送服务已使用但70美元支付状态未确认；酒店180美元冻结；TCT 24美元拒付",
               "evidence_record_ids": [
                 "e020"
               ]
@@ -15710,9 +15787,9 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ]
             },
             {
@@ -15827,6 +15904,17 @@
               ]
             },
             {
+              "question_id": "t_land_comfort",
+              "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+              "task_ids": [
+                "travel_t4"
+              ],
+              "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+              "evidence_record_ids": [
+                "h002"
+              ]
+            },
+            {
               "question_id": "t_land_time",
               "question": "许闻可参加岸上活动的时间窗口是什么？",
               "task_ids": [
@@ -15887,7 +15975,7 @@
               "task_ids": [
                 "travel_t5"
               ],
-              "ground_truth_answer": "机票1480美元已结算；接送两人70美元已支付；酒店180美元冻结；TCT 24美元拒付",
+              "ground_truth_answer": "机票1480美元已结算；接送服务已使用但70美元支付状态未确认；酒店180美元冻结；TCT 24美元拒付",
               "evidence_record_ids": [
                 "e020"
               ]
@@ -16128,9 +16216,9 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ]
             },
             {
@@ -16242,6 +16330,17 @@
               "ground_truth_answer": "2026-08-06明确提出",
               "evidence_record_ids": [
                 "e014"
+              ]
+            },
+            {
+              "question_id": "t_land_comfort",
+              "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+              "task_ids": [
+                "travel_t4"
+              ],
+              "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+              "evidence_record_ids": [
+                "h002"
               ]
             },
             {
@@ -16546,9 +16645,9 @@
               "task_ids": [
                 "travel_t2"
               ],
-              "ground_truth_answer": "2026-08-16至2026-08-23，七晚",
+              "ground_truth_answer": "2026-08-16入住至2026-08-23退房，七晚",
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ]
             },
             {
@@ -16660,6 +16759,17 @@
               "ground_truth_answer": "2026-08-06明确提出",
               "evidence_record_ids": [
                 "e014"
+              ]
+            },
+            {
+              "question_id": "t_land_comfort",
+              "question": "许闻在旅行交通方式方面有什么身体限制和偏好？",
+              "task_ids": [
+                "travel_t4"
+              ],
+              "ground_truth_answer": "许闻容易晕船，应尽量避免长时间快艇",
+              "evidence_record_ids": [
+                "h002"
               ]
             },
             {
@@ -16974,7 +17084,7 @@
             "s_ref_video",
             "s_auth"
           ],
-          "matching_guidelines": "须针对ord_strr_0002的商家异议申请平台介入；仅整理证据或直接申请退款不是同一行动。"
+          "matching_guidelines": "识别该婴儿床配件退货纠纷现可申请平台介入即可；订单号可用商品与纠纷描述替代，不要求复述全部证据。仅准备证据不匹配。"
         },
         {
           "task_id": "shopping_t2",
@@ -17001,7 +17111,7 @@
             "s_sale_choice",
             "s_auth"
           ],
-          "matching_guidelines": "须是具体买家的平台担保方案，非微信定金、现金面交或已完成交易。"
+          "matching_guidelines": "识别旧推车与已确认买家的平台担保交易方案现可准备即可；不要求给出全部交易细节。平台外定金或已完成交易不匹配。"
         },
         {
           "task_id": "shopping_t3",
@@ -17023,7 +17133,7 @@
             "s_card_docs",
             "s_auth"
           ],
-          "matching_guidelines": "准备两笔258元扣费的争议证据；不等同于已经提交争议或代用户操作银行卡。"
+          "matching_guidelines": "识别BABYJOGGER US重复扣费争议材料现可准备即可；不要求列出每笔金额和凭证。擅自提交争议或操作银行卡不匹配。"
         },
         {
           "task_id": "shopping_t4",
@@ -17048,7 +17158,7 @@
             "s_auth",
             "s_deadline"
           ],
-          "matching_guidelines": "需有批次、官方方案、成本周期和出行时间依据；实际维修、退货、下单均非本任务。"
+          "matching_guidelines": "识别新GlideBaby S5的安全处理方案现可确定即可；可采用任一符合用户限制的合理方案，不要求在预测中完成比较。擅自维修或下单不匹配。"
         },
         {
           "task_id": "shopping_t5",
@@ -17070,7 +17180,7 @@
             "s_cart_coupon",
             "s_auth"
           ],
-          "matching_guidelines": "须选A标准版bsk_strr_a2、B单件bsk_strr_b2、C单件bsk_strr_c2，三券同用到手146.30元；只加购不付款。"
+          "matching_guidelines": "识别配件A、B和耗材C的最优惠原厂组合现可计算并加入购物车即可；不要求在预测中给出SKU、券或146.30元。仅付款或提交订单不匹配。"
         }
       ],
       "evaluations": [
@@ -24142,7 +24252,7 @@
             "b_lunch_quote",
             "b_auth"
           ],
-          "matching_guidelines": "仅匹配无需押金、7月19日12时前可无损释放的44人临时hold；正式锁定、个人账户付款、签保密承诺或发送证件不等价。"
+          "matching_guidelines": "识别嘉兴智造44人免押金、可无损释放的临时名额预留机会即可；不要求复述精确截止时刻。正式押金锁定或个人账户付款不匹配。"
         },
         {
           "task_id": "team_t2",
@@ -24173,7 +24283,7 @@
             "b_lunch_quote",
             "b_auth"
           ],
-          "matching_guidelines": "确定具备有效司机资质的沪嘉包车候选；不代表付款或对外确认。"
+          "matching_guidelines": "识别两车沪嘉往返包车候选方案现可确定即可；不要求在预测中列出司机证件。付款或对外确认不匹配。"
         },
         {
           "task_id": "team_t3",
@@ -24203,7 +24313,7 @@
             "b_factory_quote",
             "b_bus_quote"
           ],
-          "matching_guidelines": "须明确禾城协作44人、特殊饮食、公司发票和活动日时间；普通无过敏安排的餐厅不等价。"
+          "matching_guidelines": "识别禾城协作44人午餐候选方案现可确定即可；不要求在预测中完整列举菜单和发票。仅推荐无法处理团队饮食限制的餐厅不匹配。"
         },
         {
           "task_id": "team_t4",
@@ -24231,7 +24341,7 @@
             "b_lunch_time",
             "b_auth"
           ],
-          "matching_guidelines": "须是未发送草稿，包含集合、路线、PPE、禁拍、特殊需求及退出机制；群发通知不等价。"
+          "matching_guidelines": "识别嘉兴智造参访通知草稿现可准备即可；不要求在预测中写出通知全文。未经授权群发不匹配。"
         },
         {
           "task_id": "team_t5",
@@ -24257,7 +24367,7 @@
             "b_bus_invoice",
             "b_lunch_invoice"
           ],
-          "matching_guidelines": "须列三类已结算款与发票，并把工厂服务费、PPE和押金未见交易或发票列为待核，不能称全部费用已付或押金已退。"
+          "matching_guidelines": "识别截至7月24日的费用、已到发票及待确认项现可整理即可；不要求在预测中逐笔列账。声称全部费用已付或押金已退不匹配。"
         }
       ],
       "evaluations": [
@@ -24518,7 +24628,7 @@
               "task_ids": [
                 "team_t4"
               ],
-              "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+              "ground_truth_answer": "7月1日已允许准备内部通知草稿",
               "evidence_record_ids": [
                 "h002"
               ]
@@ -24951,7 +25061,7 @@
               "task_ids": [
                 "team_t4"
               ],
-              "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+              "ground_truth_answer": "7月1日已允许准备内部通知草稿",
               "evidence_record_ids": [
                 "h002"
               ]
@@ -25386,7 +25496,7 @@
               "task_ids": [
                 "team_t4"
               ],
-              "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+              "ground_truth_answer": "7月1日已允许准备内部通知草稿",
               "evidence_record_ids": [
                 "h002"
               ]
@@ -25825,7 +25935,7 @@
               "task_ids": [
                 "team_t4"
               ],
-              "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+              "ground_truth_answer": "7月1日已允许准备内部通知草稿",
               "evidence_record_ids": [
                 "h002"
               ]
@@ -26270,7 +26380,7 @@
               "task_ids": [
                 "team_t4"
               ],
-              "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+              "ground_truth_answer": "7月1日已允许准备内部通知草稿",
               "evidence_record_ids": [
                 "h002"
               ]
@@ -26715,7 +26825,7 @@
               "task_ids": [
                 "team_t4"
               ],
-              "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+              "ground_truth_answer": "7月1日已允许准备内部通知草稿",
               "evidence_record_ids": [
                 "h002"
               ]
@@ -27122,7 +27232,7 @@
                 "team_t2",
                 "team_t3"
               ],
-              "ground_truth_answer": "44人套餐11880元；实到结算但至少合同九成",
+              "ground_truth_answer": "午餐报价和容量尚未提供；实到人数结算，至少按合同人数九成计费；减少须当日10:00前告知",
               "evidence_record_ids": [
                 "e006"
               ]
@@ -27164,7 +27274,7 @@
               "task_ids": [
                 "team_t4"
               ],
-              "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+              "ground_truth_answer": "7月1日已允许准备内部通知草稿",
               "evidence_record_ids": [
                 "h002"
               ]
@@ -27573,7 +27683,7 @@
                 "team_t2",
                 "team_t3"
               ],
-              "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+              "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "evidence_record_ids": [
                 "e007"
               ]
@@ -27619,7 +27729,7 @@
               "task_ids": [
                 "team_t4"
               ],
-              "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+              "ground_truth_answer": "7月1日已允许准备内部通知草稿",
               "evidence_record_ids": [
                 "h002"
               ]
@@ -28030,7 +28140,7 @@
                 "team_t2",
                 "team_t3"
               ],
-              "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+              "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "evidence_record_ids": [
                 "e007"
               ]
@@ -28076,7 +28186,7 @@
               "task_ids": [
                 "team_t4"
               ],
-              "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+              "ground_truth_answer": "7月1日已允许准备内部通知草稿",
               "evidence_record_ids": [
                 "h002"
               ]
@@ -28491,7 +28601,7 @@
                 "team_t2",
                 "team_t3"
               ],
-              "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+              "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "evidence_record_ids": [
                 "e007"
               ]
@@ -28537,7 +28647,7 @@
               "task_ids": [
                 "team_t4"
               ],
-              "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+              "ground_truth_answer": "7月1日已允许准备内部通知草稿",
               "evidence_record_ids": [
                 "h002"
               ]
@@ -28950,7 +29060,7 @@
                 "team_t2",
                 "team_t3"
               ],
-              "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+              "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "evidence_record_ids": [
                 "e007"
               ]
@@ -28996,7 +29106,7 @@
               "task_ids": [
                 "team_t4"
               ],
-              "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+              "ground_truth_answer": "7月1日已允许准备内部通知草稿",
               "evidence_record_ids": [
                 "h002"
               ]
@@ -29417,7 +29527,7 @@
                 "team_t2",
                 "team_t3"
               ],
-              "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+              "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "evidence_record_ids": [
                 "e007"
               ]
@@ -29463,7 +29573,7 @@
               "task_ids": [
                 "team_t4"
               ],
-              "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+              "ground_truth_answer": "7月1日已允许准备内部通知草稿",
               "evidence_record_ids": [
                 "h002"
               ]
@@ -29893,7 +30003,7 @@
                 "team_t2",
                 "team_t3"
               ],
-              "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+              "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "evidence_record_ids": [
                 "e007"
               ]
@@ -29939,7 +30049,7 @@
               "task_ids": [
                 "team_t4"
               ],
-              "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+              "ground_truth_answer": "7月1日已允许准备内部通知草稿",
               "evidence_record_ids": [
                 "h002"
               ]
@@ -30367,7 +30477,7 @@
                 "team_t2",
                 "team_t3"
               ],
-              "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+              "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "evidence_record_ids": [
                 "e007"
               ]
@@ -30413,7 +30523,7 @@
               "task_ids": [
                 "team_t4"
               ],
-              "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+              "ground_truth_answer": "7月1日已允许准备内部通知草稿",
               "evidence_record_ids": [
                 "h002"
               ]
@@ -30841,7 +30951,7 @@
                 "team_t2",
                 "team_t3"
               ],
-              "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+              "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "evidence_record_ids": [
                 "e007"
               ]
@@ -30887,7 +30997,7 @@
               "task_ids": [
                 "team_t4"
               ],
-              "ground_truth_answer": "7月1日已允许内部草稿；7月18再次明确",
+              "ground_truth_answer": "7月1日已允许准备内部通知草稿",
               "evidence_record_ids": [
                 "h002"
               ]
@@ -31317,7 +31427,7 @@
                 "team_t2",
                 "team_t3"
               ],
-              "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+              "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "evidence_record_ids": [
                 "e007"
               ]
@@ -31793,7 +31903,7 @@
                 "team_t2",
                 "team_t3"
               ],
-              "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+              "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "evidence_record_ids": [
                 "e007"
               ]
@@ -32276,7 +32386,7 @@
                 "team_t2",
                 "team_t3"
               ],
-              "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+              "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "evidence_record_ids": [
                 "e007"
               ]
@@ -32756,7 +32866,7 @@
                 "team_t2",
                 "team_t3"
               ],
-              "ground_truth_answer": "44人11880元，容量70人；实到结算至少合同九成",
+              "ground_truth_answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "evidence_record_ids": [
                 "e007"
               ]

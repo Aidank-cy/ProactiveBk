@@ -41,23 +41,23 @@ Each row refers to a reviewer-only `*_semantic_audit.json` file. Those files giv
 | s01 | e001 | 2026-07-25T11:30:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | t_deadline, t_transfer_route | travel_t3 | ∅ | ∅ | ∅ | ∅ | 24 |
 | s02 | e002 | 2026-07-26T20:05:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | t_dates | ∅ | ∅ | ∅ | ∅ | ∅ | 24 |
 | s03 | e003 | 2026-07-27T09:20:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | t_visa | travel_t1 | ∅ | ∅ | ∅ | ∅ | 23 |
-| s04 | e004 | 2026-07-27T10:00:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | t_hotel_dates | travel_t2 | ∅ | ∅ | ∅ | ∅ | 22 |
-| s05 | e005 | 2026-07-28T13:05:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | t_budget | ∅ | ∅ | ∅ | ∅ | ∅ | 22 |
-| s06 | e006 | 2026-07-30T10:15:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | t_flight_stock, t_flight_time, t_flight_hold | travel_t1, travel_t3 | ∅ | ∅ | ∅ | ∅ | 18 |
-| s07 | e007 | 2026-07-31T18:55:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | t_flight_stock, t_flight_ticket, t_flight_price, t_flight_hold | travel_t1, travel_t2 | ∅ | ∅ | ∅ | ∅ | 17 |
-| s08 | e008 | 2026-07-31T19:10:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | t_hotel_stock, t_hotel_place, t_hotel_price, t_hotel_cancel | travel_t1, travel_t2 | travel_t1, travel_t2 | travel_t1, travel_t2 | ∅ | e001, e002, e003, e004, e005, e006, e007, e008, h001, h002 | 12 |
+| s04 | e004 | 2026-07-27T10:00:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | t_hotel_dates | travel_t2 | ∅ | ∅ | ∅ | ∅ | 23 |
+| s05 | e005 | 2026-07-28T13:05:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | t_budget | ∅ | ∅ | ∅ | ∅ | ∅ | 23 |
+| s06 | e006 | 2026-07-30T10:15:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | t_flight_stock, t_flight_time, t_flight_hold | travel_t1, travel_t3 | ∅ | ∅ | ∅ | ∅ | 20 |
+| s07 | e007 | 2026-07-31T18:55:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | t_flight_stock, t_flight_ticket, t_flight_price, t_flight_hold | travel_t1, travel_t2 | ∅ | ∅ | ∅ | ∅ | 18 |
+| s08 | e008 | 2026-07-31T19:10:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | t_hotel_dates, t_hotel_stock, t_hotel_place, t_hotel_price, t_hotel_cancel | travel_t1, travel_t2 | travel_t1, travel_t2 | travel_t1, travel_t2 | ∅ | e001, e002, e003, e005, e006, e007, e008, h001, h002 | 12 |
 | s09 | e009 | 2026-08-01T11:00:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | t_flight_stock, t_flight_price, t_flight_hold, t_flight_open | travel_t1, travel_t2 | ∅ | ∅ | travel_t1, travel_t2 | ∅ | 16 |
 | s10 | e010 | 2026-08-02T18:00:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | ∅ | ∅ | ∅ | ∅ | ∅ | ∅ | 16 |
 | s11 | e011 | 2026-08-02T20:00:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | t_hotel_open, t_hotel_stock | travel_t2 | ∅ | ∅ | ∅ | ∅ | 17 |
 | s12 | e012 | 2026-08-03T10:00:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | t_hotel_stock, t_hotel_open | travel_t2 | ∅ | ∅ | ∅ | ∅ | 16 |
 | s13 | e013 | 2026-08-04T21:00:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t5 | t_claim_policy, t_auth | travel_t5 | ∅ | ∅ | ∅ | ∅ | 15 |
 | s14 | e014 | 2026-08-06T13:00:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t4, travel_t5 | t_land_goal, t_land_time, t_land_weather, t_land_open | travel_t4 | ∅ | ∅ | ∅ | ∅ | 10 |
-| s15 | e015 | 2026-08-07T11:05:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t4, travel_t5 | t_land_option, t_land_weather | travel_t4 | travel_t4 | travel_t4 | ∅ | e014, e015, h001, h002 | 9 |
+| s15 | e015 | 2026-08-07T11:05:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t4, travel_t5 | t_land_option, t_land_weather | travel_t4 | travel_t4 | travel_t4 | ∅ | e014, e015, h002 | 9 |
 | s16 | e016 | 2026-08-08T16:45:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t4, travel_t5 | t_transfer_vendor, t_transfer_cost | travel_t3 | travel_t3, travel_t4 | travel_t3 | ∅ | e001, e006, e013, e014, e015, e016, h001, h002 | 7 |
 | s17 | e017 | 2026-08-10T22:30:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t4, travel_t5 | t_flight_open, t_flight_price, t_flight_hold, t_hotel_open, t_claim_payment | travel_t1 | travel_t3, travel_t4 | ∅ | ∅ | e001, e006, e013, e014, e015, e016, h001, h002 | 7 |
 | s18 | e018 | 2026-08-11T13:00:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t4, travel_t5 | t_flight_open, t_flight_hold, t_claim_payment | ∅ | travel_t3, travel_t4 | ∅ | ∅ | e001, e006, e013, e014, e015, e016, h001, h002 | 7 |
-| s19 | e019 | 2026-08-14T17:35:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t4, travel_t5 | t_flight_open, t_flight_time | travel_t1, travel_t3 | travel_t4 | ∅ | travel_t3 | e014, e015, h001, h002 | 9 |
-| s20 | e020 | 2026-08-16T15:30:00-06:00 | travel_t1, travel_t2, travel_t3, travel_t4, travel_t5 | t_flight_time, t_transfer_open, t_transfer_vendor, t_hotel_cancel, t_claim_payment | travel_t2, travel_t3 | travel_t4 | ∅ | ∅ | e014, e015, h001, h002 | 9 |
+| s19 | e019 | 2026-08-14T17:35:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t4, travel_t5 | t_flight_open, t_flight_time | travel_t1, travel_t3 | travel_t4 | ∅ | travel_t3 | e014, e015, h002 | 9 |
+| s20 | e020 | 2026-08-16T15:30:00-06:00 | travel_t1, travel_t2, travel_t3, travel_t4, travel_t5 | t_flight_time, t_transfer_open, t_transfer_vendor, t_hotel_cancel, t_claim_payment | travel_t2, travel_t3 | travel_t4 | ∅ | ∅ | e014, e015, h002 | 9 |
 | s21 | e021 | 2026-08-20T09:00:00-06:00 | travel_t1, travel_t2, travel_t3, travel_t4, travel_t5 | t_land_open, t_land_weather | travel_t4 | ∅ | ∅ | travel_t4 | ∅ | 10 |
 | s22 | e022 | 2026-08-24T12:00:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t4, travel_t5 | t_claim_payment, t_claim_receipts, t_hotel_price, t_hotel_open | travel_t5 | ∅ | ∅ | ∅ | ∅ | 9 |
 | s23 | e023 | 2026-08-25T13:30:00+08:00 | travel_t1, travel_t2, travel_t3, travel_t4, travel_t5 | t_claim_return, t_claim_receipts | travel_t5 | travel_t5 | travel_t5 | ∅ | e013, e022, e023, h001, h002 | 7 |

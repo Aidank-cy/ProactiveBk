@@ -124,7 +124,7 @@
           ]
         },
         "b_notice_goal": {
-          "answer": "7月1日已允许内部草稿；7月18再次明确",
+          "answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -592,7 +592,7 @@
               "evidence_record_ids": [
                 "h002"
               ],
-              "explanation": "Current visible facts: b_notice_goal=7月1日已允许内部草稿；7月18再次明确",
+              "explanation": "Current visible facts: b_notice_goal=7月1日已允许准备内部通知草稿",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -917,7 +917,7 @@
           ]
         },
         "b_notice_goal": {
-          "answer": "7月1日已允许内部草稿；7月18再次明确",
+          "answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -1385,7 +1385,7 @@
               "evidence_record_ids": [
                 "h002"
               ],
-              "explanation": "Current visible facts: b_notice_goal=7月1日已允许内部草稿；7月18再次明确",
+              "explanation": "Current visible facts: b_notice_goal=7月1日已允许准备内部通知草稿",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -1712,7 +1712,7 @@
           ]
         },
         "b_notice_goal": {
-          "answer": "7月1日已允许内部草稿；7月18再次明确",
+          "answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -2184,7 +2184,7 @@
               "evidence_record_ids": [
                 "h002"
               ],
-              "explanation": "Current visible facts: b_notice_goal=7月1日已允许内部草稿；7月18再次明确",
+              "explanation": "Current visible facts: b_notice_goal=7月1日已允许准备内部通知草稿",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -2523,7 +2523,7 @@
           ]
         },
         "b_notice_goal": {
-          "answer": "7月1日已允许内部草稿；7月18再次明确",
+          "answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -2999,7 +2999,7 @@
               "evidence_record_ids": [
                 "h002"
               ],
-              "explanation": "Current visible facts: b_notice_goal=7月1日已允许内部草稿；7月18再次明确",
+              "explanation": "Current visible facts: b_notice_goal=7月1日已允许准备内部通知草稿",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -3352,7 +3352,7 @@
           ]
         },
         "b_notice_goal": {
-          "answer": "7月1日已允许内部草稿；7月18再次明确",
+          "answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -3834,7 +3834,7 @@
               "evidence_record_ids": [
                 "h002"
               ],
-              "explanation": "Current visible facts: b_notice_goal=7月1日已允许内部草稿；7月18再次明确",
+              "explanation": "Current visible facts: b_notice_goal=7月1日已允许准备内部通知草稿",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -4183,7 +4183,7 @@
           ]
         },
         "b_notice_goal": {
-          "answer": "7月1日已允许内部草稿；7月18再次明确",
+          "answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -4665,7 +4665,7 @@
               "evidence_record_ids": [
                 "h002"
               ],
-              "explanation": "Current visible facts: b_notice_goal=7月1日已允许内部草稿；7月18再次明确",
+              "explanation": "Current visible facts: b_notice_goal=7月1日已允许准备内部通知草稿",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -4989,7 +4989,7 @@
           "evidence_record_ids": []
         },
         "b_lunch_quote": {
-          "answer": "44人套餐11880元；实到结算但至少合同九成",
+          "answer": "午餐报价和容量尚未提供；实到人数结算，至少按合同人数九成计费；减少须当日10:00前告知",
           "evidence_record_ids": [
             "e006"
           ]
@@ -5009,7 +5009,7 @@
           ]
         },
         "b_notice_goal": {
-          "answer": "7月1日已允许内部草稿；7月18再次明确",
+          "answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -5186,7 +5186,7 @@
                 "e006",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000元、押金5000元；PPE与保险待报价; b_bus_quote=unknown; b_lunch_quote=44人套餐11880元；实到结算但至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000元、押金5000元；PPE与保险待报价; b_bus_quote=unknown; b_lunch_quote=午餐报价和容量尚未提供；实到人数结算，至少按合同人数九成计费；减少须当日10:00前告知",
               "missing_fact": "b_bus_quote",
               "temporal_proof": []
             },
@@ -5320,7 +5320,7 @@
                 "e006",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000元、押金5000元；PPE与保险待报价; b_bus_quote=unknown; b_lunch_quote=44人套餐11880元；实到结算但至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000元、押金5000元；PPE与保险待报价; b_bus_quote=unknown; b_lunch_quote=午餐报价和容量尚未提供；实到人数结算，至少按合同人数九成计费；减少须当日10:00前告知",
               "missing_fact": "b_bus_quote",
               "temporal_proof": []
             },
@@ -5425,7 +5425,7 @@
               "evidence_record_ids": [
                 "e006"
               ],
-              "explanation": "Current visible facts: b_lunch_quote=44人套餐11880元；实到结算但至少合同九成",
+              "explanation": "Current visible facts: b_lunch_quote=午餐报价和容量尚未提供；实到人数结算，至少按合同人数九成计费；减少须当日10:00前告知",
               "missing_fact": "",
               "temporal_proof": []
             },
@@ -5462,7 +5462,7 @@
                 "e006",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000元、押金5000元；PPE与保险待报价; b_bus_quote=unknown; b_lunch_quote=44人套餐11880元；实到结算但至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000元、押金5000元；PPE与保险待报价; b_bus_quote=unknown; b_lunch_quote=午餐报价和容量尚未提供；实到人数结算，至少按合同人数九成计费；减少须当日10:00前告知",
               "missing_fact": "b_bus_quote",
               "temporal_proof": []
             }
@@ -5481,7 +5481,7 @@
             "count: Current visible facts: b_count=38人报名，6人待确认",
             "menu: b_lunch_menu",
             "needs: b_lunch_menu",
-            "capacity_price: Current visible facts: b_lunch_quote=44人套餐11880元；实到结算但至少合同九成",
+            "capacity_price: Current visible facts: b_lunch_quote=午餐报价和容量尚未提供；实到人数结算，至少按合同人数九成计费；减少须当日10:00前告知",
             "invoice: b_lunch_invoice",
             "schedule: b_lunch_time",
             "budget: b_bus_quote"
@@ -5498,7 +5498,7 @@
               "evidence_record_ids": [
                 "h002"
               ],
-              "explanation": "Current visible facts: b_notice_goal=7月1日已允许内部草稿；7月18再次明确",
+              "explanation": "Current visible facts: b_notice_goal=7月1日已允许准备内部通知草稿",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -5703,7 +5703,7 @@
       },
       "changed_facts": {
         "b_factory_cancel": "正式押金预订进入活动前三工作日后取消扣半押金；临时免押金hold政策待确认",
-        "b_lunch_quote": "44人套餐11880元；实到结算但至少合同九成"
+        "b_lunch_quote": "午餐报价和容量尚未提供；实到人数结算，至少按合同人数九成计费；减少须当日10:00前告知"
       },
       "changed_task_conditions": {
         "team_t1": {
@@ -5831,7 +5831,7 @@
           ]
         },
         "b_lunch_quote": {
-          "answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -5855,7 +5855,7 @@
           ]
         },
         "b_notice_goal": {
-          "answer": "7月1日已允许内部草稿；7月18再次明确",
+          "answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -6031,7 +6031,7 @@
                 "e007",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000元、押金5000元、保险1760元；PPE待报价; b_bus_quote=unknown; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000元、押金5000元、保险1760元；PPE待报价; b_bus_quote=unknown; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": "b_bus_quote",
               "temporal_proof": []
             },
@@ -6164,7 +6164,7 @@
                 "e007",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000元、押金5000元、保险1760元；PPE待报价; b_bus_quote=unknown; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000元、押金5000元、保险1760元；PPE待报价; b_bus_quote=unknown; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": "b_bus_quote",
               "temporal_proof": []
             },
@@ -6272,7 +6272,7 @@
               "evidence_record_ids": [
                 "e007"
               ],
-              "explanation": "Current visible facts: b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -6312,7 +6312,7 @@
                 "e007",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000元、押金5000元、保险1760元；PPE待报价; b_bus_quote=unknown; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000元、押金5000元、保险1760元；PPE待报价; b_bus_quote=unknown; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": "b_bus_quote",
               "temporal_proof": []
             }
@@ -6343,7 +6343,7 @@
               "evidence_record_ids": [
                 "h002"
               ],
-              "explanation": "Current visible facts: b_notice_goal=7月1日已允许内部草稿；7月18再次明确",
+              "explanation": "Current visible facts: b_notice_goal=7月1日已允许准备内部通知草稿",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -6553,7 +6553,7 @@
         "b_lunch_menu": "3素食、2清真、过敏单独留餐",
         "b_lunch_invoice": "可开公司抬头增值税发票",
         "b_lunch_time": "工厂上午段12:00结束、12:15-13:15午休；12:30在附近用餐",
-        "b_lunch_quote": "44人11880元，容量70人；实到结算至少合同九成",
+        "b_lunch_quote": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
         "b_factory_quote": "工厂18000元、押金5000元、保险1760元；PPE待报价"
       },
       "changed_task_conditions": {
@@ -6692,7 +6692,7 @@
           ]
         },
         "b_lunch_quote": {
-          "answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -6716,7 +6716,7 @@
           ]
         },
         "b_notice_goal": {
-          "answer": "7月1日已允许内部草稿；7月18再次明确",
+          "answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -6893,7 +6893,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -7027,7 +7027,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -7131,7 +7131,7 @@
               "evidence_record_ids": [
                 "e007"
               ],
-              "explanation": "Current visible facts: b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -7172,7 +7172,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -7205,7 +7205,7 @@
               "evidence_record_ids": [
                 "h002"
               ],
-              "explanation": "Current visible facts: b_notice_goal=7月1日已允许内部草稿；7月18再次明确",
+              "explanation": "Current visible facts: b_notice_goal=7月1日已允许准备内部通知草稿",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -7558,7 +7558,7 @@
           ]
         },
         "b_lunch_quote": {
-          "answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -7582,7 +7582,7 @@
           ]
         },
         "b_notice_goal": {
-          "answer": "7月1日已允许内部草稿；7月18再次明确",
+          "answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -7759,7 +7759,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -7892,7 +7892,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -7996,7 +7996,7 @@
               "evidence_record_ids": [
                 "e007"
               ],
-              "explanation": "Current visible facts: b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -8037,7 +8037,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -8070,7 +8070,7 @@
               "evidence_record_ids": [
                 "h002"
               ],
-              "explanation": "Current visible facts: b_notice_goal=7月1日已允许内部草稿；7月18再次明确",
+              "explanation": "Current visible facts: b_notice_goal=7月1日已允许准备内部通知草稿",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -8409,7 +8409,7 @@
           ]
         },
         "b_lunch_quote": {
-          "answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -8433,7 +8433,7 @@
           ]
         },
         "b_notice_goal": {
-          "answer": "7月1日已允许内部草稿；7月18再次明确",
+          "answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -8612,7 +8612,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -8745,7 +8745,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -8849,7 +8849,7 @@
               "evidence_record_ids": [
                 "e007"
               ],
-              "explanation": "Current visible facts: b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -8890,7 +8890,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -8923,7 +8923,7 @@
               "evidence_record_ids": [
                 "h002"
               ],
-              "explanation": "Current visible facts: b_notice_goal=7月1日已允许内部草稿；7月18再次明确",
+              "explanation": "Current visible facts: b_notice_goal=7月1日已允许准备内部通知草稿",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -9273,7 +9273,7 @@
           ]
         },
         "b_lunch_quote": {
-          "answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -9297,7 +9297,7 @@
           ]
         },
         "b_notice_goal": {
-          "answer": "7月1日已允许内部草稿；7月18再次明确",
+          "answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -9480,7 +9480,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -9617,7 +9617,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -9724,7 +9724,7 @@
               "evidence_record_ids": [
                 "e007"
               ],
-              "explanation": "Current visible facts: b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -9765,7 +9765,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -9798,7 +9798,7 @@
               "evidence_record_ids": [
                 "h002"
               ],
-              "explanation": "Current visible facts: b_notice_goal=7月1日已允许内部草稿；7月18再次明确",
+              "explanation": "Current visible facts: b_notice_goal=7月1日已允许准备内部通知草稿",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -10160,7 +10160,7 @@
           ]
         },
         "b_lunch_quote": {
-          "answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -10184,7 +10184,7 @@
           ]
         },
         "b_notice_goal": {
-          "answer": "7月1日已允许内部草稿；7月18再次明确",
+          "answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -10369,7 +10369,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -10505,7 +10505,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -10612,7 +10612,7 @@
               "evidence_record_ids": [
                 "e007"
               ],
-              "explanation": "Current visible facts: b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -10653,7 +10653,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -10686,7 +10686,7 @@
               "evidence_record_ids": [
                 "h002"
               ],
-              "explanation": "Current visible facts: b_notice_goal=7月1日已允许内部草稿；7月18再次明确",
+              "explanation": "Current visible facts: b_notice_goal=7月1日已允许准备内部通知草稿",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -11042,7 +11042,7 @@
           ]
         },
         "b_lunch_quote": {
-          "answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -11066,7 +11066,7 @@
           ]
         },
         "b_notice_goal": {
-          "answer": "7月1日已允许内部草稿；7月18再次明确",
+          "answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -11251,7 +11251,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -11387,7 +11387,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -11494,7 +11494,7 @@
               "evidence_record_ids": [
                 "e007"
               ],
-              "explanation": "Current visible facts: b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -11535,7 +11535,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -11568,7 +11568,7 @@
               "evidence_record_ids": [
                 "h002"
               ],
-              "explanation": "Current visible facts: b_notice_goal=7月1日已允许内部草稿；7月18再次明确",
+              "explanation": "Current visible facts: b_notice_goal=7月1日已允许准备内部通知草稿",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -11914,7 +11914,7 @@
           ]
         },
         "b_lunch_quote": {
-          "answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -11938,7 +11938,7 @@
           ]
         },
         "b_notice_goal": {
-          "answer": "7月1日已允许内部草稿；7月18再次明确",
+          "answer": "7月1日已允许准备内部通知草稿",
           "evidence_record_ids": [
             "h002"
           ]
@@ -12123,7 +12123,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -12259,7 +12259,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -12366,7 +12366,7 @@
               "evidence_record_ids": [
                 "e007"
               ],
-              "explanation": "Current visible facts: b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -12407,7 +12407,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -12440,7 +12440,7 @@
               "evidence_record_ids": [
                 "h002"
               ],
-              "explanation": "Current visible facts: b_notice_goal=7月1日已允许内部草稿；7月18再次明确",
+              "explanation": "Current visible facts: b_notice_goal=7月1日已允许准备内部通知草稿",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -12788,7 +12788,7 @@
           ]
         },
         "b_lunch_quote": {
-          "answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -12999,7 +12999,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -13132,7 +13132,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -13239,7 +13239,7 @@
               "evidence_record_ids": [
                 "e007"
               ],
-              "explanation": "Current visible facts: b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -13280,7 +13280,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -13693,7 +13693,7 @@
           ]
         },
         "b_lunch_quote": {
-          "answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -13906,7 +13906,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -14043,7 +14043,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -14150,7 +14150,7 @@
               "evidence_record_ids": [
                 "e007"
               ],
-              "explanation": "Current visible facts: b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -14191,7 +14191,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -14591,7 +14591,7 @@
           ]
         },
         "b_lunch_quote": {
-          "answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -14810,7 +14810,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -14942,7 +14942,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -15044,7 +15044,7 @@
               "evidence_record_ids": [
                 "e007"
               ],
-              "explanation": "Current visible facts: b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -15085,7 +15085,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -15476,7 +15476,7 @@
           ]
         },
         "b_lunch_quote": {
-          "answer": "44人11880元，容量70人；实到结算至少合同九成",
+          "answer": "确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
           "evidence_record_ids": [
             "e007"
           ]
@@ -15695,7 +15695,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -15827,7 +15827,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -15929,7 +15929,7 @@
               "evidence_record_ids": [
                 "e007"
               ],
-              "explanation": "Current visible facts: b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -15970,7 +15970,7 @@
                 "e008",
                 "h002"
               ],
-              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=44人11880元，容量70人；实到结算至少合同九成",
+              "explanation": "Current visible facts: b_budget=56000元; b_factory_quote=工厂18000、PPE3520、保险1760元；押金5000元另列; b_bus_quote=两台49座，徐汇总部至南湖工业园往返12800元; b_lunch_quote=确认可容纳44人，报价11880元；实到结算至少合同九成，减少须当日10:00前告知",
               "missing_fact": null,
               "temporal_proof": []
             }

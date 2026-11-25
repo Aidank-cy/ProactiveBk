@@ -535,15 +535,12 @@
             "comfort": {
               "state": "Unknown",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
-              "evidence_record_ids": [
-                "h001",
-                "h002"
-              ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销",
-              "missing_fact": "t_land_weather",
+              "evidence_record_ids": [],
+              "explanation": "Goal not yet active; no question exposed.",
+              "missing_fact": "t_land_comfort or t_land_weather",
               "temporal_proof": []
             }
           },
@@ -563,7 +560,7 @@
             "time: t_land_time",
             "conditions: t_land_weather",
             "option: t_land_option",
-            "comfort: t_land_weather"
+            "comfort: t_land_comfort or t_land_weather"
           ]
         },
         "travel_t5": {
@@ -1201,15 +1198,12 @@
             "comfort": {
               "state": "Unknown",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
-              "evidence_record_ids": [
-                "h001",
-                "h002"
-              ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销",
-              "missing_fact": "t_land_weather",
+              "evidence_record_ids": [],
+              "explanation": "Goal not yet active; no question exposed.",
+              "missing_fact": "t_land_comfort or t_land_weather",
               "temporal_proof": []
             }
           },
@@ -1229,7 +1223,7 @@
             "time: t_land_time",
             "conditions: t_land_weather",
             "option: t_land_option",
-            "comfort: t_land_weather"
+            "comfort: t_land_comfort or t_land_weather"
           ]
         },
         "travel_t5": {
@@ -1878,15 +1872,12 @@
             "comfort": {
               "state": "Unknown",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
-              "evidence_record_ids": [
-                "h001",
-                "h002"
-              ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销",
-              "missing_fact": "t_land_weather",
+              "evidence_record_ids": [],
+              "explanation": "Goal not yet active; no question exposed.",
+              "missing_fact": "t_land_comfort or t_land_weather",
               "temporal_proof": []
             }
           },
@@ -1906,7 +1897,7 @@
             "time: t_land_time",
             "conditions: t_land_weather",
             "option: t_land_option",
-            "comfort: t_land_weather"
+            "comfort: t_land_comfort or t_land_weather"
           ]
         },
         "travel_t5": {
@@ -2552,15 +2543,12 @@
             "comfort": {
               "state": "Unknown",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
-              "evidence_record_ids": [
-                "h001",
-                "h002"
-              ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销",
-              "missing_fact": "t_land_weather",
+              "evidence_record_ids": [],
+              "explanation": "Goal not yet active; no question exposed.",
+              "missing_fact": "t_land_comfort or t_land_weather",
               "temporal_proof": []
             }
           },
@@ -2580,7 +2568,7 @@
             "time: t_land_time",
             "conditions: t_land_weather",
             "option: t_land_option",
-            "comfort: t_land_weather"
+            "comfort: t_land_comfort or t_land_weather"
           ]
         },
         "travel_t5": {
@@ -2759,7 +2747,7 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "建议8月16日晚前到岛；完整入住及退房日期尚未确定",
           "evidence_record_ids": [
             "e004"
           ]
@@ -2983,15 +2971,15 @@
               "temporal_proof": []
             },
             "dates": {
-              "state": "Satisfied",
+              "state": "Unknown",
               "memory_question_ids": [
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
                 "e004"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
-              "missing_fact": null,
+              "explanation": "Current visible facts: t_hotel_dates=建议8月16日晚前到岛；完整入住及退房日期尚未确定",
+              "missing_fact": "",
               "temporal_proof": []
             },
             "inventory": {
@@ -3060,6 +3048,7 @@
           },
           "supporting_record_ids": [],
           "remaining_ambiguities": [
+            "dates: Current visible facts: t_hotel_dates=建议8月16日晚前到岛；完整入住及退房日期尚未确定",
             "inventory: t_hotel_stock",
             "location: t_hotel_place",
             "budget: t_budget or t_flight_price or t_hotel_price",
@@ -3233,15 +3222,12 @@
             "comfort": {
               "state": "Unknown",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
-              "evidence_record_ids": [
-                "h001",
-                "h002"
-              ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销",
-              "missing_fact": "t_land_weather",
+              "evidence_record_ids": [],
+              "explanation": "Goal not yet active; no question exposed.",
+              "missing_fact": "t_land_comfort or t_land_weather",
               "temporal_proof": []
             }
           },
@@ -3261,7 +3247,7 @@
             "time: t_land_time",
             "conditions: t_land_weather",
             "option: t_land_option",
-            "comfort: t_land_weather"
+            "comfort: t_land_comfort or t_land_weather"
           ]
         },
         "travel_t5": {
@@ -3354,11 +3340,11 @@
         }
       },
       "changed_facts": {
-        "t_hotel_dates": "2026-08-16至2026-08-23，七晚"
+        "t_hotel_dates": "建议8月16日晚前到岛；完整入住及退房日期尚未确定"
       },
       "changed_task_conditions": {
         "travel_t2": {
-          "dates": "Satisfied"
+          "dates": "Unknown"
         }
       },
       "lifecycle_reason": ""
@@ -3442,7 +3428,7 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "建议8月16日晚前到岛；完整入住及退房日期尚未确定",
           "evidence_record_ids": [
             "e004"
           ]
@@ -3668,15 +3654,15 @@
               "temporal_proof": []
             },
             "dates": {
-              "state": "Satisfied",
+              "state": "Unknown",
               "memory_question_ids": [
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
                 "e004"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
-              "missing_fact": null,
+              "explanation": "Current visible facts: t_hotel_dates=建议8月16日晚前到岛；完整入住及退房日期尚未确定",
+              "missing_fact": "",
               "temporal_proof": []
             },
             "inventory": {
@@ -3747,6 +3733,7 @@
           },
           "supporting_record_ids": [],
           "remaining_ambiguities": [
+            "dates: Current visible facts: t_hotel_dates=建议8月16日晚前到岛；完整入住及退房日期尚未确定",
             "inventory: t_hotel_stock",
             "location: t_hotel_place",
             "budget: t_flight_price or t_hotel_price",
@@ -3920,15 +3907,12 @@
             "comfort": {
               "state": "Unknown",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
-              "evidence_record_ids": [
-                "h001",
-                "h002"
-              ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销",
-              "missing_fact": "t_land_weather",
+              "evidence_record_ids": [],
+              "explanation": "Goal not yet active; no question exposed.",
+              "missing_fact": "t_land_comfort or t_land_weather",
               "temporal_proof": []
             }
           },
@@ -3948,7 +3932,7 @@
             "time: t_land_time",
             "conditions: t_land_weather",
             "option: t_land_option",
-            "comfort: t_land_weather"
+            "comfort: t_land_comfort or t_land_weather"
           ]
         },
         "travel_t5": {
@@ -4099,7 +4083,7 @@
           ]
         },
         "t_flight_stock": {
-          "answer": "每段至少3座",
+          "answer": "相关航段有余票；部分航段剩3座，尚不能确认每段都至少有两席",
           "evidence_record_ids": [
             "e006"
           ]
@@ -4131,7 +4115,7 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "建议8月16日晚前到岛；完整入住及退房日期尚未确定",
           "evidence_record_ids": [
             "e004"
           ]
@@ -4227,15 +4211,15 @@
               "temporal_proof": []
             },
             "inventory": {
-              "state": "Satisfied",
+              "state": "Unknown",
               "memory_question_ids": [
                 "t_flight_stock"
               ],
               "evidence_record_ids": [
                 "e006"
               ],
-              "explanation": "Current visible facts: t_flight_stock=每段至少3座",
-              "missing_fact": null,
+              "explanation": "Current visible facts: t_flight_stock=相关航段有余票；部分航段剩3座，尚不能确认每段都至少有两席",
+              "missing_fact": "",
               "temporal_proof": []
             },
             "transit": {
@@ -4326,6 +4310,7 @@
           },
           "supporting_record_ids": [],
           "remaining_ambiguities": [
+            "inventory: Current visible facts: t_flight_stock=相关航段有余票；部分航段剩3座，尚不能确认每段都至少有两席",
             "ticket: t_flight_ticket",
             "budget: t_flight_price or t_hotel_price"
           ]
@@ -4359,15 +4344,15 @@
               "temporal_proof": []
             },
             "dates": {
-              "state": "Satisfied",
+              "state": "Unknown",
               "memory_question_ids": [
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
                 "e004"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
-              "missing_fact": null,
+              "explanation": "Current visible facts: t_hotel_dates=建议8月16日晚前到岛；完整入住及退房日期尚未确定",
+              "missing_fact": "",
               "temporal_proof": []
             },
             "inventory": {
@@ -4438,6 +4423,7 @@
           },
           "supporting_record_ids": [],
           "remaining_ambiguities": [
+            "dates: Current visible facts: t_hotel_dates=建议8月16日晚前到岛；完整入住及退房日期尚未确定",
             "inventory: t_hotel_stock",
             "location: t_hotel_place",
             "budget: t_flight_price or t_hotel_price",
@@ -4612,15 +4598,12 @@
             "comfort": {
               "state": "Unknown",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
-              "evidence_record_ids": [
-                "h001",
-                "h002"
-              ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销",
-              "missing_fact": "t_land_weather",
+              "evidence_record_ids": [],
+              "explanation": "Goal not yet active; no question exposed.",
+              "missing_fact": "t_land_comfort or t_land_weather",
               "temporal_proof": []
             }
           },
@@ -4640,7 +4623,7 @@
             "time: t_land_time",
             "conditions: t_land_weather",
             "option: t_land_option",
-            "comfort: t_land_weather"
+            "comfort: t_land_comfort or t_land_weather"
           ]
         },
         "travel_t5": {
@@ -4733,13 +4716,13 @@
         }
       },
       "changed_facts": {
-        "t_flight_stock": "每段至少3座",
+        "t_flight_stock": "相关航段有余票；部分航段剩3座，尚不能确认每段都至少有两席",
         "t_flight_time": "8月14日19:40离沪；8月16日11:10抵GPS；8月25日10:20返沪",
         "t_flight_hold": "免费hold 6小时，出票后依票规"
       },
       "changed_task_conditions": {
         "travel_t1": {
-          "inventory": "Satisfied",
+          "inventory": "Unknown",
           "timing": "Satisfied",
           "reversible": "Satisfied"
         },
@@ -4838,7 +4821,7 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "建议8月16日晚前到岛；完整入住及退房日期尚未确定",
           "evidence_record_ids": [
             "e004"
           ]
@@ -5068,15 +5051,15 @@
               "temporal_proof": []
             },
             "dates": {
-              "state": "Satisfied",
+              "state": "Unknown",
               "memory_question_ids": [
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
                 "e004"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
-              "missing_fact": null,
+              "explanation": "Current visible facts: t_hotel_dates=建议8月16日晚前到岛；完整入住及退房日期尚未确定",
+              "missing_fact": "",
               "temporal_proof": []
             },
             "inventory": {
@@ -5148,6 +5131,7 @@
           },
           "supporting_record_ids": [],
           "remaining_ambiguities": [
+            "dates: Current visible facts: t_hotel_dates=建议8月16日晚前到岛；完整入住及退房日期尚未确定",
             "inventory: t_hotel_stock",
             "location: t_hotel_place",
             "budget: t_hotel_price",
@@ -5322,15 +5306,12 @@
             "comfort": {
               "state": "Unknown",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
-              "evidence_record_ids": [
-                "h001",
-                "h002"
-              ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销",
-              "missing_fact": "t_land_weather",
+              "evidence_record_ids": [],
+              "explanation": "Goal not yet active; no question exposed.",
+              "missing_fact": "t_land_comfort or t_land_weather",
               "temporal_proof": []
             }
           },
@@ -5350,7 +5331,7 @@
             "time: t_land_time",
             "conditions: t_land_weather",
             "option: t_land_option",
-            "comfort: t_land_weather"
+            "comfort: t_land_comfort or t_land_weather"
           ]
         },
         "travel_t5": {
@@ -5556,9 +5537,9 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         "t_hotel_stock": {
@@ -5808,9 +5789,9 @@
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
+              "explanation": "Current visible facts: t_hotel_dates=2026-08-16入住至2026-08-23退房，七晚",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -5889,7 +5870,6 @@
             "gt_matches_condition_states": true
           },
           "supporting_record_ids": [
-            "e004",
             "e005",
             "e007",
             "e008",
@@ -6066,15 +6046,12 @@
             "comfort": {
               "state": "Unknown",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
-              "evidence_record_ids": [
-                "h001",
-                "h002"
-              ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销",
-              "missing_fact": "t_land_weather",
+              "evidence_record_ids": [],
+              "explanation": "Goal not yet active; no question exposed.",
+              "missing_fact": "t_land_comfort or t_land_weather",
               "temporal_proof": []
             }
           },
@@ -6094,7 +6071,7 @@
             "time: t_land_time",
             "conditions: t_land_weather",
             "option: t_land_option",
-            "comfort: t_land_weather"
+            "comfort: t_land_comfort or t_land_weather"
           ]
         },
         "travel_t5": {
@@ -6187,6 +6164,7 @@
         }
       },
       "changed_facts": {
+        "t_hotel_dates": "2026-08-16入住至2026-08-23退房，七晚",
         "t_hotel_stock": "七晚弹性房各3间",
         "t_hotel_place": "安静，距会场1.1公里，可步行",
         "t_hotel_price": "岛上七晚上界1687美元，本土过夜175美元；含900美元当地费用预留合计5942美元估算",
@@ -6197,6 +6175,7 @@
           "budget": "Satisfied"
         },
         "travel_t2": {
+          "dates": "Satisfied",
           "inventory": "Satisfied",
           "location": "Satisfied",
           "budget": "Satisfied",
@@ -6297,9 +6276,9 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         "t_hotel_stock": {
@@ -6549,9 +6528,9 @@
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
+              "explanation": "Current visible facts: t_hotel_dates=2026-08-16入住至2026-08-23退房，七晚",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -6802,15 +6781,12 @@
             "comfort": {
               "state": "Unknown",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
-              "evidence_record_ids": [
-                "h001",
-                "h002"
-              ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销",
-              "missing_fact": "t_land_weather",
+              "evidence_record_ids": [],
+              "explanation": "Goal not yet active; no question exposed.",
+              "missing_fact": "t_land_comfort or t_land_weather",
               "temporal_proof": []
             }
           },
@@ -6830,7 +6806,7 @@
             "time: t_land_time",
             "conditions: t_land_weather",
             "option: t_land_option",
-            "comfort: t_land_weather"
+            "comfort: t_land_comfort or t_land_weather"
           ]
         },
         "travel_t5": {
@@ -7029,9 +7005,9 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         "t_hotel_stock": {
@@ -7281,9 +7257,9 @@
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
+              "explanation": "Current visible facts: t_hotel_dates=2026-08-16入住至2026-08-23退房，七晚",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -7534,15 +7510,12 @@
             "comfort": {
               "state": "Unknown",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
-              "evidence_record_ids": [
-                "h001",
-                "h002"
-              ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销",
-              "missing_fact": "t_land_weather",
+              "evidence_record_ids": [],
+              "explanation": "Goal not yet active; no question exposed.",
+              "missing_fact": "t_land_comfort or t_land_weather",
               "temporal_proof": []
             }
           },
@@ -7562,7 +7535,7 @@
             "time: t_land_time",
             "conditions: t_land_weather",
             "option: t_land_option",
-            "comfort: t_land_weather"
+            "comfort: t_land_comfort or t_land_weather"
           ]
         },
         "travel_t5": {
@@ -7747,9 +7720,9 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         "t_hotel_stock": {
@@ -7999,9 +7972,9 @@
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
+              "explanation": "Current visible facts: t_hotel_dates=2026-08-16入住至2026-08-23退房，七晚",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -8253,15 +8226,12 @@
             "comfort": {
               "state": "Unknown",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
-              "evidence_record_ids": [
-                "h001",
-                "h002"
-              ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销",
-              "missing_fact": "t_land_weather",
+              "evidence_record_ids": [],
+              "explanation": "Goal not yet active; no question exposed.",
+              "missing_fact": "t_land_comfort or t_land_weather",
               "temporal_proof": []
             }
           },
@@ -8281,7 +8251,7 @@
             "time: t_land_time",
             "conditions: t_land_weather",
             "option: t_land_option",
-            "comfort: t_land_weather"
+            "comfort: t_land_comfort or t_land_weather"
           ]
         },
         "travel_t5": {
@@ -8474,9 +8444,9 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         "t_hotel_stock": {
@@ -8726,9 +8696,9 @@
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
+              "explanation": "Current visible facts: t_hotel_dates=2026-08-16入住至2026-08-23退房，七晚",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -8979,15 +8949,12 @@
             "comfort": {
               "state": "Unknown",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
-              "evidence_record_ids": [
-                "h001",
-                "h002"
-              ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销",
-              "missing_fact": "t_land_weather",
+              "evidence_record_ids": [],
+              "explanation": "Goal not yet active; no question exposed.",
+              "missing_fact": "t_land_comfort or t_land_weather",
               "temporal_proof": []
             }
           },
@@ -9007,7 +8974,7 @@
             "time: t_land_time",
             "conditions: t_land_weather",
             "option: t_land_option",
-            "comfort: t_land_weather"
+            "comfort: t_land_comfort or t_land_weather"
           ]
         },
         "travel_t5": {
@@ -9199,9 +9166,9 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         "t_hotel_stock": {
@@ -9453,9 +9420,9 @@
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
+              "explanation": "Current visible facts: t_hotel_dates=2026-08-16入住至2026-08-23退房，七晚",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -9706,15 +9673,12 @@
             "comfort": {
               "state": "Unknown",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
-              "evidence_record_ids": [
-                "h001",
-                "h002"
-              ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销",
-              "missing_fact": "t_land_weather",
+              "evidence_record_ids": [],
+              "explanation": "Goal not yet active; no question exposed.",
+              "missing_fact": "t_land_comfort or t_land_weather",
               "temporal_proof": []
             }
           },
@@ -9734,7 +9698,7 @@
             "time: t_land_time",
             "conditions: t_land_weather",
             "option: t_land_option",
-            "comfort: t_land_weather"
+            "comfort: t_land_comfort or t_land_weather"
           ]
         },
         "travel_t5": {
@@ -9928,9 +9892,9 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         "t_hotel_stock": {
@@ -9987,6 +9951,12 @@
           "answer": "2026-08-06明确提出",
           "evidence_record_ids": [
             "e014"
+          ]
+        },
+        "t_land_comfort": {
+          "answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
           ]
         },
         "t_land_time": {
@@ -10210,9 +10180,9 @@
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
+              "explanation": "Current visible facts: t_hotel_dates=2026-08-16入住至2026-08-23退房，七晚",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -10471,15 +10441,14 @@
             "comfort": {
               "state": "Satisfied",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
               "evidence_record_ids": [
                 "e014",
-                "h001",
                 "h002"
               ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销; t_land_weather=跨岛海况差；需岸上替代",
+              "explanation": "Current visible facts: t_land_comfort=许闻容易晕船，应尽量避免长时间快艇; t_land_weather=跨岛海况差；需岸上替代",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -10699,9 +10668,9 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         "t_hotel_stock": {
@@ -10758,6 +10727,12 @@
           "answer": "2026-08-06明确提出",
           "evidence_record_ids": [
             "e014"
+          ]
+        },
+        "t_land_comfort": {
+          "answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
           ]
         },
         "t_land_time": {
@@ -10983,9 +10958,9 @@
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
+              "explanation": "Current visible facts: t_hotel_dates=2026-08-16入住至2026-08-23退房，七晚",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -11246,15 +11221,14 @@
             "comfort": {
               "state": "Satisfied",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
               "evidence_record_ids": [
                 "e015",
-                "h001",
                 "h002"
               ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销; t_land_weather=海况差，岸上短途步行天气适宜",
+              "explanation": "Current visible facts: t_land_comfort=许闻容易晕船，应尽量避免长时间快艇; t_land_weather=海况差，岸上短途步行天气适宜",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -11271,7 +11245,6 @@
           "supporting_record_ids": [
             "e014",
             "e015",
-            "h001",
             "h002"
           ],
           "remaining_ambiguities": []
@@ -11472,9 +11445,9 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         "t_hotel_stock": {
@@ -11535,6 +11508,12 @@
           "answer": "2026-08-06明确提出",
           "evidence_record_ids": [
             "e014"
+          ]
+        },
+        "t_land_comfort": {
+          "answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
           ]
         },
         "t_land_time": {
@@ -11760,9 +11739,9 @@
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
+              "explanation": "Current visible facts: t_hotel_dates=2026-08-16入住至2026-08-23退房，七晚",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -12031,15 +12010,14 @@
             "comfort": {
               "state": "Satisfied",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
               "evidence_record_ids": [
                 "e015",
-                "h001",
                 "h002"
               ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销; t_land_weather=海况差，岸上短途步行天气适宜",
+              "explanation": "Current visible facts: t_land_comfort=许闻容易晕船，应尽量避免长时间快艇; t_land_weather=海况差，岸上短途步行天气适宜",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -12056,7 +12034,6 @@
           "supporting_record_ids": [
             "e014",
             "e015",
-            "h001",
             "h002"
           ],
           "remaining_ambiguities": []
@@ -12244,7 +12221,7 @@
           ]
         },
         "t_flight_hold": {
-          "answer": "已创建72小时临时留座，需用户确认付款后出票",
+          "answer": "航司暂留两席，留座到期时刻未说明；银行要求72小时内完成支付二次确认；尚未付款或出票",
           "evidence_record_ids": [
             "e017"
           ]
@@ -12256,9 +12233,9 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         "t_hotel_stock": {
@@ -12319,6 +12296,12 @@
           "answer": "2026-08-06明确提出",
           "evidence_record_ids": [
             "e014"
+          ]
+        },
+        "t_land_comfort": {
+          "answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
           ]
         },
         "t_land_time": {
@@ -12479,7 +12462,7 @@
               "evidence_record_ids": [
                 "e017"
               ],
-              "explanation": "Current visible facts: t_flight_hold=已创建72小时临时留座，需用户确认付款后出票",
+              "explanation": "Current visible facts: t_flight_hold=航司暂留两席，留座到期时刻未说明；银行要求72小时内完成支付二次确认；尚未付款或出票",
               "missing_fact": "",
               "temporal_proof": []
             },
@@ -12509,7 +12492,7 @@
           "remaining_ambiguities": [
             "inventory: Current visible facts: t_flight_stock=7月31日席位保证已过期，当前库存unknown",
             "budget: Current visible facts: t_budget=6800美元，明显超支须解释; t_flight_price=新外部订票尝试1480美元，尚未结算; t_hotel_price=岛上七晚上界1687美元，本土过夜175美元；含900美元当地费用预留合计5942美元估算",
-            "reversible: Current visible facts: t_flight_hold=已创建72小时临时留座，需用户确认付款后出票"
+            "reversible: Current visible facts: t_flight_hold=航司暂留两席，留座到期时刻未说明；银行要求72小时内完成支付二次确认；尚未付款或出票"
           ]
         },
         "travel_t2": {
@@ -12546,9 +12529,9 @@
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
+              "explanation": "Current visible facts: t_hotel_dates=2026-08-16入住至2026-08-23退房，七晚",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -12817,15 +12800,14 @@
             "comfort": {
               "state": "Satisfied",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
               "evidence_record_ids": [
                 "e015",
-                "h001",
                 "h002"
               ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销; t_land_weather=海况差，岸上短途步行天气适宜",
+              "explanation": "Current visible facts: t_land_comfort=许闻容易晕船，应尽量避免长时间快艇; t_land_weather=海况差，岸上短途步行天气适宜",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -12842,7 +12824,6 @@
           "supporting_record_ids": [
             "e014",
             "e015",
-            "h001",
             "h002"
           ],
           "remaining_ambiguities": []
@@ -12942,7 +12923,7 @@
       "changed_facts": {
         "t_flight_open": "航司暂留1480美元两席，待用户二次确认；不得重复预留",
         "t_flight_price": "新外部订票尝试1480美元，尚未结算",
-        "t_flight_hold": "已创建72小时临时留座，需用户确认付款后出票",
+        "t_flight_hold": "航司暂留两席，留座到期时刻未说明；银行要求72小时内完成支付二次确认；尚未付款或出票",
         "t_hotel_open": "用户预订有效；180美元仅预授权，房费未支付",
         "t_claim_payment": "机票1480美元尚未扣款；酒店180美元冻结；TCT 24美元拒付无资金流出"
       },
@@ -13046,9 +13027,9 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         "t_hotel_stock": {
@@ -13109,6 +13090,12 @@
           "answer": "2026-08-06明确提出",
           "evidence_record_ids": [
             "e014"
+          ]
+        },
+        "t_land_comfort": {
+          "answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
           ]
         },
         "t_land_time": {
@@ -13336,9 +13323,9 @@
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
+              "explanation": "Current visible facts: t_hotel_dates=2026-08-16入住至2026-08-23退房，七晚",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -13607,15 +13594,14 @@
             "comfort": {
               "state": "Satisfied",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
               "evidence_record_ids": [
                 "e015",
-                "h001",
                 "h002"
               ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销; t_land_weather=海况差，岸上短途步行天气适宜",
+              "explanation": "Current visible facts: t_land_comfort=许闻容易晕船，应尽量避免长时间快艇; t_land_weather=海况差，岸上短途步行天气适宜",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -13632,7 +13618,6 @@
           "supporting_record_ids": [
             "e014",
             "e015",
-            "h001",
             "h002"
           ],
           "remaining_ambiguities": []
@@ -13831,9 +13816,9 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         "t_hotel_stock": {
@@ -13894,6 +13879,12 @@
           "answer": "2026-08-06明确提出",
           "evidence_record_ids": [
             "e014"
+          ]
+        },
+        "t_land_comfort": {
+          "answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
           ]
         },
         "t_land_time": {
@@ -14122,9 +14113,9 @@
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
+              "explanation": "Current visible facts: t_hotel_dates=2026-08-16入住至2026-08-23退房，七晚",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -14388,15 +14379,14 @@
             "comfort": {
               "state": "Satisfied",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
               "evidence_record_ids": [
                 "e015",
-                "h001",
                 "h002"
               ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销; t_land_weather=海况差，岸上短途步行天气适宜",
+              "explanation": "Current visible facts: t_land_comfort=许闻容易晕船，应尽量避免长时间快艇; t_land_weather=海况差，岸上短途步行天气适宜",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -14413,7 +14403,6 @@
           "supporting_record_ids": [
             "e014",
             "e015",
-            "h001",
             "h002"
           ],
           "remaining_ambiguities": []
@@ -14616,9 +14605,9 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         "t_hotel_stock": {
@@ -14681,6 +14670,12 @@
             "e014"
           ]
         },
+        "t_land_comfort": {
+          "answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
+          ]
+        },
         "t_land_time": {
           "answer": "2026-08-19下午",
           "evidence_record_ids": [
@@ -14712,7 +14707,7 @@
           ]
         },
         "t_claim_payment": {
-          "answer": "机票1480美元已结算；接送两人70美元已支付；酒店180美元冻结；TCT 24美元拒付",
+          "answer": "机票1480美元已结算；接送服务已使用但70美元支付状态未确认；酒店180美元冻结；TCT 24美元拒付",
           "evidence_record_ids": [
             "e020"
           ]
@@ -14907,9 +14902,9 @@
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
+              "explanation": "Current visible facts: t_hotel_dates=2026-08-16入住至2026-08-23退房，七晚",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -15179,15 +15174,14 @@
             "comfort": {
               "state": "Satisfied",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
               "evidence_record_ids": [
                 "e015",
-                "h001",
                 "h002"
               ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销; t_land_weather=海况差，岸上短途步行天气适宜",
+              "explanation": "Current visible facts: t_land_comfort=许闻容易晕船，应尽量避免长时间快艇; t_land_weather=海况差，岸上短途步行天气适宜",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -15204,7 +15198,6 @@
           "supporting_record_ids": [
             "e014",
             "e015",
-            "h001",
             "h002"
           ],
           "remaining_ambiguities": []
@@ -15257,7 +15250,7 @@
               "evidence_record_ids": [
                 "e020"
               ],
-              "explanation": "Current visible facts: t_claim_payment=机票1480美元已结算；接送两人70美元已支付；酒店180美元冻结；TCT 24美元拒付",
+              "explanation": "Current visible facts: t_claim_payment=机票1480美元已结算；接送服务已使用但70美元支付状态未确认；酒店180美元冻结；TCT 24美元拒付",
               "missing_fact": "",
               "temporal_proof": []
             },
@@ -15295,7 +15288,7 @@
           },
           "supporting_record_ids": [],
           "remaining_ambiguities": [
-            "settlement: Current visible facts: t_claim_payment=机票1480美元已结算；接送两人70美元已支付；酒店180美元冻结；TCT 24美元拒付",
+            "settlement: Current visible facts: t_claim_payment=机票1480美元已结算；接送服务已使用但70美元支付状态未确认；酒店180美元冻结；TCT 24美元拒付",
             "receipts: t_claim_receipts",
             "trip_finished: Current visible facts: t_claim_return=尚未返沪"
           ]
@@ -15306,7 +15299,7 @@
         "t_transfer_open": "8月16日接送已完成，不需再次安排",
         "t_transfer_vendor": "8月16日认证接送已使用",
         "t_hotel_cancel": "免费取消截止8月14日18:00岛屿时间，现已过期",
-        "t_claim_payment": "机票1480美元已结算；接送两人70美元已支付；酒店180美元冻结；TCT 24美元拒付"
+        "t_claim_payment": "机票1480美元已结算；接送服务已使用但70美元支付状态未确认；酒店180美元冻结；TCT 24美元拒付"
       },
       "changed_task_conditions": {
         "travel_t2": {
@@ -15410,9 +15403,9 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         "t_hotel_stock": {
@@ -15475,6 +15468,12 @@
             "e014"
           ]
         },
+        "t_land_comfort": {
+          "answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
+          ]
+        },
         "t_land_time": {
           "answer": "2026-08-19下午",
           "evidence_record_ids": [
@@ -15506,7 +15505,7 @@
           ]
         },
         "t_claim_payment": {
-          "answer": "机票1480美元已结算；接送两人70美元已支付；酒店180美元冻结；TCT 24美元拒付",
+          "answer": "机票1480美元已结算；接送服务已使用但70美元支付状态未确认；酒店180美元冻结；TCT 24美元拒付",
           "evidence_record_ids": [
             "e020"
           ]
@@ -15701,9 +15700,9 @@
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
+              "explanation": "Current visible facts: t_hotel_dates=2026-08-16入住至2026-08-23退房，七晚",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -15973,15 +15972,14 @@
             "comfort": {
               "state": "Satisfied",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
               "evidence_record_ids": [
                 "e021",
-                "h001",
                 "h002"
               ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销; t_land_weather=8月20日海况警告升级，部分船只停航；此前8月19日岸上天气记录已过时",
+              "explanation": "Current visible facts: t_land_comfort=许闻容易晕船，应尽量避免长时间快艇; t_land_weather=8月20日海况警告升级，部分船只停航；此前8月19日岸上天气记录已过时",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -16048,7 +16046,7 @@
               "evidence_record_ids": [
                 "e020"
               ],
-              "explanation": "Current visible facts: t_claim_payment=机票1480美元已结算；接送两人70美元已支付；酒店180美元冻结；TCT 24美元拒付",
+              "explanation": "Current visible facts: t_claim_payment=机票1480美元已结算；接送服务已使用但70美元支付状态未确认；酒店180美元冻结；TCT 24美元拒付",
               "missing_fact": "",
               "temporal_proof": []
             },
@@ -16086,7 +16084,7 @@
           },
           "supporting_record_ids": [],
           "remaining_ambiguities": [
-            "settlement: Current visible facts: t_claim_payment=机票1480美元已结算；接送两人70美元已支付；酒店180美元冻结；TCT 24美元拒付",
+            "settlement: Current visible facts: t_claim_payment=机票1480美元已结算；接送服务已使用但70美元支付状态未确认；酒店180美元冻结；TCT 24美元拒付",
             "receipts: t_claim_receipts",
             "trip_finished: Current visible facts: t_claim_return=尚未返沪"
           ]
@@ -16194,9 +16192,9 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         "t_hotel_stock": {
@@ -16257,6 +16255,12 @@
           "answer": "2026-08-06明确提出",
           "evidence_record_ids": [
             "e014"
+          ]
+        },
+        "t_land_comfort": {
+          "answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
           ]
         },
         "t_land_time": {
@@ -16487,9 +16491,9 @@
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
+              "explanation": "Current visible facts: t_hotel_dates=2026-08-16入住至2026-08-23退房，七晚",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -16759,15 +16763,14 @@
             "comfort": {
               "state": "Satisfied",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
               "evidence_record_ids": [
                 "e021",
-                "h001",
                 "h002"
               ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销; t_land_weather=8月20日海况警告升级，部分船只停航；此前8月19日岸上天气记录已过时",
+              "explanation": "Current visible facts: t_land_comfort=许闻容易晕船，应尽量避免长时间快艇; t_land_weather=8月20日海况警告升级，部分船只停航；此前8月19日岸上天气记录已过时",
               "missing_fact": null,
               "temporal_proof": []
             }
@@ -16987,9 +16990,9 @@
           ]
         },
         "t_hotel_dates": {
-          "answer": "2026-08-16至2026-08-23，七晚",
+          "answer": "2026-08-16入住至2026-08-23退房，七晚",
           "evidence_record_ids": [
-            "e004"
+            "e008"
           ]
         },
         "t_hotel_stock": {
@@ -17050,6 +17053,12 @@
           "answer": "2026-08-06明确提出",
           "evidence_record_ids": [
             "e014"
+          ]
+        },
+        "t_land_comfort": {
+          "answer": "许闻容易晕船，应尽量避免长时间快艇",
+          "evidence_record_ids": [
+            "h002"
           ]
         },
         "t_land_time": {
@@ -17280,9 +17289,9 @@
                 "t_hotel_dates"
               ],
               "evidence_record_ids": [
-                "e004"
+                "e008"
               ],
-              "explanation": "Current visible facts: t_hotel_dates=2026-08-16至2026-08-23，七晚",
+              "explanation": "Current visible facts: t_hotel_dates=2026-08-16入住至2026-08-23退房，七晚",
               "missing_fact": null,
               "temporal_proof": []
             },
@@ -17552,15 +17561,14 @@
             "comfort": {
               "state": "Satisfied",
               "memory_question_ids": [
-                "t_goal",
+                "t_land_comfort",
                 "t_land_weather"
               ],
               "evidence_record_ids": [
                 "e021",
-                "h001",
                 "h002"
               ],
-              "explanation": "Current visible facts: t_goal=管理航班、住宿、岛上接送、费用与报销; t_land_weather=8月20日海况警告升级，部分船只停航；此前8月19日岸上天气记录已过时",
+              "explanation": "Current visible facts: t_land_comfort=许闻容易晕船，应尽量避免长时间快艇; t_land_weather=8月20日海况警告升级，部分船只停航；此前8月19日岸上天气记录已过时",
               "missing_fact": null,
               "temporal_proof": []
             }

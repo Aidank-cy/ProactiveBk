@@ -1,0 +1,5 @@
+models: [mock/toy]
+models_config_path: /dev/null
+num_samples: 1
+concurrency: 2
+retry: 0

@@ -1,0 +1,7 @@
+Based on the provided historical context and current environment state, identify outstanding user tasks that are currently actionable.
+A task is actionable only when its necessary conditions, user constraints, and authorization requirements are satisfied.
+Do not assume missing information.
+Do not include tasks that are already completed, expired, invalidated, or not currently authorized.
+Do not execute any task.
+Return an empty actionable_tasks list if no actionable task exists within the requested scope.
+Return only JSON: {"actionable_tasks":[{"description":"", "evidence":[]}]}.

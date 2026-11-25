@@ -1,0 +1,11 @@
+models:
+  - deepseek/deepseek-flash
+models_config_path: ../VibeLifeBench/models.json
+temperature: 0
+top_p: null
+max_output_tokens: 1024
+timeout: 120
+retry: 1
+concurrency: 1
+seed: null
+num_samples: 1

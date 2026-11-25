@@ -12,6 +12,7 @@ from .context_builder import build_context, canonical
 from .dataset_loader import load_dataset
 from .integrity import SYSTEM_PROMPT, check_pair, check_request
 from .harness.adapter import invoke
+from .direct_api import invoke as invoke_direct
 
 ROOT = Path(__file__).resolve().parent
 MEMORY = (ROOT / "prompts/memory.txt").read_text().strip()
@@ -121,16 +122,20 @@ def requests_for(scenarios, config, mode="all", scenario_filter=None, stage_filt
                         yield req
 
 
-def run(config_path, dataset_path, mode="all", output=None, dry_run=False, scenario=None, stage=None, resume=False, adapter=invoke):
+def run(config_path, dataset_path, mode="all", output=None, dry_run=False, scenario=None, stage=None, resume=False, adapter=invoke, backend="harness"):
     config = yaml.safe_load(Path(config_path).read_text())
+    if backend not in ("harness", "direct"):
+        raise ValueError("backend must be harness or direct")
+    if adapter is invoke and backend == "direct":
+        adapter = invoke_direct
     config["models"] = config.get("models") or [config["model_name"]]
     if config.get("seed") is not None:
-        raise ValueError("seed unsupported by OpenClaw adapter")
+        raise ValueError("seed unsupported by selected adapter")
     config["model_parameters"] = {k: config.get(k) for k in ("temperature", "top_p", "max_output_tokens", "seed")}
     scenarios = load_dataset(dataset_path)
     requests = list(requests_for(scenarios, config, mode, scenario, stage))
     check_pair([{**r, "model_parameters": config["model_parameters"]} for r in requests])
-    if not dry_run and adapter is invoke:
+    if not dry_run and adapter in (invoke, invoke_direct):
         models_data = json.loads(Path(config["models_config_path"]).read_text())
         for req in requests:
             provider, model_id = req["model_name"].split("/", 1)
@@ -183,8 +188,9 @@ def main():
     p.add_argument("--stage")
     p.add_argument("--resume", action="store_true")
     p.add_argument("--dry-run", action="store_true")
+    p.add_argument("--backend", choices=["harness", "direct"], default="harness")
     a = p.parse_args()
-    rows = run(a.config, a.dataset, a.mode, a.output, a.dry_run, a.scenario, a.stage, a.resume)
+    rows = run(a.config, a.dataset, a.mode, a.output, a.dry_run, a.scenario, a.stage, a.resume, backend=a.backend)
     if a.dry_run:
         for row in rows:
             print(json.dumps(row, ensure_ascii=False))

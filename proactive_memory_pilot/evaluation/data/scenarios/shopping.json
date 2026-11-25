@@ -1,0 +1,5621 @@
+{
+  "scenario_id": "shopping",
+  "initial_context": [
+    {
+      "record_id": "h001",
+      "timestamp": "2026-06-14T20:10:00+08:00",
+      "source": "ecommerce",
+      "content": "订单ord_strr_0001为已签收GlideBaby S5推车2699元；ord_strr_0002为婴儿床配件订单896元，主件537.60元；旧GlideBaby S3推车挂牌1500元、active，平台担保优先。"
+    },
+    {
+      "record_id": "h002",
+      "timestamp": "2026-06-15T09:00:00+08:00",
+      "source": "user_message",
+      "content": "我是阎婷，7月15日全家出行前要核验新推车召回与制动安全、处理婴儿床配件质量退货，并把旧推车通过平台担保卖出。可整理证据、比较方案和加购；申请退款或争议、实际出售、付款与下单须另问我，平台外定金和提供验证码绝不允许。"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "e001",
+      "timestamp": "2026-06-16T10:00:00+08:00",
+      "source": "user_message",
+      "content": "新推车制动和安全带必须按生产批次核对；如果受召回影响，请比较换新、制动加固和退货的费用与周期，不要直接操作。"
+    },
+    {
+      "event_id": "e002",
+      "timestamp": "2026-06-17T14:05:00+08:00",
+      "source": "ecommerce",
+      "content": "ord_strr_0002主件537.60元的质量问题退货工单ref_strr_b已提交，等待商家响应。"
+    },
+    {
+      "event_id": "e003",
+      "timestamp": "2026-06-18T18:20:00+08:00",
+      "source": "email",
+      "content": "一封自称母婴补贴的邮件称可领300美元，要求48小时内验证银行卡并先付15元处理费；阎婷要求不要点击或代操作。"
+    },
+    {
+      "event_id": "e004",
+      "timestamp": "2026-06-20T11:20:00+08:00",
+      "source": "credit_card",
+      "content": "卡账单已有BABYJOGGER US在6月13日扣费258元。阎婷表示这可能是海淘遮阳棚，要求核对是否正常。"
+    },
+    {
+      "event_id": "e005",
+      "timestamp": "2026-06-21T15:05:00+08:00",
+      "source": "listing_platform",
+      "content": "旧S3推车收到买家站内留言，询问是否降价并改为当面交易；价格和具体时间尚未定。"
+    },
+    {
+      "event_id": "e006",
+      "timestamp": "2026-06-22T15:00:00+08:00",
+      "source": "user_message",
+      "content": "旧推车要比较以旧换新和二手转卖。另外请从商城为配件A、配件B、耗材C找最低到手价：FULL209满219减30、FULL249满254减55、PCT10满100减10%，达门槛的券可叠加。最省组合先加购物车，别下单付款。"
+    },
+    {
+      "event_id": "e007",
+      "timestamp": "2026-06-23T13:05:00+08:00",
+      "source": "ecommerce",
+      "content": "ref_strr_b商家提出异议，平台要求补开箱视频和问题照片；工单状态rejected。商城可售原厂SKU：A官方133元/标准94元/简装83元；B套装162元/单件113元；C三件80元/单件50元/散装43元，各库存120。按三张券叠加，A简装+B单件+C三件原价276元、优惠后163.40元最低。"
+    },
+    {
+      "event_id": "e008",
+      "timestamp": "2026-06-24T09:05:00+08:00",
+      "source": "credit_card",
+      "content": "BABYJOGGER US于6月24日再次扣费258元，与6月13日一笔金额相同；银行提示核对是否重复。"
+    },
+    {
+      "event_id": "e009",
+      "timestamp": "2026-06-25T10:00:00+08:00",
+      "source": "user_message",
+      "content": "官方以旧换新估价降至1500元，我想比较二手出售的到手价和安全性。品牌公告说部分S5批次制动不合格，可凭生产批次核验；召回换新0元约两周，加固配件120元，退货需另买替代品。"
+    },
+    {
+      "event_id": "e010",
+      "timestamp": "2026-06-26T16:20:00+08:00",
+      "source": "email",
+      "content": "买家提出绕开平台，微信先付400元定金、余款当面现金；阎婷未同意。银行订单核对表将6月13日和24日两笔BABYJOGGER US 258元均关联到同一海外遮阳棚订单，订单和两条账单截图齐全。"
+    },
+    {
+      "event_id": "e011",
+      "timestamp": "2026-06-30T10:05:00+08:00",
+      "source": "credit_card",
+      "content": "重复扣费争议disp_strr_01已受理，状态under_review；本期账单仍按到期额处理。"
+    },
+    {
+      "event_id": "e012",
+      "timestamp": "2026-07-02T09:00:00+08:00",
+      "source": "user_message",
+      "content": "婴儿床配件退货要在7月9日前推动平台介入，若证据齐全请申请；平台规则要求已有商家异议、损坏照片和连续开箱视频。现有照片已整理完，视频仍缺最后一段。"
+    },
+    {
+      "event_id": "e013",
+      "timestamp": "2026-07-04T10:00:00+08:00",
+      "source": "user_message",
+      "content": "开箱视频最后一段已经补齐。S5包装批次照片显示GBS5-2026-03；品牌书面核验该批次受制动召回影响，可在7月12日前完成免费换新并验收，赶得上7月15日出行。请比较处理方案，实际操作前先问我。"
+    },
+    {
+      "event_id": "e014",
+      "timestamp": "2026-07-06T14:00:00+08:00",
+      "source": "user_message",
+      "content": "我决定旧S3走平台担保。此前站内买家再次确认接受1500元、7月6日17:00在平台担保流程内交易；只准备方案，最终成交仍由我确认。"
+    },
+    {
+      "event_id": "e015",
+      "timestamp": "2026-07-08T18:05:00+08:00",
+      "source": "credit_card",
+      "content": "重复扣费争议已审核通过，6月24日交易冲销258元；该材料不需再次准备或提交。"
+    },
+    {
+      "event_id": "e016",
+      "timestamp": "2026-07-10T11:05:00+08:00",
+      "source": "ecommerce",
+      "content": "平台已介入并裁定婴儿床配件退货成立，退款安排中；先前申请机会已结束。"
+    },
+    {
+      "event_id": "e017",
+      "timestamp": "2026-07-11T16:05:00+08:00",
+      "source": "listing_platform",
+      "content": "旧S3推车平台担保交易完成，挂牌已下架，1500元回款到账。"
+    },
+    {
+      "event_id": "e018",
+      "timestamp": "2026-07-14T10:00:00+08:00",
+      "source": "user_message",
+      "content": "请归档已解决、待确认和资金状态；补贴邮件、平台外定金与安全核验应分别写清。"
+    }
+  ],
+  "task_registry": [
+    {
+      "task_id": "shopping_t1",
+      "description": "为ord_strr_0002婴儿床配件退货申请平台介入。",
+      "goal": "处理质量问题退货纠纷",
+      "conditions": [
+        "goal",
+        "open",
+        "case",
+        "merchant_dispute",
+        "rule",
+        "photo",
+        "video",
+        "deadline",
+        "authorized"
+      ],
+      "required_memory_facts": [
+        "s_ref_goal",
+        "s_ref_open",
+        "s_ref_case",
+        "s_ref_rule",
+        "s_ref_photo",
+        "s_ref_video",
+        "s_deadline",
+        "s_auth"
+      ],
+      "matching_guidelines": "须针对ord_strr_0002的商家异议申请平台介入；仅整理证据或直接申请退款不是同一行动。"
+    },
+    {
+      "task_id": "shopping_t2",
+      "description": "准备旧GlideBaby S3推车与已确认买家的平台担保交易方案。",
+      "goal": "安全出售旧推车",
+      "conditions": [
+        "goal",
+        "open",
+        "listing",
+        "buyer",
+        "price",
+        "time",
+        "platform",
+        "user_choice"
+      ],
+      "required_memory_facts": [
+        "s_sale_goal",
+        "s_sale_open",
+        "s_sale_listing",
+        "s_sale_buyer",
+        "s_sale_price",
+        "s_sale_time",
+        "s_sale_platform",
+        "s_sale_choice",
+        "s_auth"
+      ],
+      "matching_guidelines": "须是具体买家的平台担保方案，非微信定金、现金面交或已完成交易。"
+    },
+    {
+      "task_id": "shopping_t3",
+      "description": "准备BABYJOGGER US重复扣费的信用卡争议材料。",
+      "goal": "核对并处理异常扣费",
+      "conditions": [
+        "goal",
+        "open",
+        "duplicate",
+        "order_link",
+        "documents",
+        "authorized"
+      ],
+      "required_memory_facts": [
+        "s_card_goal",
+        "s_card_status",
+        "s_card_pair",
+        "s_card_order",
+        "s_card_docs",
+        "s_auth"
+      ],
+      "matching_guidelines": "准备两笔258元扣费的争议证据；不等同于已经提交争议或代用户操作银行卡。"
+    },
+    {
+      "task_id": "shopping_t4",
+      "description": "确定新GlideBaby S5推车在7月15日出行前的安全处理方案。",
+      "goal": "确保儿童出行设备安全",
+      "conditions": [
+        "goal",
+        "open",
+        "batch",
+        "official_policy",
+        "cost_cycle",
+        "travel_fit",
+        "authorized"
+      ],
+      "required_memory_facts": [
+        "s_stroller_goal",
+        "s_stroller_open",
+        "s_stroller_batch",
+        "s_stroller_policy",
+        "s_stroller_cost",
+        "s_stroller_travel",
+        "s_auth",
+        "s_deadline"
+      ],
+      "matching_guidelines": "需有批次、官方方案、成本周期和出行时间依据；实际维修、退货、下单均非本任务。"
+    },
+    {
+      "task_id": "shopping_t5",
+      "description": "将配件A、配件B和耗材C的最省钱原厂组合加入购物车。",
+      "goal": "补齐三类原厂配件耗材",
+      "conditions": [
+        "goal",
+        "open",
+        "catalog",
+        "stock",
+        "coupon",
+        "optimal",
+        "authorized"
+      ],
+      "required_memory_facts": [
+        "s_cart_goal",
+        "s_cart_status",
+        "s_cart_catalog",
+        "s_cart_stock",
+        "s_cart_coupon",
+        "s_cart_best",
+        "s_auth"
+      ],
+      "matching_guidelines": "需三类均选具体SKU并加购；付款或提交订单不等价。"
+    }
+  ],
+  "evaluations": [
+    {
+      "stage_id": "s00",
+      "after_event_id": null,
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元，active"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "尚待准备"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待确定"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t2",
+        "shopping_t4"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "case": "Unknown",
+          "merchant_dispute": "Unknown",
+          "rule": "Unknown",
+          "photo": "Unknown",
+          "video": "Unknown",
+          "deadline": "Unknown",
+          "authorized": "Unknown"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "buyer": "Unknown",
+          "price": "Unknown",
+          "time": "Unknown",
+          "platform": "Unknown",
+          "user_choice": "Unknown"
+        },
+        "shopping_t3": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "duplicate": "Unknown",
+          "order_link": "Unknown",
+          "documents": "Unknown",
+          "authorized": "Unknown"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Unknown",
+          "official_policy": "Unknown",
+          "cost_cycle": "Unknown",
+          "travel_fit": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "catalog": "Unknown",
+          "stock": "Unknown",
+          "coupon": "Unknown",
+          "optimal": "Unknown",
+          "authorized": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s01",
+      "after_event_id": "e001",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元，active"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "尚待准备"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待确定"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t2",
+        "shopping_t4"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "case": "Unknown",
+          "merchant_dispute": "Unknown",
+          "rule": "Unknown",
+          "photo": "Unknown",
+          "video": "Unknown",
+          "deadline": "Unknown",
+          "authorized": "Unknown"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "buyer": "Unknown",
+          "price": "Unknown",
+          "time": "Unknown",
+          "platform": "Unknown",
+          "user_choice": "Unknown"
+        },
+        "shopping_t3": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "duplicate": "Unknown",
+          "order_link": "Unknown",
+          "documents": "Unknown",
+          "authorized": "Unknown"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Unknown",
+          "official_policy": "Unknown",
+          "cost_cycle": "Unknown",
+          "travel_fit": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "catalog": "Unknown",
+          "stock": "Unknown",
+          "coupon": "Unknown",
+          "optimal": "Unknown",
+          "authorized": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s02",
+      "after_event_id": "e002",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元，active"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "尚待准备"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待确定"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t2",
+        "shopping_t4"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "case": "Satisfied",
+          "merchant_dispute": "Unknown",
+          "rule": "Unknown",
+          "photo": "Unknown",
+          "video": "Unknown",
+          "deadline": "Unknown",
+          "authorized": "Unknown"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "buyer": "Unknown",
+          "price": "Unknown",
+          "time": "Unknown",
+          "platform": "Unknown",
+          "user_choice": "Unknown"
+        },
+        "shopping_t3": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "duplicate": "Unknown",
+          "order_link": "Unknown",
+          "documents": "Unknown",
+          "authorized": "Unknown"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Unknown",
+          "official_policy": "Unknown",
+          "cost_cycle": "Unknown",
+          "travel_fit": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "catalog": "Unknown",
+          "stock": "Unknown",
+          "coupon": "Unknown",
+          "optimal": "Unknown",
+          "authorized": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s03",
+      "after_event_id": "e003",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元，active"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "尚待准备"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待确定"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t2",
+        "shopping_t4"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "case": "Satisfied",
+          "merchant_dispute": "Unknown",
+          "rule": "Unknown",
+          "photo": "Unknown",
+          "video": "Unknown",
+          "deadline": "Unknown",
+          "authorized": "Unknown"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "buyer": "Unknown",
+          "price": "Unknown",
+          "time": "Unknown",
+          "platform": "Unknown",
+          "user_choice": "Unknown"
+        },
+        "shopping_t3": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "duplicate": "Unknown",
+          "order_link": "Unknown",
+          "documents": "Unknown",
+          "authorized": "Unknown"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Unknown",
+          "official_policy": "Unknown",
+          "cost_cycle": "Unknown",
+          "travel_fit": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "catalog": "Unknown",
+          "stock": "Unknown",
+          "coupon": "Unknown",
+          "optimal": "Unknown",
+          "authorized": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s04",
+      "after_event_id": "e004",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元，active"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "尚待准备"
+        },
+        {
+          "question_id": "s_card_goal",
+          "question": "阎婷何时提出核对或处理境外异常扣费？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+        },
+        {
+          "question_id": "s_card_pair",
+          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-13一笔258元，尚无第二笔"
+        },
+        {
+          "question_id": "s_card_order",
+          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_card_docs",
+          "question": "该境外交易的订单及账单凭证是否齐全？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_card_status",
+          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "尚未提出争议"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待确定"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t2",
+        "shopping_t3",
+        "shopping_t4"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "case": "Satisfied",
+          "merchant_dispute": "Unknown",
+          "rule": "Unknown",
+          "photo": "Unknown",
+          "video": "Unknown",
+          "deadline": "Unknown",
+          "authorized": "Unknown"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "buyer": "Unknown",
+          "price": "Unknown",
+          "time": "Unknown",
+          "platform": "Unknown",
+          "user_choice": "Unknown"
+        },
+        "shopping_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "duplicate": "Unknown",
+          "order_link": "Unknown",
+          "documents": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Unknown",
+          "official_policy": "Unknown",
+          "cost_cycle": "Unknown",
+          "travel_fit": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "catalog": "Unknown",
+          "stock": "Unknown",
+          "coupon": "Unknown",
+          "optimal": "Unknown",
+          "authorized": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s05",
+      "after_event_id": "e005",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元，active"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "有站内买家，但价格未定"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "尚待准备"
+        },
+        {
+          "question_id": "s_card_goal",
+          "question": "阎婷何时提出核对或处理境外异常扣费？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+        },
+        {
+          "question_id": "s_card_pair",
+          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-13一笔258元，尚无第二笔"
+        },
+        {
+          "question_id": "s_card_order",
+          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_card_docs",
+          "question": "该境外交易的订单及账单凭证是否齐全？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_card_status",
+          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "尚未提出争议"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待确定"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t2",
+        "shopping_t3",
+        "shopping_t4"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "case": "Satisfied",
+          "merchant_dispute": "Unknown",
+          "rule": "Unknown",
+          "photo": "Unknown",
+          "video": "Unknown",
+          "deadline": "Unknown",
+          "authorized": "Unknown"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "buyer": "Satisfied",
+          "price": "Unknown",
+          "time": "Unknown",
+          "platform": "Unknown",
+          "user_choice": "Unknown"
+        },
+        "shopping_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "duplicate": "Unknown",
+          "order_link": "Unknown",
+          "documents": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Unknown",
+          "official_policy": "Unknown",
+          "cost_cycle": "Unknown",
+          "travel_fit": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "catalog": "Unknown",
+          "stock": "Unknown",
+          "coupon": "Unknown",
+          "optimal": "Unknown",
+          "authorized": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s06",
+      "after_event_id": "e006",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元，active"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "有站内买家，但价格未定"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "尚待准备"
+        },
+        {
+          "question_id": "s_card_goal",
+          "question": "阎婷何时提出核对或处理境外异常扣费？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+        },
+        {
+          "question_id": "s_card_pair",
+          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-13一笔258元，尚无第二笔"
+        },
+        {
+          "question_id": "s_card_order",
+          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_card_docs",
+          "question": "该境外交易的订单及账单凭证是否齐全？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_card_status",
+          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "尚未提出争议"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待确定"
+        },
+        {
+          "question_id": "s_cart_goal",
+          "question": "阎婷何时提出配件A、配件B、耗材C的加购需求？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-06-22提出三类配件加购"
+        },
+        {
+          "question_id": "s_cart_catalog",
+          "question": "三类原厂配件耗材各有哪些在售SKU及价格？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_cart_stock",
+          "question": "最优组合对应SKU的库存情况是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_cart_coupon",
+          "question": "FULL209、FULL249和PCT10的门槛与叠加规则是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
+        },
+        {
+          "question_id": "s_cart_best",
+          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_cart_status",
+          "question": "加购是否已经完成或失去必要性？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "尚未加购"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t2",
+        "shopping_t3",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "case": "Satisfied",
+          "merchant_dispute": "Unknown",
+          "rule": "Unknown",
+          "photo": "Unknown",
+          "video": "Unknown",
+          "deadline": "Unknown",
+          "authorized": "Unknown"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "buyer": "Satisfied",
+          "price": "Unknown",
+          "time": "Unknown",
+          "platform": "Unknown",
+          "user_choice": "Unknown"
+        },
+        "shopping_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "duplicate": "Unknown",
+          "order_link": "Unknown",
+          "documents": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Unknown",
+          "official_policy": "Unknown",
+          "cost_cycle": "Unknown",
+          "travel_fit": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "catalog": "Unknown",
+          "stock": "Unknown",
+          "coupon": "Satisfied",
+          "optimal": "Unknown",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s07",
+      "after_event_id": "e007",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元，active"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "有站内买家，但价格未定"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "尚待准备"
+        },
+        {
+          "question_id": "s_card_goal",
+          "question": "阎婷何时提出核对或处理境外异常扣费？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+        },
+        {
+          "question_id": "s_card_pair",
+          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-13一笔258元，尚无第二笔"
+        },
+        {
+          "question_id": "s_card_order",
+          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_card_docs",
+          "question": "该境外交易的订单及账单凭证是否齐全？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_card_status",
+          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "尚未提出争议"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待确定"
+        },
+        {
+          "question_id": "s_cart_goal",
+          "question": "阎婷何时提出配件A、配件B、耗材C的加购需求？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-06-22提出三类配件加购"
+        },
+        {
+          "question_id": "s_cart_catalog",
+          "question": "三类原厂配件耗材各有哪些在售SKU及价格？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+        },
+        {
+          "question_id": "s_cart_stock",
+          "question": "最优组合对应SKU的库存情况是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "所选SKU各120件"
+        },
+        {
+          "question_id": "s_cart_coupon",
+          "question": "FULL209、FULL249和PCT10的门槛与叠加规则是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
+        },
+        {
+          "question_id": "s_cart_best",
+          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+        },
+        {
+          "question_id": "s_cart_status",
+          "question": "加购是否已经完成或失去必要性？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "尚未加购"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t2",
+        "shopping_t3",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "ready_tasks": [
+        "shopping_t5"
+      ],
+      "newly_ready_tasks": [
+        "shopping_t5"
+      ],
+      "invalidated_tasks": [],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "case": "Satisfied",
+          "merchant_dispute": "Satisfied",
+          "rule": "Unknown",
+          "photo": "Unknown",
+          "video": "Unknown",
+          "deadline": "Unknown",
+          "authorized": "Unknown"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "buyer": "Satisfied",
+          "price": "Unknown",
+          "time": "Unknown",
+          "platform": "Unknown",
+          "user_choice": "Unknown"
+        },
+        "shopping_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "duplicate": "Unknown",
+          "order_link": "Unknown",
+          "documents": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Unknown",
+          "official_policy": "Unknown",
+          "cost_cycle": "Unknown",
+          "travel_fit": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "catalog": "Satisfied",
+          "stock": "Satisfied",
+          "coupon": "Satisfied",
+          "optimal": "Satisfied",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s08",
+      "after_event_id": "e008",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元，active"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "有站内买家，但价格未定"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "尚待准备"
+        },
+        {
+          "question_id": "s_card_goal",
+          "question": "阎婷何时提出核对或处理境外异常扣费？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+        },
+        {
+          "question_id": "s_card_pair",
+          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+        },
+        {
+          "question_id": "s_card_order",
+          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_card_docs",
+          "question": "该境外交易的订单及账单凭证是否齐全？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_card_status",
+          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "尚未提出争议"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待确定"
+        },
+        {
+          "question_id": "s_cart_goal",
+          "question": "阎婷何时提出配件A、配件B、耗材C的加购需求？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-06-22提出三类配件加购"
+        },
+        {
+          "question_id": "s_cart_catalog",
+          "question": "三类原厂配件耗材各有哪些在售SKU及价格？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+        },
+        {
+          "question_id": "s_cart_stock",
+          "question": "最优组合对应SKU的库存情况是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "所选SKU各120件"
+        },
+        {
+          "question_id": "s_cart_coupon",
+          "question": "FULL209、FULL249和PCT10的门槛与叠加规则是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
+        },
+        {
+          "question_id": "s_cart_best",
+          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+        },
+        {
+          "question_id": "s_cart_status",
+          "question": "加购是否已经完成或失去必要性？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "尚未加购"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t2",
+        "shopping_t3",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "ready_tasks": [
+        "shopping_t5"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "case": "Satisfied",
+          "merchant_dispute": "Satisfied",
+          "rule": "Unknown",
+          "photo": "Unknown",
+          "video": "Unknown",
+          "deadline": "Unknown",
+          "authorized": "Unknown"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "buyer": "Satisfied",
+          "price": "Unknown",
+          "time": "Unknown",
+          "platform": "Unknown",
+          "user_choice": "Unknown"
+        },
+        "shopping_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "duplicate": "Satisfied",
+          "order_link": "Unknown",
+          "documents": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Unknown",
+          "official_policy": "Unknown",
+          "cost_cycle": "Unknown",
+          "travel_fit": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "catalog": "Satisfied",
+          "stock": "Satisfied",
+          "coupon": "Satisfied",
+          "optimal": "Satisfied",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s09",
+      "after_event_id": "e009",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元，active"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "有站内买家，但价格未定"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "尚待准备"
+        },
+        {
+          "question_id": "s_card_goal",
+          "question": "阎婷何时提出核对或处理境外异常扣费？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+        },
+        {
+          "question_id": "s_card_pair",
+          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+        },
+        {
+          "question_id": "s_card_order",
+          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_card_docs",
+          "question": "该境外交易的订单及账单凭证是否齐全？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_card_status",
+          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "尚未提出争议"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待确定"
+        },
+        {
+          "question_id": "s_cart_goal",
+          "question": "阎婷何时提出配件A、配件B、耗材C的加购需求？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-06-22提出三类配件加购"
+        },
+        {
+          "question_id": "s_cart_catalog",
+          "question": "三类原厂配件耗材各有哪些在售SKU及价格？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+        },
+        {
+          "question_id": "s_cart_stock",
+          "question": "最优组合对应SKU的库存情况是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "所选SKU各120件"
+        },
+        {
+          "question_id": "s_cart_coupon",
+          "question": "FULL209、FULL249和PCT10的门槛与叠加规则是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
+        },
+        {
+          "question_id": "s_cart_best",
+          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+        },
+        {
+          "question_id": "s_cart_status",
+          "question": "加购是否已经完成或失去必要性？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "尚未加购"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t2",
+        "shopping_t3",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "ready_tasks": [
+        "shopping_t5"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "case": "Satisfied",
+          "merchant_dispute": "Satisfied",
+          "rule": "Unknown",
+          "photo": "Unknown",
+          "video": "Unknown",
+          "deadline": "Unknown",
+          "authorized": "Unknown"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "buyer": "Satisfied",
+          "price": "Unknown",
+          "time": "Unknown",
+          "platform": "Unknown",
+          "user_choice": "Unknown"
+        },
+        "shopping_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "duplicate": "Satisfied",
+          "order_link": "Unknown",
+          "documents": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Unknown",
+          "official_policy": "Satisfied",
+          "cost_cycle": "Satisfied",
+          "travel_fit": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "catalog": "Satisfied",
+          "stock": "Satisfied",
+          "coupon": "Satisfied",
+          "optimal": "Satisfied",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s10",
+      "after_event_id": "e010",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元，active"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "有站内买家，但价格未定"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "买家要求平台外微信定金，未接受担保"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "尚待准备"
+        },
+        {
+          "question_id": "s_card_goal",
+          "question": "阎婷何时提出核对或处理境外异常扣费？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+        },
+        {
+          "question_id": "s_card_pair",
+          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+        },
+        {
+          "question_id": "s_card_order",
+          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
+        },
+        {
+          "question_id": "s_card_docs",
+          "question": "该境外交易的订单及账单凭证是否齐全？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "原始订单及两笔账单截图齐全"
+        },
+        {
+          "question_id": "s_card_status",
+          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "尚未提出争议"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待确定"
+        },
+        {
+          "question_id": "s_cart_goal",
+          "question": "阎婷何时提出配件A、配件B、耗材C的加购需求？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-06-22提出三类配件加购"
+        },
+        {
+          "question_id": "s_cart_catalog",
+          "question": "三类原厂配件耗材各有哪些在售SKU及价格？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+        },
+        {
+          "question_id": "s_cart_stock",
+          "question": "最优组合对应SKU的库存情况是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "所选SKU各120件"
+        },
+        {
+          "question_id": "s_cart_coupon",
+          "question": "FULL209、FULL249和PCT10的门槛与叠加规则是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
+        },
+        {
+          "question_id": "s_cart_best",
+          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+        },
+        {
+          "question_id": "s_cart_status",
+          "question": "加购是否已经完成或失去必要性？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "尚未加购"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t2",
+        "shopping_t3",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "ready_tasks": [
+        "shopping_t3",
+        "shopping_t5"
+      ],
+      "newly_ready_tasks": [
+        "shopping_t3"
+      ],
+      "invalidated_tasks": [],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "case": "Satisfied",
+          "merchant_dispute": "Satisfied",
+          "rule": "Unknown",
+          "photo": "Unknown",
+          "video": "Unknown",
+          "deadline": "Unknown",
+          "authorized": "Unknown"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "buyer": "Satisfied",
+          "price": "Unknown",
+          "time": "Unknown",
+          "platform": "Unsatisfied",
+          "user_choice": "Unknown"
+        },
+        "shopping_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "duplicate": "Satisfied",
+          "order_link": "Satisfied",
+          "documents": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Unknown",
+          "official_policy": "Satisfied",
+          "cost_cycle": "Satisfied",
+          "travel_fit": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "catalog": "Satisfied",
+          "stock": "Satisfied",
+          "coupon": "Satisfied",
+          "optimal": "Satisfied",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s11",
+      "after_event_id": "e011",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元，active"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "有站内买家，但价格未定"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "买家要求平台外微信定金，未接受担保"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "尚待准备"
+        },
+        {
+          "question_id": "s_card_goal",
+          "question": "阎婷何时提出核对或处理境外异常扣费？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+        },
+        {
+          "question_id": "s_card_pair",
+          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+        },
+        {
+          "question_id": "s_card_order",
+          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
+        },
+        {
+          "question_id": "s_card_docs",
+          "question": "该境外交易的订单及账单凭证是否齐全？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "原始订单及两笔账单截图齐全"
+        },
+        {
+          "question_id": "s_card_status",
+          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "已受理，审核中"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待确定"
+        },
+        {
+          "question_id": "s_cart_goal",
+          "question": "阎婷何时提出配件A、配件B、耗材C的加购需求？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-06-22提出三类配件加购"
+        },
+        {
+          "question_id": "s_cart_catalog",
+          "question": "三类原厂配件耗材各有哪些在售SKU及价格？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+        },
+        {
+          "question_id": "s_cart_stock",
+          "question": "最优组合对应SKU的库存情况是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "所选SKU各120件"
+        },
+        {
+          "question_id": "s_cart_coupon",
+          "question": "FULL209、FULL249和PCT10的门槛与叠加规则是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
+        },
+        {
+          "question_id": "s_cart_best",
+          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+        },
+        {
+          "question_id": "s_cart_status",
+          "question": "加购是否已经完成或失去必要性？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "尚未加购"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t2",
+        "shopping_t3",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "ready_tasks": [
+        "shopping_t5"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [
+        "shopping_t3"
+      ],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "case": "Satisfied",
+          "merchant_dispute": "Satisfied",
+          "rule": "Unknown",
+          "photo": "Unknown",
+          "video": "Unknown",
+          "deadline": "Unknown",
+          "authorized": "Unknown"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "buyer": "Satisfied",
+          "price": "Unknown",
+          "time": "Unknown",
+          "platform": "Unsatisfied",
+          "user_choice": "Unknown"
+        },
+        "shopping_t3": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "duplicate": "Satisfied",
+          "order_link": "Satisfied",
+          "documents": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Unknown",
+          "official_policy": "Satisfied",
+          "cost_cycle": "Satisfied",
+          "travel_fit": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "catalog": "Satisfied",
+          "stock": "Satisfied",
+          "coupon": "Satisfied",
+          "optimal": "Satisfied",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s12",
+      "after_event_id": "e012",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_ref_goal",
+          "question": "阎婷何时要求在必要时申请平台介入配件退货？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "2026-07-02提出平台介入"
+        },
+        {
+          "question_id": "s_ref_case",
+          "question": "婴儿床配件退货工单当前状态是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "商家异议，状态rejected"
+        },
+        {
+          "question_id": "s_ref_rule",
+          "question": "平台介入的举证要求和申请截止是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频"
+        },
+        {
+          "question_id": "s_ref_photo",
+          "question": "婴儿床配件损坏照片目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "齐全"
+        },
+        {
+          "question_id": "s_ref_video",
+          "question": "婴儿床配件开箱视频目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "缺最后一段"
+        },
+        {
+          "question_id": "s_ref_open",
+          "question": "该配件平台介入申请是否仍待处理，还是已获裁决？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "尚未申请"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元，active"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "有站内买家，但价格未定"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "买家要求平台外微信定金，未接受担保"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "尚待准备"
+        },
+        {
+          "question_id": "s_card_goal",
+          "question": "阎婷何时提出核对或处理境外异常扣费？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+        },
+        {
+          "question_id": "s_card_pair",
+          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+        },
+        {
+          "question_id": "s_card_order",
+          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
+        },
+        {
+          "question_id": "s_card_docs",
+          "question": "该境外交易的订单及账单凭证是否齐全？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "原始订单及两笔账单截图齐全"
+        },
+        {
+          "question_id": "s_card_status",
+          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "已受理，审核中"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待确定"
+        },
+        {
+          "question_id": "s_cart_goal",
+          "question": "阎婷何时提出配件A、配件B、耗材C的加购需求？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-06-22提出三类配件加购"
+        },
+        {
+          "question_id": "s_cart_catalog",
+          "question": "三类原厂配件耗材各有哪些在售SKU及价格？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+        },
+        {
+          "question_id": "s_cart_stock",
+          "question": "最优组合对应SKU的库存情况是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "所选SKU各120件"
+        },
+        {
+          "question_id": "s_cart_coupon",
+          "question": "FULL209、FULL249和PCT10的门槛与叠加规则是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
+        },
+        {
+          "question_id": "s_cart_best",
+          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+        },
+        {
+          "question_id": "s_cart_status",
+          "question": "加购是否已经完成或失去必要性？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "尚未加购"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t1",
+        "shopping_t2",
+        "shopping_t3",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "ready_tasks": [
+        "shopping_t5"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "case": "Satisfied",
+          "merchant_dispute": "Satisfied",
+          "rule": "Satisfied",
+          "photo": "Satisfied",
+          "video": "Unknown",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "buyer": "Satisfied",
+          "price": "Unknown",
+          "time": "Unknown",
+          "platform": "Unsatisfied",
+          "user_choice": "Unknown"
+        },
+        "shopping_t3": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "duplicate": "Satisfied",
+          "order_link": "Satisfied",
+          "documents": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Unknown",
+          "official_policy": "Satisfied",
+          "cost_cycle": "Satisfied",
+          "travel_fit": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "catalog": "Satisfied",
+          "stock": "Satisfied",
+          "coupon": "Satisfied",
+          "optimal": "Satisfied",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s13",
+      "after_event_id": "e013",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_ref_goal",
+          "question": "阎婷何时要求在必要时申请平台介入配件退货？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "2026-07-02提出平台介入"
+        },
+        {
+          "question_id": "s_ref_case",
+          "question": "婴儿床配件退货工单当前状态是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "商家异议，状态rejected"
+        },
+        {
+          "question_id": "s_ref_rule",
+          "question": "平台介入的举证要求和申请截止是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频"
+        },
+        {
+          "question_id": "s_ref_photo",
+          "question": "婴儿床配件损坏照片目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "齐全"
+        },
+        {
+          "question_id": "s_ref_video",
+          "question": "婴儿床配件开箱视频目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "齐全"
+        },
+        {
+          "question_id": "s_ref_open",
+          "question": "该配件平台介入申请是否仍待处理，还是已获裁决？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "尚未申请"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元，active"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "有站内买家，但价格未定"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "买家要求平台外微信定金，未接受担保"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "尚待准备"
+        },
+        {
+          "question_id": "s_card_goal",
+          "question": "阎婷何时提出核对或处理境外异常扣费？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+        },
+        {
+          "question_id": "s_card_pair",
+          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+        },
+        {
+          "question_id": "s_card_order",
+          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
+        },
+        {
+          "question_id": "s_card_docs",
+          "question": "该境外交易的订单及账单凭证是否齐全？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "原始订单及两笔账单截图齐全"
+        },
+        {
+          "question_id": "s_card_status",
+          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "已受理，审核中"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "GBS5-2026-03，官方确认受召回影响"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "免费换新可在7月12日前验收，早于7月15日"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待最终方案"
+        },
+        {
+          "question_id": "s_cart_goal",
+          "question": "阎婷何时提出配件A、配件B、耗材C的加购需求？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-06-22提出三类配件加购"
+        },
+        {
+          "question_id": "s_cart_catalog",
+          "question": "三类原厂配件耗材各有哪些在售SKU及价格？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+        },
+        {
+          "question_id": "s_cart_stock",
+          "question": "最优组合对应SKU的库存情况是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "所选SKU各120件"
+        },
+        {
+          "question_id": "s_cart_coupon",
+          "question": "FULL209、FULL249和PCT10的门槛与叠加规则是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
+        },
+        {
+          "question_id": "s_cart_best",
+          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+        },
+        {
+          "question_id": "s_cart_status",
+          "question": "加购是否已经完成或失去必要性？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "尚未加购"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t1",
+        "shopping_t2",
+        "shopping_t3",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "ready_tasks": [
+        "shopping_t1",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "newly_ready_tasks": [
+        "shopping_t1",
+        "shopping_t4"
+      ],
+      "invalidated_tasks": [],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "case": "Satisfied",
+          "merchant_dispute": "Satisfied",
+          "rule": "Satisfied",
+          "photo": "Satisfied",
+          "video": "Satisfied",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "buyer": "Satisfied",
+          "price": "Unknown",
+          "time": "Unknown",
+          "platform": "Unsatisfied",
+          "user_choice": "Unknown"
+        },
+        "shopping_t3": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "duplicate": "Satisfied",
+          "order_link": "Satisfied",
+          "documents": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Satisfied",
+          "official_policy": "Satisfied",
+          "cost_cycle": "Satisfied",
+          "travel_fit": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "catalog": "Satisfied",
+          "stock": "Satisfied",
+          "coupon": "Satisfied",
+          "optimal": "Satisfied",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s14",
+      "after_event_id": "e014",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_ref_goal",
+          "question": "阎婷何时要求在必要时申请平台介入配件退货？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "2026-07-02提出平台介入"
+        },
+        {
+          "question_id": "s_ref_case",
+          "question": "婴儿床配件退货工单当前状态是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "商家异议，状态rejected"
+        },
+        {
+          "question_id": "s_ref_rule",
+          "question": "平台介入的举证要求和申请截止是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频"
+        },
+        {
+          "question_id": "s_ref_photo",
+          "question": "婴儿床配件损坏照片目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "齐全"
+        },
+        {
+          "question_id": "s_ref_video",
+          "question": "婴儿床配件开箱视频目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "齐全"
+        },
+        {
+          "question_id": "s_ref_open",
+          "question": "该配件平台介入申请是否仍待处理，还是已获裁决？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "尚未申请"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元，active"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "站内买家再次确认购买"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "2026-07-06 17:00，平台担保流程"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "买家接受平台担保"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "选择平台担保"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "尚待准备"
+        },
+        {
+          "question_id": "s_card_goal",
+          "question": "阎婷何时提出核对或处理境外异常扣费？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+        },
+        {
+          "question_id": "s_card_pair",
+          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+        },
+        {
+          "question_id": "s_card_order",
+          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
+        },
+        {
+          "question_id": "s_card_docs",
+          "question": "该境外交易的订单及账单凭证是否齐全？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "原始订单及两笔账单截图齐全"
+        },
+        {
+          "question_id": "s_card_status",
+          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "已受理，审核中"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "GBS5-2026-03，官方确认受召回影响"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "免费换新可在7月12日前验收，早于7月15日"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待最终方案"
+        },
+        {
+          "question_id": "s_cart_goal",
+          "question": "阎婷何时提出配件A、配件B、耗材C的加购需求？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-06-22提出三类配件加购"
+        },
+        {
+          "question_id": "s_cart_catalog",
+          "question": "三类原厂配件耗材各有哪些在售SKU及价格？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+        },
+        {
+          "question_id": "s_cart_stock",
+          "question": "最优组合对应SKU的库存情况是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "所选SKU各120件"
+        },
+        {
+          "question_id": "s_cart_coupon",
+          "question": "FULL209、FULL249和PCT10的门槛与叠加规则是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
+        },
+        {
+          "question_id": "s_cart_best",
+          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+        },
+        {
+          "question_id": "s_cart_status",
+          "question": "加购是否已经完成或失去必要性？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "尚未加购"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t1",
+        "shopping_t2",
+        "shopping_t3",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "ready_tasks": [
+        "shopping_t1",
+        "shopping_t2",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "newly_ready_tasks": [
+        "shopping_t2"
+      ],
+      "invalidated_tasks": [],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "case": "Satisfied",
+          "merchant_dispute": "Satisfied",
+          "rule": "Satisfied",
+          "photo": "Satisfied",
+          "video": "Satisfied",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "buyer": "Satisfied",
+          "price": "Satisfied",
+          "time": "Satisfied",
+          "platform": "Satisfied",
+          "user_choice": "Satisfied"
+        },
+        "shopping_t3": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "duplicate": "Satisfied",
+          "order_link": "Satisfied",
+          "documents": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Satisfied",
+          "official_policy": "Satisfied",
+          "cost_cycle": "Satisfied",
+          "travel_fit": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "catalog": "Satisfied",
+          "stock": "Satisfied",
+          "coupon": "Satisfied",
+          "optimal": "Satisfied",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s15",
+      "after_event_id": "e015",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_ref_goal",
+          "question": "阎婷何时要求在必要时申请平台介入配件退货？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "2026-07-02提出平台介入"
+        },
+        {
+          "question_id": "s_ref_case",
+          "question": "婴儿床配件退货工单当前状态是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "商家异议，状态rejected"
+        },
+        {
+          "question_id": "s_ref_rule",
+          "question": "平台介入的举证要求和申请截止是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频"
+        },
+        {
+          "question_id": "s_ref_photo",
+          "question": "婴儿床配件损坏照片目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "齐全"
+        },
+        {
+          "question_id": "s_ref_video",
+          "question": "婴儿床配件开箱视频目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "齐全"
+        },
+        {
+          "question_id": "s_ref_open",
+          "question": "该配件平台介入申请是否仍待处理，还是已获裁决？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "尚未申请"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元，active"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "站内买家再次确认购买"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "2026-07-06 17:00，平台担保流程"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "买家接受平台担保"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "选择平台担保"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "尚待准备"
+        },
+        {
+          "question_id": "s_card_goal",
+          "question": "阎婷何时提出核对或处理境外异常扣费？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+        },
+        {
+          "question_id": "s_card_pair",
+          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+        },
+        {
+          "question_id": "s_card_order",
+          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
+        },
+        {
+          "question_id": "s_card_docs",
+          "question": "该境外交易的订单及账单凭证是否齐全？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "原始订单及两笔账单截图齐全"
+        },
+        {
+          "question_id": "s_card_status",
+          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "已批准并冲销258元"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "GBS5-2026-03，官方确认受召回影响"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "免费换新可在7月12日前验收，早于7月15日"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待最终方案"
+        },
+        {
+          "question_id": "s_cart_goal",
+          "question": "阎婷何时提出配件A、配件B、耗材C的加购需求？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-06-22提出三类配件加购"
+        },
+        {
+          "question_id": "s_cart_catalog",
+          "question": "三类原厂配件耗材各有哪些在售SKU及价格？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+        },
+        {
+          "question_id": "s_cart_stock",
+          "question": "最优组合对应SKU的库存情况是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "所选SKU各120件"
+        },
+        {
+          "question_id": "s_cart_coupon",
+          "question": "FULL209、FULL249和PCT10的门槛与叠加规则是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
+        },
+        {
+          "question_id": "s_cart_best",
+          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+        },
+        {
+          "question_id": "s_cart_status",
+          "question": "加购是否已经完成或失去必要性？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "尚未加购"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t1",
+        "shopping_t2",
+        "shopping_t3",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "ready_tasks": [
+        "shopping_t1",
+        "shopping_t2",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "case": "Satisfied",
+          "merchant_dispute": "Satisfied",
+          "rule": "Satisfied",
+          "photo": "Satisfied",
+          "video": "Satisfied",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "buyer": "Satisfied",
+          "price": "Satisfied",
+          "time": "Satisfied",
+          "platform": "Satisfied",
+          "user_choice": "Satisfied"
+        },
+        "shopping_t3": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "duplicate": "Satisfied",
+          "order_link": "Satisfied",
+          "documents": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Satisfied",
+          "official_policy": "Satisfied",
+          "cost_cycle": "Satisfied",
+          "travel_fit": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "catalog": "Satisfied",
+          "stock": "Satisfied",
+          "coupon": "Satisfied",
+          "optimal": "Satisfied",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s16",
+      "after_event_id": "e016",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_ref_goal",
+          "question": "阎婷何时要求在必要时申请平台介入配件退货？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "2026-07-02提出平台介入"
+        },
+        {
+          "question_id": "s_ref_case",
+          "question": "婴儿床配件退货工单当前状态是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "平台介入已批准，退款安排中"
+        },
+        {
+          "question_id": "s_ref_rule",
+          "question": "平台介入的举证要求和申请截止是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频"
+        },
+        {
+          "question_id": "s_ref_photo",
+          "question": "婴儿床配件损坏照片目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "齐全"
+        },
+        {
+          "question_id": "s_ref_video",
+          "question": "婴儿床配件开箱视频目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "齐全"
+        },
+        {
+          "question_id": "s_ref_open",
+          "question": "该配件平台介入申请是否仍待处理，还是已获裁决？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "已获裁决"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元，active"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "站内买家再次确认购买"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "2026-07-06 17:00，平台担保流程"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "买家接受平台担保"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "选择平台担保"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "尚待准备"
+        },
+        {
+          "question_id": "s_card_goal",
+          "question": "阎婷何时提出核对或处理境外异常扣费？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+        },
+        {
+          "question_id": "s_card_pair",
+          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+        },
+        {
+          "question_id": "s_card_order",
+          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
+        },
+        {
+          "question_id": "s_card_docs",
+          "question": "该境外交易的订单及账单凭证是否齐全？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "原始订单及两笔账单截图齐全"
+        },
+        {
+          "question_id": "s_card_status",
+          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "已批准并冲销258元"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "GBS5-2026-03，官方确认受召回影响"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "免费换新可在7月12日前验收，早于7月15日"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待最终方案"
+        },
+        {
+          "question_id": "s_cart_goal",
+          "question": "阎婷何时提出配件A、配件B、耗材C的加购需求？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-06-22提出三类配件加购"
+        },
+        {
+          "question_id": "s_cart_catalog",
+          "question": "三类原厂配件耗材各有哪些在售SKU及价格？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+        },
+        {
+          "question_id": "s_cart_stock",
+          "question": "最优组合对应SKU的库存情况是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "所选SKU各120件"
+        },
+        {
+          "question_id": "s_cart_coupon",
+          "question": "FULL209、FULL249和PCT10的门槛与叠加规则是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
+        },
+        {
+          "question_id": "s_cart_best",
+          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+        },
+        {
+          "question_id": "s_cart_status",
+          "question": "加购是否已经完成或失去必要性？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "尚未加购"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t1",
+        "shopping_t2",
+        "shopping_t3",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "ready_tasks": [
+        "shopping_t2",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [
+        "shopping_t1"
+      ],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "case": "Satisfied",
+          "merchant_dispute": "Satisfied",
+          "rule": "Satisfied",
+          "photo": "Satisfied",
+          "video": "Satisfied",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "buyer": "Satisfied",
+          "price": "Satisfied",
+          "time": "Satisfied",
+          "platform": "Satisfied",
+          "user_choice": "Satisfied"
+        },
+        "shopping_t3": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "duplicate": "Satisfied",
+          "order_link": "Satisfied",
+          "documents": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Satisfied",
+          "official_policy": "Satisfied",
+          "cost_cycle": "Satisfied",
+          "travel_fit": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "catalog": "Satisfied",
+          "stock": "Satisfied",
+          "coupon": "Satisfied",
+          "optimal": "Satisfied",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s17",
+      "after_event_id": "e017",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_ref_goal",
+          "question": "阎婷何时要求在必要时申请平台介入配件退货？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "2026-07-02提出平台介入"
+        },
+        {
+          "question_id": "s_ref_case",
+          "question": "婴儿床配件退货工单当前状态是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "平台介入已批准，退款安排中"
+        },
+        {
+          "question_id": "s_ref_rule",
+          "question": "平台介入的举证要求和申请截止是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频"
+        },
+        {
+          "question_id": "s_ref_photo",
+          "question": "婴儿床配件损坏照片目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "齐全"
+        },
+        {
+          "question_id": "s_ref_video",
+          "question": "婴儿床配件开箱视频目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "齐全"
+        },
+        {
+          "question_id": "s_ref_open",
+          "question": "该配件平台介入申请是否仍待处理，还是已获裁决？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "已获裁决"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "已下架"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "站内买家再次确认购买"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "2026-07-06 17:00，平台担保流程"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "买家接受平台担保"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "选择平台担保"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "已完成"
+        },
+        {
+          "question_id": "s_card_goal",
+          "question": "阎婷何时提出核对或处理境外异常扣费？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+        },
+        {
+          "question_id": "s_card_pair",
+          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+        },
+        {
+          "question_id": "s_card_order",
+          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
+        },
+        {
+          "question_id": "s_card_docs",
+          "question": "该境外交易的订单及账单凭证是否齐全？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "原始订单及两笔账单截图齐全"
+        },
+        {
+          "question_id": "s_card_status",
+          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "已批准并冲销258元"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "GBS5-2026-03，官方确认受召回影响"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "免费换新可在7月12日前验收，早于7月15日"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待最终方案"
+        },
+        {
+          "question_id": "s_cart_goal",
+          "question": "阎婷何时提出配件A、配件B、耗材C的加购需求？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-06-22提出三类配件加购"
+        },
+        {
+          "question_id": "s_cart_catalog",
+          "question": "三类原厂配件耗材各有哪些在售SKU及价格？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+        },
+        {
+          "question_id": "s_cart_stock",
+          "question": "最优组合对应SKU的库存情况是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "所选SKU各120件"
+        },
+        {
+          "question_id": "s_cart_coupon",
+          "question": "FULL209、FULL249和PCT10的门槛与叠加规则是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
+        },
+        {
+          "question_id": "s_cart_best",
+          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+        },
+        {
+          "question_id": "s_cart_status",
+          "question": "加购是否已经完成或失去必要性？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "尚未加购"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t1",
+        "shopping_t2",
+        "shopping_t3",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "ready_tasks": [
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [
+        "shopping_t2"
+      ],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "case": "Satisfied",
+          "merchant_dispute": "Satisfied",
+          "rule": "Satisfied",
+          "photo": "Satisfied",
+          "video": "Satisfied",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "listing": "Unsatisfied",
+          "buyer": "Satisfied",
+          "price": "Satisfied",
+          "time": "Satisfied",
+          "platform": "Satisfied",
+          "user_choice": "Satisfied"
+        },
+        "shopping_t3": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "duplicate": "Satisfied",
+          "order_link": "Satisfied",
+          "documents": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Satisfied",
+          "official_policy": "Satisfied",
+          "cost_cycle": "Satisfied",
+          "travel_fit": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "catalog": "Satisfied",
+          "stock": "Satisfied",
+          "coupon": "Satisfied",
+          "optimal": "Satisfied",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s18",
+      "after_event_id": "e018",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-07-15"
+        },
+        {
+          "question_id": "s_ref_goal",
+          "question": "阎婷何时要求在必要时申请平台介入配件退货？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "2026-07-02提出平台介入"
+        },
+        {
+          "question_id": "s_ref_case",
+          "question": "婴儿床配件退货工单当前状态是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "平台介入已批准，退款安排中"
+        },
+        {
+          "question_id": "s_ref_rule",
+          "question": "平台介入的举证要求和申请截止是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频"
+        },
+        {
+          "question_id": "s_ref_photo",
+          "question": "婴儿床配件损坏照片目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "齐全"
+        },
+        {
+          "question_id": "s_ref_video",
+          "question": "婴儿床配件开箱视频目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "齐全"
+        },
+        {
+          "question_id": "s_ref_open",
+          "question": "该配件平台介入申请是否仍待处理，还是已获裁决？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "已获裁决"
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售"
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "已下架"
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "站内买家再次确认购买"
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元"
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "2026-07-06 17:00，平台担保流程"
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "买家接受平台担保"
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "选择平台担保"
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "已完成"
+        },
+        {
+          "question_id": "s_card_goal",
+          "question": "阎婷何时提出核对或处理境外异常扣费？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+        },
+        {
+          "question_id": "s_card_pair",
+          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+        },
+        {
+          "question_id": "s_card_order",
+          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
+        },
+        {
+          "question_id": "s_card_docs",
+          "question": "该境外交易的订单及账单凭证是否齐全？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "原始订单及两笔账单截图齐全"
+        },
+        {
+          "question_id": "s_card_status",
+          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "已批准并冲销258元"
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "GBS5-2026-03，官方确认受召回影响"
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "免费换新可在7月12日前验收，早于7月15日"
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待最终方案"
+        },
+        {
+          "question_id": "s_cart_goal",
+          "question": "阎婷何时提出配件A、配件B、耗材C的加购需求？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-06-22提出三类配件加购"
+        },
+        {
+          "question_id": "s_cart_catalog",
+          "question": "三类原厂配件耗材各有哪些在售SKU及价格？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+        },
+        {
+          "question_id": "s_cart_stock",
+          "question": "最优组合对应SKU的库存情况是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "所选SKU各120件"
+        },
+        {
+          "question_id": "s_cart_coupon",
+          "question": "FULL209、FULL249和PCT10的门槛与叠加规则是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
+        },
+        {
+          "question_id": "s_cart_best",
+          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+        },
+        {
+          "question_id": "s_cart_status",
+          "question": "加购是否已经完成或失去必要性？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "尚未加购"
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t1",
+        "shopping_t2",
+        "shopping_t3",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "ready_tasks": [
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "case": "Satisfied",
+          "merchant_dispute": "Satisfied",
+          "rule": "Satisfied",
+          "photo": "Satisfied",
+          "video": "Satisfied",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "listing": "Unsatisfied",
+          "buyer": "Satisfied",
+          "price": "Satisfied",
+          "time": "Satisfied",
+          "platform": "Satisfied",
+          "user_choice": "Satisfied"
+        },
+        "shopping_t3": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "duplicate": "Satisfied",
+          "order_link": "Satisfied",
+          "documents": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Satisfied",
+          "official_policy": "Satisfied",
+          "cost_cycle": "Satisfied",
+          "travel_fit": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "catalog": "Satisfied",
+          "stock": "Satisfied",
+          "coupon": "Satisfied",
+          "optimal": "Satisfied",
+          "authorized": "Satisfied"
+        }
+      }
+    }
+  ]
+}

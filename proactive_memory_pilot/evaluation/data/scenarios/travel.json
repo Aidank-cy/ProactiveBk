@@ -1,0 +1,6896 @@
+{
+  "scenario_id": "travel",
+  "initial_context": [
+    {
+      "record_id": "h001",
+      "timestamp": "2026-07-24T09:10:00+08:00",
+      "source": "user_message",
+      "content": "我是林乔，8月去厄瓜多尔Galapagos参加生态数据工作坊，爱人许闻同行。请持续管理航班、酒店、岛上接送、预算、证件与报销。合规且可撤销的项目可先hold；最终付款和不可退项目须先问我。"
+    },
+    {
+      "record_id": "h002",
+      "timestamp": "2026-07-24T09:18:00+08:00",
+      "source": "user_message",
+      "content": "我们从上海出发。许闻容易晕船，尽量不要长时间快艇；他是私人陪同，不参加会议，费用不得混入我的会议报销。"
+    },
+    {
+      "record_id": "h003",
+      "timestamp": "2026-07-24T09:25:00+08:00",
+      "source": "workspace",
+      "content": "旅行资料夹目前只有交接规则；护照姓名、签证和邀请函核验包尚未发布，过境资格仍待核。"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "e001",
+      "timestamp": "2026-07-25T11:30:00+08:00",
+      "source": "calendar",
+      "content": "会务日历确认：8月17日18:00前须到Puerto Ayora Marine Data Lab登记，18日09:00开幕，22日12:00结束。Baltra机场至会场需机场巴士、Itabaca海峡驳船和Santa Cruz陆路换乘。"
+    },
+    {
+      "event_id": "e002",
+      "timestamp": "2026-07-26T20:05:00+08:00",
+      "source": "user_message",
+      "content": "8月14日17:30后才能从上海出发；8月25日中午前必须回到上海。可靠且准时优先于省钱，14日16:30-17:30和25日14:00-16:00有不可移动会议。"
+    },
+    {
+      "event_id": "e003",
+      "timestamp": "2026-07-27T09:20:00+08:00",
+      "source": "workspace",
+      "content": "核验包确认：林乔和许闻中国护照有效；林乔美国B1/B2签证已于2024-10-31到期，许闻从未持美国签证；两人无申根签证，欧洲连接只能在单张机票内空侧转机且行李直挂。美国转机须两人都有有效美国签证。已省略证件号码和生日。"
+    },
+    {
+      "event_id": "e004",
+      "timestamp": "2026-07-27T10:00:00+08:00",
+      "source": "email",
+      "content": "会务协调人邮件：8月17日10:00-18:00现场登记，无次晨补办；建议16日晚前到岛。Baltra落地后还需巴士、驳船和陆路到镇；岛上住宿需自订。"
+    },
+    {
+      "event_id": "e005",
+      "timestamp": "2026-07-28T13:05:00+08:00",
+      "source": "flight_booking",
+      "content": "经LAX的UA858/CM473/CM159/LA1411联程票价再降55美元/航段且座位增加；非美国路线CX368/CX315/IB6453价格各涨40美元、余票减少。林乔说两人总预算尽量控制在6800美元，明显超支须解释。"
+    },
+    {
+      "event_id": "e006",
+      "timestamp": "2026-07-30T10:15:00+08:00",
+      "source": "flight_booking",
+      "content": "经HKG/MAD/GYE到Galapagos的CX368/CX315/IB6453/AV1632有余票；CX368于8月14日19:40离沪，AV1632于8月16日11:10抵Baltra；返程AV1633/IB6454/IB6455于8月25日10:20抵沪。非美国路线部分票价再涨60美元且剩3座；免费hold窗口缩为6小时。"
+    },
+    {
+      "event_id": "e007",
+      "timestamp": "2026-07-31T10:00:00+08:00",
+      "source": "email",
+      "content": "航司针对上述HKG/MAD/GYE往返组合出具两人合计3180美元单票通程报价，Madrid转机保持空侧、行李直挂，保留6小时免费hold；该价格是组合报价，并非逐段公开票价相加。"
+    },
+    {
+      "event_id": "e008",
+      "timestamp": "2026-07-31T19:10:00+08:00",
+      "source": "hotel_booking",
+      "content": "Puerto Ayora的Jardin Tranquilo安静花园双人房距会场约1.1公里，8月16日至23日弹性房每晚225至241美元、库存每晚3间；入住前两天18:00当地时间前免费取消。Malecon Central更近但预付不可退；Guayaquil机场过夜弹性房约175美元。按航班3180美元、岛上房约1630美元、本土房175美元、接送和入岛费预留约500美元，合计约5485美元，仍在6800美元目标内。"
+    },
+    {
+      "event_id": "e009",
+      "timestamp": "2026-08-01T11:00:00+08:00",
+      "source": "weather",
+      "content": "火山灰提高Quito航段风险：KL755和AV1688显示延误95分钟；经Guayaquil的航段当前未见同类更新。"
+    },
+    {
+      "event_id": "e010",
+      "timestamp": "2026-08-02T18:00:00+08:00",
+      "source": "email",
+      "content": "航司邮件：经Quito航线受火山灰影响可在24小时内免改签费变更到达点，须同舱有库存；Guayaquil至岛上班次当前按表运行。免费变更不保证个别航班一定起飞。"
+    },
+    {
+      "event_id": "e011",
+      "timestamp": "2026-08-03T10:00:00+08:00",
+      "source": "hotel_booking",
+      "content": "Jardin Tranquilo 8月16至23日弹性房七晚库存变为0；远郊Cerro Verde弹性房每晚余2间但距会场12.5公里且接驳班次有限；Malecon Central预付房更便宜但不可退。"
+    },
+    {
+      "event_id": "e012",
+      "timestamp": "2026-08-04T21:00:00+08:00",
+      "source": "email",
+      "content": "财务书面答复：林乔本人机票、入岛费、合理会议住宿单人房价和本人接送可报；许闻机票、入岛费、双人房差额和接送座位不可报。只hold或预授权冻结不能当费用申报；酒店发票需标明单人价。林乔再次确认可取消项目可先hold，不可退和证件风险未排除项目须先问。"
+    },
+    {
+      "event_id": "e013",
+      "timestamp": "2026-08-06T13:00:00+08:00",
+      "source": "user_message",
+      "content": "许闻容易晕船；这几天海况较差，避开跨岛快艇。我想让他在8月19日下午参加安全的Santa Cruz岸上活动，不和我的工作坊时间冲突。"
+    },
+    {
+      "event_id": "e014",
+      "timestamp": "2026-08-07T11:05:00+08:00",
+      "source": "email",
+      "content": "国家公园邮件确认TCT每人20美元、岛上国家公园费每人100美元；两处刷卡不稳，建议小面额美元现金并保留每人收据。地图显示Tortuga Bay陆地步道及Santa Cruz高地路线；8月19日下午两处开放且天气预报适合短途步行。"
+    },
+    {
+      "event_id": "e015",
+      "timestamp": "2026-08-08T16:45:00+08:00",
+      "source": "email",
+      "content": "认证接送供应商Transfers Santa Cruz调整Baltra接机班次：8月16日12:30最后接机，供两人座位，35美元/人，含机场巴士、驳船衔接和至Puerto Ayora的路段；按当前11:10落地，预计16:00前到会场。"
+    },
+    {
+      "event_id": "e016",
+      "timestamp": "2026-08-10T09:35:00+08:00",
+      "source": "email",
+      "content": "支付渠道提示一笔航班hold须二次确认后才出票，酒店180美元押金仅预授权冻结；没有重复支付授权。"
+    },
+    {
+      "event_id": "e017",
+      "timestamp": "2026-08-14T17:35:00+08:00",
+      "source": "flight_booking",
+      "content": "CX368首段晚点70分钟，后续Madrid衔接余量待航司确认；原预留窗口已结束。"
+    },
+    {
+      "event_id": "e018",
+      "timestamp": "2026-08-17T15:00:00-06:00",
+      "source": "user_message",
+      "content": "我们已到Galapagos机场，接送及排队比预想慢。航司状态显示Madrid衔接保住，AV1632延误40分钟；原8月16日认证接送方案已过期，当前需重新判断登记衔接。"
+    },
+    {
+      "event_id": "e019",
+      "timestamp": "2026-08-20T09:00:00-06:00",
+      "source": "email",
+      "content": "主办方因天气调整户外样线为岸上数据清洗及室内讨论；港务警告停止部分船只作业。许闻8月19日下午活动时间已过去。"
+    },
+    {
+      "event_id": "e020",
+      "timestamp": "2026-08-24T10:00:00+08:00",
+      "source": "email",
+      "content": "票据到达：两人机票合计1480美元已结算；Jardin Tranquilo双人房七晚1575美元、早餐168美元、洗衣22美元，共1765美元，单人房价1190美元，180美元押金冻结待释放；Baltra接送两席70美元已结算；两人TCT各20美元、国家公园费各100美元有独立现金收据。每人机票分项凭证随航段券附上。"
+    },
+    {
+      "event_id": "e021",
+      "timestamp": "2026-08-25T13:30:00+08:00",
+      "source": "user_message",
+      "content": "我已回到上海，请最终整理报销和私人费用。机票乘客券已核对：林乔740美元、许闻740美元；其余发票与现金收据按此前邮件。"
+    }
+  ],
+  "task_registry": [
+    {
+      "task_id": "travel_t1",
+      "description": "为林乔和许闻预留符合条件的非美国转机国际往返航班。",
+      "goal": "完成合规可靠的工作坊往返旅行",
+      "conditions": [
+        "goal",
+        "open",
+        "inventory",
+        "transit",
+        "ticket",
+        "timing",
+        "budget",
+        "reversible",
+        "authorized"
+      ],
+      "required_memory_facts": [
+        "t_goal",
+        "t_flight_open",
+        "t_flight_stock",
+        "t_visa",
+        "t_flight_ticket",
+        "t_dates",
+        "t_deadline",
+        "t_flight_time",
+        "t_budget",
+        "t_flight_price",
+        "t_flight_hold",
+        "t_auth"
+      ],
+      "matching_guidelines": "须是两人国际往返的合规可撤销预留；单程、美国转机、实际出票或未经确认付款不等价。"
+    },
+    {
+      "task_id": "travel_t2",
+      "description": "为林乔和许闻预留Jardin Tranquilo可免费取消的工作坊住宿。",
+      "goal": "取得安静且靠近会场的住宿",
+      "conditions": [
+        "goal",
+        "open",
+        "dates",
+        "inventory",
+        "location",
+        "budget",
+        "cancellation",
+        "authorized"
+      ],
+      "required_memory_facts": [
+        "t_goal",
+        "t_hotel_open",
+        "t_hotel_dates",
+        "t_hotel_stock",
+        "t_hotel_place",
+        "t_budget",
+        "t_flight_price",
+        "t_hotel_price",
+        "t_hotel_cancel",
+        "t_auth"
+      ],
+      "matching_guidelines": "须识别Jardin Tranquilo可取消房；不可退的Malecon Central或远郊Cerro Verde不等价。"
+    },
+    {
+      "task_id": "travel_t3",
+      "description": "确定两人从Baltra机场到Puerto Ayora工作坊地点的认证接送方案。",
+      "goal": "按时完成工作坊登记",
+      "conditions": [
+        "goal",
+        "open",
+        "arrival",
+        "route",
+        "vendor",
+        "cost",
+        "deadline",
+        "authorized"
+      ],
+      "required_memory_facts": [
+        "t_goal",
+        "t_transfer_open",
+        "t_flight_time",
+        "t_transfer_route",
+        "t_transfer_vendor",
+        "t_transfer_cost",
+        "t_deadline",
+        "t_auth"
+      ],
+      "matching_guidelines": "确定班次与衔接即可；不表示付款预订，须覆盖两人并考虑登记截止。"
+    },
+    {
+      "task_id": "travel_t4",
+      "description": "为许闻制定晕船限制下的Santa Cruz岸上活动方案。",
+      "goal": "让陪同者安全参与适宜活动",
+      "conditions": [
+        "goal",
+        "open",
+        "time",
+        "conditions",
+        "option",
+        "comfort"
+      ],
+      "required_memory_facts": [
+        "t_land_goal",
+        "t_land_open",
+        "t_land_time",
+        "t_land_weather",
+        "t_land_option",
+        "t_goal"
+      ],
+      "matching_guidelines": "须为许闻安排岸上、避开长快艇的具体活动；远海或潜水不等价。"
+    },
+    {
+      "task_id": "travel_t5",
+      "description": "整理林乔本次会议费用的最终报销材料包。",
+      "goal": "完成会议费用与私人费用拆分",
+      "conditions": [
+        "goal",
+        "open",
+        "policy",
+        "settlement",
+        "receipts",
+        "trip_finished"
+      ],
+      "required_memory_facts": [
+        "t_goal",
+        "t_claim_policy",
+        "t_claim_payment",
+        "t_claim_receipts",
+        "t_claim_return"
+      ],
+      "matching_guidelines": "须为林乔最终报销，按本人和许闻拆分实际结算与冻结；仅整理预估预算不等价。"
+    }
+  ],
+  "evaluations": [
+    {
+      "stage_id": "s00",
+      "after_event_id": null,
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "可撤销低风险hold可先处理；不可退与最终付款须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t5"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "inventory": "Unknown",
+          "transit": "Unknown",
+          "ticket": "Unknown",
+          "timing": "Unknown",
+          "budget": "Unknown",
+          "reversible": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "dates": "Unknown",
+          "inventory": "Unknown",
+          "location": "Unknown",
+          "budget": "Unknown",
+          "cancellation": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Unknown",
+          "route": "Unknown",
+          "vendor": "Unknown",
+          "cost": "Unknown",
+          "deadline": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "time": "Unknown",
+          "conditions": "Unknown",
+          "option": "Unknown",
+          "comfort": "Unknown"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Unknown",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s01",
+      "after_event_id": "e001",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "可撤销低风险hold可先处理；不可退与最终付款须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t5"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "inventory": "Unknown",
+          "transit": "Unknown",
+          "ticket": "Unknown",
+          "timing": "Unknown",
+          "budget": "Unknown",
+          "reversible": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "dates": "Unknown",
+          "inventory": "Unknown",
+          "location": "Unknown",
+          "budget": "Unknown",
+          "cancellation": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Unknown",
+          "route": "Satisfied",
+          "vendor": "Unknown",
+          "cost": "Unknown",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "time": "Unknown",
+          "conditions": "Unknown",
+          "option": "Unknown",
+          "comfort": "Unknown"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Unknown",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s02",
+      "after_event_id": "e002",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "可撤销低风险hold可先处理；不可退与最终付款须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t5"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "inventory": "Unknown",
+          "transit": "Unknown",
+          "ticket": "Unknown",
+          "timing": "Unknown",
+          "budget": "Unknown",
+          "reversible": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "dates": "Unknown",
+          "inventory": "Unknown",
+          "location": "Unknown",
+          "budget": "Unknown",
+          "cancellation": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Unknown",
+          "route": "Satisfied",
+          "vendor": "Unknown",
+          "cost": "Unknown",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "time": "Unknown",
+          "conditions": "Unknown",
+          "option": "Unknown",
+          "comfort": "Unknown"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Unknown",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s03",
+      "after_event_id": "e003",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "可撤销低风险hold可先处理；不可退与最终付款须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t5"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "inventory": "Unknown",
+          "transit": "Satisfied",
+          "ticket": "Unknown",
+          "timing": "Unknown",
+          "budget": "Unknown",
+          "reversible": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "dates": "Unknown",
+          "inventory": "Unknown",
+          "location": "Unknown",
+          "budget": "Unknown",
+          "cancellation": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Unknown",
+          "route": "Satisfied",
+          "vendor": "Unknown",
+          "cost": "Unknown",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "time": "Unknown",
+          "conditions": "Unknown",
+          "option": "Unknown",
+          "comfort": "Unknown"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Unknown",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s04",
+      "after_event_id": "e004",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "可撤销低风险hold可先处理；不可退与最终付款须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t5"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "inventory": "Unknown",
+          "transit": "Satisfied",
+          "ticket": "Unknown",
+          "timing": "Unknown",
+          "budget": "Unknown",
+          "reversible": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "dates": "Satisfied",
+          "inventory": "Unknown",
+          "location": "Unknown",
+          "budget": "Unknown",
+          "cancellation": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Unknown",
+          "route": "Satisfied",
+          "vendor": "Unknown",
+          "cost": "Unknown",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "time": "Unknown",
+          "conditions": "Unknown",
+          "option": "Unknown",
+          "comfort": "Unknown"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Unknown",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s05",
+      "after_event_id": "e005",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "可撤销低风险hold可先处理；不可退与最终付款须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "6800美元，明显超支须解释"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t5"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "inventory": "Unknown",
+          "transit": "Satisfied",
+          "ticket": "Unknown",
+          "timing": "Unknown",
+          "budget": "Unknown",
+          "reversible": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "dates": "Satisfied",
+          "inventory": "Unknown",
+          "location": "Unknown",
+          "budget": "Unknown",
+          "cancellation": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Unknown",
+          "route": "Satisfied",
+          "vendor": "Unknown",
+          "cost": "Unknown",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "time": "Unknown",
+          "conditions": "Unknown",
+          "option": "Unknown",
+          "comfort": "Unknown"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Unknown",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s06",
+      "after_event_id": "e006",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "可撤销低风险hold可先处理；不可退与最终付款须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "6800美元，明显超支须解释"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "每段至少3座"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "8月14日19:40离沪；8月16日11:10抵GPS；8月25日10:20返沪"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "免费hold 6小时，出票后依票规"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t5"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "inventory": "Satisfied",
+          "transit": "Satisfied",
+          "ticket": "Unknown",
+          "timing": "Satisfied",
+          "budget": "Unknown",
+          "reversible": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "dates": "Satisfied",
+          "inventory": "Unknown",
+          "location": "Unknown",
+          "budget": "Unknown",
+          "cancellation": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Satisfied",
+          "route": "Satisfied",
+          "vendor": "Unknown",
+          "cost": "Unknown",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "time": "Unknown",
+          "conditions": "Unknown",
+          "option": "Unknown",
+          "comfort": "Unknown"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Unknown",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s07",
+      "after_event_id": "e007",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "可撤销低风险hold可先处理；不可退与最终付款须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "6800美元，明显超支须解释"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "每段至少3座"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "8月14日19:40离沪；8月16日11:10抵GPS；8月25日10:20返沪"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "单票通程、Madrid空侧、行李直挂"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "两人往返3180美元"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "免费hold 6小时，出票后依票规"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t5"
+      ],
+      "ready_tasks": [
+        "travel_t1"
+      ],
+      "newly_ready_tasks": [
+        "travel_t1"
+      ],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "inventory": "Satisfied",
+          "transit": "Satisfied",
+          "ticket": "Satisfied",
+          "timing": "Satisfied",
+          "budget": "Satisfied",
+          "reversible": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "dates": "Satisfied",
+          "inventory": "Unknown",
+          "location": "Unknown",
+          "budget": "Unknown",
+          "cancellation": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Satisfied",
+          "route": "Satisfied",
+          "vendor": "Unknown",
+          "cost": "Unknown",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "time": "Unknown",
+          "conditions": "Unknown",
+          "option": "Unknown",
+          "comfort": "Unknown"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Unknown",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s08",
+      "after_event_id": "e008",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "可撤销低风险hold可先处理；不可退与最终付款须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "6800美元，明显超支须解释"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "每段至少3座"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "8月14日19:40离沪；8月16日11:10抵GPS；8月25日10:20返沪"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "单票通程、Madrid空侧、行李直挂"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "两人往返3180美元"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "免费hold 6小时，出票后依票规"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "七晚弹性房各3间"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "安静，距会场1.1公里，可步行"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "岛上七晚约1630美元，本土过夜约175美元，总预算约5485美元"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "入住前两天18:00当地时间免费取消"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t5"
+      ],
+      "ready_tasks": [
+        "travel_t1",
+        "travel_t2"
+      ],
+      "newly_ready_tasks": [
+        "travel_t2"
+      ],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "inventory": "Satisfied",
+          "transit": "Satisfied",
+          "ticket": "Satisfied",
+          "timing": "Satisfied",
+          "budget": "Satisfied",
+          "reversible": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "dates": "Satisfied",
+          "inventory": "Satisfied",
+          "location": "Satisfied",
+          "budget": "Satisfied",
+          "cancellation": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Satisfied",
+          "route": "Satisfied",
+          "vendor": "Unknown",
+          "cost": "Unknown",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "time": "Unknown",
+          "conditions": "Unknown",
+          "option": "Unknown",
+          "comfort": "Unknown"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Unknown",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s09",
+      "after_event_id": "e009",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "可撤销低风险hold可先处理；不可退与最终付款须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "6800美元，明显超支须解释"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "每段至少3座"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "8月14日19:40离沪；8月16日11:10抵GPS；8月25日10:20返沪"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "单票通程、Madrid空侧、行李直挂"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "两人往返3180美元"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "免费hold 6小时，出票后依票规"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "七晚弹性房各3间"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "安静，距会场1.1公里，可步行"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "岛上七晚约1630美元，本土过夜约175美元，总预算约5485美元"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "入住前两天18:00当地时间免费取消"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t5"
+      ],
+      "ready_tasks": [
+        "travel_t1",
+        "travel_t2"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "inventory": "Satisfied",
+          "transit": "Satisfied",
+          "ticket": "Satisfied",
+          "timing": "Satisfied",
+          "budget": "Satisfied",
+          "reversible": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "dates": "Satisfied",
+          "inventory": "Satisfied",
+          "location": "Satisfied",
+          "budget": "Satisfied",
+          "cancellation": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Satisfied",
+          "route": "Satisfied",
+          "vendor": "Unknown",
+          "cost": "Unknown",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "time": "Unknown",
+          "conditions": "Unknown",
+          "option": "Unknown",
+          "comfort": "Unknown"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Unknown",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s10",
+      "after_event_id": "e010",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "可撤销低风险hold可先处理；不可退与最终付款须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "6800美元，明显超支须解释"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "每段至少3座"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "8月14日19:40离沪；8月16日11:10抵GPS；8月25日10:20返沪"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "单票通程、Madrid空侧、行李直挂"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "两人往返3180美元"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "免费hold 6小时，出票后依票规"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "七晚弹性房各3间"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "安静，距会场1.1公里，可步行"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "岛上七晚约1630美元，本土过夜约175美元，总预算约5485美元"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "入住前两天18:00当地时间免费取消"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t5"
+      ],
+      "ready_tasks": [
+        "travel_t1",
+        "travel_t2"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "inventory": "Satisfied",
+          "transit": "Satisfied",
+          "ticket": "Satisfied",
+          "timing": "Satisfied",
+          "budget": "Satisfied",
+          "reversible": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "dates": "Satisfied",
+          "inventory": "Satisfied",
+          "location": "Satisfied",
+          "budget": "Satisfied",
+          "cancellation": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Satisfied",
+          "route": "Satisfied",
+          "vendor": "Unknown",
+          "cost": "Unknown",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "time": "Unknown",
+          "conditions": "Unknown",
+          "option": "Unknown",
+          "comfort": "Unknown"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Unknown",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s11",
+      "after_event_id": "e011",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "可撤销低风险hold可先处理；不可退与最终付款须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "6800美元，明显超支须解释"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "每段至少3座"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "8月14日19:40离沪；8月16日11:10抵GPS；8月25日10:20返沪"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "单票通程、Madrid空侧、行李直挂"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "两人往返3180美元"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "免费hold 6小时，出票后依票规"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "七晚弹性房库存0"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "安静，距会场1.1公里，可步行"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "岛上七晚约1630美元，本土过夜约175美元，总预算约5485美元"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "入住前两天18:00当地时间免费取消"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "该房型售罄"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t5"
+      ],
+      "ready_tasks": [
+        "travel_t1"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [
+        "travel_t2"
+      ],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "inventory": "Satisfied",
+          "transit": "Satisfied",
+          "ticket": "Satisfied",
+          "timing": "Satisfied",
+          "budget": "Satisfied",
+          "reversible": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "dates": "Satisfied",
+          "inventory": "Unsatisfied",
+          "location": "Satisfied",
+          "budget": "Satisfied",
+          "cancellation": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Satisfied",
+          "route": "Satisfied",
+          "vendor": "Unknown",
+          "cost": "Unknown",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "time": "Unknown",
+          "conditions": "Unknown",
+          "option": "Unknown",
+          "comfort": "Unknown"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Unknown",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s12",
+      "after_event_id": "e012",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "合规可取消项目可先hold；不可退、明显超预算和证件风险项目须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "6800美元，明显超支须解释"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "每段至少3座"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "8月14日19:40离沪；8月16日11:10抵GPS；8月25日10:20返沪"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "单票通程、Madrid空侧、行李直挂"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "两人往返3180美元"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "免费hold 6小时，出票后依票规"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "七晚弹性房库存0"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "安静，距会场1.1公里，可步行"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "岛上七晚约1630美元，本土过夜约175美元，总预算约5485美元"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "入住前两天18:00当地时间免费取消"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "该房型售罄"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "本人机票、入岛费、单人房价与本人接送可报；许闻及双人差额不可报；仅已结算可申报"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t5"
+      ],
+      "ready_tasks": [
+        "travel_t1"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "inventory": "Satisfied",
+          "transit": "Satisfied",
+          "ticket": "Satisfied",
+          "timing": "Satisfied",
+          "budget": "Satisfied",
+          "reversible": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "dates": "Satisfied",
+          "inventory": "Unsatisfied",
+          "location": "Satisfied",
+          "budget": "Satisfied",
+          "cancellation": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Satisfied",
+          "route": "Satisfied",
+          "vendor": "Unknown",
+          "cost": "Unknown",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "time": "Unknown",
+          "conditions": "Unknown",
+          "option": "Unknown",
+          "comfort": "Unknown"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Satisfied",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s13",
+      "after_event_id": "e013",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t4",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "合规可取消项目可先hold；不可退、明显超预算和证件风险项目须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "6800美元，明显超支须解释"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "每段至少3座"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "8月14日19:40离沪；8月16日11:10抵GPS；8月25日10:20返沪"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "单票通程、Madrid空侧、行李直挂"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "两人往返3180美元"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "免费hold 6小时，出票后依票规"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "七晚弹性房库存0"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "安静，距会场1.1公里，可步行"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "岛上七晚约1630美元，本土过夜约175美元，总预算约5485美元"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "入住前两天18:00当地时间免费取消"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "该房型售罄"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_land_goal",
+          "question": "林乔何时明确要求为许闻安排岸上活动？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-06明确提出"
+        },
+        {
+          "question_id": "t_land_time",
+          "question": "许闻可参加岸上活动的时间窗口是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-19下午"
+        },
+        {
+          "question_id": "t_land_weather",
+          "question": "当前海况和岸上天气对许闻活动的影响是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "跨岛海况差；需岸上替代"
+        },
+        {
+          "question_id": "t_land_option",
+          "question": "当前有哪些可用的岸上活动及其安排？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_land_open",
+          "question": "许闻的该岸上活动时间窗口是否仍未过去？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "时间未过去"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "本人机票、入岛费、单人房价与本人接送可报；许闻及双人差额不可报；仅已结算可申报"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t4",
+        "travel_t5"
+      ],
+      "ready_tasks": [
+        "travel_t1"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "inventory": "Satisfied",
+          "transit": "Satisfied",
+          "ticket": "Satisfied",
+          "timing": "Satisfied",
+          "budget": "Satisfied",
+          "reversible": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "dates": "Satisfied",
+          "inventory": "Unsatisfied",
+          "location": "Satisfied",
+          "budget": "Satisfied",
+          "cancellation": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Satisfied",
+          "route": "Satisfied",
+          "vendor": "Unknown",
+          "cost": "Unknown",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "time": "Satisfied",
+          "conditions": "Satisfied",
+          "option": "Unknown",
+          "comfort": "Satisfied"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Satisfied",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s14",
+      "after_event_id": "e014",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t4",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "合规可取消项目可先hold；不可退、明显超预算和证件风险项目须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "6800美元，明显超支须解释"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "每段至少3座"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "8月14日19:40离沪；8月16日11:10抵GPS；8月25日10:20返沪"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "单票通程、Madrid空侧、行李直挂"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "两人往返3180美元"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "免费hold 6小时，出票后依票规"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "七晚弹性房库存0"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "安静，距会场1.1公里，可步行"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "岛上七晚约1630美元，本土过夜约175美元，总预算约5485美元"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "入住前两天18:00当地时间免费取消"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "该房型售罄"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_land_goal",
+          "question": "林乔何时明确要求为许闻安排岸上活动？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-06明确提出"
+        },
+        {
+          "question_id": "t_land_time",
+          "question": "许闻可参加岸上活动的时间窗口是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-19下午"
+        },
+        {
+          "question_id": "t_land_weather",
+          "question": "当前海况和岸上天气对许闻活动的影响是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "海况差，岸上短途步行天气适宜"
+        },
+        {
+          "question_id": "t_land_option",
+          "question": "当前有哪些可用的岸上活动及其安排？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "Tortuga Bay陆地步道或Santa Cruz高地短途步行，8月19日下午可用"
+        },
+        {
+          "question_id": "t_land_open",
+          "question": "许闻的该岸上活动时间窗口是否仍未过去？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "时间未过去"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "本人机票、入岛费、单人房价与本人接送可报；许闻及双人差额不可报；仅已结算可申报"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t4",
+        "travel_t5"
+      ],
+      "ready_tasks": [
+        "travel_t1",
+        "travel_t4"
+      ],
+      "newly_ready_tasks": [
+        "travel_t4"
+      ],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "inventory": "Satisfied",
+          "transit": "Satisfied",
+          "ticket": "Satisfied",
+          "timing": "Satisfied",
+          "budget": "Satisfied",
+          "reversible": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "dates": "Satisfied",
+          "inventory": "Unsatisfied",
+          "location": "Satisfied",
+          "budget": "Satisfied",
+          "cancellation": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Satisfied",
+          "route": "Satisfied",
+          "vendor": "Unknown",
+          "cost": "Unknown",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "time": "Satisfied",
+          "conditions": "Satisfied",
+          "option": "Satisfied",
+          "comfort": "Satisfied"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Satisfied",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s15",
+      "after_event_id": "e015",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t4",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "合规可取消项目可先hold；不可退、明显超预算和证件风险项目须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "6800美元，明显超支须解释"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "每段至少3座"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "8月14日19:40离沪；8月16日11:10抵GPS；8月25日10:20返沪"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "单票通程、Madrid空侧、行李直挂"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "两人往返3180美元"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "免费hold 6小时，出票后依票规"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "七晚弹性房库存0"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "安静，距会场1.1公里，可步行"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "岛上七晚约1630美元，本土过夜约175美元，总预算约5485美元"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "入住前两天18:00当地时间免费取消"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "该房型售罄"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "8月16日12:30末班，供两席，预计16:00前到镇"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "两人70美元"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_land_goal",
+          "question": "林乔何时明确要求为许闻安排岸上活动？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-06明确提出"
+        },
+        {
+          "question_id": "t_land_time",
+          "question": "许闻可参加岸上活动的时间窗口是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-19下午"
+        },
+        {
+          "question_id": "t_land_weather",
+          "question": "当前海况和岸上天气对许闻活动的影响是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "海况差，岸上短途步行天气适宜"
+        },
+        {
+          "question_id": "t_land_option",
+          "question": "当前有哪些可用的岸上活动及其安排？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "Tortuga Bay陆地步道或Santa Cruz高地短途步行，8月19日下午可用"
+        },
+        {
+          "question_id": "t_land_open",
+          "question": "许闻的该岸上活动时间窗口是否仍未过去？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "时间未过去"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "本人机票、入岛费、单人房价与本人接送可报；许闻及双人差额不可报；仅已结算可申报"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t4",
+        "travel_t5"
+      ],
+      "ready_tasks": [
+        "travel_t1",
+        "travel_t3",
+        "travel_t4"
+      ],
+      "newly_ready_tasks": [
+        "travel_t3"
+      ],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "inventory": "Satisfied",
+          "transit": "Satisfied",
+          "ticket": "Satisfied",
+          "timing": "Satisfied",
+          "budget": "Satisfied",
+          "reversible": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "dates": "Satisfied",
+          "inventory": "Unsatisfied",
+          "location": "Satisfied",
+          "budget": "Satisfied",
+          "cancellation": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Satisfied",
+          "route": "Satisfied",
+          "vendor": "Satisfied",
+          "cost": "Satisfied",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "time": "Satisfied",
+          "conditions": "Satisfied",
+          "option": "Satisfied",
+          "comfort": "Satisfied"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Satisfied",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s16",
+      "after_event_id": "e016",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t4",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "合规可取消项目可先hold；不可退、明显超预算和证件风险项目须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "6800美元，明显超支须解释"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "每段至少3座"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "8月14日19:40离沪；8月16日11:10抵GPS；8月25日10:20返沪"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "单票通程、Madrid空侧、行李直挂"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "两人往返3180美元"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "免费hold 6小时，出票后依票规"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "待预留"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "七晚弹性房库存0"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "安静，距会场1.1公里，可步行"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "岛上七晚约1630美元，本土过夜约175美元，总预算约5485美元"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "入住前两天18:00当地时间免费取消"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "该房型售罄"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "8月16日12:30末班，供两席，预计16:00前到镇"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "两人70美元"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_land_goal",
+          "question": "林乔何时明确要求为许闻安排岸上活动？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-06明确提出"
+        },
+        {
+          "question_id": "t_land_time",
+          "question": "许闻可参加岸上活动的时间窗口是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-19下午"
+        },
+        {
+          "question_id": "t_land_weather",
+          "question": "当前海况和岸上天气对许闻活动的影响是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "海况差，岸上短途步行天气适宜"
+        },
+        {
+          "question_id": "t_land_option",
+          "question": "当前有哪些可用的岸上活动及其安排？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "Tortuga Bay陆地步道或Santa Cruz高地短途步行，8月19日下午可用"
+        },
+        {
+          "question_id": "t_land_open",
+          "question": "许闻的该岸上活动时间窗口是否仍未过去？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "时间未过去"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "本人机票、入岛费、单人房价与本人接送可报；许闻及双人差额不可报；仅已结算可申报"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t4",
+        "travel_t5"
+      ],
+      "ready_tasks": [
+        "travel_t1",
+        "travel_t3",
+        "travel_t4"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "inventory": "Satisfied",
+          "transit": "Satisfied",
+          "ticket": "Satisfied",
+          "timing": "Satisfied",
+          "budget": "Satisfied",
+          "reversible": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "dates": "Satisfied",
+          "inventory": "Unsatisfied",
+          "location": "Satisfied",
+          "budget": "Satisfied",
+          "cancellation": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Satisfied",
+          "route": "Satisfied",
+          "vendor": "Satisfied",
+          "cost": "Satisfied",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "time": "Satisfied",
+          "conditions": "Satisfied",
+          "option": "Satisfied",
+          "comfort": "Satisfied"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Satisfied",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s17",
+      "after_event_id": "e017",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t4",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "合规可取消项目可先hold；不可退、明显超预算和证件风险项目须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "6800美元，明显超支须解释"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "每段至少3座"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "首段晚点70分钟，Madrid衔接待确认"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "单票通程、Madrid空侧、行李直挂"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "两人往返3180美元"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "免费hold 6小时，出票后依票规"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "出发日，已非预留窗口"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "七晚弹性房库存0"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "安静，距会场1.1公里，可步行"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "岛上七晚约1630美元，本土过夜约175美元，总预算约5485美元"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "入住前两天18:00当地时间免费取消"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "该房型售罄"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "8月16日12:30末班，供两席，预计16:00前到镇"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "两人70美元"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "待安排"
+        },
+        {
+          "question_id": "t_land_goal",
+          "question": "林乔何时明确要求为许闻安排岸上活动？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-06明确提出"
+        },
+        {
+          "question_id": "t_land_time",
+          "question": "许闻可参加岸上活动的时间窗口是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-19下午"
+        },
+        {
+          "question_id": "t_land_weather",
+          "question": "当前海况和岸上天气对许闻活动的影响是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "海况差，岸上短途步行天气适宜"
+        },
+        {
+          "question_id": "t_land_option",
+          "question": "当前有哪些可用的岸上活动及其安排？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "Tortuga Bay陆地步道或Santa Cruz高地短途步行，8月19日下午可用"
+        },
+        {
+          "question_id": "t_land_open",
+          "question": "许闻的该岸上活动时间窗口是否仍未过去？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "时间未过去"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "本人机票、入岛费、单人房价与本人接送可报；许闻及双人差额不可报；仅已结算可申报"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t4",
+        "travel_t5"
+      ],
+      "ready_tasks": [
+        "travel_t3",
+        "travel_t4"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [
+        "travel_t1"
+      ],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "inventory": "Satisfied",
+          "transit": "Satisfied",
+          "ticket": "Satisfied",
+          "timing": "Unknown",
+          "budget": "Satisfied",
+          "reversible": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "dates": "Satisfied",
+          "inventory": "Unsatisfied",
+          "location": "Satisfied",
+          "budget": "Satisfied",
+          "cancellation": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "arrival": "Satisfied",
+          "route": "Satisfied",
+          "vendor": "Satisfied",
+          "cost": "Satisfied",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "time": "Satisfied",
+          "conditions": "Satisfied",
+          "option": "Satisfied",
+          "comfort": "Satisfied"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Satisfied",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s18",
+      "after_event_id": "e018",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t4",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "合规可取消项目可先hold；不可退、明显超预算和证件风险项目须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "6800美元，明显超支须解释"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "每段至少3座"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "首段晚点70分钟，Madrid衔接待确认"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "单票通程、Madrid空侧、行李直挂"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "两人往返3180美元"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "免费hold 6小时，出票后依票规"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "出发日，已非预留窗口"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "七晚弹性房库存0"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "安静，距会场1.1公里，可步行"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "岛上七晚约1630美元，本土过夜约175美元，总预算约5485美元"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "入住前两天18:00当地时间免费取消"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "该房型售罄"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "原8月16日班次已过期"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "两人70美元"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "原8月16日方案过期"
+        },
+        {
+          "question_id": "t_land_goal",
+          "question": "林乔何时明确要求为许闻安排岸上活动？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-06明确提出"
+        },
+        {
+          "question_id": "t_land_time",
+          "question": "许闻可参加岸上活动的时间窗口是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-19下午"
+        },
+        {
+          "question_id": "t_land_weather",
+          "question": "当前海况和岸上天气对许闻活动的影响是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "海况差，岸上短途步行天气适宜"
+        },
+        {
+          "question_id": "t_land_option",
+          "question": "当前有哪些可用的岸上活动及其安排？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "Tortuga Bay陆地步道或Santa Cruz高地短途步行，8月19日下午可用"
+        },
+        {
+          "question_id": "t_land_open",
+          "question": "许闻的该岸上活动时间窗口是否仍未过去？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "时间未过去"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "本人机票、入岛费、单人房价与本人接送可报；许闻及双人差额不可报；仅已结算可申报"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t4",
+        "travel_t5"
+      ],
+      "ready_tasks": [
+        "travel_t4"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [
+        "travel_t3"
+      ],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "inventory": "Satisfied",
+          "transit": "Satisfied",
+          "ticket": "Satisfied",
+          "timing": "Unknown",
+          "budget": "Satisfied",
+          "reversible": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "dates": "Satisfied",
+          "inventory": "Unsatisfied",
+          "location": "Satisfied",
+          "budget": "Satisfied",
+          "cancellation": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "arrival": "Satisfied",
+          "route": "Satisfied",
+          "vendor": "Unsatisfied",
+          "cost": "Satisfied",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "time": "Satisfied",
+          "conditions": "Satisfied",
+          "option": "Satisfied",
+          "comfort": "Satisfied"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Satisfied",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s19",
+      "after_event_id": "e019",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t4",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "合规可取消项目可先hold；不可退、明显超预算和证件风险项目须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "6800美元，明显超支须解释"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "每段至少3座"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "首段晚点70分钟，Madrid衔接待确认"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "单票通程、Madrid空侧、行李直挂"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "两人往返3180美元"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "免费hold 6小时，出票后依票规"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "出发日，已非预留窗口"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "七晚弹性房库存0"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "安静，距会场1.1公里，可步行"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "岛上七晚约1630美元，本土过夜约175美元，总预算约5485美元"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "入住前两天18:00当地时间免费取消"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "该房型售罄"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "原8月16日班次已过期"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "两人70美元"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "原8月16日方案过期"
+        },
+        {
+          "question_id": "t_land_goal",
+          "question": "林乔何时明确要求为许闻安排岸上活动？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-06明确提出"
+        },
+        {
+          "question_id": "t_land_time",
+          "question": "许闻可参加岸上活动的时间窗口是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-19下午"
+        },
+        {
+          "question_id": "t_land_weather",
+          "question": "当前海况和岸上天气对许闻活动的影响是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "海况差，岸上短途步行天气适宜"
+        },
+        {
+          "question_id": "t_land_option",
+          "question": "当前有哪些可用的岸上活动及其安排？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "Tortuga Bay陆地步道或Santa Cruz高地短途步行，8月19日下午可用"
+        },
+        {
+          "question_id": "t_land_open",
+          "question": "许闻的该岸上活动时间窗口是否仍未过去？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "8月19日窗口已过"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "本人机票、入岛费、单人房价与本人接送可报；许闻及双人差额不可报；仅已结算可申报"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t4",
+        "travel_t5"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [
+        "travel_t4"
+      ],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "inventory": "Satisfied",
+          "transit": "Satisfied",
+          "ticket": "Satisfied",
+          "timing": "Unknown",
+          "budget": "Satisfied",
+          "reversible": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "dates": "Satisfied",
+          "inventory": "Unsatisfied",
+          "location": "Satisfied",
+          "budget": "Satisfied",
+          "cancellation": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "arrival": "Satisfied",
+          "route": "Satisfied",
+          "vendor": "Unsatisfied",
+          "cost": "Satisfied",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "time": "Satisfied",
+          "conditions": "Satisfied",
+          "option": "Satisfied",
+          "comfort": "Satisfied"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Satisfied",
+          "settlement": "Unknown",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s20",
+      "after_event_id": "e020",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t4",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "合规可取消项目可先hold；不可退、明显超预算和证件风险项目须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "6800美元，明显超支须解释"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "每段至少3座"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "首段晚点70分钟，Madrid衔接待确认"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "单票通程、Madrid空侧、行李直挂"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "两人往返3180美元"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "免费hold 6小时，出票后依票规"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "出发日，已非预留窗口"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "七晚弹性房库存0"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "安静，距会场1.1公里，可步行"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "岛上七晚约1630美元，本土过夜约175美元，总预算约5485美元"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "入住前两天18:00当地时间免费取消"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "该房型售罄"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "原8月16日班次已过期"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "两人70美元"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "原8月16日方案过期"
+        },
+        {
+          "question_id": "t_land_goal",
+          "question": "林乔何时明确要求为许闻安排岸上活动？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-06明确提出"
+        },
+        {
+          "question_id": "t_land_time",
+          "question": "许闻可参加岸上活动的时间窗口是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-19下午"
+        },
+        {
+          "question_id": "t_land_weather",
+          "question": "当前海况和岸上天气对许闻活动的影响是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "海况差，岸上短途步行天气适宜"
+        },
+        {
+          "question_id": "t_land_option",
+          "question": "当前有哪些可用的岸上活动及其安排？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "Tortuga Bay陆地步道或Santa Cruz高地短途步行，8月19日下午可用"
+        },
+        {
+          "question_id": "t_land_open",
+          "question": "许闻的该岸上活动时间窗口是否仍未过去？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "8月19日窗口已过"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "本人机票、入岛费、单人房价与本人接送可报；许闻及双人差额不可报；仅已结算可申报"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "机票1480、住宿1765、接送70已结算；180押金仍冻结；入岛现金收据分人"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "多项票据到达，但每人机票金额待核对"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "尚未返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t4",
+        "travel_t5"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "inventory": "Satisfied",
+          "transit": "Satisfied",
+          "ticket": "Satisfied",
+          "timing": "Unknown",
+          "budget": "Satisfied",
+          "reversible": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "dates": "Satisfied",
+          "inventory": "Unsatisfied",
+          "location": "Satisfied",
+          "budget": "Satisfied",
+          "cancellation": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "arrival": "Satisfied",
+          "route": "Satisfied",
+          "vendor": "Unsatisfied",
+          "cost": "Satisfied",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "time": "Satisfied",
+          "conditions": "Satisfied",
+          "option": "Satisfied",
+          "comfort": "Satisfied"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Satisfied",
+          "settlement": "Satisfied",
+          "receipts": "Unknown",
+          "trip_finished": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s21",
+      "after_event_id": "e021",
+      "memory_questions": [
+        {
+          "question_id": "t_goal",
+          "question": "林乔最初要求管理哪些旅行事项？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3",
+            "travel_t4",
+            "travel_t5"
+          ],
+          "ground_truth_answer": "管理航班、住宿、岛上接送、费用与报销"
+        },
+        {
+          "question_id": "t_auth",
+          "question": "林乔允许预留什么类型的项目，哪些付款须再确认？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "合规可取消项目可先hold；不可退、明显超预算和证件风险项目须确认"
+        },
+        {
+          "question_id": "t_dates",
+          "question": "林乔可从上海出发和必须返沪的时间界限是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "2026-08-14 17:30后离沪，2026-08-25中午前返沪"
+        },
+        {
+          "question_id": "t_deadline",
+          "question": "工作坊登记截止时间及地点是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "2026-08-17 18:00岛屿时间，Puerto Ayora Marine Data Lab"
+        },
+        {
+          "question_id": "t_budget",
+          "question": "两人的旅行预算目标是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "6800美元，明显超支须解释"
+        },
+        {
+          "question_id": "t_visa",
+          "question": "两人的美国过境及欧洲空侧转机证件状态是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "美国转机不合规；马德里单票空侧转机可行"
+        },
+        {
+          "question_id": "t_flight_stock",
+          "question": "选定的非美国往返航班当前库存是多少？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "每段至少3座"
+        },
+        {
+          "question_id": "t_flight_time",
+          "question": "选定航班的去程与返程关键到达时间是什么？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t3"
+          ],
+          "ground_truth_answer": "首段晚点70分钟，Madrid衔接待确认"
+        },
+        {
+          "question_id": "t_flight_ticket",
+          "question": "选定航班的联程、行李及转机安排是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "单票通程、Madrid空侧、行李直挂"
+        },
+        {
+          "question_id": "t_flight_price",
+          "question": "选定航班两人的往返总报价是多少美元？",
+          "task_ids": [
+            "travel_t1",
+            "travel_t2"
+          ],
+          "ground_truth_answer": "两人往返3180美元"
+        },
+        {
+          "question_id": "t_flight_hold",
+          "question": "选定航班目前的预留和退改政策是什么？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "免费hold 6小时，出票后依票规"
+        },
+        {
+          "question_id": "t_flight_open",
+          "question": "选定航班仍可预留，还是已经出发或失效？",
+          "task_ids": [
+            "travel_t1"
+          ],
+          "ground_truth_answer": "出发日，已非预留窗口"
+        },
+        {
+          "question_id": "t_hotel_dates",
+          "question": "岛上酒店需要覆盖哪些入住日期？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "2026-08-16至2026-08-23，七晚"
+        },
+        {
+          "question_id": "t_hotel_stock",
+          "question": "Jardin Tranquilo弹性双人房当前库存是多少？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "七晚弹性房库存0"
+        },
+        {
+          "question_id": "t_hotel_place",
+          "question": "Jardin Tranquilo距工作坊地点及夜间环境如何？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "安静，距会场1.1公里，可步行"
+        },
+        {
+          "question_id": "t_hotel_price",
+          "question": "Jardin Tranquilo七晚双人房及本土过夜酒店的预算额是多少美元？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "岛上七晚约1630美元，本土过夜约175美元，总预算约5485美元"
+        },
+        {
+          "question_id": "t_hotel_cancel",
+          "question": "Jardin Tranquilo弹性房的免费取消期限是什么？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "入住前两天18:00当地时间免费取消"
+        },
+        {
+          "question_id": "t_hotel_open",
+          "question": "Jardin Tranquilo该房型是否仍可预留？",
+          "task_ids": [
+            "travel_t2"
+          ],
+          "ground_truth_answer": "该房型售罄"
+        },
+        {
+          "question_id": "t_transfer_route",
+          "question": "从Baltra机场到Puerto Ayora需经过哪些交通环节？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "Baltra巴士、Itabaca驳船、Santa Cruz陆路至Puerto Ayora"
+        },
+        {
+          "question_id": "t_transfer_vendor",
+          "question": "认证接送供应商当前可用班次和最晚接机时间是什么？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "原8月16日班次已过期"
+        },
+        {
+          "question_id": "t_transfer_cost",
+          "question": "两人的机场接送报价是多少美元？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "两人70美元"
+        },
+        {
+          "question_id": "t_transfer_open",
+          "question": "岛上机场接送方案现在是待安排还是已完成或过期？",
+          "task_ids": [
+            "travel_t3"
+          ],
+          "ground_truth_answer": "原8月16日方案过期"
+        },
+        {
+          "question_id": "t_land_goal",
+          "question": "林乔何时明确要求为许闻安排岸上活动？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-06明确提出"
+        },
+        {
+          "question_id": "t_land_time",
+          "question": "许闻可参加岸上活动的时间窗口是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "2026-08-19下午"
+        },
+        {
+          "question_id": "t_land_weather",
+          "question": "当前海况和岸上天气对许闻活动的影响是什么？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "海况差，岸上短途步行天气适宜"
+        },
+        {
+          "question_id": "t_land_option",
+          "question": "当前有哪些可用的岸上活动及其安排？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "Tortuga Bay陆地步道或Santa Cruz高地短途步行，8月19日下午可用"
+        },
+        {
+          "question_id": "t_land_open",
+          "question": "许闻的该岸上活动时间窗口是否仍未过去？",
+          "task_ids": [
+            "travel_t4"
+          ],
+          "ground_truth_answer": "8月19日窗口已过"
+        },
+        {
+          "question_id": "t_claim_policy",
+          "question": "财务对林乔与许闻费用拆分的正式规则是什么？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "本人机票、入岛费、单人房价与本人接送可报；许闻及双人差额不可报；仅已结算可申报"
+        },
+        {
+          "question_id": "t_claim_payment",
+          "question": "哪些会议相关费用已实际结算，哪些仍为冻结或拒付？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "机票1480、住宿1765、接送70已结算；180押金仍冻结；入岛现金收据分人"
+        },
+        {
+          "question_id": "t_claim_receipts",
+          "question": "最终报销所需的票据和每人费用拆分资料是否齐全？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "每人机票740美元及住宿单人价1190美元等凭证齐全"
+        },
+        {
+          "question_id": "t_claim_return",
+          "question": "两人是否已结束旅行并返沪？",
+          "task_ids": [
+            "travel_t5"
+          ],
+          "ground_truth_answer": "已返沪"
+        }
+      ],
+      "reactive_questions": [
+        "travel_t1",
+        "travel_t2",
+        "travel_t3",
+        "travel_t4",
+        "travel_t5"
+      ],
+      "ready_tasks": [
+        "travel_t5"
+      ],
+      "newly_ready_tasks": [
+        "travel_t5"
+      ],
+      "invalidated_tasks": [],
+      "task_states": {
+        "travel_t1": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "inventory": "Satisfied",
+          "transit": "Satisfied",
+          "ticket": "Satisfied",
+          "timing": "Unknown",
+          "budget": "Satisfied",
+          "reversible": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t2": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "dates": "Satisfied",
+          "inventory": "Unsatisfied",
+          "location": "Satisfied",
+          "budget": "Satisfied",
+          "cancellation": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t3": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "arrival": "Satisfied",
+          "route": "Satisfied",
+          "vendor": "Unsatisfied",
+          "cost": "Satisfied",
+          "deadline": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "travel_t4": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "time": "Satisfied",
+          "conditions": "Satisfied",
+          "option": "Satisfied",
+          "comfort": "Satisfied"
+        },
+        "travel_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "policy": "Satisfied",
+          "settlement": "Satisfied",
+          "receipts": "Satisfied",
+          "trip_finished": "Satisfied"
+        }
+      }
+    }
+  ]
+}

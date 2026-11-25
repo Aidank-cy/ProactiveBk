@@ -1,6 +1,37 @@
 # Controlled Proactive vs Memory Pilot
 
-This directory is independent of VibeLifeBench. It contains only the evaluation framework and a toy fixture. No benchmark scenarios or user tasks have been authored.
+This directory contains the evaluation framework, a toy fixture, and four fixed scenarios reconstructed from the local VibeLifeBench source data. The reconstructed scenarios include explicitly audited experimental supplements; they are not verbatim VibeLifeBench tasks.
+
+## Fixed four-scenario pilot data
+
+The formal data lives in [evaluation/data/scenarios](evaluation/data/scenarios). `rental.json`, `travel.json`, `shopping.json`, and `team_building.json` each contain one complete scenario. `all_scenarios.json` combines the four and is generated from the same builder. [Dataset summary](evaluation/data/scenarios/documentation/dataset_summary.md) gives per-scenario event, question, opportunity, and API-call counts. Each reconstruction document records the complete story, source record and original-event mapping, controlled additions, fixed tasks, every Stage's Ready set, its derived readiness matrix, and unresolved questions.
+
+The four scenarios have 19 fixed tasks, 77 incremental events and 81 stages. With one model and one sample, a full run requires 2,616 requests: 2,205 Memory, 330 Reactive Single, and 81 Proactive. Initial-context token counts in the summary are UTF-8 estimates, not provider measurements. Data should be reviewed and frozen before a scored inference run, especially the controlled additions and the travel hotel inventory versus later receipt inconsistency.
+
+To regenerate and check the data:
+
+```bash
+python -m evaluation.data.scenarios.materialize
+python -m evaluation.data.scenarios.materialize --check
+python -m pytest -q evaluation/tests
+```
+
+The dataset loader enforces both directions of `Ready iff all necessary conditions are Satisfied`, complete condition states, full required Memory question coverage for active tasks, transition labels, and chronological stages. Formal-data tests also validate the JSON Schema, original source paths, future-event isolation and equal Context Hashes. No model output modifies a later stage.
+
+### Run with the direct API backend
+
+The CLI's existing default backend remains `harness` for compatibility with the original pilot. For this four-scenario study, use `--backend direct`; it sends one stateless Chat Completions request per evaluation via the existing model config and does not start OpenClaw. The API key stays in the local `models.json` or the configured environment variable and is not written to results. `seed` is unsupported and rejected. `top_p` is sent only when configured. API usage fields stay null if the provider omits them. A prior single synthetic direct API connectivity smoke test is described below; the four formal scenarios have not been sent to a live API.
+
+```bash
+cd /home/hezd/nfs_hzd/ProactiveBk/proactive_memory_pilot
+python -m evaluation.runner --config evaluation/configs/deepseek.yaml --dataset evaluation/data/scenarios/all_scenarios.json --mode all --backend direct --dry-run > /tmp/proactive_pilot_inputs.jsonl
+python -m evaluation.runner --config evaluation/configs/deepseek.yaml --dataset evaluation/data/scenarios/all_scenarios.json --mode all --backend direct --output outputs/raw_results/four_scenarios.jsonl
+python -m evaluation.review --results outputs/raw_results/four_scenarios.jsonl --dataset evaluation/data/scenarios/all_scenarios.json --output outputs/human_annotations/four_scenarios.jsonl
+python -m evaluation.metrics --results outputs/raw_results/four_scenarios.jsonl --annotations outputs/human_annotations/four_scenarios.jsonl --dataset evaluation/data/scenarios/all_scenarios.json
+python -m evaluation.failure_analysis --results outputs/raw_results/four_scenarios.jsonl --annotations outputs/human_annotations/four_scenarios.jsonl --dataset evaluation/data/scenarios/all_scenarios.json
+```
+
+Use `--scenario rental --stage s04` for a small dry run. Add later official data by editing the fixed builder, recording every source and supplement, regenerating the JSON and audit files, then running the same tests before inference. The separate JSONs, task registry, matching guidelines, and truth labels must be frozen together; do not modify labels in response to a model's predictions.
 
 ## Harness reuse
 

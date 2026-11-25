@@ -1,0 +1,5941 @@
+{
+  "scenario_id": "rental",
+  "initial_context": [
+    {
+      "record_id": "h001",
+      "timestamp": "2026-07-06T10:20:00+08:00",
+      "source": "email",
+      "content": "北岸花园联系方称周末可看房、押一付一；服务费须合同前确认，主入口全天通行仅为口头说法。"
+    },
+    {
+      "record_id": "h002",
+      "timestamp": "2026-07-09T21:30:00+08:00",
+      "source": "email",
+      "content": "河滨小筑联系方称价格可能变化，远程看房资料需现场确认。"
+    },
+    {
+      "record_id": "h003",
+      "timestamp": "2026-07-10T08:30:00+08:00",
+      "source": "listing_platform",
+      "content": "平台在售：云栖苑一居室月租5950元；北岸花园一居室月租8320元；河滨小筑一居室月租5850元。三套均显示active；云栖苑居住证明仅有材料线索，河滨小筑标注个人码锁房款。"
+    },
+    {
+      "record_id": "h004",
+      "timestamp": "2026-07-10T09:00:00+08:00",
+      "source": "user_message",
+      "content": "我是魏岚，8月17日要到苏州工业园区瑞宁数据港入职，8月15日前需完成入住准备。只在8月8日至9日能线下看房。找一居室，月租不超6000元，早高峰门到门通勤不超45分钟，能正规居住登记。请维护内部候选和看房安排。可查询、保存候选、建立内部提醒；联系中介、对外预约、发个人资料、付款及签约均须我先确认。"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "e001",
+      "timestamp": "2026-07-17T09:00:00+08:00",
+      "source": "review_platform",
+      "content": "北岸花园住户称远程视频只拍了客厅和卧室，南门至楼栋入口未连续展示；云栖苑住户称东门照明稳定，但7:30前有施工车辆。"
+    },
+    {
+      "event_id": "e002",
+      "timestamp": "2026-07-20T09:00:00+08:00",
+      "source": "maps",
+      "content": "北岸花园夜间返程接驳末班提前，22:30后需改走南门。云栖苑到瑞宁数据港的早高峰门到门实测为38分钟。"
+    },
+    {
+      "event_id": "e003",
+      "timestamp": "2026-07-22T09:00:00+08:00",
+      "source": "email",
+      "content": "云栖苑联系方可连续视频展示东门、楼栋、电梯厅和室内；经纪人执业信息可由门店公示核对。锁房款、维修、登记协助和服务费目前仅在说明稿，尚未进入合同附件。"
+    },
+    {
+      "event_id": "e004",
+      "timestamp": "2026-07-23T11:00:00+08:00",
+      "source": "email",
+      "content": "云栖苑房东书面确认可配合正规居住登记，正式合同会附登记协助条款；8月8日14:00-15:00可线下看房，房源仍在售。"
+    },
+    {
+      "event_id": "e005",
+      "timestamp": "2026-07-24T09:00:00+08:00",
+      "source": "listing_platform",
+      "content": "河滨小筑月租由5850元涨至6300元，另列1800元清洁费；北岸花园夜间接驳临时变化已解除。"
+    },
+    {
+      "event_id": "e006",
+      "timestamp": "2026-07-25T09:00:00+08:00",
+      "source": "user_message",
+      "content": "我还想把云栖苑的出租主体、押金退还、居住登记、维修责任和服务费整理成签约前书面核验材料；仅列清单，不替我作法律结论。"
+    },
+    {
+      "event_id": "e007",
+      "timestamp": "2026-07-27T09:00:00+08:00",
+      "source": "calendar",
+      "content": "HR新增8月8日10:00-12:00入职材料线上复核；云栖苑14:00-15:00看房与该会议不冲突。"
+    },
+    {
+      "event_id": "e008",
+      "timestamp": "2026-07-28T09:00:00+08:00",
+      "source": "review_platform",
+      "content": "河滨小筑住户称带看人用个人收款码催款，门店无法核对其值守记录，北门关闭时间也与挂牌说明不一致。"
+    },
+    {
+      "event_id": "e009",
+      "timestamp": "2026-07-30T09:00:00+08:00",
+      "source": "maps",
+      "content": "河滨小筑北门周边施工，晚间需绕西门；弱照明增加步行距离。北岸花园早高峰到瑞宁数据港门到门实测39分钟。"
+    },
+    {
+      "event_id": "e010",
+      "timestamp": "2026-08-01T09:00:00+08:00",
+      "source": "email",
+      "content": "云栖苑说明稿列出出租主体授权、押金退还节点、维修分工、居住登记配合与服务费明细；仍未签署，附件编号和退还条件待双方确认。"
+    },
+    {
+      "event_id": "e011",
+      "timestamp": "2026-08-02T11:00:00+08:00",
+      "source": "email",
+      "content": "北岸花园联系方更新：月租降至5900元，8月9日10:00-11:00可看房；房东书面同意在合同中提供正规居住登记协助条款。房源仍在售。"
+    },
+    {
+      "event_id": "e012",
+      "timestamp": "2026-08-03T09:00:00+08:00",
+      "source": "email",
+      "content": "河滨小筑联系方要求今晚向个人码付2000元锁房并提交身份证及劳动合同照片；魏岚表示这些动作都先停住。"
+    },
+    {
+      "event_id": "e013",
+      "timestamp": "2026-08-05T09:00:00+08:00",
+      "source": "listing_platform",
+      "content": "新增湖畔新庭一居室月租5750元，可在唯一周末看房；登记协助和视频范围尚待书面核验。"
+    },
+    {
+      "event_id": "e014",
+      "timestamp": "2026-08-06T09:00:00+08:00",
+      "source": "maps",
+      "content": "云栖苑东门步行段8月8日至9日临时绕行、搬家车辆限时通行；按新路径早高峰门到门实测51分钟。"
+    },
+    {
+      "event_id": "e015",
+      "timestamp": "2026-08-10T09:00:00+08:00",
+      "source": "calendar",
+      "content": "8月8日至9日唯一线下看房周末已结束；云栖苑东门绕行解除。"
+    },
+    {
+      "event_id": "e016",
+      "timestamp": "2026-08-11T09:00:00+08:00",
+      "source": "email",
+      "content": "云栖苑联系方确认房源仍可租，出租主体授权、登记附件、押金退还条件和维修责任原件可供签约前核对；服务费金额仍须写入正式附件。"
+    },
+    {
+      "event_id": "e017",
+      "timestamp": "2026-08-12T11:00:00+08:00",
+      "source": "email",
+      "content": "云栖苑联系方补发正式附件草稿：服务费为一个月租金的35%，列明收取主体；押金、维修和居住登记附件编号齐全，可供魏岚签约前逐项审核。"
+    },
+    {
+      "event_id": "e018",
+      "timestamp": "2026-08-14T09:00:00+08:00",
+      "source": "user_message",
+      "content": "今天请完成最终归档，列首选、备选、淘汰及未决核验；付款、签约与发资料仍由我决定。"
+    }
+  ],
+  "task_registry": [
+    {
+      "task_id": "rental_t1",
+      "description": "将云栖苑加入魏岚的内部看房计划。",
+      "goal": "筛选可行苏州租房候选",
+      "conditions": [
+        "goal",
+        "open",
+        "listing",
+        "room",
+        "budget",
+        "commute",
+        "registration",
+        "slot",
+        "authorized"
+      ],
+      "required_memory_facts": [
+        "r_goal",
+        "r_budget",
+        "r_commute_limit",
+        "r_weekend",
+        "r_auth",
+        "r_c_price",
+        "r_c_type",
+        "r_c_status",
+        "r_c_commute",
+        "r_c_reg",
+        "r_c_slot"
+      ],
+      "matching_guidelines": "须明确云栖苑与内部计划；联系中介、对外预约、锁房和签约均不等价。"
+    },
+    {
+      "task_id": "rental_t2",
+      "description": "将北岸花园加入魏岚的内部看房计划。",
+      "goal": "筛选可行苏州租房候选",
+      "conditions": [
+        "goal",
+        "open",
+        "listing",
+        "room",
+        "budget",
+        "commute",
+        "registration",
+        "slot",
+        "authorized"
+      ],
+      "required_memory_facts": [
+        "r_goal",
+        "r_budget",
+        "r_commute_limit",
+        "r_weekend",
+        "r_auth",
+        "r_a_price",
+        "r_a_type",
+        "r_a_status",
+        "r_a_commute",
+        "r_a_reg",
+        "r_a_slot"
+      ],
+      "matching_guidelines": "须明确北岸花园与内部计划；不能用云栖苑的价格、通勤或授权替代。"
+    },
+    {
+      "task_id": "rental_t3",
+      "description": "将河滨小筑加入魏岚的内部看房计划。",
+      "goal": "筛选可行苏州租房候选",
+      "conditions": [
+        "goal",
+        "open",
+        "listing",
+        "room",
+        "budget",
+        "commute",
+        "registration",
+        "slot",
+        "authorized",
+        "identity_risk"
+      ],
+      "required_memory_facts": [
+        "r_goal",
+        "r_budget",
+        "r_commute_limit",
+        "r_weekend",
+        "r_auth",
+        "r_b_price",
+        "r_b_type",
+        "r_b_status",
+        "r_b_commute",
+        "r_b_reg",
+        "r_b_slot",
+        "r_b_risk"
+      ],
+      "matching_guidelines": "须明确河滨小筑且交易与身份风险已排除；个人码转账或发送证件不是匹配。"
+    },
+    {
+      "task_id": "rental_t4",
+      "description": "整理云栖苑完整的签约前合同审核材料。",
+      "goal": "核验租房合同条款",
+      "conditions": [
+        "goal",
+        "open",
+        "owner",
+        "registration",
+        "deposit",
+        "repair",
+        "fee",
+        "authorized"
+      ],
+      "required_memory_facts": [
+        "r_contract_goal",
+        "r_contract_status",
+        "r_contract_owner",
+        "r_c_reg",
+        "r_contract_deposit",
+        "r_contract_repair",
+        "r_contract_fee",
+        "r_auth"
+      ],
+      "matching_guidelines": "整理出租主体、登记附件、押金、维修、服务费的内部审核材料；不签约也不作法律定论。"
+    }
+  ],
+  "evaluations": [
+    {
+      "stage_id": "s00",
+      "after_event_id": null,
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "8320元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "5850元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "个人码锁房款未核验"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied",
+          "identity_risk": "Unknown"
+        },
+        "rental_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "owner": "Unknown",
+          "registration": "Unknown",
+          "deposit": "Unknown",
+          "repair": "Unknown",
+          "fee": "Unknown",
+          "authorized": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s01",
+      "after_event_id": "e001",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "8320元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "5850元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "个人码锁房款未核验"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied",
+          "identity_risk": "Unknown"
+        },
+        "rental_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "owner": "Unknown",
+          "registration": "Unknown",
+          "deposit": "Unknown",
+          "repair": "Unknown",
+          "fee": "Unknown",
+          "authorized": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s02",
+      "after_event_id": "e002",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "38分钟"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "8320元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "5850元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "个人码锁房款未核验"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied",
+          "identity_risk": "Unknown"
+        },
+        "rental_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "owner": "Unknown",
+          "registration": "Unknown",
+          "deposit": "Unknown",
+          "repair": "Unknown",
+          "fee": "Unknown",
+          "authorized": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s03",
+      "after_event_id": "e003",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "38分钟"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "仅有说明稿，未书面确认"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "8320元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "5850元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "个人码锁房款未核验"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied",
+          "identity_risk": "Unknown"
+        },
+        "rental_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "owner": "Unknown",
+          "registration": "Unknown",
+          "deposit": "Unknown",
+          "repair": "Unknown",
+          "fee": "Unknown",
+          "authorized": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s04",
+      "after_event_id": "e004",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "38分钟"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "房东书面确认，正式合同待附条款"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "2026-08-08 14:00-15:00"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "8320元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "5850元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "个人码锁房款未核验"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3"
+      ],
+      "ready_tasks": [
+        "rental_t1"
+      ],
+      "newly_ready_tasks": [
+        "rental_t1"
+      ],
+      "invalidated_tasks": [],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied",
+          "identity_risk": "Unknown"
+        },
+        "rental_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "owner": "Unknown",
+          "registration": "Satisfied",
+          "deposit": "Unknown",
+          "repair": "Unknown",
+          "fee": "Unknown",
+          "authorized": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s05",
+      "after_event_id": "e005",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "38分钟"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "房东书面确认，正式合同待附条款"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "2026-08-08 14:00-15:00"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "8320元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6300元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "个人码锁房款未核验"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3"
+      ],
+      "ready_tasks": [
+        "rental_t1"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied",
+          "identity_risk": "Unknown"
+        },
+        "rental_t4": {
+          "goal": "Unknown",
+          "open": "Unknown",
+          "owner": "Unknown",
+          "registration": "Satisfied",
+          "deposit": "Unknown",
+          "repair": "Unknown",
+          "fee": "Unknown",
+          "authorized": "Unknown"
+        }
+      }
+    },
+    {
+      "stage_id": "s06",
+      "after_event_id": "e006",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "38分钟"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "房东书面确认，正式合同待附条款"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "2026-08-08 14:00-15:00"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "8320元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6300元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "个人码锁房款未核验"
+        },
+        {
+          "question_id": "r_contract_goal",
+          "question": "用户何时提出云栖苑签约前书面核验材料需求？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "2026-07-25提出"
+        },
+        {
+          "question_id": "r_contract_owner",
+          "question": "云栖苑出租主体授权文件目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_contract_deposit",
+          "question": "云栖苑押金退还条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_contract_repair",
+          "question": "云栖苑维修责任条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_contract_fee",
+          "question": "云栖苑服务费金额和列示方式目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_contract_status",
+          "question": "云栖苑签约前审核材料是否已经整理完成或取消？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "待整理"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3",
+        "rental_t4"
+      ],
+      "ready_tasks": [
+        "rental_t1"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied",
+          "identity_risk": "Unknown"
+        },
+        "rental_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "owner": "Unknown",
+          "registration": "Satisfied",
+          "deposit": "Unknown",
+          "repair": "Unknown",
+          "fee": "Unknown",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s07",
+      "after_event_id": "e007",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "38分钟"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "房东书面确认，正式合同待附条款"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "2026-08-08 14:00-15:00"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "8320元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6300元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "个人码锁房款未核验"
+        },
+        {
+          "question_id": "r_contract_goal",
+          "question": "用户何时提出云栖苑签约前书面核验材料需求？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "2026-07-25提出"
+        },
+        {
+          "question_id": "r_contract_owner",
+          "question": "云栖苑出租主体授权文件目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_contract_deposit",
+          "question": "云栖苑押金退还条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_contract_repair",
+          "question": "云栖苑维修责任条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_contract_fee",
+          "question": "云栖苑服务费金额和列示方式目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_contract_status",
+          "question": "云栖苑签约前审核材料是否已经整理完成或取消？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "待整理"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3",
+        "rental_t4"
+      ],
+      "ready_tasks": [
+        "rental_t1"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied",
+          "identity_risk": "Unknown"
+        },
+        "rental_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "owner": "Unknown",
+          "registration": "Satisfied",
+          "deposit": "Unknown",
+          "repair": "Unknown",
+          "fee": "Unknown",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s08",
+      "after_event_id": "e008",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "38分钟"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "房东书面确认，正式合同待附条款"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "2026-08-08 14:00-15:00"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "8320元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6300元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "身份与收款渠道核验失败"
+        },
+        {
+          "question_id": "r_contract_goal",
+          "question": "用户何时提出云栖苑签约前书面核验材料需求？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "2026-07-25提出"
+        },
+        {
+          "question_id": "r_contract_owner",
+          "question": "云栖苑出租主体授权文件目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_contract_deposit",
+          "question": "云栖苑押金退还条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_contract_repair",
+          "question": "云栖苑维修责任条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_contract_fee",
+          "question": "云栖苑服务费金额和列示方式目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_contract_status",
+          "question": "云栖苑签约前审核材料是否已经整理完成或取消？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "待整理"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3",
+        "rental_t4"
+      ],
+      "ready_tasks": [
+        "rental_t1"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied",
+          "identity_risk": "Unsatisfied"
+        },
+        "rental_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "owner": "Unknown",
+          "registration": "Satisfied",
+          "deposit": "Unknown",
+          "repair": "Unknown",
+          "fee": "Unknown",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s09",
+      "after_event_id": "e009",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "38分钟"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "房东书面确认，正式合同待附条款"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "2026-08-08 14:00-15:00"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "8320元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "39分钟"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6300元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "身份与收款渠道核验失败"
+        },
+        {
+          "question_id": "r_contract_goal",
+          "question": "用户何时提出云栖苑签约前书面核验材料需求？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "2026-07-25提出"
+        },
+        {
+          "question_id": "r_contract_owner",
+          "question": "云栖苑出租主体授权文件目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_contract_deposit",
+          "question": "云栖苑押金退还条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_contract_repair",
+          "question": "云栖苑维修责任条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_contract_fee",
+          "question": "云栖苑服务费金额和列示方式目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_contract_status",
+          "question": "云栖苑签约前审核材料是否已经整理完成或取消？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "待整理"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3",
+        "rental_t4"
+      ],
+      "ready_tasks": [
+        "rental_t1"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Satisfied",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied",
+          "identity_risk": "Unsatisfied"
+        },
+        "rental_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "owner": "Unknown",
+          "registration": "Satisfied",
+          "deposit": "Unknown",
+          "repair": "Unknown",
+          "fee": "Unknown",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s10",
+      "after_event_id": "e010",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "38分钟"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "房东书面确认，正式合同待附条款"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "2026-08-08 14:00-15:00"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "8320元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "39分钟"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6300元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "身份与收款渠道核验失败"
+        },
+        {
+          "question_id": "r_contract_goal",
+          "question": "用户何时提出云栖苑签约前书面核验材料需求？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "2026-07-25提出"
+        },
+        {
+          "question_id": "r_contract_owner",
+          "question": "云栖苑出租主体授权文件目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "说明稿，授权原件待核对"
+        },
+        {
+          "question_id": "r_contract_deposit",
+          "question": "云栖苑押金退还条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "退还节点已列，条件待确认"
+        },
+        {
+          "question_id": "r_contract_repair",
+          "question": "云栖苑维修责任条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "分工已列，待正式附件"
+        },
+        {
+          "question_id": "r_contract_fee",
+          "question": "云栖苑服务费金额和列示方式目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "明细已列，金额待正式确认"
+        },
+        {
+          "question_id": "r_contract_status",
+          "question": "云栖苑签约前审核材料是否已经整理完成或取消？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "待整理"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3",
+        "rental_t4"
+      ],
+      "ready_tasks": [
+        "rental_t1"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Satisfied",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied",
+          "identity_risk": "Unsatisfied"
+        },
+        "rental_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "owner": "Unknown",
+          "registration": "Satisfied",
+          "deposit": "Unknown",
+          "repair": "Unknown",
+          "fee": "Unknown",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s11",
+      "after_event_id": "e011",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "38分钟"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "房东书面确认，正式合同待附条款"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "2026-08-08 14:00-15:00"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "5900元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "39分钟"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "房东书面同意合同附登记协助条款"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "2026-08-09 10:00-11:00"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6300元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "身份与收款渠道核验失败"
+        },
+        {
+          "question_id": "r_contract_goal",
+          "question": "用户何时提出云栖苑签约前书面核验材料需求？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "2026-07-25提出"
+        },
+        {
+          "question_id": "r_contract_owner",
+          "question": "云栖苑出租主体授权文件目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "说明稿，授权原件待核对"
+        },
+        {
+          "question_id": "r_contract_deposit",
+          "question": "云栖苑押金退还条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "退还节点已列，条件待确认"
+        },
+        {
+          "question_id": "r_contract_repair",
+          "question": "云栖苑维修责任条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "分工已列，待正式附件"
+        },
+        {
+          "question_id": "r_contract_fee",
+          "question": "云栖苑服务费金额和列示方式目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "明细已列，金额待正式确认"
+        },
+        {
+          "question_id": "r_contract_status",
+          "question": "云栖苑签约前审核材料是否已经整理完成或取消？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "待整理"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3",
+        "rental_t4"
+      ],
+      "ready_tasks": [
+        "rental_t1",
+        "rental_t2"
+      ],
+      "newly_ready_tasks": [
+        "rental_t2"
+      ],
+      "invalidated_tasks": [],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied",
+          "identity_risk": "Unsatisfied"
+        },
+        "rental_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "owner": "Unknown",
+          "registration": "Satisfied",
+          "deposit": "Unknown",
+          "repair": "Unknown",
+          "fee": "Unknown",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s12",
+      "after_event_id": "e012",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "38分钟"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "房东书面确认，正式合同待附条款"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "2026-08-08 14:00-15:00"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "5900元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "39分钟"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "房东书面同意合同附登记协助条款"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "2026-08-09 10:00-11:00"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6300元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "个人码催付2000元及索取敏感资料"
+        },
+        {
+          "question_id": "r_contract_goal",
+          "question": "用户何时提出云栖苑签约前书面核验材料需求？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "2026-07-25提出"
+        },
+        {
+          "question_id": "r_contract_owner",
+          "question": "云栖苑出租主体授权文件目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "说明稿，授权原件待核对"
+        },
+        {
+          "question_id": "r_contract_deposit",
+          "question": "云栖苑押金退还条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "退还节点已列，条件待确认"
+        },
+        {
+          "question_id": "r_contract_repair",
+          "question": "云栖苑维修责任条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "分工已列，待正式附件"
+        },
+        {
+          "question_id": "r_contract_fee",
+          "question": "云栖苑服务费金额和列示方式目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "明细已列，金额待正式确认"
+        },
+        {
+          "question_id": "r_contract_status",
+          "question": "云栖苑签约前审核材料是否已经整理完成或取消？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "待整理"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3",
+        "rental_t4"
+      ],
+      "ready_tasks": [
+        "rental_t1",
+        "rental_t2"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied",
+          "identity_risk": "Unsatisfied"
+        },
+        "rental_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "owner": "Unknown",
+          "registration": "Satisfied",
+          "deposit": "Unknown",
+          "repair": "Unknown",
+          "fee": "Unknown",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s13",
+      "after_event_id": "e013",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "38分钟"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "房东书面确认，正式合同待附条款"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "2026-08-08 14:00-15:00"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "5900元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "39分钟"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "房东书面同意合同附登记协助条款"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "2026-08-09 10:00-11:00"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6300元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "个人码催付2000元及索取敏感资料"
+        },
+        {
+          "question_id": "r_contract_goal",
+          "question": "用户何时提出云栖苑签约前书面核验材料需求？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "2026-07-25提出"
+        },
+        {
+          "question_id": "r_contract_owner",
+          "question": "云栖苑出租主体授权文件目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "说明稿，授权原件待核对"
+        },
+        {
+          "question_id": "r_contract_deposit",
+          "question": "云栖苑押金退还条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "退还节点已列，条件待确认"
+        },
+        {
+          "question_id": "r_contract_repair",
+          "question": "云栖苑维修责任条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "分工已列，待正式附件"
+        },
+        {
+          "question_id": "r_contract_fee",
+          "question": "云栖苑服务费金额和列示方式目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "明细已列，金额待正式确认"
+        },
+        {
+          "question_id": "r_contract_status",
+          "question": "云栖苑签约前审核材料是否已经整理完成或取消？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "待整理"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3",
+        "rental_t4"
+      ],
+      "ready_tasks": [
+        "rental_t1",
+        "rental_t2"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied",
+          "identity_risk": "Unsatisfied"
+        },
+        "rental_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "owner": "Unknown",
+          "registration": "Satisfied",
+          "deposit": "Unknown",
+          "repair": "Unknown",
+          "fee": "Unknown",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s14",
+      "after_event_id": "e014",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "51分钟"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "房东书面确认，正式合同待附条款"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "2026-08-08 14:00-15:00"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "5900元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "39分钟"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "房东书面同意合同附登记协助条款"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "2026-08-09 10:00-11:00"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6300元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "个人码催付2000元及索取敏感资料"
+        },
+        {
+          "question_id": "r_contract_goal",
+          "question": "用户何时提出云栖苑签约前书面核验材料需求？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "2026-07-25提出"
+        },
+        {
+          "question_id": "r_contract_owner",
+          "question": "云栖苑出租主体授权文件目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "说明稿，授权原件待核对"
+        },
+        {
+          "question_id": "r_contract_deposit",
+          "question": "云栖苑押金退还条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "退还节点已列，条件待确认"
+        },
+        {
+          "question_id": "r_contract_repair",
+          "question": "云栖苑维修责任条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "分工已列，待正式附件"
+        },
+        {
+          "question_id": "r_contract_fee",
+          "question": "云栖苑服务费金额和列示方式目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "明细已列，金额待正式确认"
+        },
+        {
+          "question_id": "r_contract_status",
+          "question": "云栖苑签约前审核材料是否已经整理完成或取消？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "待整理"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3",
+        "rental_t4"
+      ],
+      "ready_tasks": [
+        "rental_t2"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [
+        "rental_t1"
+      ],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Unsatisfied",
+          "registration": "Satisfied",
+          "slot": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unknown",
+          "authorized": "Satisfied",
+          "identity_risk": "Unsatisfied"
+        },
+        "rental_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "owner": "Unknown",
+          "registration": "Satisfied",
+          "deposit": "Unknown",
+          "repair": "Unknown",
+          "fee": "Unknown",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s15",
+      "after_event_id": "e015",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "38分钟"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "房东书面确认，正式合同待附条款"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "已过期"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "5900元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "39分钟"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "房东书面同意合同附登记协助条款"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "已过期"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6300元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "已过期"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "个人码催付2000元及索取敏感资料"
+        },
+        {
+          "question_id": "r_contract_goal",
+          "question": "用户何时提出云栖苑签约前书面核验材料需求？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "2026-07-25提出"
+        },
+        {
+          "question_id": "r_contract_owner",
+          "question": "云栖苑出租主体授权文件目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "说明稿，授权原件待核对"
+        },
+        {
+          "question_id": "r_contract_deposit",
+          "question": "云栖苑押金退还条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "退还节点已列，条件待确认"
+        },
+        {
+          "question_id": "r_contract_repair",
+          "question": "云栖苑维修责任条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "分工已列，待正式附件"
+        },
+        {
+          "question_id": "r_contract_fee",
+          "question": "云栖苑服务费金额和列示方式目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "明细已列，金额待正式确认"
+        },
+        {
+          "question_id": "r_contract_status",
+          "question": "云栖苑签约前审核材料是否已经整理完成或取消？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "待整理"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3",
+        "rental_t4"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [
+        "rental_t2"
+      ],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Unsatisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Unsatisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unsatisfied",
+          "authorized": "Satisfied",
+          "identity_risk": "Unsatisfied"
+        },
+        "rental_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "owner": "Unknown",
+          "registration": "Satisfied",
+          "deposit": "Unknown",
+          "repair": "Unknown",
+          "fee": "Unknown",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s16",
+      "after_event_id": "e016",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "38分钟"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "房东书面确认，正式合同待附条款"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "已过期"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "5900元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "39分钟"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "房东书面同意合同附登记协助条款"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "已过期"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6300元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "已过期"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "个人码催付2000元及索取敏感资料"
+        },
+        {
+          "question_id": "r_contract_goal",
+          "question": "用户何时提出云栖苑签约前书面核验材料需求？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "2026-07-25提出"
+        },
+        {
+          "question_id": "r_contract_owner",
+          "question": "云栖苑出租主体授权文件目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "原件可供核对"
+        },
+        {
+          "question_id": "r_contract_deposit",
+          "question": "云栖苑押金退还条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "条件可供原件核对"
+        },
+        {
+          "question_id": "r_contract_repair",
+          "question": "云栖苑维修责任条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "原件可供核对"
+        },
+        {
+          "question_id": "r_contract_fee",
+          "question": "云栖苑服务费金额和列示方式目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "金额待正式附件"
+        },
+        {
+          "question_id": "r_contract_status",
+          "question": "云栖苑签约前审核材料是否已经整理完成或取消？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "待整理"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3",
+        "rental_t4"
+      ],
+      "ready_tasks": [],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Unsatisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Unsatisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unsatisfied",
+          "authorized": "Satisfied",
+          "identity_risk": "Unsatisfied"
+        },
+        "rental_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "owner": "Satisfied",
+          "registration": "Satisfied",
+          "deposit": "Satisfied",
+          "repair": "Satisfied",
+          "fee": "Unknown",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s17",
+      "after_event_id": "e017",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "38分钟"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "房东书面确认，正式合同待附条款"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "已过期"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "5900元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "39分钟"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "房东书面同意合同附登记协助条款"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "已过期"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6300元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "已过期"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "个人码催付2000元及索取敏感资料"
+        },
+        {
+          "question_id": "r_contract_goal",
+          "question": "用户何时提出云栖苑签约前书面核验材料需求？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "2026-07-25提出"
+        },
+        {
+          "question_id": "r_contract_owner",
+          "question": "云栖苑出租主体授权文件目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "原件可供核对"
+        },
+        {
+          "question_id": "r_contract_deposit",
+          "question": "云栖苑押金退还条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "条件可供原件核对"
+        },
+        {
+          "question_id": "r_contract_repair",
+          "question": "云栖苑维修责任条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "原件可供核对"
+        },
+        {
+          "question_id": "r_contract_fee",
+          "question": "云栖苑服务费金额和列示方式目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "月租35%，收取主体与附件编号已列"
+        },
+        {
+          "question_id": "r_contract_status",
+          "question": "云栖苑签约前审核材料是否已经整理完成或取消？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "材料可整理，尚未签约"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3",
+        "rental_t4"
+      ],
+      "ready_tasks": [
+        "rental_t4"
+      ],
+      "newly_ready_tasks": [
+        "rental_t4"
+      ],
+      "invalidated_tasks": [],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Unsatisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Unsatisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unsatisfied",
+          "authorized": "Satisfied",
+          "identity_risk": "Unsatisfied"
+        },
+        "rental_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "owner": "Satisfied",
+          "registration": "Satisfied",
+          "deposit": "Satisfied",
+          "repair": "Satisfied",
+          "fee": "Satisfied",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s18",
+      "after_event_id": "e018",
+      "memory_questions": [
+        {
+          "question_id": "r_goal",
+          "question": "用户最初要求维护什么租房安排？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "内部候选与看房安排"
+        },
+        {
+          "question_id": "r_budget",
+          "question": "用户可接受的最高月租是多少元？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6000元"
+        },
+        {
+          "question_id": "r_commute_limit",
+          "question": "用户可接受的早高峰门到门通勤上限是多少分钟？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "45分钟"
+        },
+        {
+          "question_id": "r_weekend",
+          "question": "用户唯一能线下看房的日期是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3"
+          ],
+          "ground_truth_answer": "2026-08-08至2026-08-09"
+        },
+        {
+          "question_id": "r_auth",
+          "question": "用户允许哪些租房准备行动，哪些对外行动须另行确认？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t2",
+            "rental_t3",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "内部筛选和计划已授权；联系、预约、付款、资料发送及签约须确认"
+        },
+        {
+          "question_id": "r_c_price",
+          "question": "云栖苑当前月租是多少元？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "5950元"
+        },
+        {
+          "question_id": "r_c_type",
+          "question": "云栖苑当前户型是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_c_status",
+          "question": "云栖苑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_c_commute",
+          "question": "云栖苑当前早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "38分钟"
+        },
+        {
+          "question_id": "r_c_reg",
+          "question": "云栖苑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t1",
+            "rental_t4"
+          ],
+          "ground_truth_answer": "房东书面确认，正式合同待附条款"
+        },
+        {
+          "question_id": "r_c_slot",
+          "question": "云栖苑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t1"
+          ],
+          "ground_truth_answer": "已过期"
+        },
+        {
+          "question_id": "r_a_price",
+          "question": "北岸花园当前月租是多少元？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "5900元"
+        },
+        {
+          "question_id": "r_a_type",
+          "question": "北岸花园当前户型是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_a_status",
+          "question": "北岸花园当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_a_commute",
+          "question": "北岸花园早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "39分钟"
+        },
+        {
+          "question_id": "r_a_reg",
+          "question": "北岸花园的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "房东书面同意合同附登记协助条款"
+        },
+        {
+          "question_id": "r_a_slot",
+          "question": "北岸花园当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t2"
+          ],
+          "ground_truth_answer": "已过期"
+        },
+        {
+          "question_id": "r_b_price",
+          "question": "河滨小筑当前月租是多少元？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "6300元"
+        },
+        {
+          "question_id": "r_b_type",
+          "question": "河滨小筑当前户型是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "一居室"
+        },
+        {
+          "question_id": "r_b_status",
+          "question": "河滨小筑当前挂牌状态是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "在售"
+        },
+        {
+          "question_id": "r_b_commute",
+          "question": "河滨小筑早高峰门到门通勤测量是多少分钟？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_reg",
+          "question": "河滨小筑的正规居住登记书面支持情况是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "unknown"
+        },
+        {
+          "question_id": "r_b_slot",
+          "question": "河滨小筑当前可用的线下看房时段是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "已过期"
+        },
+        {
+          "question_id": "r_b_risk",
+          "question": "河滨小筑联系方身份和收款渠道的核验结果是什么？",
+          "task_ids": [
+            "rental_t3"
+          ],
+          "ground_truth_answer": "个人码催付2000元及索取敏感资料"
+        },
+        {
+          "question_id": "r_contract_goal",
+          "question": "用户何时提出云栖苑签约前书面核验材料需求？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "2026-07-25提出"
+        },
+        {
+          "question_id": "r_contract_owner",
+          "question": "云栖苑出租主体授权文件目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "原件可供核对"
+        },
+        {
+          "question_id": "r_contract_deposit",
+          "question": "云栖苑押金退还条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "条件可供原件核对"
+        },
+        {
+          "question_id": "r_contract_repair",
+          "question": "云栖苑维修责任条款目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "原件可供核对"
+        },
+        {
+          "question_id": "r_contract_fee",
+          "question": "云栖苑服务费金额和列示方式目前是什么状态？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "月租35%，收取主体与附件编号已列"
+        },
+        {
+          "question_id": "r_contract_status",
+          "question": "云栖苑签约前审核材料是否已经整理完成或取消？",
+          "task_ids": [
+            "rental_t4"
+          ],
+          "ground_truth_answer": "材料可整理，尚未签约"
+        }
+      ],
+      "reactive_questions": [
+        "rental_t1",
+        "rental_t2",
+        "rental_t3",
+        "rental_t4"
+      ],
+      "ready_tasks": [
+        "rental_t4"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "rental_t1": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Unsatisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t2": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Satisfied",
+          "commute": "Satisfied",
+          "registration": "Satisfied",
+          "slot": "Unsatisfied",
+          "authorized": "Satisfied"
+        },
+        "rental_t3": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
+          "room": "Satisfied",
+          "budget": "Unsatisfied",
+          "commute": "Unknown",
+          "registration": "Unknown",
+          "slot": "Unsatisfied",
+          "authorized": "Satisfied",
+          "identity_risk": "Unsatisfied"
+        },
+        "rental_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "owner": "Satisfied",
+          "registration": "Satisfied",
+          "deposit": "Satisfied",
+          "repair": "Satisfied",
+          "fee": "Satisfied",
+          "authorized": "Satisfied"
+        }
+      }
+    }
+  ]
+}

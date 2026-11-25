@@ -20,6 +20,11 @@ def load_dataset(path):
         parsed_times = [datetime.fromisoformat(t.replace("Z", "+00:00")) for t in timestamps]
         if any(t.tzinfo is None for t in parsed_times) or parsed_times != sorted(parsed_times):
             raise ValueError("timestamps must be timezone-aware and chronological")
+        if len(s["evaluations"]) != len(event_ids) + 1:
+            raise ValueError("one evaluation stage is required per event, plus stage 0")
+        stage_ids = [stage["stage_id"] for stage in s["evaluations"]]
+        if len(stage_ids) != len(set(stage_ids)):
+            raise ValueError("duplicate stage ID")
         previous = set()
         for i, stage in enumerate(s["evaluations"]):
             for key in ("stage_id", "after_event_id", "memory_questions", "reactive_questions",
@@ -34,20 +39,30 @@ def load_dataset(path):
                 raise ValueError("unknown or inconsistent ready task")
             if set(stage["newly_ready_tasks"]) != ready - previous:
                 raise ValueError("newly_ready_tasks must equal transitions to ready")
-            if not set(stage["invalidated_tasks"]) <= previous - ready:
-                raise ValueError("invalidated_tasks must leave ready set")
+            if set(stage["invalidated_tasks"]) != previous - ready:
+                raise ValueError("invalidated_tasks must equal transitions out of ready")
+            if set(stage["task_states"]) != task_ids:
+                raise ValueError("each task needs exactly one condition-state record")
             for t in s["task_registry"]:
                 state = stage["task_states"].get(t["task_id"])
-                if not state or not all(v in ("Satisfied", "Unsatisfied", "Unknown") for v in state.values()):
+                if not state or set(state) != set(t["conditions"]) or not all(v in ("Satisfied", "Unsatisfied", "Unknown") for v in state.values()):
                     raise ValueError("each task needs condition states")
-                if t["task_id"] in ready and (set(state) != set(t["conditions"]) or any(v != "Satisfied" for v in state.values())):
-                    raise ValueError("ready task has incomplete conditions")
+                if (t["task_id"] in ready) != all(v == "Satisfied" for v in state.values()):
+                    raise ValueError("ready tasks and condition states disagree")
+            question_ids = [q["question_id"] for q in stage["memory_questions"]]
+            if len(question_ids) != len(set(question_ids)):
+                raise ValueError("duplicate memory question ID in stage")
             for q in stage["memory_questions"]:
                 if not set(q["task_ids"]) <= task_ids or not q.get("question_id") or not q.get("question") or "ground_truth_answer" not in q:
                     raise ValueError("invalid memory question")
             if not set(stage["reactive_questions"]) <= task_ids:
                 raise ValueError("unknown reactive task")
+            for t in s["task_registry"]:
+                if t["task_id"] in stage["reactive_questions"]:
+                    covered = {q["question_id"] for q in stage["memory_questions"] if t["task_id"] in q["task_ids"]}
+                    if not set(t["required_memory_facts"]) <= covered:
+                        raise ValueError("active task has uncovered required memory facts")
+                elif t["task_id"] in ready:
+                    raise ValueError("ready task omitted from reactive questions")
             previous = ready
-        if len(s["evaluations"]) != len(event_ids) + 1:
-            raise ValueError("one evaluation stage is required per event, plus stage 0")
     return scenarios

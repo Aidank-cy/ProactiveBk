@@ -142,3 +142,24 @@ def test_integrity_controls(tmp_path):
     paired[-1]["model_parameters"] = {"temperature": 1}
     with pytest.raises(ValueError):
         check_pair(paired)
+
+
+def test_valid_extra_and_combined_task_prediction(tmp_path):
+    dataset, config = fixture(tmp_path)
+    rows = run(config, dataset, output=tmp_path / "raw.jsonl", adapter=mock)
+    target = next(r for r in rows if r["stage_id"] == "s1" and r["evaluation_type"] == "proactive")
+    target["parsed_response"]["actionable_tasks"] = [
+        {"description": "Place blue token in box A and red token in box B.", "evidence": []},
+        {"description": "Warn user about a separate valid issue.", "evidence": []}]
+    annotations = labels(rows, dataset)
+    ann = next(a for a in annotations if a["call_id"] == call_id(target))
+    ann["matches"] = [
+        {"prediction_index": 0, "matched_task_id": "t1", "match_status": "Correct Match"},
+        {"prediction_index": 0, "matched_task_id": "t2", "match_status": "Correct Match"},
+        {"prediction_index": 1, "matched_task_id": None, "match_status": "Valid Extra Task"}]
+    report = score(rows, annotations, dataset)
+    assert report["counts"]["valid_extra_tasks"] == 1
+    assert report["counts"]["tp"] == 3
+    assert report["counts"]["fp"] == 0
+    assert report["rates"]["proactive_micro_precision"] == 1
+    assert report["rates"]["proactive_open_precision"] == 1

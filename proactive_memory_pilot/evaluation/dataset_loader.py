@@ -52,9 +52,16 @@ def load_dataset(path):
             question_ids = [q["question_id"] for q in stage["memory_questions"]]
             if len(question_ids) != len(set(question_ids)):
                 raise ValueError("duplicate memory question ID in stage")
+            visible_ids = set(record_ids + event_ids[:i])
             for q in stage["memory_questions"]:
                 if not set(q["task_ids"]) <= task_ids or not q.get("question_id") or not q.get("question") or "ground_truth_answer" not in q:
                     raise ValueError("invalid memory question")
+                evidence = q.get("evidence_record_ids")
+                if evidence is not None:
+                    if not isinstance(evidence, list) or not set(evidence) <= visible_ids:
+                        raise ValueError("memory evidence contains unknown or future record ID")
+                    if q["ground_truth_answer"] != "unknown" and not evidence:
+                        raise ValueError("known memory answer lacks evidence")
             if not set(stage["reactive_questions"]) <= task_ids:
                 raise ValueError("unknown reactive task")
             for t in s["task_registry"]:

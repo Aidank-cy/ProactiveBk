@@ -31,6 +31,7 @@ def analyze(results, annotations, dataset):
                                       {call_id(x) for x in matching}]
                       if category == "core_gap" else None})
     false_positives = []
+    valid_extras = []
     annotation_lookup = {a["call_id"]: a for a in annotations}
     for row in results:
         if row["evaluation_type"] != "proactive" or row["status"] != "ok":
@@ -42,7 +43,12 @@ def analyze(results, annotations, dataset):
                                         "stage_id": row["stage_id"], "sample_id": row["sample_id"],
                                         "prediction": row["parsed_response"]["actionable_tasks"][match["prediction_index"]],
                                         "annotation": match})
-    return {"cases": cases, "false_positives": false_positives,
+            if match.get("match_status") == "Valid Extra Task":
+                valid_extras.append({"model_name": row["model_name"], "scenario_id": row["scenario_id"],
+                                     "stage_id": row["stage_id"], "sample_id": row["sample_id"],
+                                     "prediction": row["parsed_response"]["actionable_tasks"][match["prediction_index"]],
+                                     "annotation": match})
+    return {"cases": cases, "false_positives": false_positives, "valid_extra_tasks": valid_extras,
             "counts": {c: sum(x["category"] == c for x in cases) for c in
             ("missing_annotation", "memory_incorrect", "reactive_incorrect", "core_gap", "all_correct")}}
 

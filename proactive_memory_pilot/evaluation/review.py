@@ -4,6 +4,9 @@ import json
 from pathlib import Path
 from .dataset_loader import load_dataset
 
+MATCH_STATUSES = ("Correct Match", "Not Ready", "Duplicate", "Out of Scope",
+                  "Valid Extra Task", "Unsupported Task", "Needs Review")
+
 
 def call_id(row):
     import hashlib
@@ -23,6 +26,7 @@ def make_review(results, dataset):
             q = next(q for q in st["memory_questions"] if q["question_id"] == row["question_id"])
             out.append({**common, "question_id": q["question_id"], "question": q["question"],
                         "task_ids": q["task_ids"], "ground_truth_answer": q["ground_truth_answer"],
+                        "ground_truth_evidence_record_ids": q.get("evidence_record_ids", []),
                         "model_answer": (row.get("parsed_response") or {}).get("answer"),
                         "correct": None, "comment": ""})
         else:
@@ -30,6 +34,8 @@ def make_review(results, dataset):
             predictions = (row.get("parsed_response") or {}).get("actionable_tasks", [])
             out.append({**common, "task_id": row["task_id"], "ready_tasks": st["ready_tasks"],
                         "task_registry": tasks, "predictions": predictions,
+                        "annotation_guidance": "For a description with multiple distinct actions, add one match row per action using the same prediction_index. Valid Extra Task is a real actionable task outside the fixed registry; Needs Review requires truth adjudication before scoring.",
+                        "allowed_match_statuses": MATCH_STATUSES,
                         "matches": [{"prediction_index": i, "matched_task_id": None, "match_status": None,
                                      "evidence_correct": None, "comment": ""} for i in range(len(predictions))],
                         "comment": ""})

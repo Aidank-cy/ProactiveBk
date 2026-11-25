@@ -1,0 +1,289 @@
+{
+  "rule": "All coupon thresholds and percentage discount use the original subtotal; discounts add; percentage floors to cents; total floors at zero.",
+  "source": "VibeLifeBench/servers/ecommerce_mock/src/ecommerce_mock/services/coupon_service.py and cart_service.py",
+  "combination_count": 18,
+  "best": {
+    "sku_ids": [
+      "bsk_strr_a2",
+      "bsk_strr_b2",
+      "bsk_strr_c2"
+    ],
+    "subtotal_minor": 25700,
+    "coupon_codes": [
+      "FULL209_strr",
+      "FULL249_strr",
+      "PCT10_strr"
+    ],
+    "discount_minor": 11070,
+    "total_minor": 14630
+  },
+  "all_combinations": [
+    {
+      "sku_ids": [
+        "bsk_strr_a2",
+        "bsk_strr_b2",
+        "bsk_strr_c2"
+      ],
+      "subtotal_minor": 25700,
+      "coupon_codes": [
+        "FULL209_strr",
+        "FULL249_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 11070,
+      "total_minor": 14630
+    },
+    {
+      "sku_ids": [
+        "bsk_strr_a3",
+        "bsk_strr_b2",
+        "bsk_strr_c1"
+      ],
+      "subtotal_minor": 27600,
+      "coupon_codes": [
+        "FULL209_strr",
+        "FULL249_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 11260,
+      "total_minor": 16340
+    },
+    {
+      "sku_ids": [
+        "bsk_strr_a2",
+        "bsk_strr_b2",
+        "bsk_strr_c1"
+      ],
+      "subtotal_minor": 28700,
+      "coupon_codes": [
+        "FULL209_strr",
+        "FULL249_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 11370,
+      "total_minor": 17330
+    },
+    {
+      "sku_ids": [
+        "bsk_strr_a3",
+        "bsk_strr_b1",
+        "bsk_strr_c3"
+      ],
+      "subtotal_minor": 28800,
+      "coupon_codes": [
+        "FULL209_strr",
+        "FULL249_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 11380,
+      "total_minor": 17420
+    },
+    {
+      "sku_ids": [
+        "bsk_strr_a1",
+        "bsk_strr_b2",
+        "bsk_strr_c3"
+      ],
+      "subtotal_minor": 28900,
+      "coupon_codes": [
+        "FULL209_strr",
+        "FULL249_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 11390,
+      "total_minor": 17510
+    },
+    {
+      "sku_ids": [
+        "bsk_strr_a3",
+        "bsk_strr_b1",
+        "bsk_strr_c2"
+      ],
+      "subtotal_minor": 29500,
+      "coupon_codes": [
+        "FULL209_strr",
+        "FULL249_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 11450,
+      "total_minor": 18050
+    },
+    {
+      "sku_ids": [
+        "bsk_strr_a1",
+        "bsk_strr_b2",
+        "bsk_strr_c2"
+      ],
+      "subtotal_minor": 29600,
+      "coupon_codes": [
+        "FULL209_strr",
+        "FULL249_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 11460,
+      "total_minor": 18140
+    },
+    {
+      "sku_ids": [
+        "bsk_strr_a2",
+        "bsk_strr_b1",
+        "bsk_strr_c3"
+      ],
+      "subtotal_minor": 29900,
+      "coupon_codes": [
+        "FULL209_strr",
+        "FULL249_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 11490,
+      "total_minor": 18410
+    },
+    {
+      "sku_ids": [
+        "bsk_strr_a3",
+        "bsk_strr_b2",
+        "bsk_strr_c3"
+      ],
+      "subtotal_minor": 23900,
+      "coupon_codes": [
+        "FULL209_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 5390,
+      "total_minor": 18510
+    },
+    {
+      "sku_ids": [
+        "bsk_strr_a2",
+        "bsk_strr_b1",
+        "bsk_strr_c2"
+      ],
+      "subtotal_minor": 30600,
+      "coupon_codes": [
+        "FULL209_strr",
+        "FULL249_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 11560,
+      "total_minor": 19040
+    },
+    {
+      "sku_ids": [
+        "bsk_strr_a3",
+        "bsk_strr_b2",
+        "bsk_strr_c2"
+      ],
+      "subtotal_minor": 24600,
+      "coupon_codes": [
+        "FULL209_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 5460,
+      "total_minor": 19140
+    },
+    {
+      "sku_ids": [
+        "bsk_strr_a2",
+        "bsk_strr_b2",
+        "bsk_strr_c3"
+      ],
+      "subtotal_minor": 25000,
+      "coupon_codes": [
+        "FULL209_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 5500,
+      "total_minor": 19500
+    },
+    {
+      "sku_ids": [
+        "bsk_strr_a3",
+        "bsk_strr_b1",
+        "bsk_strr_c1"
+      ],
+      "subtotal_minor": 32500,
+      "coupon_codes": [
+        "FULL209_strr",
+        "FULL249_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 11750,
+      "total_minor": 20750
+    },
+    {
+      "sku_ids": [
+        "bsk_strr_a1",
+        "bsk_strr_b2",
+        "bsk_strr_c1"
+      ],
+      "subtotal_minor": 32600,
+      "coupon_codes": [
+        "FULL209_strr",
+        "FULL249_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 11760,
+      "total_minor": 20840
+    },
+    {
+      "sku_ids": [
+        "bsk_strr_a2",
+        "bsk_strr_b1",
+        "bsk_strr_c1"
+      ],
+      "subtotal_minor": 33600,
+      "coupon_codes": [
+        "FULL209_strr",
+        "FULL249_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 11860,
+      "total_minor": 21740
+    },
+    {
+      "sku_ids": [
+        "bsk_strr_a1",
+        "bsk_strr_b1",
+        "bsk_strr_c3"
+      ],
+      "subtotal_minor": 33800,
+      "coupon_codes": [
+        "FULL209_strr",
+        "FULL249_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 11880,
+      "total_minor": 21920
+    },
+    {
+      "sku_ids": [
+        "bsk_strr_a1",
+        "bsk_strr_b1",
+        "bsk_strr_c2"
+      ],
+      "subtotal_minor": 34500,
+      "coupon_codes": [
+        "FULL209_strr",
+        "FULL249_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 11950,
+      "total_minor": 22550
+    },
+    {
+      "sku_ids": [
+        "bsk_strr_a1",
+        "bsk_strr_b1",
+        "bsk_strr_c1"
+      ],
+      "subtotal_minor": 37500,
+      "coupon_codes": [
+        "FULL209_strr",
+        "FULL249_strr",
+        "PCT10_strr"
+      ],
+      "discount_minor": 12250,
+      "total_minor": 25250
+    }
+  ]
+}

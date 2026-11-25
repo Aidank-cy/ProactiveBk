@@ -16,10 +16,15 @@ def annotated_matches(row, ann):
         return None
     predictions = row["parsed_response"]["actionable_tasks"]
     matches = ann.get("matches", [])
-    if len(matches) != len(predictions) or any(m.get("match_status") is None for m in matches):
+    if (len(matches) < len(predictions)
+            or {m.get("prediction_index") for m in matches} != set(range(len(predictions)))
+            or any(m.get("match_status") is None for m in matches)):
         return None
     if any(m["match_status"] == "Needs Review" for m in matches):
         return None
+    allowed = {"Correct Match", "Not Ready", "Duplicate", "Out of Scope", "Unsupported Task", "Valid Extra Task", "Needs Review"}
+    if any(m["match_status"] not in allowed for m in matches):
+        raise ValueError("unknown task match status")
     ids = [m.get("matched_task_id") for m in matches if m["match_status"] == "Correct Match"]
     if len(ids) != len(set(ids)):
         raise ValueError("same task matched twice")
@@ -46,15 +51,16 @@ def score(results, annotations, dataset):
                 if pm is not None:
                     ready = set(st["ready_tasks"])
                     tp = len(pids & ready)
-                    fp = len(pm) - tp
+                    valid_extra = sum(m["match_status"] == "Valid Extra Task" for m in pm)
+                    fp = len(pm) - tp - valid_extra
                     fn = len(ready - pids)
-                    for k, n in (("tp", tp), ("fp", fp), ("fn", fn), ("duplicates", sum(m["match_status"] == "Duplicate" for m in pm)), ("predictions", len(pm))):
+                    for k, n in (("tp", tp), ("fp", fp), ("fn", fn), ("valid_extra_tasks", valid_extra), ("duplicates", sum(m["match_status"] == "Duplicate" for m in pm)), ("predictions", len(pm))):
                         counts[k] += n
                         per_scenario[s["scenario_id"]][k] += n
                     counts["proactive_stages"] += 1
                     if not ready:
                         counts["empty_stages"] += 1
-                        counts["empty_correct"] += not pm
+                        counts["empty_correct"] += tp == 0 and fp == 0
                     for tid in st["newly_ready_tasks"]:
                         counts["newly_ready_total"] += 1
                         counts["newly_ready_identified"] += tid in pids
@@ -103,6 +109,7 @@ def score(results, annotations, dataset):
     gap = [x for x in paired if x["memory_correct"] is True and x["reactive_correct"] is True and x["proactive_correct"] is not None]
     new_gap = [x for x in gap if x["newly_ready"]]
     precision = ratio(counts["tp"], counts["tp"] + counts["fp"])
+    open_precision = ratio(counts["tp"] + counts["valid_extra_tasks"], counts["tp"] + counts["valid_extra_tasks"] + counts["fp"])
     recall = ratio(counts["tp"], counts["tp"] + counts["fn"])
     rprecision = ratio(counts["reactive_tp"], counts["reactive_tp"] + counts["reactive_fp"])
     rrecall = ratio(counts["reactive_tp"], counts["reactive_ready"])
@@ -112,7 +119,8 @@ def score(results, annotations, dataset):
              "reactive_precision": rprecision, "reactive_recall": rrecall,
              "reactive_balanced_accuracy": None if not counts["reactive_ready"] or not counts["reactive_not_ready"] else
              (ratio(counts["reactive_tp"], counts["reactive_ready"]) + ratio(counts["reactive_tn"], counts["reactive_not_ready"])) / 2,
-             "proactive_micro_precision": precision, "proactive_micro_recall": recall,
+             "proactive_micro_precision": precision, "proactive_open_precision": open_precision,
+             "proactive_micro_recall": recall,
              "proactive_micro_f1": None if precision is None or recall is None or precision + recall == 0 else 2 * precision * recall / (precision + recall),
              "empty_stage_accuracy": ratio(counts["empty_correct"], counts["empty_stages"]),
              "duplicate_prediction_rate": ratio(counts["duplicates"], counts["predictions"]),
@@ -123,12 +131,13 @@ def score(results, annotations, dataset):
     scenario_reports = {}
     for name, v in per_scenario.items():
         sp = ratio(v["tp"], v["tp"] + v["fp"])
+        sop = ratio(v["tp"] + v["valid_extra_tasks"], v["tp"] + v["valid_extra_tasks"] + v["fp"])
         sr = ratio(v["tp"], v["tp"] + v["fn"])
-        scenario_reports[name] = {**v, "precision": sp, "recall": sr,
+        scenario_reports[name] = {**v, "precision": sp, "open_precision": sop, "recall": sr,
                                   "f1": None if sp is None or sr is None or sp + sr == 0 else 2*sp*sr/(sp+sr)}
     return {"counts": dict(counts), "rates": rates, "all_ready_proactive_gap": gap_report(gap),
             "newly_ready_proactive_gap": gap_report(new_gap), "per_scenario": scenario_reports,
-            "paired": paired, "undefined_rule": "null when denominator is zero; missing and Needs Review excluded"}
+            "paired": paired, "undefined_rule": "null when denominator is zero; missing and Needs Review excluded. Fixed-task precision excludes Valid Extra Task from numerator and denominator; open precision counts it as valid. One JSON prediction may be split into multiple atomic labels with the same prediction_index."}
 
 
 def main():

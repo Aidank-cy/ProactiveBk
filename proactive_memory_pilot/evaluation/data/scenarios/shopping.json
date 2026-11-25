@@ -55,7 +55,7 @@
       "event_id": "e007",
       "timestamp": "2026-06-23T13:05:00+08:00",
       "source": "ecommerce",
-      "content": "ref_strr_b商家提出异议，平台要求补开箱视频和问题照片；工单状态rejected。商城可售原厂SKU：A官方133元/标准94元/简装83元；B套装162元/单件113元；C三件80元/单件50元/散装43元，各库存120。按三张券叠加，A简装+B单件+C三件原价276元、优惠后163.40元最低。"
+      "content": "ref_strr_b商家提出异议，平台要求补开箱视频和问题照片；工单状态rejected。商城可售原厂SKU：A官方bsk_strr_a1 133元、标准bsk_strr_a2 94元、简装bsk_strr_a3 83元；B套装bsk_strr_b1 162元、单件bsk_strr_b2 113元；C三件bsk_strr_c1 80元、单件bsk_strr_c2 50元、散装bsk_strr_c3 43元，各库存120。三张券截至8月31日有效、所有商品适用，均按优惠前原价判断门槛；百分券按原价计算10%并向下取整到分，满减券各独立计算后相加，最高不超过原价。"
     },
     {
       "event_id": "e008",
@@ -85,13 +85,13 @@
       "event_id": "e012",
       "timestamp": "2026-07-02T09:00:00+08:00",
       "source": "user_message",
-      "content": "婴儿床配件退货要在7月9日前推动平台介入，若证据齐全请申请；平台规则要求已有商家异议、损坏照片和连续开箱视频。现有照片已整理完，视频仍缺最后一段。"
+      "content": "婴儿床配件退货要在7月9日前推动平台介入，若证据齐全请直接申请；我明确授权这一次平台介入申请。平台规则要求已有商家异议、损坏照片和连续开箱视频。现有照片已整理完，视频仍缺最后一段。"
     },
     {
       "event_id": "e013",
       "timestamp": "2026-07-04T10:00:00+08:00",
       "source": "user_message",
-      "content": "开箱视频最后一段已经补齐。S5包装批次照片显示GBS5-2026-03；品牌书面核验该批次受制动召回影响，可在7月12日前完成免费换新并验收，赶得上7月15日出行。请比较处理方案，实际操作前先问我。"
+      "content": "开箱视频最后一段已经补齐。S5包装批次照片显示GBS5-2026-03；品牌书面核验此批次在制动召回范围，安全带认证仍有效。品牌列三种比较方案：免费换新通常约两周，但针对该批次确认7月12日前送达并验收；制动加固配件120元、7月10日前可装并复检；质量退货可申请退款，但7月15日前另购替代推车的到货时间未知。请比较并推荐出行前安全处理，实际维修、退货或下单仍先问我。"
     },
     {
       "event_id": "e014",
@@ -103,25 +103,31 @@
       "event_id": "e015",
       "timestamp": "2026-07-08T18:05:00+08:00",
       "source": "credit_card",
-      "content": "重复扣费争议已审核通过，6月24日交易冲销258元；该材料不需再次准备或提交。"
+      "content": "重复扣费争议已审核通过，6月24日交易冲销258元；该材料不需再次准备或提交。旧推车买家此前确认的7月6日17:00交易时间已过，双方尚未重新约定。"
     },
     {
       "event_id": "e016",
+      "timestamp": "2026-07-09T08:30:00+08:00",
+      "source": "ecommerce",
+      "content": "平台工单ref_strr_b显示用户已在7月9日前从本人账户提交介入申请，上传了损坏照片和完整开箱视频；状态under_review。此提交由用户在平台外部完成，本实验模型没有执行。"
+    },
+    {
+      "event_id": "e017",
       "timestamp": "2026-07-10T11:05:00+08:00",
       "source": "ecommerce",
       "content": "平台已介入并裁定婴儿床配件退货成立，退款安排中；先前申请机会已结束。"
     },
     {
-      "event_id": "e017",
+      "event_id": "e018",
       "timestamp": "2026-07-11T16:05:00+08:00",
       "source": "listing_platform",
-      "content": "旧S3推车平台担保交易完成，挂牌已下架，1500元回款到账。"
+      "content": "旧S3推车买卖双方在平台外部重新约定7月11日15:00，并于该时段通过平台担保完成交易；挂牌已下架，1500元回款到账。"
     },
     {
-      "event_id": "e018",
+      "event_id": "e019",
       "timestamp": "2026-07-14T10:00:00+08:00",
       "source": "user_message",
-      "content": "请归档已解决、待确认和资金状态；补贴邮件、平台外定金与安全核验应分别写清。"
+      "content": "请归档已解决、待确认和资金状态；补贴邮件、平台外定金与安全核验应分别写清。7月12日品牌承诺的换新验收日已过，我尚未收到实际验收结果。"
     }
   ],
   "task_registry": [
@@ -147,7 +153,6 @@
         "s_ref_rule",
         "s_ref_photo",
         "s_ref_video",
-        "s_deadline",
         "s_auth"
       ],
       "matching_guidelines": "须针对ord_strr_0002的商家异议申请平台介入；仅整理证据或直接申请退款不是同一行动。"
@@ -228,7 +233,7 @@
     },
     {
       "task_id": "shopping_t5",
-      "description": "将配件A、配件B和耗材C的最省钱原厂组合加入购物车。",
+      "description": "选出配件A、配件B和耗材C的最低到手价原厂组合并加入购物车。",
       "goal": "补齐三类原厂配件耗材",
       "conditions": [
         "goal",
@@ -236,7 +241,6 @@
         "catalog",
         "stock",
         "coupon",
-        "optimal",
         "authorized"
       ],
       "required_memory_facts": [
@@ -245,10 +249,9 @@
         "s_cart_catalog",
         "s_cart_stock",
         "s_cart_coupon",
-        "s_cart_best",
         "s_auth"
       ],
-      "matching_guidelines": "需三类均选具体SKU并加购；付款或提交订单不等价。"
+      "matching_guidelines": "须选A标准版bsk_strr_a2、B单件bsk_strr_b2、C单件bsk_strr_c2，三券同用到手146.30元；只加购不付款。"
     }
   ],
   "evaluations": [
@@ -263,7 +266,10 @@
             "shopping_t2",
             "shopping_t4"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -272,7 +278,10 @@
             "shopping_t2",
             "shopping_t4"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -280,7 +289,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -288,7 +300,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元，active"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -296,7 +311,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_price",
@@ -304,7 +320,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_time",
@@ -312,7 +329,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_platform",
@@ -320,7 +338,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_choice",
@@ -328,7 +347,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_open",
@@ -336,7 +356,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "尚待准备"
+          "ground_truth_answer": "尚待准备",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -344,7 +367,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -352,7 +378,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_policy",
@@ -360,7 +387,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_cost",
@@ -368,15 +396,17 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_open",
@@ -384,7 +414,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待确定"
+          "ground_truth_answer": "尚待确定",
+          "evidence_record_ids": [
+            "h002"
+          ]
         }
       ],
       "reactive_questions": [
@@ -439,7 +472,6 @@
           "catalog": "Unknown",
           "stock": "Unknown",
           "coupon": "Unknown",
-          "optimal": "Unknown",
           "authorized": "Unknown"
         }
       }
@@ -455,7 +487,10 @@
             "shopping_t2",
             "shopping_t4"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -464,7 +499,10 @@
             "shopping_t2",
             "shopping_t4"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -472,7 +510,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -480,7 +521,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元，active"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -488,7 +532,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_price",
@@ -496,7 +541,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_time",
@@ -504,7 +550,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_platform",
@@ -512,7 +559,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_choice",
@@ -520,7 +568,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_open",
@@ -528,7 +577,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "尚待准备"
+          "ground_truth_answer": "尚待准备",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -536,7 +588,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -544,7 +599,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_policy",
@@ -552,7 +608,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_cost",
@@ -560,15 +617,17 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_open",
@@ -576,7 +635,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待确定"
+          "ground_truth_answer": "尚待确定",
+          "evidence_record_ids": [
+            "h002"
+          ]
         }
       ],
       "reactive_questions": [
@@ -631,7 +693,6 @@
           "catalog": "Unknown",
           "stock": "Unknown",
           "coupon": "Unknown",
-          "optimal": "Unknown",
           "authorized": "Unknown"
         }
       }
@@ -647,7 +708,10 @@
             "shopping_t2",
             "shopping_t4"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -656,7 +720,10 @@
             "shopping_t2",
             "shopping_t4"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -664,7 +731,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -672,7 +742,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元，active"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -680,7 +753,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_price",
@@ -688,7 +762,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_time",
@@ -696,7 +771,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_platform",
@@ -704,7 +780,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_choice",
@@ -712,7 +789,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_open",
@@ -720,7 +798,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "尚待准备"
+          "ground_truth_answer": "尚待准备",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -728,7 +809,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -736,7 +820,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_policy",
@@ -744,7 +829,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_cost",
@@ -752,15 +838,17 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_open",
@@ -768,7 +856,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待确定"
+          "ground_truth_answer": "尚待确定",
+          "evidence_record_ids": [
+            "h002"
+          ]
         }
       ],
       "reactive_questions": [
@@ -823,7 +914,6 @@
           "catalog": "Unknown",
           "stock": "Unknown",
           "coupon": "Unknown",
-          "optimal": "Unknown",
           "authorized": "Unknown"
         }
       }
@@ -839,7 +929,10 @@
             "shopping_t2",
             "shopping_t4"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -848,7 +941,10 @@
             "shopping_t2",
             "shopping_t4"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -856,7 +952,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -864,7 +963,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元，active"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -872,7 +974,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_price",
@@ -880,7 +983,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_time",
@@ -888,7 +992,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_platform",
@@ -896,7 +1001,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_choice",
@@ -904,7 +1010,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_open",
@@ -912,7 +1019,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "尚待准备"
+          "ground_truth_answer": "尚待准备",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -920,7 +1030,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -928,7 +1041,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_policy",
@@ -936,7 +1050,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_cost",
@@ -944,15 +1059,17 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_open",
@@ -960,7 +1077,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待确定"
+          "ground_truth_answer": "尚待确定",
+          "evidence_record_ids": [
+            "h002"
+          ]
         }
       ],
       "reactive_questions": [
@@ -1015,7 +1135,6 @@
           "catalog": "Unknown",
           "stock": "Unknown",
           "coupon": "Unknown",
-          "optimal": "Unknown",
           "authorized": "Unknown"
         }
       }
@@ -1032,7 +1151,10 @@
             "shopping_t3",
             "shopping_t4"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -1042,7 +1164,10 @@
             "shopping_t3",
             "shopping_t4"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -1050,7 +1175,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -1058,7 +1186,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元，active"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -1066,7 +1197,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_price",
@@ -1074,7 +1206,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_time",
@@ -1082,7 +1215,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_platform",
@@ -1090,7 +1224,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_choice",
@@ -1098,7 +1233,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_open",
@@ -1106,7 +1242,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "尚待准备"
+          "ground_truth_answer": "尚待准备",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_card_goal",
@@ -1114,7 +1253,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+          "ground_truth_answer": "2026-06-20提出异常扣费核对",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_pair",
@@ -1122,7 +1264,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-13一笔258元，尚无第二笔"
+          "ground_truth_answer": "2026-06-13一笔258元，尚无第二笔",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_order",
@@ -1130,7 +1275,8 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_card_docs",
@@ -1138,7 +1284,8 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_card_status",
@@ -1146,7 +1293,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "尚未提出争议"
+          "ground_truth_answer": "尚未提出争议",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -1154,7 +1304,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -1162,7 +1315,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_policy",
@@ -1170,7 +1324,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_cost",
@@ -1178,15 +1333,17 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_open",
@@ -1194,7 +1351,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待确定"
+          "ground_truth_answer": "尚待确定",
+          "evidence_record_ids": [
+            "h002"
+          ]
         }
       ],
       "reactive_questions": [
@@ -1250,7 +1410,6 @@
           "catalog": "Unknown",
           "stock": "Unknown",
           "coupon": "Unknown",
-          "optimal": "Unknown",
           "authorized": "Unknown"
         }
       }
@@ -1267,7 +1426,10 @@
             "shopping_t3",
             "shopping_t4"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -1277,7 +1439,10 @@
             "shopping_t3",
             "shopping_t4"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -1285,7 +1450,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -1293,7 +1461,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元，active"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -1301,7 +1472,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "有站内买家，但价格未定"
+          "ground_truth_answer": "有站内买家，但价格未定",
+          "evidence_record_ids": [
+            "e005"
+          ]
         },
         {
           "question_id": "s_sale_price",
@@ -1309,7 +1483,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_time",
@@ -1317,7 +1492,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_platform",
@@ -1325,7 +1501,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_choice",
@@ -1333,7 +1510,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_open",
@@ -1341,7 +1519,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "尚待准备"
+          "ground_truth_answer": "尚待准备",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_card_goal",
@@ -1349,7 +1530,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+          "ground_truth_answer": "2026-06-20提出异常扣费核对",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_pair",
@@ -1357,7 +1541,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-13一笔258元，尚无第二笔"
+          "ground_truth_answer": "2026-06-13一笔258元，尚无第二笔",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_order",
@@ -1365,7 +1552,8 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_card_docs",
@@ -1373,7 +1561,8 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_card_status",
@@ -1381,7 +1570,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "尚未提出争议"
+          "ground_truth_answer": "尚未提出争议",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -1389,7 +1581,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -1397,7 +1592,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_policy",
@@ -1405,7 +1601,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_cost",
@@ -1413,15 +1610,17 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_open",
@@ -1429,7 +1628,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待确定"
+          "ground_truth_answer": "尚待确定",
+          "evidence_record_ids": [
+            "h002"
+          ]
         }
       ],
       "reactive_questions": [
@@ -1485,7 +1687,6 @@
           "catalog": "Unknown",
           "stock": "Unknown",
           "coupon": "Unknown",
-          "optimal": "Unknown",
           "authorized": "Unknown"
         }
       }
@@ -1503,7 +1704,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -1514,7 +1718,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -1522,7 +1729,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -1530,7 +1740,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元，active"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -1538,7 +1751,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "有站内买家，但价格未定"
+          "ground_truth_answer": "有站内买家，但价格未定",
+          "evidence_record_ids": [
+            "e005"
+          ]
         },
         {
           "question_id": "s_sale_price",
@@ -1546,7 +1762,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_time",
@@ -1554,7 +1771,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_platform",
@@ -1562,7 +1780,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_choice",
@@ -1570,7 +1789,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_open",
@@ -1578,7 +1798,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "尚待准备"
+          "ground_truth_answer": "尚待准备",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_card_goal",
@@ -1586,7 +1809,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+          "ground_truth_answer": "2026-06-20提出异常扣费核对",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_pair",
@@ -1594,7 +1820,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-13一笔258元，尚无第二笔"
+          "ground_truth_answer": "2026-06-13一笔258元，尚无第二笔",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_order",
@@ -1602,7 +1831,8 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_card_docs",
@@ -1610,7 +1840,8 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_card_status",
@@ -1618,7 +1849,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "尚未提出争议"
+          "ground_truth_answer": "尚未提出争议",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -1626,7 +1860,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -1634,7 +1871,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_policy",
@@ -1642,7 +1880,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_cost",
@@ -1650,15 +1889,17 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_open",
@@ -1666,7 +1907,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待确定"
+          "ground_truth_answer": "尚待确定",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_cart_goal",
@@ -1674,7 +1918,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-06-22提出三类配件加购"
+          "ground_truth_answer": "2026-06-22提出三类配件加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         },
         {
           "question_id": "s_cart_catalog",
@@ -1682,15 +1929,17 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_cart_stock",
-          "question": "最优组合对应SKU的库存情况是什么？",
+          "question": "三类原厂配件候选SKU目前各有多少库存？",
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_cart_coupon",
@@ -1698,15 +1947,8 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
-        },
-        {
-          "question_id": "s_cart_best",
-          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_cart_status",
@@ -1714,7 +1956,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "尚未加购"
+          "ground_truth_answer": "尚未加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         }
       ],
       "reactive_questions": [
@@ -1770,8 +2015,7 @@
           "open": "Satisfied",
           "catalog": "Unknown",
           "stock": "Unknown",
-          "coupon": "Satisfied",
-          "optimal": "Unknown",
+          "coupon": "Unknown",
           "authorized": "Satisfied"
         }
       }
@@ -1789,7 +2033,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -1800,7 +2047,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -1808,7 +2058,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -1816,7 +2069,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元，active"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -1824,7 +2080,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "有站内买家，但价格未定"
+          "ground_truth_answer": "有站内买家，但价格未定",
+          "evidence_record_ids": [
+            "e005"
+          ]
         },
         {
           "question_id": "s_sale_price",
@@ -1832,7 +2091,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_time",
@@ -1840,7 +2100,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_platform",
@@ -1848,7 +2109,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_choice",
@@ -1856,7 +2118,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_open",
@@ -1864,7 +2127,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "尚待准备"
+          "ground_truth_answer": "尚待准备",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_card_goal",
@@ -1872,7 +2138,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+          "ground_truth_answer": "2026-06-20提出异常扣费核对",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_pair",
@@ -1880,7 +2149,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-13一笔258元，尚无第二笔"
+          "ground_truth_answer": "2026-06-13一笔258元，尚无第二笔",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_order",
@@ -1888,7 +2160,8 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_card_docs",
@@ -1896,7 +2169,8 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_card_status",
@@ -1904,7 +2178,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "尚未提出争议"
+          "ground_truth_answer": "尚未提出争议",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -1912,7 +2189,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -1920,7 +2200,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_policy",
@@ -1928,7 +2209,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_cost",
@@ -1936,15 +2218,17 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_open",
@@ -1952,7 +2236,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待确定"
+          "ground_truth_answer": "尚待确定",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_cart_goal",
@@ -1960,7 +2247,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-06-22提出三类配件加购"
+          "ground_truth_answer": "2026-06-22提出三类配件加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         },
         {
           "question_id": "s_cart_catalog",
@@ -1968,15 +2258,21 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+          "ground_truth_answer": "A:a1 133/a2 94/a3 83元；B:b1 162/b2 113元；C:c1 80/c2 50/c3 43元",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_stock",
-          "question": "最优组合对应SKU的库存情况是什么？",
+          "question": "三类原厂配件候选SKU目前各有多少库存？",
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "所选SKU各120件"
+          "ground_truth_answer": "八个候选SKU各120件",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_coupon",
@@ -1984,15 +2280,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
-        },
-        {
-          "question_id": "s_cart_best",
-          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+          "ground_truth_answer": "满219减30、满254减55、满100减10%；各券按优惠前原价独立判断，百分券向下取整到分，可叠加至不低于0；有效至8月31日",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_status",
@@ -2000,7 +2291,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "尚未加购"
+          "ground_truth_answer": "尚未加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         }
       ],
       "reactive_questions": [
@@ -2061,7 +2355,6 @@
           "catalog": "Satisfied",
           "stock": "Satisfied",
           "coupon": "Satisfied",
-          "optimal": "Satisfied",
           "authorized": "Satisfied"
         }
       }
@@ -2079,7 +2372,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -2090,7 +2386,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -2098,7 +2397,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -2106,7 +2408,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元，active"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -2114,7 +2419,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "有站内买家，但价格未定"
+          "ground_truth_answer": "有站内买家，但价格未定",
+          "evidence_record_ids": [
+            "e005"
+          ]
         },
         {
           "question_id": "s_sale_price",
@@ -2122,7 +2430,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_time",
@@ -2130,7 +2439,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_platform",
@@ -2138,7 +2448,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_choice",
@@ -2146,7 +2457,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_open",
@@ -2154,7 +2466,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "尚待准备"
+          "ground_truth_answer": "尚待准备",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_card_goal",
@@ -2162,7 +2477,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+          "ground_truth_answer": "2026-06-20提出异常扣费核对",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_pair",
@@ -2170,7 +2488,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US",
+          "evidence_record_ids": [
+            "e008"
+          ]
         },
         {
           "question_id": "s_card_order",
@@ -2178,7 +2499,8 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_card_docs",
@@ -2186,7 +2508,8 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_card_status",
@@ -2194,7 +2517,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "尚未提出争议"
+          "ground_truth_answer": "尚未提出争议",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -2202,7 +2528,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -2210,7 +2539,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_policy",
@@ -2218,7 +2548,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_cost",
@@ -2226,15 +2557,17 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_open",
@@ -2242,7 +2575,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待确定"
+          "ground_truth_answer": "尚待确定",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_cart_goal",
@@ -2250,7 +2586,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-06-22提出三类配件加购"
+          "ground_truth_answer": "2026-06-22提出三类配件加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         },
         {
           "question_id": "s_cart_catalog",
@@ -2258,15 +2597,21 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+          "ground_truth_answer": "A:a1 133/a2 94/a3 83元；B:b1 162/b2 113元；C:c1 80/c2 50/c3 43元",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_stock",
-          "question": "最优组合对应SKU的库存情况是什么？",
+          "question": "三类原厂配件候选SKU目前各有多少库存？",
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "所选SKU各120件"
+          "ground_truth_answer": "八个候选SKU各120件",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_coupon",
@@ -2274,15 +2619,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
-        },
-        {
-          "question_id": "s_cart_best",
-          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+          "ground_truth_answer": "满219减30、满254减55、满100减10%；各券按优惠前原价独立判断，百分券向下取整到分，可叠加至不低于0；有效至8月31日",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_status",
@@ -2290,7 +2630,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "尚未加购"
+          "ground_truth_answer": "尚未加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         }
       ],
       "reactive_questions": [
@@ -2349,7 +2692,6 @@
           "catalog": "Satisfied",
           "stock": "Satisfied",
           "coupon": "Satisfied",
-          "optimal": "Satisfied",
           "authorized": "Satisfied"
         }
       }
@@ -2367,7 +2709,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -2378,7 +2723,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -2386,7 +2734,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -2394,7 +2745,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元，active"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -2402,7 +2756,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "有站内买家，但价格未定"
+          "ground_truth_answer": "有站内买家，但价格未定",
+          "evidence_record_ids": [
+            "e005"
+          ]
         },
         {
           "question_id": "s_sale_price",
@@ -2410,7 +2767,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_time",
@@ -2418,7 +2776,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_platform",
@@ -2426,7 +2785,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_choice",
@@ -2434,7 +2794,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_open",
@@ -2442,7 +2803,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "尚待准备"
+          "ground_truth_answer": "尚待准备",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_card_goal",
@@ -2450,7 +2814,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+          "ground_truth_answer": "2026-06-20提出异常扣费核对",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_pair",
@@ -2458,7 +2825,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US",
+          "evidence_record_ids": [
+            "e008"
+          ]
         },
         {
           "question_id": "s_card_order",
@@ -2466,7 +2836,8 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_card_docs",
@@ -2474,7 +2845,8 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_card_status",
@@ -2482,7 +2854,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "尚未提出争议"
+          "ground_truth_answer": "尚未提出争议",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -2490,7 +2865,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -2498,7 +2876,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_policy",
@@ -2506,7 +2885,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+          "ground_truth_answer": "官方：召回换新、120元加固、退货另购",
+          "evidence_record_ids": [
+            "e009"
+          ]
         },
         {
           "question_id": "s_stroller_cost",
@@ -2514,15 +2896,19 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+          "ground_truth_answer": "换新0元约两周；加固120元；退货另购",
+          "evidence_record_ids": [
+            "e009"
+          ]
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_open",
@@ -2530,7 +2916,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待确定"
+          "ground_truth_answer": "尚待确定",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_cart_goal",
@@ -2538,7 +2927,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-06-22提出三类配件加购"
+          "ground_truth_answer": "2026-06-22提出三类配件加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         },
         {
           "question_id": "s_cart_catalog",
@@ -2546,15 +2938,21 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+          "ground_truth_answer": "A:a1 133/a2 94/a3 83元；B:b1 162/b2 113元；C:c1 80/c2 50/c3 43元",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_stock",
-          "question": "最优组合对应SKU的库存情况是什么？",
+          "question": "三类原厂配件候选SKU目前各有多少库存？",
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "所选SKU各120件"
+          "ground_truth_answer": "八个候选SKU各120件",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_coupon",
@@ -2562,15 +2960,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
-        },
-        {
-          "question_id": "s_cart_best",
-          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+          "ground_truth_answer": "满219减30、满254减55、满100减10%；各券按优惠前原价独立判断，百分券向下取整到分，可叠加至不低于0；有效至8月31日",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_status",
@@ -2578,7 +2971,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "尚未加购"
+          "ground_truth_answer": "尚未加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         }
       ],
       "reactive_questions": [
@@ -2637,7 +3033,6 @@
           "catalog": "Satisfied",
           "stock": "Satisfied",
           "coupon": "Satisfied",
-          "optimal": "Satisfied",
           "authorized": "Satisfied"
         }
       }
@@ -2655,7 +3050,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -2666,7 +3064,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -2674,7 +3075,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -2682,7 +3086,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元，active"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -2690,7 +3097,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "有站内买家，但价格未定"
+          "ground_truth_answer": "有站内买家，但价格未定",
+          "evidence_record_ids": [
+            "e005"
+          ]
         },
         {
           "question_id": "s_sale_price",
@@ -2698,7 +3108,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_time",
@@ -2706,7 +3117,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_platform",
@@ -2714,7 +3126,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "买家要求平台外微信定金，未接受担保"
+          "ground_truth_answer": "买家要求平台外微信定金，未接受担保",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_sale_choice",
@@ -2722,7 +3137,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_open",
@@ -2730,7 +3146,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "尚待准备"
+          "ground_truth_answer": "尚待准备",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_card_goal",
@@ -2738,7 +3157,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+          "ground_truth_answer": "2026-06-20提出异常扣费核对",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_pair",
@@ -2746,7 +3168,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US",
+          "evidence_record_ids": [
+            "e008"
+          ]
         },
         {
           "question_id": "s_card_order",
@@ -2754,7 +3179,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_card_docs",
@@ -2762,7 +3190,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "原始订单及两笔账单截图齐全"
+          "ground_truth_answer": "原始订单及两笔账单截图齐全",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_card_status",
@@ -2770,7 +3201,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "尚未提出争议"
+          "ground_truth_answer": "尚未提出争议",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -2778,7 +3212,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -2786,7 +3223,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_policy",
@@ -2794,7 +3232,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+          "ground_truth_answer": "官方：召回换新、120元加固、退货另购",
+          "evidence_record_ids": [
+            "e009"
+          ]
         },
         {
           "question_id": "s_stroller_cost",
@@ -2802,15 +3243,19 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+          "ground_truth_answer": "换新0元约两周；加固120元；退货另购",
+          "evidence_record_ids": [
+            "e009"
+          ]
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_open",
@@ -2818,7 +3263,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待确定"
+          "ground_truth_answer": "尚待确定",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_cart_goal",
@@ -2826,7 +3274,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-06-22提出三类配件加购"
+          "ground_truth_answer": "2026-06-22提出三类配件加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         },
         {
           "question_id": "s_cart_catalog",
@@ -2834,15 +3285,21 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+          "ground_truth_answer": "A:a1 133/a2 94/a3 83元；B:b1 162/b2 113元；C:c1 80/c2 50/c3 43元",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_stock",
-          "question": "最优组合对应SKU的库存情况是什么？",
+          "question": "三类原厂配件候选SKU目前各有多少库存？",
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "所选SKU各120件"
+          "ground_truth_answer": "八个候选SKU各120件",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_coupon",
@@ -2850,15 +3307,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
-        },
-        {
-          "question_id": "s_cart_best",
-          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+          "ground_truth_answer": "满219减30、满254减55、满100减10%；各券按优惠前原价独立判断，百分券向下取整到分，可叠加至不低于0；有效至8月31日",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_status",
@@ -2866,7 +3318,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "尚未加购"
+          "ground_truth_answer": "尚未加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         }
       ],
       "reactive_questions": [
@@ -2928,7 +3383,6 @@
           "catalog": "Satisfied",
           "stock": "Satisfied",
           "coupon": "Satisfied",
-          "optimal": "Satisfied",
           "authorized": "Satisfied"
         }
       }
@@ -2946,7 +3400,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -2957,7 +3414,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -2965,7 +3425,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -2973,7 +3436,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元，active"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -2981,7 +3447,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "有站内买家，但价格未定"
+          "ground_truth_answer": "有站内买家，但价格未定",
+          "evidence_record_ids": [
+            "e005"
+          ]
         },
         {
           "question_id": "s_sale_price",
@@ -2989,7 +3458,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_time",
@@ -2997,7 +3467,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_platform",
@@ -3005,7 +3476,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "买家要求平台外微信定金，未接受担保"
+          "ground_truth_answer": "买家要求平台外微信定金，未接受担保",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_sale_choice",
@@ -3013,7 +3487,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_open",
@@ -3021,7 +3496,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "尚待准备"
+          "ground_truth_answer": "尚待准备",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_card_goal",
@@ -3029,7 +3507,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+          "ground_truth_answer": "2026-06-20提出异常扣费核对",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_pair",
@@ -3037,7 +3518,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US",
+          "evidence_record_ids": [
+            "e008"
+          ]
         },
         {
           "question_id": "s_card_order",
@@ -3045,7 +3529,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_card_docs",
@@ -3053,7 +3540,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "原始订单及两笔账单截图齐全"
+          "ground_truth_answer": "原始订单及两笔账单截图齐全",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_card_status",
@@ -3061,7 +3551,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "已受理，审核中"
+          "ground_truth_answer": "已受理，审核中",
+          "evidence_record_ids": [
+            "e011"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -3069,7 +3562,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -3077,7 +3573,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_policy",
@@ -3085,7 +3582,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+          "ground_truth_answer": "官方：召回换新、120元加固、退货另购",
+          "evidence_record_ids": [
+            "e009"
+          ]
         },
         {
           "question_id": "s_stroller_cost",
@@ -3093,15 +3593,19 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+          "ground_truth_answer": "换新0元约两周；加固120元；退货另购",
+          "evidence_record_ids": [
+            "e009"
+          ]
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_open",
@@ -3109,7 +3613,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待确定"
+          "ground_truth_answer": "尚待确定",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_cart_goal",
@@ -3117,7 +3624,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-06-22提出三类配件加购"
+          "ground_truth_answer": "2026-06-22提出三类配件加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         },
         {
           "question_id": "s_cart_catalog",
@@ -3125,15 +3635,21 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+          "ground_truth_answer": "A:a1 133/a2 94/a3 83元；B:b1 162/b2 113元；C:c1 80/c2 50/c3 43元",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_stock",
-          "question": "最优组合对应SKU的库存情况是什么？",
+          "question": "三类原厂配件候选SKU目前各有多少库存？",
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "所选SKU各120件"
+          "ground_truth_answer": "八个候选SKU各120件",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_coupon",
@@ -3141,15 +3657,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
-        },
-        {
-          "question_id": "s_cart_best",
-          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+          "ground_truth_answer": "满219减30、满254减55、满100减10%；各券按优惠前原价独立判断，百分券向下取整到分，可叠加至不低于0；有效至8月31日",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_status",
@@ -3157,7 +3668,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "尚未加购"
+          "ground_truth_answer": "尚未加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         }
       ],
       "reactive_questions": [
@@ -3218,7 +3732,6 @@
           "catalog": "Satisfied",
           "stock": "Satisfied",
           "coupon": "Satisfied",
-          "optimal": "Satisfied",
           "authorized": "Satisfied"
         }
       }
@@ -3237,7 +3750,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理与加购可做；本次ord_strr_0002平台介入已授权；银行卡争议提交、出售成交、付款下单仍须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -3249,7 +3765,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_ref_goal",
@@ -3257,7 +3776,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "2026-07-02提出平台介入"
+          "ground_truth_answer": "2026-07-02提出平台介入",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_case",
@@ -3265,7 +3787,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "商家异议，状态rejected"
+          "ground_truth_answer": "商家异议，状态rejected",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_ref_rule",
@@ -3273,7 +3798,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频"
+          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_photo",
@@ -3281,7 +3809,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "齐全"
+          "ground_truth_answer": "齐全",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_video",
@@ -3289,7 +3820,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "缺最后一段"
+          "ground_truth_answer": "缺最后一段",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_open",
@@ -3297,7 +3831,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "尚未申请"
+          "ground_truth_answer": "尚未申请",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -3305,7 +3842,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -3313,7 +3853,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元，active"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -3321,7 +3864,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "有站内买家，但价格未定"
+          "ground_truth_answer": "有站内买家，但价格未定",
+          "evidence_record_ids": [
+            "e005"
+          ]
         },
         {
           "question_id": "s_sale_price",
@@ -3329,7 +3875,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_time",
@@ -3337,7 +3884,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_platform",
@@ -3345,7 +3893,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "买家要求平台外微信定金，未接受担保"
+          "ground_truth_answer": "买家要求平台外微信定金，未接受担保",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_sale_choice",
@@ -3353,7 +3904,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_open",
@@ -3361,7 +3913,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "尚待准备"
+          "ground_truth_answer": "尚待准备",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_card_goal",
@@ -3369,7 +3924,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+          "ground_truth_answer": "2026-06-20提出异常扣费核对",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_pair",
@@ -3377,7 +3935,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US",
+          "evidence_record_ids": [
+            "e008"
+          ]
         },
         {
           "question_id": "s_card_order",
@@ -3385,7 +3946,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_card_docs",
@@ -3393,7 +3957,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "原始订单及两笔账单截图齐全"
+          "ground_truth_answer": "原始订单及两笔账单截图齐全",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_card_status",
@@ -3401,7 +3968,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "已受理，审核中"
+          "ground_truth_answer": "已受理，审核中",
+          "evidence_record_ids": [
+            "e011"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -3409,7 +3979,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -3417,7 +3990,8 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_policy",
@@ -3425,7 +3999,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+          "ground_truth_answer": "官方：召回换新、120元加固、退货另购",
+          "evidence_record_ids": [
+            "e009"
+          ]
         },
         {
           "question_id": "s_stroller_cost",
@@ -3433,15 +4010,19 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+          "ground_truth_answer": "换新0元约两周；加固120元；退货另购",
+          "evidence_record_ids": [
+            "e009"
+          ]
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_stroller_open",
@@ -3449,7 +4030,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待确定"
+          "ground_truth_answer": "尚待确定",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_cart_goal",
@@ -3457,7 +4041,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-06-22提出三类配件加购"
+          "ground_truth_answer": "2026-06-22提出三类配件加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         },
         {
           "question_id": "s_cart_catalog",
@@ -3465,15 +4052,21 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+          "ground_truth_answer": "A:a1 133/a2 94/a3 83元；B:b1 162/b2 113元；C:c1 80/c2 50/c3 43元",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_stock",
-          "question": "最优组合对应SKU的库存情况是什么？",
+          "question": "三类原厂配件候选SKU目前各有多少库存？",
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "所选SKU各120件"
+          "ground_truth_answer": "八个候选SKU各120件",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_coupon",
@@ -3481,15 +4074,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
-        },
-        {
-          "question_id": "s_cart_best",
-          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+          "ground_truth_answer": "满219减30、满254减55、满100减10%；各券按优惠前原价独立判断，百分券向下取整到分，可叠加至不低于0；有效至8月31日",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_status",
@@ -3497,7 +4085,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "尚未加购"
+          "ground_truth_answer": "尚未加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         }
       ],
       "reactive_questions": [
@@ -3557,7 +4148,6 @@
           "catalog": "Satisfied",
           "stock": "Satisfied",
           "coupon": "Satisfied",
-          "optimal": "Satisfied",
           "authorized": "Satisfied"
         }
       }
@@ -3576,7 +4166,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理与加购可做；本次ord_strr_0002平台介入已授权；银行卡争议提交、出售成交、付款下单仍须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -3588,7 +4181,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_ref_goal",
@@ -3596,7 +4192,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "2026-07-02提出平台介入"
+          "ground_truth_answer": "2026-07-02提出平台介入",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_case",
@@ -3604,7 +4203,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "商家异议，状态rejected"
+          "ground_truth_answer": "商家异议，状态rejected",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_ref_rule",
@@ -3612,7 +4214,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频"
+          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_photo",
@@ -3620,7 +4225,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "齐全"
+          "ground_truth_answer": "齐全",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_video",
@@ -3628,7 +4236,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "齐全"
+          "ground_truth_answer": "齐全",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_ref_open",
@@ -3636,7 +4247,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "尚未申请"
+          "ground_truth_answer": "尚未申请",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -3644,7 +4258,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -3652,7 +4269,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元，active"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -3660,7 +4280,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "有站内买家，但价格未定"
+          "ground_truth_answer": "有站内买家，但价格未定",
+          "evidence_record_ids": [
+            "e005"
+          ]
         },
         {
           "question_id": "s_sale_price",
@@ -3668,7 +4291,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_time",
@@ -3676,7 +4300,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_platform",
@@ -3684,7 +4309,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "买家要求平台外微信定金，未接受担保"
+          "ground_truth_answer": "买家要求平台外微信定金，未接受担保",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_sale_choice",
@@ -3692,7 +4320,8 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "unknown"
+          "ground_truth_answer": "unknown",
+          "evidence_record_ids": []
         },
         {
           "question_id": "s_sale_open",
@@ -3700,7 +4329,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "尚待准备"
+          "ground_truth_answer": "尚待准备",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_card_goal",
@@ -3708,7 +4340,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+          "ground_truth_answer": "2026-06-20提出异常扣费核对",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_pair",
@@ -3716,7 +4351,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US",
+          "evidence_record_ids": [
+            "e008"
+          ]
         },
         {
           "question_id": "s_card_order",
@@ -3724,7 +4362,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_card_docs",
@@ -3732,7 +4373,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "原始订单及两笔账单截图齐全"
+          "ground_truth_answer": "原始订单及两笔账单截图齐全",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_card_status",
@@ -3740,7 +4384,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "已受理，审核中"
+          "ground_truth_answer": "已受理，审核中",
+          "evidence_record_ids": [
+            "e011"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -3748,7 +4395,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -3756,7 +4406,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "GBS5-2026-03，官方确认受召回影响"
+          "ground_truth_answer": "GBS5-2026-03，制动召回范围内，安全带认证仍有效",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_policy",
@@ -3764,7 +4417,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+          "ground_truth_answer": "免费换新、120元制动加固并复检、质量退货需另购替代推车",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_cost",
@@ -3772,15 +4428,21 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+          "ground_truth_answer": "换新一般两周但个案7月12日前验收；加固120元7月10日前装检；退货替代品到货未知",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "免费换新可在7月12日前验收，早于7月15日"
+          "ground_truth_answer": "换新7月12日前验收，加固7月10日前装检；退货替代品时间未知",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_open",
@@ -3788,7 +4450,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待最终方案"
+          "ground_truth_answer": "尚待最终比较与推荐",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_cart_goal",
@@ -3796,7 +4461,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-06-22提出三类配件加购"
+          "ground_truth_answer": "2026-06-22提出三类配件加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         },
         {
           "question_id": "s_cart_catalog",
@@ -3804,15 +4472,21 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+          "ground_truth_answer": "A:a1 133/a2 94/a3 83元；B:b1 162/b2 113元；C:c1 80/c2 50/c3 43元",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_stock",
-          "question": "最优组合对应SKU的库存情况是什么？",
+          "question": "三类原厂配件候选SKU目前各有多少库存？",
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "所选SKU各120件"
+          "ground_truth_answer": "八个候选SKU各120件",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_coupon",
@@ -3820,15 +4494,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
-        },
-        {
-          "question_id": "s_cart_best",
-          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+          "ground_truth_answer": "满219减30、满254减55、满100减10%；各券按优惠前原价独立判断，百分券向下取整到分，可叠加至不低于0；有效至8月31日",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_status",
@@ -3836,7 +4505,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "尚未加购"
+          "ground_truth_answer": "尚未加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         }
       ],
       "reactive_questions": [
@@ -3901,7 +4573,6 @@
           "catalog": "Satisfied",
           "stock": "Satisfied",
           "coupon": "Satisfied",
-          "optimal": "Satisfied",
           "authorized": "Satisfied"
         }
       }
@@ -3920,7 +4591,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理与加购可做；本次ord_strr_0002平台介入已授权；银行卡争议提交、出售成交、付款下单仍须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -3932,7 +4606,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_ref_goal",
@@ -3940,7 +4617,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "2026-07-02提出平台介入"
+          "ground_truth_answer": "2026-07-02提出平台介入",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_case",
@@ -3948,7 +4628,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "商家异议，状态rejected"
+          "ground_truth_answer": "商家异议，状态rejected",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_ref_rule",
@@ -3956,7 +4639,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频"
+          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_photo",
@@ -3964,7 +4650,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "齐全"
+          "ground_truth_answer": "齐全",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_video",
@@ -3972,7 +4661,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "齐全"
+          "ground_truth_answer": "齐全",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_ref_open",
@@ -3980,7 +4672,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "尚未申请"
+          "ground_truth_answer": "尚未申请",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -3988,7 +4683,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -3996,7 +4694,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元，active"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -4004,7 +4705,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "站内买家再次确认购买"
+          "ground_truth_answer": "站内买家再次确认购买",
+          "evidence_record_ids": [
+            "e014"
+          ]
         },
         {
           "question_id": "s_sale_price",
@@ -4012,7 +4716,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元"
+          "ground_truth_answer": "1500元",
+          "evidence_record_ids": [
+            "e014"
+          ]
         },
         {
           "question_id": "s_sale_time",
@@ -4020,7 +4727,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "2026-07-06 17:00，平台担保流程"
+          "ground_truth_answer": "2026-07-06 17:00，平台担保流程",
+          "evidence_record_ids": [
+            "e014"
+          ]
         },
         {
           "question_id": "s_sale_platform",
@@ -4028,7 +4738,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "买家接受平台担保"
+          "ground_truth_answer": "买家接受平台担保",
+          "evidence_record_ids": [
+            "e014"
+          ]
         },
         {
           "question_id": "s_sale_choice",
@@ -4036,7 +4749,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "选择平台担保"
+          "ground_truth_answer": "选择平台担保",
+          "evidence_record_ids": [
+            "e014"
+          ]
         },
         {
           "question_id": "s_sale_open",
@@ -4044,7 +4760,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "尚待准备"
+          "ground_truth_answer": "尚待准备",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_card_goal",
@@ -4052,7 +4771,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+          "ground_truth_answer": "2026-06-20提出异常扣费核对",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_pair",
@@ -4060,7 +4782,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US",
+          "evidence_record_ids": [
+            "e008"
+          ]
         },
         {
           "question_id": "s_card_order",
@@ -4068,7 +4793,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_card_docs",
@@ -4076,7 +4804,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "原始订单及两笔账单截图齐全"
+          "ground_truth_answer": "原始订单及两笔账单截图齐全",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_card_status",
@@ -4084,7 +4815,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "已受理，审核中"
+          "ground_truth_answer": "已受理，审核中",
+          "evidence_record_ids": [
+            "e011"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -4092,7 +4826,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -4100,7 +4837,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "GBS5-2026-03，官方确认受召回影响"
+          "ground_truth_answer": "GBS5-2026-03，制动召回范围内，安全带认证仍有效",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_policy",
@@ -4108,7 +4848,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+          "ground_truth_answer": "免费换新、120元制动加固并复检、质量退货需另购替代推车",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_cost",
@@ -4116,15 +4859,21 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+          "ground_truth_answer": "换新一般两周但个案7月12日前验收；加固120元7月10日前装检；退货替代品到货未知",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "免费换新可在7月12日前验收，早于7月15日"
+          "ground_truth_answer": "换新7月12日前验收，加固7月10日前装检；退货替代品时间未知",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_open",
@@ -4132,7 +4881,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待最终方案"
+          "ground_truth_answer": "尚待最终比较与推荐",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_cart_goal",
@@ -4140,7 +4892,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-06-22提出三类配件加购"
+          "ground_truth_answer": "2026-06-22提出三类配件加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         },
         {
           "question_id": "s_cart_catalog",
@@ -4148,15 +4903,21 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+          "ground_truth_answer": "A:a1 133/a2 94/a3 83元；B:b1 162/b2 113元；C:c1 80/c2 50/c3 43元",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_stock",
-          "question": "最优组合对应SKU的库存情况是什么？",
+          "question": "三类原厂配件候选SKU目前各有多少库存？",
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "所选SKU各120件"
+          "ground_truth_answer": "八个候选SKU各120件",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_coupon",
@@ -4164,15 +4925,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
-        },
-        {
-          "question_id": "s_cart_best",
-          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+          "ground_truth_answer": "满219减30、满254减55、满100减10%；各券按优惠前原价独立判断，百分券向下取整到分，可叠加至不低于0；有效至8月31日",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_status",
@@ -4180,7 +4936,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "尚未加购"
+          "ground_truth_answer": "尚未加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         }
       ],
       "reactive_questions": [
@@ -4245,7 +5004,6 @@
           "catalog": "Satisfied",
           "stock": "Satisfied",
           "coupon": "Satisfied",
-          "optimal": "Satisfied",
           "authorized": "Satisfied"
         }
       }
@@ -4264,7 +5022,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理与加购可做；本次ord_strr_0002平台介入已授权；银行卡争议提交、出售成交、付款下单仍须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -4276,7 +5037,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_ref_goal",
@@ -4284,7 +5048,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "2026-07-02提出平台介入"
+          "ground_truth_answer": "2026-07-02提出平台介入",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_case",
@@ -4292,7 +5059,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "商家异议，状态rejected"
+          "ground_truth_answer": "商家异议，状态rejected",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_ref_rule",
@@ -4300,7 +5070,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频"
+          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_photo",
@@ -4308,7 +5081,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "齐全"
+          "ground_truth_answer": "齐全",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_video",
@@ -4316,7 +5092,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "齐全"
+          "ground_truth_answer": "齐全",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_ref_open",
@@ -4324,7 +5103,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "尚未申请"
+          "ground_truth_answer": "尚未申请",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -4332,7 +5114,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -4340,7 +5125,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元，active"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -4348,7 +5136,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "站内买家再次确认购买"
+          "ground_truth_answer": "站内买家再次确认购买",
+          "evidence_record_ids": [
+            "e014"
+          ]
         },
         {
           "question_id": "s_sale_price",
@@ -4356,7 +5147,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元"
+          "ground_truth_answer": "1500元",
+          "evidence_record_ids": [
+            "e014"
+          ]
         },
         {
           "question_id": "s_sale_time",
@@ -4364,7 +5158,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "2026-07-06 17:00，平台担保流程"
+          "ground_truth_answer": "7月6日17:00已过期，暂无新时段",
+          "evidence_record_ids": [
+            "e015"
+          ]
         },
         {
           "question_id": "s_sale_platform",
@@ -4372,7 +5169,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "买家接受平台担保"
+          "ground_truth_answer": "买家接受平台担保",
+          "evidence_record_ids": [
+            "e014"
+          ]
         },
         {
           "question_id": "s_sale_choice",
@@ -4380,7 +5180,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "选择平台担保"
+          "ground_truth_answer": "选择平台担保",
+          "evidence_record_ids": [
+            "e014"
+          ]
         },
         {
           "question_id": "s_sale_open",
@@ -4388,7 +5191,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "尚待准备"
+          "ground_truth_answer": "原具体方案时间已过，待重新约定",
+          "evidence_record_ids": [
+            "e015"
+          ]
         },
         {
           "question_id": "s_card_goal",
@@ -4396,7 +5202,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+          "ground_truth_answer": "2026-06-20提出异常扣费核对",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_pair",
@@ -4404,7 +5213,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US",
+          "evidence_record_ids": [
+            "e008"
+          ]
         },
         {
           "question_id": "s_card_order",
@@ -4412,7 +5224,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_card_docs",
@@ -4420,7 +5235,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "原始订单及两笔账单截图齐全"
+          "ground_truth_answer": "原始订单及两笔账单截图齐全",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_card_status",
@@ -4428,7 +5246,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "已批准并冲销258元"
+          "ground_truth_answer": "已批准并冲销258元",
+          "evidence_record_ids": [
+            "e015"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -4436,7 +5257,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -4444,7 +5268,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "GBS5-2026-03，官方确认受召回影响"
+          "ground_truth_answer": "GBS5-2026-03，制动召回范围内，安全带认证仍有效",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_policy",
@@ -4452,7 +5279,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+          "ground_truth_answer": "免费换新、120元制动加固并复检、质量退货需另购替代推车",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_cost",
@@ -4460,15 +5290,21 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+          "ground_truth_answer": "换新一般两周但个案7月12日前验收；加固120元7月10日前装检；退货替代品到货未知",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "免费换新可在7月12日前验收，早于7月15日"
+          "ground_truth_answer": "换新7月12日前验收，加固7月10日前装检；退货替代品时间未知",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_open",
@@ -4476,7 +5312,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待最终方案"
+          "ground_truth_answer": "尚待最终比较与推荐",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_cart_goal",
@@ -4484,7 +5323,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-06-22提出三类配件加购"
+          "ground_truth_answer": "2026-06-22提出三类配件加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         },
         {
           "question_id": "s_cart_catalog",
@@ -4492,15 +5334,21 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+          "ground_truth_answer": "A:a1 133/a2 94/a3 83元；B:b1 162/b2 113元；C:c1 80/c2 50/c3 43元",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_stock",
-          "question": "最优组合对应SKU的库存情况是什么？",
+          "question": "三类原厂配件候选SKU目前各有多少库存？",
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "所选SKU各120件"
+          "ground_truth_answer": "八个候选SKU各120件",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_coupon",
@@ -4508,15 +5356,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
-        },
-        {
-          "question_id": "s_cart_best",
-          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+          "ground_truth_answer": "满219减30、满254减55、满100减10%；各券按优惠前原价独立判断，百分券向下取整到分，可叠加至不低于0；有效至8月31日",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_status",
@@ -4524,7 +5367,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "尚未加购"
+          "ground_truth_answer": "尚未加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         }
       ],
       "reactive_questions": [
@@ -4536,12 +5382,13 @@
       ],
       "ready_tasks": [
         "shopping_t1",
-        "shopping_t2",
         "shopping_t4",
         "shopping_t5"
       ],
       "newly_ready_tasks": [],
-      "invalidated_tasks": [],
+      "invalidated_tasks": [
+        "shopping_t2"
+      ],
       "task_states": {
         "shopping_t1": {
           "goal": "Satisfied",
@@ -4560,7 +5407,7 @@
           "listing": "Satisfied",
           "buyer": "Satisfied",
           "price": "Satisfied",
-          "time": "Satisfied",
+          "time": "Unsatisfied",
           "platform": "Satisfied",
           "user_choice": "Satisfied"
         },
@@ -4587,7 +5434,6 @@
           "catalog": "Satisfied",
           "stock": "Satisfied",
           "coupon": "Satisfied",
-          "optimal": "Satisfied",
           "authorized": "Satisfied"
         }
       }
@@ -4606,7 +5452,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理与加购可做；本次ord_strr_0002平台介入已授权；银行卡争议提交、出售成交、付款下单仍须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -4618,7 +5467,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_ref_goal",
@@ -4626,7 +5478,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "2026-07-02提出平台介入"
+          "ground_truth_answer": "2026-07-02提出平台介入",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_case",
@@ -4634,7 +5489,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "平台介入已批准，退款安排中"
+          "ground_truth_answer": "平台介入已申请，under_review",
+          "evidence_record_ids": [
+            "e016"
+          ]
         },
         {
           "question_id": "s_ref_rule",
@@ -4642,7 +5500,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频"
+          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_photo",
@@ -4650,7 +5511,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "齐全"
+          "ground_truth_answer": "齐全",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_video",
@@ -4658,7 +5522,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "齐全"
+          "ground_truth_answer": "齐全",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_ref_open",
@@ -4666,7 +5533,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "已获裁决"
+          "ground_truth_answer": "已提交，待平台审核",
+          "evidence_record_ids": [
+            "e016"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -4674,7 +5544,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -4682,7 +5555,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元，active"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -4690,7 +5566,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "站内买家再次确认购买"
+          "ground_truth_answer": "站内买家再次确认购买",
+          "evidence_record_ids": [
+            "e014"
+          ]
         },
         {
           "question_id": "s_sale_price",
@@ -4698,7 +5577,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元"
+          "ground_truth_answer": "1500元",
+          "evidence_record_ids": [
+            "e014"
+          ]
         },
         {
           "question_id": "s_sale_time",
@@ -4706,7 +5588,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "2026-07-06 17:00，平台担保流程"
+          "ground_truth_answer": "7月6日17:00已过期，暂无新时段",
+          "evidence_record_ids": [
+            "e015"
+          ]
         },
         {
           "question_id": "s_sale_platform",
@@ -4714,7 +5599,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "买家接受平台担保"
+          "ground_truth_answer": "买家接受平台担保",
+          "evidence_record_ids": [
+            "e014"
+          ]
         },
         {
           "question_id": "s_sale_choice",
@@ -4722,7 +5610,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "选择平台担保"
+          "ground_truth_answer": "选择平台担保",
+          "evidence_record_ids": [
+            "e014"
+          ]
         },
         {
           "question_id": "s_sale_open",
@@ -4730,7 +5621,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "尚待准备"
+          "ground_truth_answer": "原具体方案时间已过，待重新约定",
+          "evidence_record_ids": [
+            "e015"
+          ]
         },
         {
           "question_id": "s_card_goal",
@@ -4738,7 +5632,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+          "ground_truth_answer": "2026-06-20提出异常扣费核对",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_pair",
@@ -4746,7 +5643,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US",
+          "evidence_record_ids": [
+            "e008"
+          ]
         },
         {
           "question_id": "s_card_order",
@@ -4754,7 +5654,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_card_docs",
@@ -4762,7 +5665,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "原始订单及两笔账单截图齐全"
+          "ground_truth_answer": "原始订单及两笔账单截图齐全",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_card_status",
@@ -4770,7 +5676,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "已批准并冲销258元"
+          "ground_truth_answer": "已批准并冲销258元",
+          "evidence_record_ids": [
+            "e015"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -4778,7 +5687,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -4786,7 +5698,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "GBS5-2026-03，官方确认受召回影响"
+          "ground_truth_answer": "GBS5-2026-03，制动召回范围内，安全带认证仍有效",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_policy",
@@ -4794,7 +5709,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+          "ground_truth_answer": "免费换新、120元制动加固并复检、质量退货需另购替代推车",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_cost",
@@ -4802,15 +5720,21 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+          "ground_truth_answer": "换新一般两周但个案7月12日前验收；加固120元7月10日前装检；退货替代品到货未知",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "免费换新可在7月12日前验收，早于7月15日"
+          "ground_truth_answer": "换新7月12日前验收，加固7月10日前装检；退货替代品时间未知",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_open",
@@ -4818,7 +5742,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待最终方案"
+          "ground_truth_answer": "尚待最终比较与推荐",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_cart_goal",
@@ -4826,7 +5753,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-06-22提出三类配件加购"
+          "ground_truth_answer": "2026-06-22提出三类配件加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         },
         {
           "question_id": "s_cart_catalog",
@@ -4834,15 +5764,21 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+          "ground_truth_answer": "A:a1 133/a2 94/a3 83元；B:b1 162/b2 113元；C:c1 80/c2 50/c3 43元",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_stock",
-          "question": "最优组合对应SKU的库存情况是什么？",
+          "question": "三类原厂配件候选SKU目前各有多少库存？",
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "所选SKU各120件"
+          "ground_truth_answer": "八个候选SKU各120件",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_coupon",
@@ -4850,15 +5786,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
-        },
-        {
-          "question_id": "s_cart_best",
-          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+          "ground_truth_answer": "满219减30、满254减55、满100减10%；各券按优惠前原价独立判断，百分券向下取整到分，可叠加至不低于0；有效至8月31日",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_status",
@@ -4866,7 +5797,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "尚未加购"
+          "ground_truth_answer": "尚未加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         }
       ],
       "reactive_questions": [
@@ -4877,7 +5811,6 @@
         "shopping_t5"
       ],
       "ready_tasks": [
-        "shopping_t2",
         "shopping_t4",
         "shopping_t5"
       ],
@@ -4903,7 +5836,7 @@
           "listing": "Satisfied",
           "buyer": "Satisfied",
           "price": "Satisfied",
-          "time": "Satisfied",
+          "time": "Unsatisfied",
           "platform": "Satisfied",
           "user_choice": "Satisfied"
         },
@@ -4930,7 +5863,6 @@
           "catalog": "Satisfied",
           "stock": "Satisfied",
           "coupon": "Satisfied",
-          "optimal": "Satisfied",
           "authorized": "Satisfied"
         }
       }
@@ -4949,7 +5881,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
+          "ground_truth_answer": "内部整理与加购可做；本次ord_strr_0002平台介入已授权；银行卡争议提交、出售成交、付款下单仍须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_deadline",
@@ -4961,7 +5896,10 @@
             "shopping_t4",
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-07-15"
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_ref_goal",
@@ -4969,7 +5907,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "2026-07-02提出平台介入"
+          "ground_truth_answer": "2026-07-02提出平台介入",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_case",
@@ -4977,7 +5918,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "平台介入已批准，退款安排中"
+          "ground_truth_answer": "平台介入已批准，退款安排中",
+          "evidence_record_ids": [
+            "e017"
+          ]
         },
         {
           "question_id": "s_ref_rule",
@@ -4985,7 +5929,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频"
+          "ground_truth_answer": "7月9日申请截止已过",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_photo",
@@ -4993,7 +5940,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "齐全"
+          "ground_truth_answer": "齐全",
+          "evidence_record_ids": [
+            "e012"
+          ]
         },
         {
           "question_id": "s_ref_video",
@@ -5001,7 +5951,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "齐全"
+          "ground_truth_answer": "齐全",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_ref_open",
@@ -5009,7 +5962,10 @@
           "task_ids": [
             "shopping_t1"
           ],
-          "ground_truth_answer": "已获裁决"
+          "ground_truth_answer": "已获裁决",
+          "evidence_record_ids": [
+            "e017"
+          ]
         },
         {
           "question_id": "s_sale_goal",
@@ -5017,7 +5973,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_sale_listing",
@@ -5025,7 +5984,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "已下架"
+          "ground_truth_answer": "1500元，active",
+          "evidence_record_ids": [
+            "h001"
+          ]
         },
         {
           "question_id": "s_sale_buyer",
@@ -5033,7 +5995,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "站内买家再次确认购买"
+          "ground_truth_answer": "站内买家再次确认购买",
+          "evidence_record_ids": [
+            "e014"
+          ]
         },
         {
           "question_id": "s_sale_price",
@@ -5041,7 +6006,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "1500元"
+          "ground_truth_answer": "1500元",
+          "evidence_record_ids": [
+            "e014"
+          ]
         },
         {
           "question_id": "s_sale_time",
@@ -5049,7 +6017,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "2026-07-06 17:00，平台担保流程"
+          "ground_truth_answer": "7月6日17:00已过期，暂无新时段",
+          "evidence_record_ids": [
+            "e015"
+          ]
         },
         {
           "question_id": "s_sale_platform",
@@ -5057,7 +6028,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "买家接受平台担保"
+          "ground_truth_answer": "买家接受平台担保",
+          "evidence_record_ids": [
+            "e014"
+          ]
         },
         {
           "question_id": "s_sale_choice",
@@ -5065,7 +6039,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "选择平台担保"
+          "ground_truth_answer": "选择平台担保",
+          "evidence_record_ids": [
+            "e014"
+          ]
         },
         {
           "question_id": "s_sale_open",
@@ -5073,7 +6050,10 @@
           "task_ids": [
             "shopping_t2"
           ],
-          "ground_truth_answer": "已完成"
+          "ground_truth_answer": "原具体方案时间已过，待重新约定",
+          "evidence_record_ids": [
+            "e015"
+          ]
         },
         {
           "question_id": "s_card_goal",
@@ -5081,7 +6061,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-20提出异常扣费核对"
+          "ground_truth_answer": "2026-06-20提出异常扣费核对",
+          "evidence_record_ids": [
+            "e004"
+          ]
         },
         {
           "question_id": "s_card_pair",
@@ -5089,7 +6072,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US",
+          "evidence_record_ids": [
+            "e008"
+          ]
         },
         {
           "question_id": "s_card_order",
@@ -5097,7 +6083,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_card_docs",
@@ -5105,7 +6094,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "原始订单及两笔账单截图齐全"
+          "ground_truth_answer": "原始订单及两笔账单截图齐全",
+          "evidence_record_ids": [
+            "e010"
+          ]
         },
         {
           "question_id": "s_card_status",
@@ -5113,7 +6105,10 @@
           "task_ids": [
             "shopping_t3"
           ],
-          "ground_truth_answer": "已批准并冲销258元"
+          "ground_truth_answer": "已批准并冲销258元",
+          "evidence_record_ids": [
+            "e015"
+          ]
         },
         {
           "question_id": "s_stroller_goal",
@@ -5121,7 +6116,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
         },
         {
           "question_id": "s_stroller_batch",
@@ -5129,7 +6127,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "GBS5-2026-03，官方确认受召回影响"
+          "ground_truth_answer": "GBS5-2026-03，制动召回范围内，安全带认证仍有效",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_policy",
@@ -5137,7 +6138,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
+          "ground_truth_answer": "免费换新、120元制动加固并复检、质量退货需另购替代推车",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_cost",
@@ -5145,15 +6149,21 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
+          "ground_truth_answer": "换新一般两周但个案7月12日前验收；加固120元7月10日前装检；退货替代品到货未知",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "免费换新可在7月12日前验收，早于7月15日"
+          "ground_truth_answer": "换新7月12日前验收，加固7月10日前装检；退货替代品时间未知",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_stroller_open",
@@ -5161,7 +6171,10 @@
           "task_ids": [
             "shopping_t4"
           ],
-          "ground_truth_answer": "尚待最终方案"
+          "ground_truth_answer": "尚待最终比较与推荐",
+          "evidence_record_ids": [
+            "e013"
+          ]
         },
         {
           "question_id": "s_cart_goal",
@@ -5169,7 +6182,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "2026-06-22提出三类配件加购"
+          "ground_truth_answer": "2026-06-22提出三类配件加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         },
         {
           "question_id": "s_cart_catalog",
@@ -5177,15 +6193,21 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
+          "ground_truth_answer": "A:a1 133/a2 94/a3 83元；B:b1 162/b2 113元；C:c1 80/c2 50/c3 43元",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_stock",
-          "question": "最优组合对应SKU的库存情况是什么？",
+          "question": "三类原厂配件候选SKU目前各有多少库存？",
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "所选SKU各120件"
+          "ground_truth_answer": "八个候选SKU各120件",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_coupon",
@@ -5193,15 +6215,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
-        },
-        {
-          "question_id": "s_cart_best",
-          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
+          "ground_truth_answer": "满219减30、满254减55、满100减10%；各券按优惠前原价独立判断，百分券向下取整到分，可叠加至不低于0；有效至8月31日",
+          "evidence_record_ids": [
+            "e007"
+          ]
         },
         {
           "question_id": "s_cart_status",
@@ -5209,349 +6226,10 @@
           "task_ids": [
             "shopping_t5"
           ],
-          "ground_truth_answer": "尚未加购"
-        }
-      ],
-      "reactive_questions": [
-        "shopping_t1",
-        "shopping_t2",
-        "shopping_t3",
-        "shopping_t4",
-        "shopping_t5"
-      ],
-      "ready_tasks": [
-        "shopping_t4",
-        "shopping_t5"
-      ],
-      "newly_ready_tasks": [],
-      "invalidated_tasks": [
-        "shopping_t2"
-      ],
-      "task_states": {
-        "shopping_t1": {
-          "goal": "Satisfied",
-          "open": "Unsatisfied",
-          "case": "Satisfied",
-          "merchant_dispute": "Satisfied",
-          "rule": "Satisfied",
-          "photo": "Satisfied",
-          "video": "Satisfied",
-          "deadline": "Satisfied",
-          "authorized": "Satisfied"
-        },
-        "shopping_t2": {
-          "goal": "Satisfied",
-          "open": "Unsatisfied",
-          "listing": "Unsatisfied",
-          "buyer": "Satisfied",
-          "price": "Satisfied",
-          "time": "Satisfied",
-          "platform": "Satisfied",
-          "user_choice": "Satisfied"
-        },
-        "shopping_t3": {
-          "goal": "Satisfied",
-          "open": "Unsatisfied",
-          "duplicate": "Satisfied",
-          "order_link": "Satisfied",
-          "documents": "Satisfied",
-          "authorized": "Satisfied"
-        },
-        "shopping_t4": {
-          "goal": "Satisfied",
-          "open": "Satisfied",
-          "batch": "Satisfied",
-          "official_policy": "Satisfied",
-          "cost_cycle": "Satisfied",
-          "travel_fit": "Satisfied",
-          "authorized": "Satisfied"
-        },
-        "shopping_t5": {
-          "goal": "Satisfied",
-          "open": "Satisfied",
-          "catalog": "Satisfied",
-          "stock": "Satisfied",
-          "coupon": "Satisfied",
-          "optimal": "Satisfied",
-          "authorized": "Satisfied"
-        }
-      }
-    },
-    {
-      "stage_id": "s18",
-      "after_event_id": "e018",
-      "memory_questions": [
-        {
-          "question_id": "s_auth",
-          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
-          "task_ids": [
-            "shopping_t1",
-            "shopping_t2",
-            "shopping_t3",
-            "shopping_t4",
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "内部整理和加购可做；申请争议、退货、出售、付款须确认；平台外定金禁止"
-        },
-        {
-          "question_id": "s_deadline",
-          "question": "阎婷的家庭出行日是哪一天？",
-          "task_ids": [
-            "shopping_t1",
-            "shopping_t2",
-            "shopping_t3",
-            "shopping_t4",
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "2026-07-15"
-        },
-        {
-          "question_id": "s_ref_goal",
-          "question": "阎婷何时要求在必要时申请平台介入配件退货？",
-          "task_ids": [
-            "shopping_t1"
-          ],
-          "ground_truth_answer": "2026-07-02提出平台介入"
-        },
-        {
-          "question_id": "s_ref_case",
-          "question": "婴儿床配件退货工单当前状态是什么？",
-          "task_ids": [
-            "shopping_t1"
-          ],
-          "ground_truth_answer": "平台介入已批准，退款安排中"
-        },
-        {
-          "question_id": "s_ref_rule",
-          "question": "平台介入的举证要求和申请截止是什么？",
-          "task_ids": [
-            "shopping_t1"
-          ],
-          "ground_truth_answer": "商家异议后，7月9日前提交损坏照片和连续开箱视频"
-        },
-        {
-          "question_id": "s_ref_photo",
-          "question": "婴儿床配件损坏照片目前是否齐全？",
-          "task_ids": [
-            "shopping_t1"
-          ],
-          "ground_truth_answer": "齐全"
-        },
-        {
-          "question_id": "s_ref_video",
-          "question": "婴儿床配件开箱视频目前是否齐全？",
-          "task_ids": [
-            "shopping_t1"
-          ],
-          "ground_truth_answer": "齐全"
-        },
-        {
-          "question_id": "s_ref_open",
-          "question": "该配件平台介入申请是否仍待处理，还是已获裁决？",
-          "task_ids": [
-            "shopping_t1"
-          ],
-          "ground_truth_answer": "已获裁决"
-        },
-        {
-          "question_id": "s_sale_goal",
-          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
-          "task_ids": [
-            "shopping_t2"
-          ],
-          "ground_truth_answer": "旧S3推车走平台担保出售"
-        },
-        {
-          "question_id": "s_sale_listing",
-          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
-          "task_ids": [
-            "shopping_t2"
-          ],
-          "ground_truth_answer": "已下架"
-        },
-        {
-          "question_id": "s_sale_buyer",
-          "question": "当前二手买家是谁，是否仍有明确购买意向？",
-          "task_ids": [
-            "shopping_t2"
-          ],
-          "ground_truth_answer": "站内买家再次确认购买"
-        },
-        {
-          "question_id": "s_sale_price",
-          "question": "买家目前接受的具体成交价是多少元？",
-          "task_ids": [
-            "shopping_t2"
-          ],
-          "ground_truth_answer": "1500元"
-        },
-        {
-          "question_id": "s_sale_time",
-          "question": "买家接受的交易时间与方式是什么？",
-          "task_ids": [
-            "shopping_t2"
-          ],
-          "ground_truth_answer": "2026-07-06 17:00，平台担保流程"
-        },
-        {
-          "question_id": "s_sale_platform",
-          "question": "买家是否接受平台担保，还是要求平台外交易？",
-          "task_ids": [
-            "shopping_t2"
-          ],
-          "ground_truth_answer": "买家接受平台担保"
-        },
-        {
-          "question_id": "s_sale_choice",
-          "question": "阎婷目前选择哪一种旧推车交易方式？",
-          "task_ids": [
-            "shopping_t2"
-          ],
-          "ground_truth_answer": "选择平台担保"
-        },
-        {
-          "question_id": "s_sale_open",
-          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
-          "task_ids": [
-            "shopping_t2"
-          ],
-          "ground_truth_answer": "已完成"
-        },
-        {
-          "question_id": "s_card_goal",
-          "question": "阎婷何时提出核对或处理境外异常扣费？",
-          "task_ids": [
-            "shopping_t3"
-          ],
-          "ground_truth_answer": "2026-06-20提出异常扣费核对"
-        },
-        {
-          "question_id": "s_card_pair",
-          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
-          "task_ids": [
-            "shopping_t3"
-          ],
-          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US"
-        },
-        {
-          "question_id": "s_card_order",
-          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
-          "task_ids": [
-            "shopping_t3"
-          ],
-          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单"
-        },
-        {
-          "question_id": "s_card_docs",
-          "question": "该境外交易的订单及账单凭证是否齐全？",
-          "task_ids": [
-            "shopping_t3"
-          ],
-          "ground_truth_answer": "原始订单及两笔账单截图齐全"
-        },
-        {
-          "question_id": "s_card_status",
-          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
-          "task_ids": [
-            "shopping_t3"
-          ],
-          "ground_truth_answer": "已批准并冲销258元"
-        },
-        {
-          "question_id": "s_stroller_goal",
-          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
-          "task_ids": [
-            "shopping_t4"
-          ],
-          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案"
-        },
-        {
-          "question_id": "s_stroller_batch",
-          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
-          "task_ids": [
-            "shopping_t4"
-          ],
-          "ground_truth_answer": "GBS5-2026-03，官方确认受召回影响"
-        },
-        {
-          "question_id": "s_stroller_policy",
-          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
-          "task_ids": [
-            "shopping_t4"
-          ],
-          "ground_truth_answer": "官方：召回换新、120元加固、退货另购"
-        },
-        {
-          "question_id": "s_stroller_cost",
-          "question": "各处理方案的费用和完成周期是什么？",
-          "task_ids": [
-            "shopping_t4"
-          ],
-          "ground_truth_answer": "换新0元约两周；加固120元；退货另购"
-        },
-        {
-          "question_id": "s_stroller_travel",
-          "question": "哪一种安全处理方案能在家庭出行前完成？",
-          "task_ids": [
-            "shopping_t4"
-          ],
-          "ground_truth_answer": "免费换新可在7月12日前验收，早于7月15日"
-        },
-        {
-          "question_id": "s_stroller_open",
-          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
-          "task_ids": [
-            "shopping_t4"
-          ],
-          "ground_truth_answer": "尚待最终方案"
-        },
-        {
-          "question_id": "s_cart_goal",
-          "question": "阎婷何时提出配件A、配件B、耗材C的加购需求？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "2026-06-22提出三类配件加购"
-        },
-        {
-          "question_id": "s_cart_catalog",
-          "question": "三类原厂配件耗材各有哪些在售SKU及价格？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "A:133/94/83元；B:162/113元；C:80/50/43元"
-        },
-        {
-          "question_id": "s_cart_stock",
-          "question": "最优组合对应SKU的库存情况是什么？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "所选SKU各120件"
-        },
-        {
-          "question_id": "s_cart_coupon",
-          "question": "FULL209、FULL249和PCT10的门槛与叠加规则是什么？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "满219减30、满254减55、满100减10%，达门槛可叠加"
-        },
-        {
-          "question_id": "s_cart_best",
-          "question": "按当前商品和叠加规则最低的组合与总价是什么？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "A简装83+B单件113+C三件80，叠券后163.40元"
-        },
-        {
-          "question_id": "s_cart_status",
-          "question": "加购是否已经完成或失去必要性？",
-          "task_ids": [
-            "shopping_t5"
-          ],
-          "ground_truth_answer": "尚未加购"
+          "ground_truth_answer": "尚未加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
         }
       ],
       "reactive_questions": [
@@ -5576,16 +6254,16 @@
           "rule": "Satisfied",
           "photo": "Satisfied",
           "video": "Satisfied",
-          "deadline": "Satisfied",
+          "deadline": "Unsatisfied",
           "authorized": "Satisfied"
         },
         "shopping_t2": {
           "goal": "Satisfied",
-          "open": "Unsatisfied",
-          "listing": "Unsatisfied",
+          "open": "Satisfied",
+          "listing": "Satisfied",
           "buyer": "Satisfied",
           "price": "Satisfied",
-          "time": "Satisfied",
+          "time": "Unsatisfied",
           "platform": "Satisfied",
           "user_choice": "Satisfied"
         },
@@ -5612,7 +6290,861 @@
           "catalog": "Satisfied",
           "stock": "Satisfied",
           "coupon": "Satisfied",
-          "optimal": "Satisfied",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s18",
+      "after_event_id": "e018",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "内部整理与加购可做；本次ord_strr_0002平台介入已授权；银行卡争议提交、出售成交、付款下单仍须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "e012"
+          ]
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
+        },
+        {
+          "question_id": "s_ref_goal",
+          "question": "阎婷何时要求在必要时申请平台介入配件退货？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "2026-07-02提出平台介入",
+          "evidence_record_ids": [
+            "e012"
+          ]
+        },
+        {
+          "question_id": "s_ref_case",
+          "question": "婴儿床配件退货工单当前状态是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "平台介入已批准，退款安排中",
+          "evidence_record_ids": [
+            "e017"
+          ]
+        },
+        {
+          "question_id": "s_ref_rule",
+          "question": "平台介入的举证要求和申请截止是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "7月9日申请截止已过",
+          "evidence_record_ids": [
+            "e012"
+          ]
+        },
+        {
+          "question_id": "s_ref_photo",
+          "question": "婴儿床配件损坏照片目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "齐全",
+          "evidence_record_ids": [
+            "e012"
+          ]
+        },
+        {
+          "question_id": "s_ref_video",
+          "question": "婴儿床配件开箱视频目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "齐全",
+          "evidence_record_ids": [
+            "e013"
+          ]
+        },
+        {
+          "question_id": "s_ref_open",
+          "question": "该配件平台介入申请是否仍待处理，还是已获裁决？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "已获裁决",
+          "evidence_record_ids": [
+            "e017"
+          ]
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "已下架",
+          "evidence_record_ids": [
+            "e018"
+          ]
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "站内买家再次确认购买",
+          "evidence_record_ids": [
+            "e014"
+          ]
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元",
+          "evidence_record_ids": [
+            "e014"
+          ]
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "7月6日17:00已过期，暂无新时段",
+          "evidence_record_ids": [
+            "e015"
+          ]
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "买家接受平台担保",
+          "evidence_record_ids": [
+            "e014"
+          ]
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "选择平台担保",
+          "evidence_record_ids": [
+            "e014"
+          ]
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "已完成",
+          "evidence_record_ids": [
+            "e018"
+          ]
+        },
+        {
+          "question_id": "s_card_goal",
+          "question": "阎婷何时提出核对或处理境外异常扣费？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-20提出异常扣费核对",
+          "evidence_record_ids": [
+            "e004"
+          ]
+        },
+        {
+          "question_id": "s_card_pair",
+          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US",
+          "evidence_record_ids": [
+            "e008"
+          ]
+        },
+        {
+          "question_id": "s_card_order",
+          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单",
+          "evidence_record_ids": [
+            "e010"
+          ]
+        },
+        {
+          "question_id": "s_card_docs",
+          "question": "该境外交易的订单及账单凭证是否齐全？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "原始订单及两笔账单截图齐全",
+          "evidence_record_ids": [
+            "e010"
+          ]
+        },
+        {
+          "question_id": "s_card_status",
+          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "已批准并冲销258元",
+          "evidence_record_ids": [
+            "e015"
+          ]
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "GBS5-2026-03，制动召回范围内，安全带认证仍有效",
+          "evidence_record_ids": [
+            "e013"
+          ]
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "免费换新、120元制动加固并复检、质量退货需另购替代推车",
+          "evidence_record_ids": [
+            "e013"
+          ]
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "换新一般两周但个案7月12日前验收；加固120元7月10日前装检；退货替代品到货未知",
+          "evidence_record_ids": [
+            "e013"
+          ]
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "换新7月12日前验收，加固7月10日前装检；退货替代品时间未知",
+          "evidence_record_ids": [
+            "e013"
+          ]
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "尚待最终比较与推荐",
+          "evidence_record_ids": [
+            "e013"
+          ]
+        },
+        {
+          "question_id": "s_cart_goal",
+          "question": "阎婷何时提出配件A、配件B、耗材C的加购需求？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-06-22提出三类配件加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
+        },
+        {
+          "question_id": "s_cart_catalog",
+          "question": "三类原厂配件耗材各有哪些在售SKU及价格？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A:a1 133/a2 94/a3 83元；B:b1 162/b2 113元；C:c1 80/c2 50/c3 43元",
+          "evidence_record_ids": [
+            "e007"
+          ]
+        },
+        {
+          "question_id": "s_cart_stock",
+          "question": "三类原厂配件候选SKU目前各有多少库存？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "八个候选SKU各120件",
+          "evidence_record_ids": [
+            "e007"
+          ]
+        },
+        {
+          "question_id": "s_cart_coupon",
+          "question": "FULL209、FULL249和PCT10的门槛与叠加规则是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "满219减30、满254减55、满100减10%；各券按优惠前原价独立判断，百分券向下取整到分，可叠加至不低于0；有效至8月31日",
+          "evidence_record_ids": [
+            "e007"
+          ]
+        },
+        {
+          "question_id": "s_cart_status",
+          "question": "加购是否已经完成或失去必要性？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "尚未加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t1",
+        "shopping_t2",
+        "shopping_t3",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "ready_tasks": [
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "case": "Satisfied",
+          "merchant_dispute": "Satisfied",
+          "rule": "Satisfied",
+          "photo": "Satisfied",
+          "video": "Satisfied",
+          "deadline": "Unsatisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "listing": "Unsatisfied",
+          "buyer": "Satisfied",
+          "price": "Satisfied",
+          "time": "Unsatisfied",
+          "platform": "Satisfied",
+          "user_choice": "Satisfied"
+        },
+        "shopping_t3": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "duplicate": "Satisfied",
+          "order_link": "Satisfied",
+          "documents": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Satisfied",
+          "official_policy": "Satisfied",
+          "cost_cycle": "Satisfied",
+          "travel_fit": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "catalog": "Satisfied",
+          "stock": "Satisfied",
+          "coupon": "Satisfied",
+          "authorized": "Satisfied"
+        }
+      }
+    },
+    {
+      "stage_id": "s19",
+      "after_event_id": "e019",
+      "memory_questions": [
+        {
+          "question_id": "s_auth",
+          "question": "阎婷允许哪些内部准备行动，哪些申请或交易须另行确认？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "内部整理与加购可做；本次ord_strr_0002平台介入已授权；银行卡争议提交、出售成交、付款下单仍须确认；平台外定金禁止",
+          "evidence_record_ids": [
+            "e012"
+          ]
+        },
+        {
+          "question_id": "s_deadline",
+          "question": "阎婷的家庭出行日是哪一天？",
+          "task_ids": [
+            "shopping_t1",
+            "shopping_t2",
+            "shopping_t3",
+            "shopping_t4",
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-07-15",
+          "evidence_record_ids": [
+            "h002"
+          ]
+        },
+        {
+          "question_id": "s_ref_goal",
+          "question": "阎婷何时要求在必要时申请平台介入配件退货？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "2026-07-02提出平台介入",
+          "evidence_record_ids": [
+            "e012"
+          ]
+        },
+        {
+          "question_id": "s_ref_case",
+          "question": "婴儿床配件退货工单当前状态是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "平台介入已批准，退款安排中",
+          "evidence_record_ids": [
+            "e017"
+          ]
+        },
+        {
+          "question_id": "s_ref_rule",
+          "question": "平台介入的举证要求和申请截止是什么？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "7月9日申请截止已过",
+          "evidence_record_ids": [
+            "e012"
+          ]
+        },
+        {
+          "question_id": "s_ref_photo",
+          "question": "婴儿床配件损坏照片目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "齐全",
+          "evidence_record_ids": [
+            "e012"
+          ]
+        },
+        {
+          "question_id": "s_ref_video",
+          "question": "婴儿床配件开箱视频目前是否齐全？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "齐全",
+          "evidence_record_ids": [
+            "e013"
+          ]
+        },
+        {
+          "question_id": "s_ref_open",
+          "question": "该配件平台介入申请是否仍待处理，还是已获裁决？",
+          "task_ids": [
+            "shopping_t1"
+          ],
+          "ground_truth_answer": "已获裁决",
+          "evidence_record_ids": [
+            "e017"
+          ]
+        },
+        {
+          "question_id": "s_sale_goal",
+          "question": "阎婷对旧推车出售和交易安全最初提出什么要求？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "旧S3推车走平台担保出售",
+          "evidence_record_ids": [
+            "h002"
+          ]
+        },
+        {
+          "question_id": "s_sale_listing",
+          "question": "旧GlideBaby S3推车当前挂牌价格与状态是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "已下架",
+          "evidence_record_ids": [
+            "e018"
+          ]
+        },
+        {
+          "question_id": "s_sale_buyer",
+          "question": "当前二手买家是谁，是否仍有明确购买意向？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "站内买家再次确认购买",
+          "evidence_record_ids": [
+            "e014"
+          ]
+        },
+        {
+          "question_id": "s_sale_price",
+          "question": "买家目前接受的具体成交价是多少元？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "1500元",
+          "evidence_record_ids": [
+            "e014"
+          ]
+        },
+        {
+          "question_id": "s_sale_time",
+          "question": "买家接受的交易时间与方式是什么？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "7月6日17:00已过期，暂无新时段",
+          "evidence_record_ids": [
+            "e015"
+          ]
+        },
+        {
+          "question_id": "s_sale_platform",
+          "question": "买家是否接受平台担保，还是要求平台外交易？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "买家接受平台担保",
+          "evidence_record_ids": [
+            "e014"
+          ]
+        },
+        {
+          "question_id": "s_sale_choice",
+          "question": "阎婷目前选择哪一种旧推车交易方式？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "选择平台担保",
+          "evidence_record_ids": [
+            "e014"
+          ]
+        },
+        {
+          "question_id": "s_sale_open",
+          "question": "旧推车方案是尚待准备、交易中，还是已完成？",
+          "task_ids": [
+            "shopping_t2"
+          ],
+          "ground_truth_answer": "已完成",
+          "evidence_record_ids": [
+            "e018"
+          ]
+        },
+        {
+          "question_id": "s_card_goal",
+          "question": "阎婷何时提出核对或处理境外异常扣费？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-20提出异常扣费核对",
+          "evidence_record_ids": [
+            "e004"
+          ]
+        },
+        {
+          "question_id": "s_card_pair",
+          "question": "BABYJOGGER US的两笔卡交易各是多少元、日期为何？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "2026-06-13与06-24各258元，商户BABYJOGGER US",
+          "evidence_record_ids": [
+            "e008"
+          ]
+        },
+        {
+          "question_id": "s_card_order",
+          "question": "两笔BABYJOGGER US扣费与哪一张原始订单对应？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "两笔均对应同一海外遮阳棚订单",
+          "evidence_record_ids": [
+            "e010"
+          ]
+        },
+        {
+          "question_id": "s_card_docs",
+          "question": "该境外交易的订单及账单凭证是否齐全？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "原始订单及两笔账单截图齐全",
+          "evidence_record_ids": [
+            "e010"
+          ]
+        },
+        {
+          "question_id": "s_card_status",
+          "question": "重复扣费争议目前尚未受理、审核中还是已冲销？",
+          "task_ids": [
+            "shopping_t3"
+          ],
+          "ground_truth_answer": "已批准并冲销258元",
+          "evidence_record_ids": [
+            "e015"
+          ]
+        },
+        {
+          "question_id": "s_stroller_goal",
+          "question": "阎婷对新推车制动与召回核验提出了什么需求？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "核验S5召回批次与制动安全并比较方案",
+          "evidence_record_ids": [
+            "h002"
+          ]
+        },
+        {
+          "question_id": "s_stroller_batch",
+          "question": "新GlideBaby S5推车的生产批次及召回核验结果是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "GBS5-2026-03，制动召回范围内，安全带认证仍有效",
+          "evidence_record_ids": [
+            "e013"
+          ]
+        },
+        {
+          "question_id": "s_stroller_policy",
+          "question": "品牌官方给出的召回换新、加固和退货处理条件是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "免费换新、120元制动加固并复检、质量退货需另购替代推车",
+          "evidence_record_ids": [
+            "e013"
+          ]
+        },
+        {
+          "question_id": "s_stroller_cost",
+          "question": "各处理方案的费用和完成周期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "7月12日换新承诺已过，实际完成未知；加固120元此前可在7月10日前装检",
+          "evidence_record_ids": [
+            "e019"
+          ]
+        },
+        {
+          "question_id": "s_stroller_travel",
+          "question": "品牌对换新和制动加固的具体完成日期是什么？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "品牌7月12日验收承诺窗口已过，是否实际完成未知",
+          "evidence_record_ids": [
+            "e013"
+          ]
+        },
+        {
+          "question_id": "s_stroller_open",
+          "question": "新推车安全方案是仍待确定还是已经最终确认完成？",
+          "task_ids": [
+            "shopping_t4"
+          ],
+          "ground_truth_answer": "出行前安全方案需重新核实完成状态",
+          "evidence_record_ids": [
+            "e019"
+          ]
+        },
+        {
+          "question_id": "s_cart_goal",
+          "question": "阎婷何时提出配件A、配件B、耗材C的加购需求？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "2026-06-22提出三类配件加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
+        },
+        {
+          "question_id": "s_cart_catalog",
+          "question": "三类原厂配件耗材各有哪些在售SKU及价格？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "A:a1 133/a2 94/a3 83元；B:b1 162/b2 113元；C:c1 80/c2 50/c3 43元",
+          "evidence_record_ids": [
+            "e007"
+          ]
+        },
+        {
+          "question_id": "s_cart_stock",
+          "question": "三类原厂配件候选SKU目前各有多少库存？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "八个候选SKU各120件",
+          "evidence_record_ids": [
+            "e007"
+          ]
+        },
+        {
+          "question_id": "s_cart_coupon",
+          "question": "FULL209、FULL249和PCT10的门槛与叠加规则是什么？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "满219减30、满254减55、满100减10%；各券按优惠前原价独立判断，百分券向下取整到分，可叠加至不低于0；有效至8月31日",
+          "evidence_record_ids": [
+            "e007"
+          ]
+        },
+        {
+          "question_id": "s_cart_status",
+          "question": "加购是否已经完成或失去必要性？",
+          "task_ids": [
+            "shopping_t5"
+          ],
+          "ground_truth_answer": "尚未加购",
+          "evidence_record_ids": [
+            "e006"
+          ]
+        }
+      ],
+      "reactive_questions": [
+        "shopping_t1",
+        "shopping_t2",
+        "shopping_t3",
+        "shopping_t4",
+        "shopping_t5"
+      ],
+      "ready_tasks": [
+        "shopping_t5"
+      ],
+      "newly_ready_tasks": [],
+      "invalidated_tasks": [
+        "shopping_t4"
+      ],
+      "task_states": {
+        "shopping_t1": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "case": "Satisfied",
+          "merchant_dispute": "Satisfied",
+          "rule": "Satisfied",
+          "photo": "Satisfied",
+          "video": "Satisfied",
+          "deadline": "Unsatisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t2": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "listing": "Unsatisfied",
+          "buyer": "Satisfied",
+          "price": "Satisfied",
+          "time": "Unsatisfied",
+          "platform": "Satisfied",
+          "user_choice": "Satisfied"
+        },
+        "shopping_t3": {
+          "goal": "Satisfied",
+          "open": "Unsatisfied",
+          "duplicate": "Satisfied",
+          "order_link": "Satisfied",
+          "documents": "Satisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t4": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "batch": "Satisfied",
+          "official_policy": "Satisfied",
+          "cost_cycle": "Satisfied",
+          "travel_fit": "Unsatisfied",
+          "authorized": "Satisfied"
+        },
+        "shopping_t5": {
+          "goal": "Satisfied",
+          "open": "Satisfied",
+          "catalog": "Satisfied",
+          "stock": "Satisfied",
+          "coupon": "Satisfied",
           "authorized": "Satisfied"
         }
       }

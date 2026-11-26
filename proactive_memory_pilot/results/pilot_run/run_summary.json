@@ -1,0 +1,46 @@
+{
+  "run_id": "12bee68e-d859-4ac6-b062-76076da361cb",
+  "expected_requests": 2933,
+  "unique_requests_recorded": 2933,
+  "raw_records_including_retry_attempts": 3413,
+  "missing_requests": 0,
+  "missing_request_keys": [],
+  "status_counts": {
+    "ok": 2933
+  },
+  "api_success_count": 2933,
+  "api_success_rate": 1.0,
+  "parsing_success_count": 2933,
+  "parsing_success_rate_among_api_success": 1.0,
+  "token_usage": {
+    "input_tokens": {
+      "total_reported": 4148939,
+      "requests_with_usage": 2933
+    },
+    "output_tokens": {
+      "total_reported": 1984570,
+      "requests_with_usage": 2933
+    }
+  },
+  "latency_seconds": {
+    "count": 2933,
+    "mean": 5.37688353221957,
+    "median": 2.8374,
+    "max": 213.8395
+  },
+  "by_scenario_status": {
+    "rental": {
+      "ok": 642
+    },
+    "travel": {
+      "ok": 814
+    },
+    "shopping": {
+      "ok": 616
+    },
+    "team_building": {
+      "ok": 861
+    }
+  },
+  "generated_at_utc": "2026-11-26T04:49:39.114485+00:00"
+}

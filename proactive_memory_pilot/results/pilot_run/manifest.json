@@ -1,0 +1,33 @@
+{
+  "run_id": "12bee68e-d859-4ac6-b062-76076da361cb",
+  "model_names": [
+    "deepseek/deepseek-flash"
+  ],
+  "model_parameters": {
+    "temperature": 0,
+    "top_p": null,
+    "max_output_tokens": 128000,
+    "seed": null
+  },
+  "backend": "direct",
+  "harness_version": "direct-openai-compatible-v1",
+  "concurrency": 4,
+  "timeout_seconds": 120,
+  "retry": 1,
+  "num_samples": 1,
+  "dataset_commit_sha": "6d49f8b7e4ebdb8265f6e47f667fd63220fb0774",
+  "dataset_sha256": "afb4416c715add82c0b1197522809203f765261683f5eb1be42b0440dabcbd7c",
+  "dataset_path": "evaluation/data/scenarios/all_scenarios.json",
+  "prompt_version": "pilot-v1",
+  "prompt_sha256": {
+    "memory": "8801d11796d69976029aee3ca50f8c404074317b9a95e0abf24664bfe42f70ac",
+    "task_readiness": "cb163a5786e881cd9899f25197cfda9517060703c8559efaeaaf30f09a5b4c33"
+  },
+  "system_and_runner_sha256": {
+    "integrity": "6e77fabb97928f1dbcb5c3e632a342681dcb3c8507947d252d28d8811a57dd8a",
+    "runner": "09117be9eaaa4a19b87fe01bc370498a73c350cfea2ab27eb746956e550bf317"
+  },
+  "inference_result_exported_at_utc": "2026-11-26T04:49:39.114485+00:00",
+  "raw_results_location": "local outputs/raw_results/pilot_run.jsonl",
+  "note": "No correctness annotation, semantic judge, or task metric was run."
+}

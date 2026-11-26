@@ -1,0 +1,16 @@
+{
+  "models": [
+    "deepseek/deepseek-flash"
+  ],
+  "temperature": 0,
+  "top_p": null,
+  "max_output_tokens": 128000,
+  "seed": null,
+  "timeout_seconds": 120,
+  "retry": 1,
+  "concurrency": 4,
+  "num_samples": 1,
+  "backend": "direct",
+  "prompt_version": "pilot-v1",
+  "note": "The API key, local model configuration path, and environment are omitted."
+}
